@@ -1,97 +1,211 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>Mohave Tech</title>
 <style>
 body { background-color: black; color: #00ff00; font-family: monospace; padding: 20px; }
-a { color: #00ff00; }
-a:visited { color: #009900; }
+a { text-decoration: none; }
 h1 { color: #00ff00; }
 h2 { color: #00ff00; border-bottom: 1px solid #00ff00; }
+.legend span { margin-right: 15px; }
+.hamburger { font-size: 28px; cursor: pointer; background: none; border: 1px solid #00ff00; color: #00ff00; padding: 4px 12px; }
+.menu { display: none; flex-direction: column; border: 1px solid #00ff00; width: 200px; margin-top: 8px; }
+.menu button { background: black; color: #00ff00; border: none; border-bottom: 1px solid #00ff00; padding: 10px; text-align: left; font-family: monospace; font-size: 16px; }
+.menu.open { display: flex; }
+.hidden { display: none; }
+.info-box { border: 1px solid #00ff00; padding: 15px; margin-top: 15px; max-width: 500px; }
 </style>
 </head>
 <body>
+
+<button class="hamburger" onclick="document.getElementById('menu').classList.toggle('open')">&#9776;</button>
+<div class="menu" id="menu">
+<button onclick="showView('alpha')">Alphabetical View</button>
+<button onclick="showView('category')">Category View</button>
+<button onclick="toggleInfo()">Info</button>
+</div>
+
 <h1>Mohave Tech</h1>
 
-<h2>Music</h2>
-<p><a href="https://bitfield-synth.vercel.app">bitfield-synth</a></p>
-<p><a href="https://chromatogram-three.vercel.app">chromatogram</a></p>
-<p><a href="https://circuit-musicfx.vercel.app">circuit-musicfx</a></p>
-<p><a href="https://edmia.vercel.app">edmia</a></p>
-<p><a href="https://looper-sooty.vercel.app">looper</a></p>
-<p><a href="https://offset-listener.vercel.app">offset-listener</a></p>
-<p><a href="https://screensaver-musicfx.vercel.app">screensaver-musicfx</a></p>
-<p><a href="https://spectral-engin.vercel.app">spectral-engin</a></p>
-<p><a href="https://suno-forge-kappa.vercel.app">suno-forge</a></p>
-<p><a href="https://termbeat.vercel.app">termbeat</a></p>
-<p><a href="https://tunnelfx.vercel.app">tunnelfx</a></p>
+<div class="info-box hidden" id="info-box">
+This page is an index archive for Mohave Technology Group projects. It links out to each live project without hosting or archiving the projects themselves.
+</div>
 
-<h2>Games</h2>
-<p><a href="https://androids.vercel.app">androids</a></p>
-<p><a href="https://birdix.vercel.app">birdix</a></p>
-<p><a href="https://hackercons.vercel.app">hackercons</a></p>
-<p><a href="https://j30p4rdy.vercel.app">j30p4rdy</a></p>
-<p><a href="https://legends-rose.vercel.app">legends</a></p>
-<p><a href="https://mary-jane-man.vercel.app">mary-jane-man</a></p>
-<p><a href="https://rogue-rail.vercel.app">rogue-rail</a></p>
-<p><a href="https://spaceout-mu.vercel.app">spaceout</a></p>
-<p><a href="https://tanksandzombies.vercel.app">tanksandzombies</a></p>
-<p><a href="https://tile-spinner.vercel.app">tile-spinner</a></p>
-<p><a href="https://tower-builder-five.vercel.app">tower-builder</a></p>
-<p><a href="https://tower-builder-one.vercel.app">tower-builder-one</a></p>
-<p><a href="https://welcome-to-the-madness.vercel.app">welcome-to-the-madness</a></p>
-
-<h2>Business and Equipment</h2>
-<p><a href="https://dronecamp.vercel.app">dronecamp</a></p>
-<p><a href="https://ghost-kitchen-builder.vercel.app">ghost-kitchen-builder</a></p>
-<p><a href="https://invoice-green-tau.vercel.app">invoice-green</a></p>
-<p><a href="https://irrigation-station.vercel.app">irrigation-station</a></p>
-<p><a href="https://parkingten.vercel.app">parkingten</a></p>
-<p><a href="https://torque-converter.vercel.app">torque-converter</a></p>
-<p><a href="https://tractor-tool.vercel.app">tractor-tool</a></p>
-
-<h2>Tools</h2>
+<div id="alpha-view" class="hidden">
 <p><a href="https://access-terminal-smoky.vercel.app">access-terminal</a></p>
 <p><a href="https://access-terminal-admin.vercel.app">access-terminal-admin</a></p>
 <p><a href="https://access-terminal-orange.vercel.app">access-terminal-orange</a></p>
 <p><a href="https://access-terminal-red.vercel.app">access-terminal-red</a></p>
 <p><a href="https://access-termonal-blue.vercel.app">access-termonal-blue</a></p>
+<p><a href="https://aerophin-twin.vercel.app">aerophin-twin</a></p>
+<p><a href="https://androids.vercel.app">androids</a></p>
+<p><a href="https://birdix.vercel.app">birdix</a></p>
 <p><a href="https://birthday-calendar-five.vercel.app">birthday-calendar</a></p>
+<p><a href="https://bitfield-synth.vercel.app">bitfield-synth</a></p>
+<p><a href="https://cabin-viewer.vercel.app">cabin-viewer</a></p>
+<p><a href="https://campus-ebutuoy.vercel.app">campus-ebutuoy</a></p>
+<p><a href="https://chromatogram-three.vercel.app">chromatogram</a></p>
+<p><a href="https://circuit-musicfx.vercel.app">circuit-musicfx</a></p>
+<p><a href="https://coffeekit1.vercel.app">coffeekit1</a></p>
 <p><a href="https://daily-outline.vercel.app">daily-outline</a></p>
 <p><a href="https://db-stumbler-blue.vercel.app">db-stumbler-blue</a></p>
+<p><a href="https://dronecamp.vercel.app">dronecamp</a></p>
+<p><a href="https://ebutuoy.vercel.app">ebutuoy</a></p>
+<p><a href="https://edmia.vercel.app">edmia</a></p>
 <p><a href="https://envelope-nu-six.vercel.app">envelope</a></p>
 <p><a href="https://equivalence-engine.vercel.app">equivalence-engine</a></p>
 <p><a href="https://field-twin-teal.vercel.app">field-twin</a></p>
 <p><a href="https://frontend-sudosilo2-1771s-projects.vercel.app">frontend</a></p>
+<p><a href="https://ghost-kitchen-builder.vercel.app">ghost-kitchen-builder</a></p>
+<p><a href="https://graceland-diagram.vercel.app">graceland-diagram</a></p>
 <p><a href="https://gridmark-seven.vercel.app">gridmark</a></p>
+<p><a href="https://groundcore-nine.vercel.app">groundcore</a></p>
+<p><a href="https://hackercons.vercel.app">hackercons</a></p>
+<p><a href="https://infinicanvan.vercel.app">infinicanvan</a></p>
+<p><a href="https://infinite-centerpoint.vercel.app">infinite-centerpoint</a></p>
+<p><a href="https://invoice-green-tau.vercel.app">invoice-green</a></p>
+<p><a href="https://irrigation-station.vercel.app">irrigation-station</a></p>
+<p><a href="https://j30p4rdy.vercel.app">j30p4rdy</a></p>
 <p><a href="https://kvs-sigma.vercel.app">kvs</a></p>
+<p><a href="https://legends-rose.vercel.app">legends</a></p>
+<p><a href="https://looper-sooty.vercel.app">looper</a></p>
+<p><a href="https://mary-jane-man.vercel.app">mary-jane-man</a></p>
+<p><a href="https://ming-globe.vercel.app">ming-globe</a></p>
 <p><a href="https://mission-operator.vercel.app">mission-operator</a></p>
+<p><a href="https://offset-listener.vercel.app">offset-listener</a></p>
 <p><a href="https://open-pipeline.vercel.app">open-pipeline</a></p>
+<p><a href="https://parkingten.vercel.app">parkingten</a></p>
 <p><a href="https://rat-site-gilt.vercel.app">rat-site</a></p>
 <p><a href="https://rat30-deck.vercel.app">rat30-deck</a></p>
 <p><a href="https://red-spoor.vercel.app">red-spoor</a></p>
 <p><a href="https://repofind-delta.vercel.app">repofind</a></p>
 <p><a href="https://restack-wheat.vercel.app">restack</a></p>
+<p><a href="https://rogue-rail.vercel.app">rogue-rail</a></p>
+<p><a href="https://rtss-sigma.vercel.app">rtss</a></p>
+<p><a href="https://screensaver-musicfx.vercel.app">screensaver-musicfx</a></p>
 <p><a href="https://shitty-ass-news.vercel.app">shitty-ass-news</a></p>
 <p><a href="https://shitty-ass-trading.vercel.app">shitty-ass-trading</a></p>
+<p><a href="https://skwiggle.vercel.app">skwiggle</a></p>
+<p><a href="https://spaceout-mu.vercel.app">spaceout</a></p>
+<p><a href="https://spectral-engin.vercel.app">spectral-engin</a></p>
+<p><a href="https://spirits-atlas.vercel.app">spirits-atlas</a></p>
 <p><a href="https://stumbler.vercel.app">stumbler</a></p>
+<p><a href="https://suno-forge-kappa.vercel.app">suno-forge</a></p>
 <p><a href="https://swh-sumbler.vercel.app">swh-sumbler</a></p>
+<p><a href="https://tanksandzombies.vercel.app">tanksandzombies</a></p>
+<p><a href="https://termbeat.vercel.app">termbeat</a></p>
+<p><a href="https://tile-spinner.vercel.app">tile-spinner</a></p>
+<p><a href="https://torque-converter.vercel.app">torque-converter</a></p>
+<p><a href="https://tower-builder-five.vercel.app">tower-builder</a></p>
+<p><a href="https://tower-builder-one.vercel.app">tower-builder-one</a></p>
+<p><a href="https://tractor-tool.vercel.app">tractor-tool</a></p>
+<p><a href="https://tunnelfx.vercel.app">tunnelfx</a></p>
+<p><a href="https://welcome-to-the-madness.vercel.app">welcome-to-the-madness</a></p>
+</div>
+
+<div id="category-view">
+<p class="legend">
+<span style="color:#00ff00">under 7d</span>
+<span style="color:#ffff00">7-30d</span>
+<span style="color:#ffa500">30-60d</span>
+<span style="color:#ff4444">60-90d</span>
+<span style="color:#888888">90d+</span>
+</p>
+
+<h2>Music</h2>
+<p><a style="color:#ff4444" href="https://bitfield-synth.vercel.app">bitfield-synth</a></p>
+<p><a style="color:#ffff00" href="https://chromatogram-three.vercel.app">chromatogram</a></p>
+<p><a style="color:#ff4444" href="https://circuit-musicfx.vercel.app">circuit-musicfx</a></p>
+<p><a style="color:#888888" href="https://edmia.vercel.app">edmia</a></p>
+<p><a style="color:#888888" href="https://looper-sooty.vercel.app">looper</a></p>
+<p><a style="color:#ffff00" href="https://offset-listener.vercel.app">offset-listener</a></p>
+<p><a style="color:#ff4444" href="https://screensaver-musicfx.vercel.app">screensaver-musicfx</a></p>
+<p><a style="color:#00ff00" href="https://spectral-engin.vercel.app">spectral-engin</a></p>
+<p><a style="color:#888888" href="https://suno-forge-kappa.vercel.app">suno-forge</a></p>
+<p><a style="color:#ffa500" href="https://termbeat.vercel.app">termbeat</a></p>
+<p><a style="color:#ff4444" href="https://tunnelfx.vercel.app">tunnelfx</a></p>
+
+<h2>Games</h2>
+<p><a style="color:#ff4444" href="https://androids.vercel.app">androids</a></p>
+<p><a style="color:#888888" href="https://birdix.vercel.app">birdix</a></p>
+<p><a style="color:#ff4444" href="https://hackercons.vercel.app">hackercons</a></p>
+<p><a style="color:#ffa500" href="https://j30p4rdy.vercel.app">j30p4rdy</a></p>
+<p><a style="color:#888888" href="https://legends-rose.vercel.app">legends</a></p>
+<p><a style="color:#00ff00" href="https://mary-jane-man.vercel.app">mary-jane-man</a></p>
+<p><a style="color:#ff4444" href="https://rogue-rail.vercel.app">rogue-rail</a></p>
+<p><a style="color:#888888" href="https://spaceout-mu.vercel.app">spaceout</a></p>
+<p><a style="color:#ff4444" href="https://tanksandzombies.vercel.app">tanksandzombies</a></p>
+<p><a style="color:#888888" href="https://tile-spinner.vercel.app">tile-spinner</a></p>
+<p><a style="color:#00ff00" href="https://tower-builder-five.vercel.app">tower-builder</a></p>
+<p><a style="color:#00ff00" href="https://tower-builder-one.vercel.app">tower-builder-one</a></p>
+<p><a style="color:#ffa500" href="https://welcome-to-the-madness.vercel.app">welcome-to-the-madness</a></p>
+
+<h2>Business and Equipment</h2>
+<p><a style="color:#ff4444" href="https://dronecamp.vercel.app">dronecamp</a></p>
+<p><a style="color:#888888" href="https://ghost-kitchen-builder.vercel.app">ghost-kitchen-builder</a></p>
+<p><a style="color:#ffa500" href="https://invoice-green-tau.vercel.app">invoice-green</a></p>
+<p><a style="color:#ffa500" href="https://irrigation-station.vercel.app">irrigation-station</a></p>
+<p><a style="color:#888888" href="https://parkingten.vercel.app">parkingten</a></p>
+<p><a style="color:#ffa500" href="https://torque-converter.vercel.app">torque-converter</a></p>
+<p><a style="color:#ffa500" href="https://tractor-tool.vercel.app">tractor-tool</a></p>
+
+<h2>Tools</h2>
+<p><a style="color:#ffa500" href="https://access-terminal-smoky.vercel.app">access-terminal</a></p>
+<p><a style="color:#ffa500" href="https://access-terminal-admin.vercel.app">access-terminal-admin</a></p>
+<p><a style="color:#ffa500" href="https://access-terminal-orange.vercel.app">access-terminal-orange</a></p>
+<p><a style="color:#ffa500" href="https://access-terminal-red.vercel.app">access-terminal-red</a></p>
+<p><a style="color:#ffa500" href="https://access-termonal-blue.vercel.app">access-termonal-blue</a></p>
+<p><a style="color:#00ff00" href="https://birthday-calendar-five.vercel.app">birthday-calendar</a></p>
+<p><a style="color:#888888" href="https://daily-outline.vercel.app">daily-outline</a></p>
+<p><a style="color:#ffff00" href="https://db-stumbler-blue.vercel.app">db-stumbler-blue</a></p>
+<p><a style="color:#888888" href="https://envelope-nu-six.vercel.app">envelope</a></p>
+<p><a style="color:#ffa500" href="https://equivalence-engine.vercel.app">equivalence-engine</a></p>
+<p><a style="color:#ffff00" href="https://field-twin-teal.vercel.app">field-twin</a></p>
+<p><a style="color:#888888" href="https://frontend-sudosilo2-1771s-projects.vercel.app">frontend</a></p>
+<p><a style="color:#888888" href="https://gridmark-seven.vercel.app">gridmark</a></p>
+<p><a style="color:#888888" href="https://kvs-sigma.vercel.app">kvs</a></p>
+<p><a style="color:#888888" href="https://mission-operator.vercel.app">mission-operator</a></p>
+<p><a style="color:#ff4444" href="https://open-pipeline.vercel.app">open-pipeline</a></p>
+<p><a style="color:#888888" href="https://rat-site-gilt.vercel.app">rat-site</a></p>
+<p><a style="color:#ffa500" href="https://rat30-deck.vercel.app">rat30-deck</a></p>
+<p><a style="color:#ffa500" href="https://red-spoor.vercel.app">red-spoor</a></p>
+<p><a style="color:#ffff00" href="https://repofind-delta.vercel.app">repofind</a></p>
+<p><a style="color:#888888" href="https://restack-wheat.vercel.app">restack</a></p>
+<p><a style="color:#00ff00" href="https://shitty-ass-news.vercel.app">shitty-ass-news</a></p>
+<p><a style="color:#00ff00" href="https://shitty-ass-trading.vercel.app">shitty-ass-trading</a></p>
+<p><a style="color:#00ff00" href="https://stumbler.vercel.app">stumbler</a></p>
+<p><a style="color:#ffa500" href="https://swh-sumbler.vercel.app">swh-sumbler</a></p>
 
 <h2>Creative and Visual</h2>
-<p><a href="https://aerophin-twin.vercel.app">aerophin-twin</a></p>
-<p><a href="https://cabin-viewer.vercel.app">cabin-viewer</a></p>
-<p><a href="https://campus-ebutuoy.vercel.app">campus-ebutuoy</a></p>
-<p><a href="https://coffeekit1.vercel.app">coffeekit1</a></p>
-<p><a href="https://ebutuoy.vercel.app">ebutuoy</a></p>
-<p><a href="https://graceland-diagram.vercel.app">graceland-diagram</a></p>
-<p><a href="https://infinicanvan.vercel.app">infinicanvan</a></p>
-<p><a href="https://infinite-centerpoint.vercel.app">infinite-centerpoint</a></p>
-<p><a href="https://ming-globe.vercel.app">ming-globe</a></p>
-<p><a href="https://rtss-sigma.vercel.app">rtss</a></p>
-<p><a href="https://skwiggle.vercel.app">skwiggle</a></p>
-<p><a href="https://spirits-atlas.vercel.app">spirits-atlas</a></p>
+<p><a style="color:#00ff00" href="https://aerophin-twin.vercel.app">aerophin-twin</a></p>
+<p><a style="color:#888888" href="https://cabin-viewer.vercel.app">cabin-viewer</a></p>
+<p><a style="color:#ff4444" href="https://campus-ebutuoy.vercel.app">campus-ebutuoy</a></p>
+<p><a style="color:#ff4444" href="https://coffeekit1.vercel.app">coffeekit1</a></p>
+<p><a style="color:#888888" href="https://ebutuoy.vercel.app">ebutuoy</a></p>
+<p><a style="color:#888888" href="https://graceland-diagram.vercel.app">graceland-diagram</a></p>
+<p><a style="color:#00ff00" href="https://infinicanvan.vercel.app">infinicanvan</a></p>
+<p><a style="color:#00ff00" href="https://infinite-centerpoint.vercel.app">infinite-centerpoint</a></p>
+<p><a style="color:#888888" href="https://ming-globe.vercel.app">ming-globe</a></p>
+<p><a style="color:#888888" href="https://rtss-sigma.vercel.app">rtss</a></p>
+<p><a style="color:#00ff00" href="https://skwiggle.vercel.app">skwiggle</a></p>
+<p><a style="color:#888888" href="https://spirits-atlas.vercel.app">spirits-atlas</a></p>
 
 <h2>Unsorted</h2>
-<p><a href="https://groundcore-nine.vercel.app">groundcore</a></p>
+<p><a style="color:#888888" href="https://groundcore-nine.vercel.app">groundcore</a></p>
+</div>
+
+<script>
+function showView(view) {
+  document.getElementById('alpha-view').classList.add('hidden');
+  document.getElementById('category-view').classList.add('hidden');
+  document.getElementById(view + '-view').classList.remove('hidden');
+  document.getElementById('menu').classList.remove('open');
+}
+function toggleInfo() {
+  document.getElementById('info-box').classList.toggle('hidden');
+  document.getElementById('menu').classList.remove('open');
+}
+</script>
 
 </body>
 </html>
