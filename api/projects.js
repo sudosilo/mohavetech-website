@@ -7,17 +7,15 @@ export default async function handler(req, res) {
   }
   try {
     const response = await fetch(url, { headers: { Authorization: "Bearer " + token } });
-    const text = await response.text();
     if (!response.ok) {
       res.setHeader("Cache-Control", "no-store");
-      res.status(200).json({ error: true, status: response.status, body: text.slice(0, 300), teamIdUsed: teamId || "none" });
+      res.status(200).json({ error: true, status: response.status });
       return;
     }
-    const data = JSON.parse(text);
-    const count = data.projects ? data.projects.length : 0;
-    if (!data.projects || count === 0) {
+    const data = await response.json();
+    if (!data.projects || data.projects.length === 0) {
       res.setHeader("Cache-Control", "no-store");
-      res.status(200).json({ error: true, status: 200, body: "zero projects returned", teamIdUsed: teamId || "none" });
+      res.status(200).json({ error: true, status: 200 });
       return;
     }
     const result = data.projects.map(p => {
@@ -31,6 +29,6 @@ export default async function handler(req, res) {
     res.status(200).json(result);
   } catch (e) {
     res.setHeader("Cache-Control", "no-store");
-    res.status(200).json({ error: true, status: 0, body: String(e), teamIdUsed: teamId || "none" });
+    res.status(200).json({ error: true, status: 0 });
   }
 }

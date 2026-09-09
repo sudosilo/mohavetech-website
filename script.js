@@ -7,11 +7,7 @@ document.body.insertBefore(statusEl, document.body.firstChild);
 
 fetch('/api/projects').then(r => r.json()).then(data => {
   if (data && data.error) {
-    statusEl.textContent = 'error ' + data.status + ': ' + data.body + ' | team id used: ' + data.teamIdUsed;
-    return;
-  }
-  if (!Array.isArray(data) || data.length === 0) {
-    statusEl.textContent = 'live data unavailable, colors are from last manual update';
+    statusEl.textContent = 'live data unavailable';
     return;
   }
   const links = document.querySelectorAll('#category-view a, #alpha-view a');
@@ -29,5 +25,5 @@ fetch('/api/projects').then(r => r.json()).then(data => {
   });
   statusEl.textContent = 'live data loaded';
 }).catch(e => {
-  statusEl.textContent = 'live data fetch failed: ' + e;
+  statusEl.textContent = 'live data fetch failed';
 });
