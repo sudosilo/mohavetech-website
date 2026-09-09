@@ -7,7 +7,7 @@ document.body.insertBefore(statusEl, document.body.firstChild);
 
 fetch('/api/projects').then(r => r.json()).then(data => {
   if (data && data.error) {
-    statusEl.textContent = 'error ' + data.status + ': ' + data.body;
+    statusEl.textContent = 'error ' + data.status + ': ' + data.body + ' | team id used: ' + data.teamIdUsed;
     return;
   }
   if (!Array.isArray(data) || data.length === 0) {

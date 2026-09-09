@@ -2,7 +2,7 @@ export default async function handler(req, res) {
   const token = process.env.VERCEL_API_TOKEN;
   const teamId = process.env.VERCEL_TEAM_ID;
   let url = "https://api.vercel.com/v9/projects?limit=100";
-  if (teamId && teamId.indexOf("team_") === 0) {
+  if (teamId) {
     url += "&teamId=" + teamId;
   }
   try {
@@ -10,13 +10,14 @@ export default async function handler(req, res) {
     const text = await response.text();
     if (!response.ok) {
       res.setHeader("Cache-Control", "no-store");
-      res.status(200).json({ error: true, status: response.status, body: text.slice(0, 300) });
+      res.status(200).json({ error: true, status: response.status, body: text.slice(0, 300), teamIdUsed: teamId || "none" });
       return;
     }
     const data = JSON.parse(text);
-    if (!data.projects) {
+    const count = data.projects ? data.projects.length : 0;
+    if (!data.projects || count === 0) {
       res.setHeader("Cache-Control", "no-store");
-      res.status(200).json({ error: true, status: 200, body: text.slice(0, 300) });
+      res.status(200).json({ error: true, status: 200, body: "zero projects returned", teamIdUsed: teamId || "none" });
       return;
     }
     const result = data.projects.map(p => {
@@ -30,6 +31,6 @@ export default async function handler(req, res) {
     res.status(200).json(result);
   } catch (e) {
     res.setHeader("Cache-Control", "no-store");
-    res.status(200).json({ error: true, status: 0, body: String(e) });
+    res.status(200).json({ error: true, status: 0, body: String(e), teamIdUsed: teamId || "none" });
   }
 }
