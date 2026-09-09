@@ -2,7 +2,7 @@ export default async function handler(req, res) {
   const token = process.env.VERCEL_API_TOKEN;
   const teamId = process.env.VERCEL_TEAM_ID;
   const response = await fetch(
-    "https://api.vercel.com/v9/projects?teamId=" + teamId,
+    "https://api.vercel.com/v9/projects?teamId=" + teamId + "&limit=100",
     { headers: { Authorization: "Bearer " + token } }
   );
   const data = await response.json();
