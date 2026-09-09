@@ -6,6 +6,10 @@ statusEl.style.marginBottom = '10px';
 document.body.insertBefore(statusEl, document.body.firstChild);
 
 fetch('/api/projects').then(r => r.json()).then(data => {
+  if (data && data.error) {
+    statusEl.textContent = 'error ' + data.status + ': ' + data.body;
+    return;
+  }
   if (!Array.isArray(data) || data.length === 0) {
     statusEl.textContent = 'live data unavailable, colors are from last manual update';
     return;
@@ -25,5 +29,5 @@ fetch('/api/projects').then(r => r.json()).then(data => {
   });
   statusEl.textContent = 'live data loaded';
 }).catch(e => {
-  statusEl.textContent = 'live data fetch failed';
+  statusEl.textContent = 'live data fetch failed: ' + e;
 });

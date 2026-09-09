@@ -7,10 +7,16 @@ export default async function handler(req, res) {
   }
   try {
     const response = await fetch(url, { headers: { Authorization: "Bearer " + token } });
-    const data = await response.json();
+    const text = await response.text();
+    if (!response.ok) {
+      res.setHeader("Cache-Control", "no-store");
+      res.status(200).json({ error: true, status: response.status, body: text.slice(0, 300) });
+      return;
+    }
+    const data = JSON.parse(text);
     if (!data.projects) {
       res.setHeader("Cache-Control", "no-store");
-      res.status(200).json([]);
+      res.status(200).json({ error: true, status: 200, body: text.slice(0, 300) });
       return;
     }
     const result = data.projects.map(p => {
@@ -24,6 +30,6 @@ export default async function handler(req, res) {
     res.status(200).json(result);
   } catch (e) {
     res.setHeader("Cache-Control", "no-store");
-    res.status(200).json([]);
+    res.status(200).json({ error: true, status: 0, body: String(e) });
   }
 }
