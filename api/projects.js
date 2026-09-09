@@ -13,5 +13,6 @@ export default async function handler(req, res) {
     const ageDays = Math.floor((Date.now() - updated) / 86400000);
     return { name: p.name, ageDays: ageDays };
   });
+  res.setHeader("Cache-Control", "no-store");
   res.status(200).json(result);
 }
