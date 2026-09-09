@@ -1,4 +1,15 @@
+const statusEl = document.createElement('div');
+statusEl.id = 'fetch-status';
+statusEl.style.color = '#888888';
+statusEl.style.fontSize = '12px';
+statusEl.style.marginBottom = '10px';
+document.body.insertBefore(statusEl, document.body.firstChild);
+
 fetch('/api/projects').then(r => r.json()).then(data => {
+  if (!Array.isArray(data) || data.length === 0) {
+    statusEl.textContent = 'live data unavailable, colors are from last manual update';
+    return;
+  }
   const links = document.querySelectorAll('#category-view a, #alpha-view a');
   links.forEach(a => {
     const name = a.textContent.trim();
@@ -12,4 +23,7 @@ fetch('/api/projects').then(r => r.json()).then(data => {
     else if (d < 90) c = '#ff4444';
     a.style.color = c;
   });
+  statusEl.textContent = 'live data loaded';
+}).catch(e => {
+  statusEl.textContent = 'live data fetch failed';
 });
