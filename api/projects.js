@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
-  const token = process.env.VERCEL_API_TOKEN;
-  const teamId = process.env.VERCEL_TEAM_ID;
+  const token = process.env.MOHAVETECH_API_TOKEN;
+  const teamId = process.env.MOHAVETECH_TEAM_ID;
   let url = "https://api.vercel.com/v9/projects?limit=100";
   if (teamId) {
     url += "&teamId=" + teamId;
