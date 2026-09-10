@@ -84,3 +84,30 @@ links.forEach(a => {
   else if (d < 90) c = '#ff4444';
   a.style.color = c;
 });
+
+function stumble() {
+  const links = document.querySelectorAll('#category-view a');
+  const pick = links[Math.floor(Math.random() * links.length)];
+  window.location.href = pick.href;
+}
+
+fetch('/api/ratings').then(r => r.json()).then(ratings => {
+  document.querySelectorAll('#category-view a, #alpha-view a').forEach(a => {
+    const name = a.textContent.trim();
+    const count = ratings[name] || 0;
+    const btn = document.createElement('button');
+    btn.textContent = '+1 (' + count + ')';
+    btn.style.marginLeft = '10px';
+    btn.style.background = 'black';
+    btn.style.color = '#00ffff';
+    btn.style.border = '1px solid #00ffff';
+    btn.style.fontFamily = 'monospace';
+    btn.style.fontSize = '11px';
+    btn.onclick = () => {
+      fetch('/api/rate?name=' + name, { method: 'POST' }).then(r => r.json()).then(d => {
+        btn.textContent = '+1 (' + d.votes + ')';
+      });
+    };
+    a.parentNode.appendChild(btn);
+  });
+});
