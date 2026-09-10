@@ -111,3 +111,14 @@ fetch('/api/ratings').then(r => r.json()).then(ratings => {
     a.parentNode.appendChild(btn);
   });
 });
+
+function showView(view) {
+  document.getElementById('alpha-view').classList.add('hidden');
+  document.getElementById('category-view').classList.add('hidden');
+  document.getElementById(view + '-view').classList.remove('hidden');
+  document.getElementById('menu').classList.remove('open');
+}
+function toggleInfo() {
+  document.getElementById('info-box').classList.toggle('hidden');
+  document.getElementById('menu').classList.remove('open');
+}
