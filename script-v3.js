@@ -122,3 +122,31 @@ function toggleInfo() {
   document.getElementById('info-box').classList.toggle('hidden');
   document.getElementById('menu').classList.remove('open');
 }
+
+document.querySelectorAll('#category-view a, #alpha-view a').forEach(a => {
+  const name = a.textContent.trim();
+  const toggle = document.createElement('span');
+  toggle.textContent = ' \u25be';
+  toggle.style.cursor = 'pointer';
+  toggle.style.color = '#00ffff';
+  a.parentNode.appendChild(toggle);
+
+  const box = document.createElement('textarea');
+  box.style.display = 'none';
+  box.style.width = '90%';
+  box.style.background = 'black';
+  box.style.color = '#00ff00';
+  box.style.border = '1px solid #00ff00';
+  box.style.fontFamily = 'monospace';
+  box.style.fontSize = '12px';
+  box.rows = 2;
+  box.value = localStorage.getItem('note:' + name) || '';
+  box.addEventListener('input', () => {
+    localStorage.setItem('note:' + name, box.value);
+  });
+  a.parentNode.parentNode.insertBefore(box, a.parentNode.nextSibling);
+
+  toggle.addEventListener('click', () => {
+    box.style.display = box.style.display === 'none' ? 'block' : 'none';
+  });
+});
