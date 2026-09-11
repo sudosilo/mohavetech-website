@@ -74,6 +74,7 @@ const baseDates = {
 };
 
 
+
 const links = document.querySelectorAll('#category-view a, #alpha-view a');
 const now = Date.now();
 links.forEach(a => {
