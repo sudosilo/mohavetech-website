@@ -117,6 +117,7 @@ fetch('/api/ratings').then(r => r.json()).then(ratings => {
 });
 
 function showView(view) {
+  document.getElementById('stats-view').classList.add('hidden');
   document.getElementById('alpha-view').classList.add('hidden');
   document.getElementById('category-view').classList.add('hidden');
   document.getElementById(view + '-view').classList.remove('hidden');
