@@ -232,3 +232,23 @@ function renderStats() {
 document.querySelectorAll('#alpha-view a').forEach(a => {
   a.style.color = '#00ffff';
 });
+
+function applyVisitedColors() {
+  document.querySelectorAll('#alpha-view a').forEach(a => {
+    const name = a.textContent.trim();
+    if (localStorage.getItem('visited:' + name)) {
+      a.style.color = '#006666';
+    } else {
+      a.style.color = '#00ffff';
+    }
+  });
+}
+applyVisitedColors();
+window.addEventListener('pageshow', applyVisitedColors);
+
+document.querySelectorAll('#alpha-view a').forEach(a => {
+  const name = a.textContent.trim();
+  a.addEventListener('click', () => {
+    localStorage.setItem('visited:' + name, 'true');
+  });
+});
