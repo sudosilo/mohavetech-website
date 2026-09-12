@@ -228,3 +228,7 @@ function renderStats() {
     document.getElementById('favorite-slot').textContent = 'ratings unavailable';
   });
 }
+
+document.querySelectorAll('#alpha-view a').forEach(a => {
+  a.style.color = '#00ffff';
+});
