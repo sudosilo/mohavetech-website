@@ -154,3 +154,75 @@ document.querySelectorAll('#category-view a, #alpha-view a').forEach(a => {
     box.style.display = box.style.display === 'none' ? 'block' : 'none';
   });
 });
+
+function showStats() {
+  document.getElementById('alpha-view').classList.add('hidden');
+  document.getElementById('category-view').classList.add('hidden');
+  document.getElementById('stats-view').classList.remove('hidden');
+  document.getElementById('menu').classList.remove('open');
+  renderStats();
+}
+
+function renderStats() {
+  const el = document.getElementById('stats-view');
+  const now = Date.now();
+  const entries = Object.entries(baseDates);
+  const total = entries.length;
+
+  const buckets = {};
+  entries.forEach(([name, date]) => {
+    const d = new Date(date);
+    const weekLabel = d.getFullYear() + '-W' + String(Math.ceil((((d - new Date(d.getFullYear(),0,1)) / 86400000) + new Date(d.getFullYear(),0,1).getDay() + 1) / 7)).padStart(2, '0');
+    buckets[weekLabel] = (buckets[weekLabel] || 0) + 1;
+  });
+  const sortedWeeks = Object.keys(buckets).sort();
+  const maxCount = Math.max(...Object.values(buckets));
+
+  let thisWeek = 0, lastWeek = 0;
+  entries.forEach(([name, date]) => {
+    const days = Math.floor((now - new Date(date).getTime()) / 86400000);
+    if (days < 7) thisWeek++;
+    else if (days < 14) lastWeek++;
+  });
+
+  const oldest = entries
+    .map(([name, date]) => ({ name, days: Math.floor((now - new Date(date).getTime()) / 86400000) }))
+    .sort((a, b) => b.days - a.days)
+    .slice(0, 5);
+
+  let html = '<h2>Statistics</h2>';
+  html += '<p>Total tracked deployments: ' + total + '</p>';
+  html += '<p>Updated in the last 7 days: ' + thisWeek + '</p>';
+  html += '<p>Updated the 7 days before that: ' + lastWeek + '</p>';
+  html += '<p>' + (thisWeek >= lastWeek ? 'Up' : 'Down') + ' week over week by ' + Math.abs(thisWeek - lastWeek) + '</p>';
+
+  html += '<h2>Deploy Timeline</h2>';
+  sortedWeeks.forEach(w => {
+    const count = buckets[w];
+    const barWidth = Math.round((count / maxCount) * 200);
+    html += '<div style="margin-bottom:4px">' + w + ' <span style="display:inline-block;background:#00ff00;height:10px;width:' + barWidth + 'px;vertical-align:middle"></span> ' + count + '</div>';
+  });
+
+  html += '<h2>Could Use Some Love</h2>';
+  oldest.forEach(o => {
+    html += '<p>' + o.name + ' - ' + o.days + ' days</p>';
+  });
+
+  html += '<h2>Favorite Project</h2>';
+  html += '<p id="favorite-slot">loading...</p>';
+
+  el.innerHTML = html;
+
+  fetch('/api/ratings').then(r => r.json()).then(ratings => {
+    let best = null, bestVotes = -1;
+    for (const name in ratings) {
+      if (ratings[name] > bestVotes) {
+        best = name;
+        bestVotes = ratings[name];
+      }
+    }
+    document.getElementById('favorite-slot').textContent = best ? (best + ' with ' + bestVotes + ' votes') : 'no votes yet';
+  }).catch(() => {
+    document.getElementById('favorite-slot').textContent = 'ratings unavailable';
+  });
+}
