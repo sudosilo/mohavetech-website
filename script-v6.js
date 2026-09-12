@@ -252,3 +252,10 @@ document.querySelectorAll('#alpha-view a').forEach(a => {
     localStorage.setItem('visited:' + name, 'true');
   });
 });
+
+const hubEntryAlpha = document.createElement('p');
+hubEntryAlpha.innerHTML = '<span style="color:#ffffff">mohavetech-website</span><span class="tag">-blue-orange</span>';
+document.getElementById('alpha-view').appendChild(hubEntryAlpha);
+
+const hubEntryCategory = hubEntryAlpha.cloneNode(true);
+document.getElementById('category-view').appendChild(hubEntryCategory);
