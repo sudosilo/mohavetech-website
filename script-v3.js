@@ -192,6 +192,7 @@ function renderStats() {
     .slice(0, 5);
 
   let html = '<h2>Statistics</h2>';
+  html += '<p>This page is an index archive for Mohave Technology Group projects. It links out to each live project without hosting or archiving the projects themselves.</p>';
   html += '<p>Total tracked deployments: ' + total + '</p>';
   html += '<p>Updated in the last 7 days: ' + thisWeek + '</p>';
   html += '<p>Updated the 7 days before that: ' + lastWeek + '</p>';
