@@ -419,3 +419,83 @@ document.getElementById('category-view').appendChild(hubEntryCategory);
   }
   frame();
 })();
+
+(function() {
+  const canvas = document.createElement('canvas');
+  canvas.id = 'starfield';
+  canvas.style.position = 'fixed';
+  canvas.style.top = '0';
+  canvas.style.left = '0';
+  canvas.style.width = '100%';
+  canvas.style.height = '100%';
+  canvas.style.zIndex = '-1';
+  canvas.style.pointerEvents = 'none';
+  document.body.insertBefore(canvas, document.body.firstChild);
+
+  const ctx = canvas.getContext('2d');
+  function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  const palette = ['#00ffff', '#ff00ff', '#ffff00', '#00ff00', '#ff8800', '#0088ff'];
+  const sprites = {
+    tree: [[0,2,'#8b5a2b'],[0,1,'#00aa00'],[-1,0,'#00aa00'],[0,0,'#00aa00'],[1,0,'#00aa00']],
+    house: [[-1,1,'#cc4444'],[0,1,'#cc4444'],[1,1,'#cc4444'],[-1,0,'#dddddd'],[0,0,'#dddddd'],[1,0,'#dddddd'],[0,-1,'#8b5a2b']],
+    bird: [[-1,0,'#333333'],[0,-1,'#333333'],[1,0,'#333333']]
+  };
+  const spriteNames = Object.keys(sprites);
+
+  function makeStar() {
+    const isEasterEgg = Math.random() < 0.07;
+    return {
+      x: (Math.random() - 0.5) * 2,
+      y: (Math.random() - 0.5) * 2,
+      z: Math.random() * 1000 + 1,
+      color: Math.random() < 0.2 ? '#ffffff' : palette[Math.floor(Math.random() * palette.length)],
+      shape: isEasterEgg ? spriteNames[Math.floor(Math.random() * spriteNames.length)] : null
+    };
+  }
+
+  const stars = [];
+  for (let i = 0; i < 140; i++) stars.push(makeStar());
+
+  function frame() {
+    ctx.fillStyle = 'rgba(0,0,0,0.4)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    const cx = canvas.width / 2;
+    const cy = canvas.height / 2;
+
+    stars.forEach(star => {
+      star.z -= 2;
+      if (star.z <= 1) {
+        Object.assign(star, makeStar());
+        star.z = 1000;
+      }
+      const scale = 200 / star.z;
+      const sx = cx + star.x * scale * cx;
+      const sy = cy + star.y * scale * cy;
+      const size = Math.max(0.5, (1000 - star.z) / 150);
+
+      if (sx < 0 || sx > canvas.width || sy < 0 || sy > canvas.height) return;
+
+      if (star.shape && size > 6) {
+        const pixels = sprites[star.shape];
+        const px = size / 3;
+        pixels.forEach(([dx, dy, color]) => {
+          ctx.fillStyle = color;
+          ctx.fillRect(sx + dx * px, sy - dy * px, px, px);
+        });
+      } else {
+        ctx.fillStyle = star.color;
+        ctx.fillRect(sx, sy, size, size);
+      }
+    });
+
+    requestAnimationFrame(frame);
+  }
+  frame();
+})();
