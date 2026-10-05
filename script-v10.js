@@ -113,7 +113,7 @@ links.forEach(a => {
 });
 
 function stumble() {
-  const links = document.querySelectorAll('#category-view a');
+  const links = document.querySelectorAll('#category-view a:not(.nostumble)');
   const pick = links[Math.floor(Math.random() * links.length)];
   window.location.href = pick.href;
 }
