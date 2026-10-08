@@ -2,6 +2,10 @@
 <html>
 <head>
 <title>Mohave Tech</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="theme-color" content="#000000">
 <style>
 body { background-color: black; color: #00ff00; font-family: monospace; padding: 20px; }
 a { text-decoration: none; }
@@ -13,8 +17,53 @@ h2 { color: #00ffff; font-family: Arial, sans-serif; font-weight: bold; letter-s
 .menu { display: none; flex-direction: column; border: 1px solid #00ff00; width: 200px; margin-top: 8px; }
 .menu button { background: black; color: #00ff00; border: none; border-bottom: 1px solid #00ff00; padding: 10px; text-align: left; font-family: monospace; font-size: 16px; }
 .menu.open { display: flex; }
+#searchbar { margin: 10px 0; }
+#searchbar input { background: black; color: #00ff00; border: 1px solid #00ff00; font-family: monospace; font-size: 16px; padding: 8px; width: 100%; max-width: 360px; box-sizing: border-box; }
+@media (min-width: 900px) and (hover: hover) and (pointer: fine) {
+  #alpha-view, #category-view { column-count: 3; column-gap: 40px; }
+  #alpha-view p, #category-view p { break-inside: avoid; }
+  #category-view h2 { break-after: avoid; }
+}
 .hidden { display: none; }
 </style>
+<script>
+function filterHub(q) {
+  q = q.trim().toLowerCase();
+  ["alpha-view", "category-view"].forEach(function (id) {
+    var box = document.getElementById(id);
+    if (!box) return;
+    var head = null, count = 0, show = true;
+    Array.prototype.slice.call(box.children).forEach(function (el) {
+      if (el.tagName === "H2") {
+        if (head) head.style.display = (!q || count) ? "" : "none";
+        head = el; count = 0; show = true; el.style.display = "";
+        return;
+      }
+      if (el.tagName === "P") {
+        show = !q || el.textContent.toLowerCase().indexOf(q) > -1;
+        if (show) count++;
+      }
+      el.style.display = show ? "" : "none";
+    });
+    if (head) head.style.display = (!q || count) ? "" : "none";
+  });
+}
+function toggleSearch() {
+  var bar = document.getElementById("searchbar");
+  var box = document.getElementById("searchbox");
+  document.getElementById("menu").classList.remove("open");
+  if (bar.classList.contains("hidden")) {
+    var st = document.getElementById("stats-view");
+    if (st && st.offsetParent !== null) showView("category");
+    bar.classList.remove("hidden");
+    box.focus();
+  } else {
+    box.value = "";
+    filterHub("");
+    bar.classList.add("hidden");
+  }
+}
+</script>
 </head>
 <body>
 
@@ -22,9 +71,12 @@ h2 { color: #00ffff; font-family: Arial, sans-serif; font-weight: bold; letter-s
 <div class="menu" id="menu">
 <button onclick="showView('alpha')">Alphabetical View</button>
 <button onclick="showView('category')">Category View</button>
+<button onclick="toggleSearch()">Search</button>
 <button onclick="stumble()">Stumble</button>
 <button onclick="showStats()">Statistics</button>
 </div>
+
+<div id="searchbar" class="hidden"><input id="searchbox" type="text" placeholder="search" autocomplete="off" oninput="filterHub(this.value)"></div>
 
 <h1>Mohave Tech</h1>
 
@@ -247,6 +299,6 @@ h2 { color: #00ffff; font-family: Arial, sans-serif; font-weight: bold; letter-s
 <p><a href="https://x-lilac-delta.vercel.app">x</a></p>
 </div>
 
-<script src="script-v12.js"></script>
+<script src="script-v13.js"></script>
 </body>
 </html>
