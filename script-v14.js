@@ -92,8 +92,7 @@ const baseDates = {
   "tunnelfx": "2026-06-20",
   "virality-snapshot": "2026-09-28",
   "virality-trader": "2026-09-28",
-  "welcome-to-the-madness": "2026-07-10",
-  "x": "2026-10-08"
+  "welcome-to-the-madness": "2026-07-10"
 };
 
 
