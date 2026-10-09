@@ -53,6 +53,7 @@ const baseDates = {
   "note-note-note": "2026-09-29",
   "offset-listener": "2026-09-22",
   "open-pipeline": "2026-07-02",
+  "pajamastan": "2026-10-08",
   "pajamastan-warrants": "2026-10-02",
   "pancake-orange": "2026-10-04",
   "pancakes": "2026-09-13",
