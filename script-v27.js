@@ -68,6 +68,7 @@ const baseDates = {
   "parkingten": "2026-09-05",
   "phasewell-scope": "2026-10-11",
   "pipeline-builder": "2026-09-11",
+  "pixelcoop-farm": "2026-10-11",
   "pixelmill": "2026-10-11",
   "polygon-arcade": "2026-09-13",
   "qsr-receipt-sim": "2026-10-08",
