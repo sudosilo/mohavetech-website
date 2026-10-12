@@ -10,7 +10,6 @@ const baseDates = {
   "androids": "2026-10-09",
   "ascend": "2026-09-11",
   "axiom": "2026-10-12",
-  "backend": "2026-10-12",
   "beesim-green": "2026-09-11",
   "birdix": "2026-10-12",
   "bitfield-synth": "2026-09-09",
