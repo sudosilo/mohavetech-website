@@ -38,7 +38,7 @@ const baseDates = {
   "field-study": "2026-10-09",
   "field-twin": "2026-10-08",
   "final-vector": "2026-10-07",
-  "free-as-in-links": "2026-10-11",
+  "free-as-in-links": "2026-10-12",
   "frontend": "2026-06-01",
   "ghost-kitchen-builder": "2026-10-11",
   "groundcore": "2026-05-15",

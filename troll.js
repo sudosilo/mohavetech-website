@@ -64,7 +64,7 @@
     t.textContent = " " + text;
     t.style.cursor = "pointer";
     t.style.color = color;
-    t.style.marginLeft = "6px";
+    t.style.marginLeft = "10px";
     t.className = "troll-toggle";
     t.addEventListener("click", function () {
       box.style.display = box.style.display === "none" ? "block" : "none";
@@ -165,8 +165,8 @@
       var statBox = panel(colorOf(state));
       buildStatus(statBox, app, state, status.checkedAt, hist);
 
-      p.appendChild(arrow("about \u25be", PINK, aboutBox));
-      p.appendChild(arrow("status \u25be", colorOf(state), statBox));
+      p.appendChild(arrow("\u25be", PINK, aboutBox));
+      p.appendChild(arrow("\u25be", colorOf(state), statBox));
       p.parentNode.insertBefore(statBox, p.nextSibling);
       p.parentNode.insertBefore(aboutBox, p.nextSibling);
     });
