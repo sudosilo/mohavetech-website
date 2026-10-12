@@ -181,3 +181,30 @@
   if (document.readyState === "complete") start();
   else window.addEventListener("load", start);
 })();
+/* starmark */
+(function () {
+  var COLORS = { blue: "#0088ff", orange: "#ff8800", green: "#00ff00", red: "#ff4444" };
+  function stars() {
+    Array.prototype.forEach.call(document.querySelectorAll(".tag"), function (t) {
+      if (t.getAttribute("data-stars")) return;
+      var words = t.textContent.split("-").map(function (w) { return w.trim().toLowerCase(); }).filter(function (w) { return COLORS[w]; });
+      if (!words.length) return;
+      t.setAttribute("data-stars", "1");
+      t.textContent = "";
+      words.forEach(function (w) {
+        var s = document.createElement("span");
+        s.textContent = String.fromCharCode(9733);
+        s.style.color = COLORS[w];
+        s.style.marginRight = "2px";
+        s.style.pointerEvents = "none";
+        t.appendChild(s);
+      });
+      var h = document.createElement("span");
+      h.textContent = " " + words.join(" ");
+      h.style.display = "none";
+      t.appendChild(h);
+    });
+  }
+  if (document.readyState === "complete") stars();
+  else window.addEventListener("load", stars);
+})();
