@@ -167,6 +167,7 @@ fetch('/api/ratings').then(r => r.json()).then(ratings => {
 
 function showView(view) {
   document.getElementById('stats-view').classList.add('hidden');
+  document.getElementById('links-view').classList.add('hidden');
   document.getElementById('alpha-view').classList.add('hidden');
   document.getElementById('category-view').classList.add('hidden');
   document.getElementById(view + '-view').classList.remove('hidden');
@@ -205,7 +206,14 @@ document.querySelectorAll('#category-view a, #alpha-view a').forEach(a => {
   });
 });
 
+function showLinks() {
+  const frame = document.getElementById('links-frame');
+  if (!frame.getAttribute('src')) frame.setAttribute('src', 'https://free-as-in-links.vercel.app');
+  showView('links');
+}
+
 function showStats() {
+  document.getElementById('links-view').classList.add('hidden');
   document.getElementById('alpha-view').classList.add('hidden');
   document.getElementById('category-view').classList.add('hidden');
   document.getElementById('stats-view').classList.remove('hidden');
