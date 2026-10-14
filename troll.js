@@ -250,3 +250,40 @@
   document.addEventListener("click", later);
   document.addEventListener("input", later);
 })();
+/* linksmark */
+(function () {
+  function addLinks() {
+    if (document.getElementById("links-view")) return;
+    var css = document.createElement("style");
+    css.textContent = "#links-frame { display: block; width: 100%; height: 80vh; border: 1px solid #00ff00; background: black; margin-top: 10px; } #links-view .tag a { color: #888888; }";
+    document.head.appendChild(css);
+    var view = document.createElement("div");
+    view.id = "links-view";
+    view.className = "hidden";
+    view.innerHTML = '<h2>Free Links</h2><p class="tag">A plain index of free, useful links. <a href="https://free-as-in-links.vercel.app" target="_blank" rel="noopener">open full page</a></p><iframe id="links-frame" title="Free Links" loading="lazy"></iframe>';
+    var cat = document.getElementById("category-view");
+    if (cat) cat.parentNode.insertBefore(view, cat);
+    if (typeof window.showLinks !== "function") {
+      window.showLinks = function () {
+        var frame = document.getElementById("links-frame");
+        if (!frame.getAttribute("src")) frame.setAttribute("src", "https://free-as-in-links.vercel.app");
+        ["stats-view", "alpha-view", "category-view"].forEach(function (id) { var e = document.getElementById(id); if (e) e.classList.add("hidden"); });
+        view.classList.remove("hidden");
+        document.getElementById("menu").classList.remove("open");
+      };
+    }
+    var menu = document.getElementById("menu");
+    if (menu) {
+      var b = document.createElement("button");
+      b.textContent = "Links";
+      b.onclick = function () { window.showLinks(); };
+      menu.appendChild(b);
+      Array.prototype.forEach.call(menu.querySelectorAll("button"), function (btn) {
+        var t = btn.textContent.trim();
+        if (t === "Search") btn.addEventListener("click", function () { if (view.offsetParent !== null) showView("category"); }, true);
+      });
+    }
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", addLinks);
+  else addLinks();
+})();
