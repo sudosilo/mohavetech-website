@@ -287,3 +287,118 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", addLinks);
   else addLinks();
 })();
+/* githubmark */
+(function () {
+  var OWNER = "sudosilo";
+  var ALIAS = {
+    "kvs": "kvs-roulette",
+    "offset-listener": "song-offset-listener",
+    "tanksandzombies": "tanks-and-zombies",
+    "equivalence-engine": "cross-venue-equivalence-engine",
+    "ebutuoy": "ebutuoy-frontend",
+    "shitty-ass-trading": "shitty-ass-trading-app",
+    "threat-atlas": "threat-atlas-v3",
+    "tile-spinner": "tilespinneratlas",
+    "dronesim-blue": "dronesim",
+    "coffeekit1": "coffeekit",
+    "rat-site": "rat",
+    "skwiggle": "skwiggle-v105",
+    "rtss": "RTSS"
+  };
+  var ICON = '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" style="vertical-align:middle;fill:currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>';
+  var CACHE = "gh-repos-v1";
+
+  function repoFor(name, have) {
+    var want = ALIAS[name] || name;
+    return have[want.toLowerCase()] || null;
+  }
+
+  function addButtons(have) {
+    var links = document.querySelectorAll("#category-view a, #alpha-view a");
+    Array.prototype.forEach.call(links, function (a) {
+      var p = a.parentNode;
+      if (!p || p.getAttribute("data-gh")) return;
+      var repo = repoFor(a.textContent.trim(), have);
+      if (!repo) return;
+      p.setAttribute("data-gh", "1");
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "gh-btn";
+      b.title = "View " + repo + " on GitHub";
+      b.setAttribute("aria-label", "View " + repo + " on GitHub");
+      b.innerHTML = ICON;
+      b.style.cssText = "margin-left:8px;background:black;color:#ffffff;border:1px solid #888888;padding:1px 5px;cursor:pointer;line-height:1;";
+      b.onclick = function () { window.open("https://github.com/" + OWNER + "/" + repo, "_blank", "noopener"); };
+      a.insertAdjacentElement("afterend", b);
+    });
+  }
+
+  function fromList(list) {
+    var have = {};
+    list.forEach(function (n) { have[n.toLowerCase()] = n; });
+    return have;
+  }
+
+  function fetchPage(n) {
+    return fetch("https://api.github.com/users/" + OWNER + "/repos?per_page=100&type=owner&page=" + n)
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); });
+  }
+
+  function load() {
+    try {
+      var c = JSON.parse(localStorage.getItem(CACHE) || "null");
+      if (c && Date.now() - c.t < 3600000) return Promise.resolve(c.names);
+    } catch (e) {}
+    var names = [];
+    function page(n) {
+      return fetchPage(n).then(function (rows) {
+        rows.forEach(function (r) { if (!r.private) names.push(r.name); });
+        if (rows.length === 100 && n < 10) return page(n + 1);
+        return names;
+      });
+    }
+    return page(1).then(function (list) {
+      try { localStorage.setItem(CACHE, JSON.stringify({ t: Date.now(), names: list })); } catch (e) {}
+      return list;
+    });
+  }
+
+  function start() {
+    load().then(function (list) { addButtons(fromList(list)); }).catch(function () {});
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
+  else start();
+})();
+/* searchmark */
+(function () {
+  window.filterHub = function (q) {
+    q = String(q || "").trim().toLowerCase();
+    ["alpha-view", "category-view"].forEach(function (id) {
+      var box = document.getElementById(id);
+      if (!box) return;
+      var head = null, count = 0, show = true;
+      function closeHead() { if (head) head.style.display = (!q || count) ? "" : "none"; }
+      Array.prototype.slice.call(box.children).forEach(function (el) {
+        if (el.tagName === "H2") {
+          closeHead();
+          head = el; count = 0; show = true; el.style.display = "";
+          return;
+        }
+        if (el.tagName === "P") {
+          show = !q || el.textContent.toLowerCase().indexOf(q) > -1;
+          if (show) count++;
+          el.style.display = show ? "" : "none";
+          return;
+        }
+        if (!show) {
+          if (!el.hasAttribute("data-fd")) el.setAttribute("data-fd", el.style.display);
+          el.style.display = "none";
+        } else if (el.hasAttribute("data-fd")) {
+          el.style.display = el.getAttribute("data-fd");
+          el.removeAttribute("data-fd");
+        }
+      });
+      closeHead();
+    });
+  };
+})();
