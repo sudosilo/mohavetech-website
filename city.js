@@ -20,7 +20,7 @@ function layout(){
     else for(let k=0;k<3;k++)trees.push({x:l.x+l.w*(0.2+k*0.3),y:l.y+l.h*(0.35+0.3*(k%2)),r:(3+h32('tr'+i+k,5)*2)*T});});
   for(let k=0;k<40;k++)trees.push({x:park.x+8+h32('pt'+k,1)*(park.w-16),y:park.y+8+h32('pu'+k,2)*(park.h-16),r:(3+h32('pr'+k,3)*4)*T});
   for(let k=0;k<60;k++){const vert=k%2,arr=vert?streets.v:streets.h,idx=Math.floor(h32('s'+k,6)*arr.length),along=h32('sa'+k,7);const side=h32('sd'+k,8)>0.5?1:-1;trees.push({x:vert?arr[idx]+side*SW*0.7:along*W,y:vert?TOP+along*(H-TOP):arr[idx]+side*SW*0.7,r:2.2*T,street:1});}
-  cars=[];for(let k=0;k<44;k++){const vert=k%2,arr=vert?streets.v:streets.h;cars.push({vert,line:arr[Math.floor(h32('c'+k,1)*arr.length)],dir:h32('cd'+k,2)>0.5?1:-1,s:h32('cs'+k,3),v:0.03+h32('cv'+k,4)*0.04,taxi:h32('ct'+k,5)<0.4});}
+  const cv2=streets.v.filter((x,i)=>i!==pc+1),ch2=streets.h.filter((y,i)=>i!==pr+1);cars=[];for(let k=0;k<44;k++){const vert=k%2,arr=vert?cv2:ch2;cars.push({vert,line:arr[Math.floor(h32('c'+k,1)*arr.length)],dir:h32('cd'+k,2)>0.5?1:-1,s:h32('cs'+k,3),v:0.03+h32('cv'+k,4)*0.04,taxi:h32('ct'+k,5)<0.4});}
   blds.sort((a,b)=>a.ht-b.ht);
   const vx=W/2,vy=TOP+(H-TOP)*0.5,K=Math.min(W,H)*0.0011;
   blds.forEach(b=>{const cxb=b.x+b.w/2,cyb=b.y+b.h/2;b.ox=(cxb-vx)*b.ht*0.2;b.oy=(cyb-vy)*b.ht*0.2;});
