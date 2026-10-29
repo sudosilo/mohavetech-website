@@ -49,3 +49,4 @@ function boat(c,kind,L,col,side){
 function selRing(c,x,y,r){c.strokeStyle=INK;c.lineWidth=2;c.setLineDash([5,4]);c.beginPath();c.arc(x,y,r,0,6.283);c.stroke();c.setLineDash([]);}
 window.VZ={AGE,INK,MUTED,MOTION,h32,load,open,close,ageText,sizeText,poly,line,box,ring,label,boat,selRing,get sel(){return sel;}};
 })();
+(function(){if(!document.querySelector('script[src="viz-menu.js"]')){const s=document.createElement('script');s.src='viz-menu.js';document.head.appendChild(s);}})();
