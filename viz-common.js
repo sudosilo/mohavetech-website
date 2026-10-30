@@ -17,7 +17,8 @@ function build(RAW,DATES,REAL){
       sizeF:kb?Math.min(1.5,0.9+0.12*Math.log2(kb/1000)):0.82+0.36*h32(name,4)};
   });
 }
-function load(cb){
+function load(cb0){
+  const cb=list=>(window.ITCH||Promise.resolve()).then(()=>cb0(window.itchApply?window.itchApply(list):list));
   if(window.FLEET_DATA){const d=window.FLEET_DATA;cb(build(d.RAW,d.DATES,d.REAL));return;}
   fetch('fleet.html').then(r=>r.text()).then(src=>{
     const RAW=src.split('const RAW=`')[1].split('`;')[0];

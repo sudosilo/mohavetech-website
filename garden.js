@@ -60,7 +60,7 @@ function resize(){
 function leaf(c,x,y,ang,len,col){c.save();c.translate(x,y);c.rotate(ang);c.fillStyle=col;c.beginPath();c.moveTo(0,0);c.quadraticCurveTo(len*0.5,-len*0.35,len,0);c.quadraticCurveTo(len*0.5,len*0.35,0,0);c.fill();c.restore();}
 
 function head(c,f,R,t){
-  const k=f.p.kind,st=f.st,base=wilt(f.p.color,st),open=[1,0.9,0.72,0.55][st];
+  const k=f.p.kind,st=f.st,base=wilt(f.p.base||f.p.color,st),open=[1,0.9,0.72,0.55][st],paint=f.p.itch&&window.itchPaint?window.itchPaint(base):base;
   if(st===4){
     c.fillStyle='rgba(255,255,255,.85)';c.strokeStyle='rgba(120,120,120,.45)';c.lineWidth=0.7;
     for(let i=0;i<14;i++){const a=i/14*6.283;c.beginPath();c.moveTo(0,0);c.lineTo(Math.cos(a)*R*1.1,Math.sin(a)*R*1.1);c.stroke();c.beginPath();c.arc(Math.cos(a)*R*1.15,Math.sin(a)*R*1.15,R*0.16,0,6.283);c.fill();}
@@ -68,24 +68,24 @@ function head(c,f,R,t){
   }
   const light=tint(base,0.35),dark=shade(base,0.25);
   if(k==='sail'){
-    for(let i=0;i<7;i++){const y=-i*R*0.75,w=R*0.42*open*(1-i*0.07);c.fillStyle=i%2?light:base;c.beginPath();c.ellipse(-w*0.5,y,w*0.6,w*0.9,-0.3,0,6.283);c.fill();c.beginPath();c.ellipse(w*0.5,y,w*0.6,w*0.9,0.3,0,6.283);c.fill();}
+    for(let i=0;i<7;i++){const y=-i*R*0.75,w=R*0.42*open*(1-i*0.07);c.fillStyle=i%2?light:paint;c.beginPath();c.ellipse(-w*0.5,y,w*0.6,w*0.9,-0.3,0,6.283);c.fill();c.beginPath();c.ellipse(w*0.5,y,w*0.6,w*0.9,0.3,0,6.283);c.fill();}
     return;
   }
   if(k==='battle'){
     c.fillStyle=dark;c.beginPath();c.moveTo(-R*0.75,-R*0.1);c.quadraticCurveTo(-R*0.95,-R*1.25*open,-R*0.15,-R*1.45);c.quadraticCurveTo(0,-R*0.6,-R*0.1,R*0.3);c.closePath();c.fill();
     c.beginPath();c.moveTo(R*0.75,-R*0.1);c.quadraticCurveTo(R*0.95,-R*1.25*open,R*0.15,-R*1.45);c.quadraticCurveTo(0,-R*0.6,R*0.1,R*0.3);c.closePath();c.fill();
-    c.fillStyle=base;c.beginPath();c.moveTo(-R*0.6,0);c.quadraticCurveTo(-R*0.7,-R*1.3,0,-R*1.55*open);c.quadraticCurveTo(R*0.7,-R*1.3,R*0.6,0);c.quadraticCurveTo(0,R*0.55,-R*0.6,0);c.fill();
+    c.fillStyle=paint;c.beginPath();c.moveTo(-R*0.6,0);c.quadraticCurveTo(-R*0.7,-R*1.3,0,-R*1.55*open);c.quadraticCurveTo(R*0.7,-R*1.3,R*0.6,0);c.quadraticCurveTo(0,R*0.55,-R*0.6,0);c.fill();
     c.fillStyle=light;c.beginPath();c.ellipse(-R*0.2,-R*0.75,R*0.12,R*0.45,0.15,0,6.283);c.fill();
     return;
   }
   if(k==='cargo'){
     c.fillStyle=dark;c.beginPath();c.arc(0,0,R,0,6.283);c.fill();
-    for(let i=0;i<4;i++){const r=R*(0.85-i*0.2)*(0.7+0.3*open);c.fillStyle=i%2?base:light;c.beginPath();c.arc(Math.cos(i*1.9)*R*0.06,Math.sin(i*1.9)*R*0.06,r,i*1.4,i*1.4+5.2);c.closePath();c.fill();}
+    for(let i=0;i<4;i++){const r=R*(0.85-i*0.2)*(0.7+0.3*open);c.fillStyle=i%2?paint:light;c.beginPath();c.arc(Math.cos(i*1.9)*R*0.06,Math.sin(i*1.9)*R*0.06,r,i*1.4,i*1.4+5.2);c.closePath();c.fill();}
     c.fillStyle=dark;c.beginPath();c.arc(0,0,R*0.16,0,6.283);c.fill();
     return;
   }
   const n=k==='tug'?13:k==='tanker'?18:5,pr=R*open;
-  const pc=k==='tug'?tint(base,0.7):base,pe=k==='tug'?tint(base,0.45):light;
+  const pc=k==='tug'?(f.p.itch&&window.itchPaint?window.itchPaint(tint(base,0.7)):tint(base,0.7)):paint,pe=k==='tug'?tint(base,0.45):light;
   for(let pass=0;pass<(k==='tanker'?2:1);pass++)for(let i=0;i<n;i++){
     const a=i/n*6.283+pass*(3.1416/n)+Math.sin(t*0.6+f.seed)*0.04;
     c.save();c.rotate(a);c.fillStyle=pass?pe:pc;c.beginPath();
@@ -114,7 +114,7 @@ function flower(c,f,hgt,s,t){
   const R=1.3*(f.p.kind==='tanker'?9:f.p.kind==='cargo'?6.2:f.p.kind==='battle'?5.6:f.p.kind==='speed'?5.8:f.p.kind==='tug'?5:3.2)*s*f.p.sizeF;
   c.save();c.translate(hx,hy);c.rotate(droop*1.1+sw*1.5);c.shadowColor='rgba(30,50,40,.35)';c.shadowBlur=2*s;head(c,f,R,t);c.restore();
   f._hx=hx;f._hy=hy;
-  if(st===3&&Math.random()<0.003*MOTION)petals.push({x:f._bx+hx,y:f._by+hy,vx:(Math.random()-0.5)*10,vy:8,life:1,col:wilt(f.p.color,3),r:Math.random()*6});
+  if(st===3&&Math.random()<0.003*MOTION)petals.push({x:f._bx+hx,y:f._by+hy,vx:(Math.random()-0.5)*10,vy:8,life:1,col:wilt(f.p.base||f.p.color,3),r:Math.random()*6});
   if(st===4&&Math.random()<0.002*MOTION)seeds.push({x:f._bx+hx,y:f._by+hy,vx:8+Math.random()*10,vy:-4-Math.random()*6,life:1});
 }
 
