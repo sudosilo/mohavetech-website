@@ -1,6 +1,6 @@
 VZ.load(P=>{
 const {h32,MOTION}=VZ;
-const cv=document.getElementById('cv'),ctx=cv.getContext('2d');
+const cv=document.getElementById('cv'),ctx=VZ.wire(cv.getContext('2d'));
 const DROP={tanker:'Cloudburst drop, one of the biggest',battle:'Storm drop, big and fast',cargo:'Heavy drop, big and steady',tug:'Sprinkle, small and nimble',speed:'Streak, small and quick',sail:'Mist drop, light and easy'};
 const SZ={tanker:1.5,battle:1.2,cargo:1.25,tug:0.8,speed:0.85,sail:0.7};
 const SPD=d=>d==null?0.6:d<7?1:d<30?0.85:d<60?0.7:d<90?0.55:0.4;
@@ -30,7 +30,7 @@ function drop(d,s){
 let last=performance.now();
 function frame(now){
   const dt=Math.min(0.05,(now-last)/1000)*MOTION,t=now/1000;last=now;
-  ctx.setTransform(DPR,0,0,DPR,0,0);scene(t);
+  ctx.setTransform(DPR,0,0,DPR,0,0);ctx.bg('#eef3f5',W,H);scene(t);
   for(const r of ripples){r.age+=dt;const k=r.age/r.dur;if(k>=1)continue;
     for(let i=0;i<3;i++){const kk=k-i*0.18;if(kk<=0)continue;const R=r.max*kk;ctx.globalAlpha=(1-kk)*0.9;ctx.strokeStyle=r.col;ctx.lineWidth=Math.max(0.8,2.2*T*r.s*(1-kk));ctx.beginPath();ctx.ellipse(r.x,r.y,R,R*0.32,0,0,6.283);ctx.stroke();}
     if(r.age<0.25){ctx.globalAlpha=1-r.age/0.25;ctx.fillStyle=r.col;for(let i=0;i<5;i++){const a=3.14+i*0.785,h=r.age*90*T*r.s;ctx.beginPath();ctx.arc(r.x+Math.cos(a)*h*0.6,r.y+Math.sin(a)*h-h*0.2,1.6*T*r.s,0,6.283);ctx.fill();}}

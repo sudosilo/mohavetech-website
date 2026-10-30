@@ -1,6 +1,6 @@
 VZ.load(P=>{
 const {h32,INK,MOTION}=VZ;
-const cv=document.getElementById('cv'),ctx=cv.getContext('2d');
+const cv=document.getElementById('cv'),ctx=VZ.wire(cv.getContext('2d'));
 const FL={tanker:{label:'Sunflower, one of the biggest',h:1},battle:{label:'Tulip, big and fast',h:0.62},cargo:{label:'Rose bush, big and steady',h:0.55},tug:{label:'Daisy, small and nimble',h:0.4},speed:{label:'Poppy, small and quick',h:0.5},sail:{label:'Lavender, light and easy',h:0.48}};
 const STAGE=d=>d==null?2:d<7?0:d<30?1:d<60?2:d<90?3:4;
 const SN=['in full bloom','open','starting to close','wilting','gone to seed'];
@@ -22,7 +22,7 @@ const rowY=r=>HOR+(H*0.92-HOR)*((r+0.75)/ROWS),rowS=r=>0.55+0.1*r;
 function hill(g,base,amp,freq,ph,col){g.fillStyle=col;g.beginPath();g.moveTo(0,H);g.lineTo(0,base);for(let x=0;x<=W;x+=8)g.lineTo(x,base-amp*(0.6+0.4*Math.sin(x*freq+ph))*(0.7+0.3*Math.sin(x*freq*0.37+ph*2)));g.lineTo(W,H);g.closePath();g.fill();}
 
 function build(){
-  bg=document.createElement('canvas');bg.width=W*DPR;bg.height=H*DPR;const g=bg.getContext('2d');g.scale(DPR,DPR);
+  bg=document.createElement('canvas');bg.width=W*DPR;bg.height=H*DPR;const g=VZ.wire(bg.getContext('2d'));g.bg('#f6f0e2',W*DPR,H*DPR);g.scale(DPR,DPR);
   let gr=g.createLinearGradient(0,0,0,HOR);gr.addColorStop(0,'#bfe1f2');gr.addColorStop(1,'#f4fafc');g.fillStyle=gr;g.fillRect(0,0,W,HOR+2);
   const sx=W*0.82,sy=HOR*0.42,sr=16*T;
   gr=g.createRadialGradient(sx,sy,sr*0.5,sx,sy,sr*4);gr.addColorStop(0,'rgba(255,214,120,.55)');gr.addColorStop(1,'rgba(255,214,120,0)');g.fillStyle=gr;g.fillRect(sx-sr*4,sy-sr*4,sr*8,sr*8);

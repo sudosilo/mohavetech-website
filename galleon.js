@@ -1,6 +1,6 @@
 VZ.load(P=>{
 const {h32,INK,MOTION}=VZ;
-const cv=document.getElementById('cv'),ctx=cv.getContext('2d');
+const cv=document.getElementById('cv'),ctx=VZ.wire(cv.getContext('2d'));
 const GUN={tanker:{label:'Great cannon, one of the biggest',s:1.35},battle:{label:'Long gun, big and fast',s:1.15},cargo:{label:'Heavy cannon, big and steady',s:1.1},tug:{label:'Swivel gun, small and nimble',s:0.8},speed:{label:'Carronade, small and quick',s:0.85},sail:{label:'Signal gun, light and easy',s:0.75}};
 const STATE=d=>d==null?'standing by':d<7?'firing':d<30?'loaded':d<60?'cooling':d<90?'rusting':'ports shut';
 const guns=P.map(p=>({p,seed:h32(p.name,300)*6,next:2+h32(p.name,301)*8,recoil:0,flash:0}))
@@ -104,7 +104,7 @@ function fire(g){
 let last=performance.now();
 function frame(now){
   const dt=Math.min(0.05,(now-last)/1000)*MOTION,t=now/1000;last=now;
-  ctx.setTransform(DPR,0,0,DPR,0,0);
+  ctx.setTransform(DPR,0,0,DPR,0,0);ctx.bg('#eef7f9',W,H);
   sky();
   ctx.strokeStyle='#4f6f7c';ctx.lineWidth=1.2;
   for(const b of gulls){b.x+=b.v*dt;if(b.x>W+20)b.x=-20;const f=Math.sin(t*6+b.ph)*3*T;ctx.beginPath();ctx.moveTo(b.x-6*T,b.y+f);ctx.quadraticCurveTo(b.x-3*T,b.y-3*T,b.x,b.y);ctx.quadraticCurveTo(b.x+3*T,b.y-3*T,b.x+6*T,b.y+f);ctx.stroke();}

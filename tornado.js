@@ -1,6 +1,6 @@
 VZ.load(P=>{
 const {h32,MOTION}=VZ;
-const cv=document.getElementById('cv'),ctx=cv.getContext('2d');
+const cv=document.getElementById('cv'),ctx=VZ.wire(cv.getContext('2d'));
 const THINGS=['cow','car','log','cat','plane','boat','house','tractor','mailbox','dog','bathtub','fish'];
 const LBL={cow:'Cow',car:'Car',log:'Log',cat:'Cat',plane:'Airplane',boat:'Boat',house:'Roof',tractor:'Tractor',mailbox:'Mailbox',dog:'Dog',bathtub:'Bathtub',fish:'Fish'};
 const SZ={tanker:1.5,battle:1.2,cargo:1.3,tug:0.85,speed:0.9,sail:0.8};
@@ -19,8 +19,8 @@ function sky(){let g=ctx.createLinearGradient(0,0,0,bot);g.addColorStop(0,'#9aa8
   ctx.fillStyle='#b5442f';ctx.fillRect(W*0.08,bot-6*T,30*T,24*T);ctx.fillStyle='#7d2f20';ctx.beginPath();ctx.moveTo(W*0.08-4*T,bot-6*T);ctx.lineTo(W*0.08+15*T,bot-20*T);ctx.lineTo(W*0.08+34*T,bot-6*T);ctx.fill();}
 function funnel(t,back){
   for(let i=0;i<46;i++){const h=i/45,y=bot-(bot-top)*h,R=rad(h),x=cx+Math.sin(h*5+t/1.4)*16*T;
-    ctx.fillStyle=back?'rgba(120,125,130,.22)':'rgba(150,155,160,.16)';ctx.beginPath();ctx.ellipse(x,y,R,R*0.22+6*T,0,back?3.14:0,back?6.283:3.14);ctx.fill();}
-  ctx.strokeStyle=back?'rgba(90,95,100,.25)':'rgba(240,240,240,.35)';ctx.lineWidth=1;
+    if(i%3)continue;ctx.strokeStyle=back?'rgba(79,111,124,.3)':'rgba(79,111,124,.6)';ctx.lineWidth=1;ctx.beginPath();ctx.ellipse(x,y,R,R*0.22+6*T,0,back?3.14:0,back?6.283:3.14);ctx.stroke();}
+  ctx.strokeStyle=back?'rgba(79,111,124,.25)':'rgba(79,111,124,.45)';ctx.lineWidth=1;
   for(const d of dust){d.a+=0.03*MOTION*(1.5-d.h);d.h+=0.0008*MOTION;if(d.h>1)d.h=0;const [x,y,z]=pos(d.h,d.a,d.r*0.2);if((z<0)!==back)continue;ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x-Math.sin(d.a)*6*T,y+Math.cos(d.a)*1.5*T);ctx.stroke();}
 }
 function draw(it,s){
@@ -45,7 +45,7 @@ function draw(it,s){
 let last=performance.now();
 function frame(now){
   const dt=Math.min(0.05,(now-last)/1000)*MOTION,t=now/1000;last=now;
-  ctx.setTransform(DPR,0,0,DPR,0,0);sky();
+  ctx.setTransform(DPR,0,0,DPR,0,0);ctx.bg('#f3f4ef',W,H);sky();
   for(const it of items){it.a+=dt*(0.6+1.6*it.v)*(1.3-it.h*0.6);it.h+=dt*it.rise*(0.5+it.v);if(it.h>1)it.h=0.02;it.spin+=dt*(1+2*it.v);
     const [x,y,z]=pos(it.h,it.a,0.15+it.out*0.5);it._x=x;it._y=y;it._z=z;}
   items.sort((a,b)=>a._z-b._z);

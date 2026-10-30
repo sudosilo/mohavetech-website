@@ -1,6 +1,6 @@
 VZ.load(P=>{
 const {h32,MOTION}=VZ;
-const cv=document.getElementById('cv'),ctx=cv.getContext('2d');
+const cv=document.getElementById('cv'),ctx=VZ.wire(cv.getContext('2d'));
 const MODE=document.body.dataset.scene||'bike';
 const NAMES={bike:{tanker:'Tandem, one of the biggest',battle:'Road bike, big and fast',cargo:'Cargo bike, big and steady',tug:'BMX, small and nimble',speed:'Fixie, small and quick',sail:'Cruiser, light and easy'},
   cheese:{tanker:'Big chaser, one of the biggest',battle:'Sprinter, big and fast',cargo:'Rugby player, big and steady',tug:'Little kid, small and nimble',speed:'Track star, small and quick',sail:'Jogger, light and easy'}}[MODE];
@@ -70,7 +70,7 @@ function cheese(t){
 let last=performance.now();
 function frame(now){
   const dt=Math.min(0.05,(now-last)/1000)*MOTION,t=now/1000;last=now;
-  ctx.setTransform(DPR,0,0,DPR,0,0);hill(dt);
+  ctx.setTransform(DPR,0,0,DPR,0,0);ctx.bg('#f3f4ef',W,H);hill(dt);
   if(MODE==='cheese')cheese(t);
   ppl.sort((a,b)=>a.y-b.y);
   for(const r of ppl){

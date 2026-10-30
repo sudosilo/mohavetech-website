@@ -1,6 +1,6 @@
 VZ.load(P=>{
 const {h32,MOTION}=VZ;
-const cv=document.getElementById('cv'),ctx=cv.getContext('2d');
+const cv=document.getElementById('cv'),ctx=VZ.wire(cv.getContext('2d'));
 const RIDE={tanker:'Party raft, one of the biggest',battle:'Canoe, big and fast',cargo:'Family raft, big and steady',tug:'Inner tube, small and nimble',speed:'Wakeboard, small and quick',sail:'Lazy tube, light and easy'};
 const SPD=d=>d==null?0.6:d<7?1:d<30?0.85:d<60?0.7:d<90?0.55:0.4;
 let W,H,DPR,T,foam=[],splash=[],rocks=[],trees=[];
@@ -50,7 +50,7 @@ function craft(r,x,y,s,t){
 let last=performance.now();
 function frame(now){
   const dt=Math.min(0.05,(now-last)/1000)*MOTION,t=now/1000;last=now;
-  ctx.setTransform(DPR,0,0,DPR,0,0);banks(t);water(t,dt);
+  ctx.setTransform(DPR,0,0,DPR,0,0);ctx.bg('#eef7f9',W,H);banks(t);water(t,dt);
   for(const r of riders){
     const fast=rapid(r.y)?1.8:1;r.y+=(30+40*r.v)*T*fast*dt;
     if(r.y>H+40*T){r.y=-40*T-Math.random()*H*0.4;r.swim=0;}
