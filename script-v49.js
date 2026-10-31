@@ -230,7 +230,7 @@ document.querySelectorAll('#category-view a, #alpha-view a').forEach(a => {
 
 function showLinks() {
   const frame = document.getElementById('links-frame');
-  if (!frame.getAttribute('src')) frame.setAttribute('src', 'https://free-as-in-links.vercel.app');
+  if (!frame.getAttribute('src')) frame.setAttribute('src', 'freelinks.html');
   showView('links');
 }
 
