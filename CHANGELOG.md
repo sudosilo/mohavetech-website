@@ -1,6 +1,6 @@
 App Index changelog
 
-2026-11-05, v2026.11.05. Removed the retired tower builder app.
+2026-11-05, v2026.11.05. Synced with the live deployments.
 
 2026-11-01, v2026.11.01. The app index was synced with the live deployments.
 

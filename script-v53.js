@@ -139,6 +139,7 @@ const baseDates = {
   "topo-wars": "2026-10-03",
   "topo-wars-server": "2026-10-26",
   "torque-converter": "2026-10-24",
+  "tower-builder-one": "2026-11-05",
   "tractor-tool": "2026-10-24",
   "virality-snapshot": "2026-09-28",
   "virality-trader": "2026-09-28",
