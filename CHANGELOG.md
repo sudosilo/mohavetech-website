@@ -1,5 +1,7 @@
 App Index changelog
 
+2026-11-05, v2026.11.05. Removed the retired tower builder app.
+
 2026-11-01, v2026.11.01. The app index was synced with the live deployments.
 
 2026-10-31, v2026.10.31. Added link rain, where every free link falls as a raindrop colored by category. A Free Links page is now hosted on its own site. The index was synced with the live deployments and retired apps were dropped.
