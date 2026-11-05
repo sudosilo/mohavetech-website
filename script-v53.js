@@ -69,7 +69,7 @@ const baseDates = {
   "hoofer-sync": "2026-10-25",
   "infinicanvan": "2026-11-02",
   "inkrunner": "2026-10-25",
-  "itchy-troll": "2026-11-04",
+  "itchy-troll": "2026-11-05",
   "j30p4rdy": "2026-11-01",
   "kat-chat": "2026-10-31",
   "kvs": "2026-10-10",
