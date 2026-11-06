@@ -57,7 +57,8 @@ async function getProjects() {
   fs.writeFileSync('mohavetech-vercel-projects-v1.json', JSON.stringify(list, null, 1) + '\n');
 
   const dates = Object.fromEntries(list.map(p => [p.name, p.date]));
-  for (const file of ['script-v53.js', 'fleet.html']) {
+  const script = fs.readdirSync('.').filter(f => /^script-v\d+\.js$/.test(f)).sort((a, b) => parseInt(b.slice(8)) - parseInt(a.slice(8)))[0];
+  for (const file of [script, 'fleet.html']) {
     let s = fs.readFileSync(file, 'utf8');
     s = s.replace(/^(\s*)"([a-z0-9-]+)": "(\d{4}-\d{2}-\d{2})",?$/gm, (line, sp, name, old) => {
       if (!dates[name] || dates[name] <= old) return line;
