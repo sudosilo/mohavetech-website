@@ -246,6 +246,17 @@ function showStats() {
   renderStats();
 }
 
+function showMonthly(id) {
+  const frame = document.getElementById('monthly-frame');
+  frame.src = 'monthlies.html#' + id;
+  frame.style.display = 'block';
+  document.querySelectorAll('#monthly-tabs button').forEach(b => {
+    const on = b.dataset.id === id;
+    b.style.background = on ? '#00ff00' : 'black';
+    b.style.color = on ? 'black' : '#00ff00';
+  });
+}
+
 function renderStats() {
   const el = document.getElementById('stats-view');
   const now = Date.now();
@@ -279,6 +290,14 @@ function renderStats() {
   html += '<p>Updated in the last 7 days: ' + thisWeek + '</p>';
   html += '<p>Updated the 7 days before that: ' + lastWeek + '</p>';
   html += '<p>' + (thisWeek >= lastWeek ? 'Up' : 'Down') + ' week over week by ' + Math.abs(thisWeek - lastWeek) + '</p>';
+
+  if (typeof MONTHLIES !== 'undefined' && MONTHLIES.length) {
+    html += '<h2>Monthly Reviews</h2><div id="monthly-tabs">';
+    MONTHLIES.forEach(m => {
+      html += '<button onclick="showMonthly(\'' + m.id + '\')" data-id="' + m.id + '" style="background:black;color:#00ff00;border:1px solid #00ff00;font-family:monospace;font-size:14px;padding:6px 12px;margin:0 6px 6px 0;cursor:pointer">' + m.title + '</button>';
+    });
+    html += '</div><iframe id="monthly-frame" title="Monthly review" style="display:none;width:100%;max-width:1000px;height:80vh;border:1px solid #00ff00;background:#f6f5f1"></iframe>';
+  }
 
   html += '<h2>Deploy Timeline</h2>';
   sortedWeeks.forEach(w => {
