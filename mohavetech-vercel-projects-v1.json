@@ -267,7 +267,7 @@
  },
  {
   "name": "chassisquiver",
-  "date": "2026-10-26",
+  "date": "2026-11-10",
   "aliases": [
    "chassisquiver.vercel.app",
    "chassisquiver-sudosilo2-1771s-projects.vercel.app",
@@ -500,7 +500,7 @@
  },
  {
   "name": "field-twin",
-  "date": "2026-11-08",
+  "date": "2026-11-10",
   "aliases": [
    "field-twin-teal.vercel.app",
    "field-twin-sudosilo2-1771s-projects.vercel.app",
@@ -509,15 +509,16 @@
  },
  {
   "name": "field-twin-glaucous",
-  "date": "2026-10-17",
+  "date": "2026-11-10",
   "aliases": [
    "field-twin-glaucous.vercel.app",
-   "field-twin-glaucous-sudosilo2-1771s-projects.vercel.app"
+   "field-twin-glaucous-sudosilo2-1771s-projects.vercel.app",
+   "field-twin-glaucous-git-main-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
   "name": "field-twin-violet",
-  "date": "2026-11-08",
+  "date": "2026-11-10",
   "aliases": [
    "field-twin-violet.vercel.app",
    "field-twin-violet-sudosilo2-1771s-projects.vercel.app",
@@ -776,7 +777,8 @@
    "mohave.wtf",
    "mohavetech.wtf",
    "mohavetech-website.vercel.app",
-   "mohavetech-website-sudosilo2-1771s-projects.vercel.app"
+   "mohavetech-website-sudosilo2-1771s-projects.vercel.app",
+   "mohavetech-website-git-master-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
@@ -974,8 +976,7 @@
   "date": "2026-11-10",
   "aliases": [
    "rainbow-run-ochre.vercel.app",
-   "rainbow-run-sudosilo2-1771s-projects.vercel.app",
-   "rainbow-run-git-main-sudosilo2-1771s-projects.vercel.app"
+   "rainbow-run-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
