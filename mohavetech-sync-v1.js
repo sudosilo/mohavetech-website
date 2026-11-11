@@ -130,7 +130,7 @@ function addRemove(list, script) {
     let s = fs.readFileSync(file, 'utf8');
     s = s.replace(/^(\s*)"([a-z0-9-]+)": "(\d{4}-\d{2}-\d{2})",?$/gm, (line, sp, name, old) => {
       if (!dates[name] || dates[name] <= old) return line;
-      return line.replace(old, dates[name]);
+      return sp + '"' + name + '": "' + dates[name] + '"' + (line.trim().endsWith(',') ? ',' : '');
     });
     fs.writeFileSync(file, s);
   }
