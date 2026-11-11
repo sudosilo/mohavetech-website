@@ -120,3 +120,9 @@ html.retro #links-view .tag a { -webkit-text-fill-color: #0000cc; text-decoratio
   html.retro .tag { margin-left: 3px; font-size: .8em; }
   html.retro .gh-btn svg { width: .9em; height: .9em; }
 }
+
+/* stars fly across the desktop and behind the links */
+html.retro #starfield { display: block !important; filter: invert(1) hue-rotate(180deg) saturate(1.6); mix-blend-mode: multiply; }
+html.retro #category-view, html.retro #alpha-view, html.retro #stats-view, html.retro #links-view { background: transparent !important; }
+html.retro .troll-panel { background: rgba(255, 255, 255, .55) !important; }
+html.retro #category-view p > a, html.retro #alpha-view p > a { text-shadow: 0 0 4px #e4d5ab, 0 0 2px #e4d5ab; }

@@ -445,7 +445,7 @@
 (function () {
   /* DEFAULT is the look every visitor gets: "modern", "future", "retro" or "classic". Change it to put another look back for everyone. */
   var DEFAULT = "modern";
-  var SHEET = { modern: ["modern.css?v=3", "#ffffff"], future: ["future.css?v=1", "#eef1ec"], retro: ["retro.css?v=1", "#000080"] };
+  var SHEET = { modern: ["modern.css?v=3", "#ffffff"], future: ["future.css?v=1", "#eef1ec"], retro: ["retro.css?v=2", "#000080"] };
   var NAME = { modern: "Modern look", future: "Future retro look", retro: "Retro look", classic: "Classic look" };
   var look = DEFAULT;
   try { look = localStorage.getItem("hub-look3") || DEFAULT; } catch (e) {}
