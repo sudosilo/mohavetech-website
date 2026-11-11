@@ -443,31 +443,37 @@
 })();
 /* retromark */
 (function () {
-  /* DEFAULT is the look every visitor gets. Change "retro" to "classic" to put the old look back for everyone. */
-  var DEFAULT = "retro";
+  /* DEFAULT is the look every visitor gets: "future", "retro" or "classic". Change it to put another look back for everyone. */
+  var DEFAULT = "future";
+  var SHEET = { future: ["future.css?v=1", "#eef1ec"], retro: ["retro.css?v=1", "#000080"] };
+  var NAME = { future: "Future retro look", retro: "Retro look", classic: "Classic look" };
   var look = DEFAULT;
-  try { look = localStorage.getItem("hub-look") || DEFAULT; } catch (e) {}
-  if (look === "retro") {
-    document.documentElement.classList.add("retro");
+  try { look = localStorage.getItem("hub-look2") || DEFAULT; } catch (e) {}
+  if (!NAME[look]) look = DEFAULT;
+  if (SHEET[look]) {
+    document.documentElement.classList.add(look);
     var l = document.createElement("link");
     l.rel = "stylesheet";
-    l.href = "retro.css?v=1";
+    l.href = SHEET[look][0];
     document.head.appendChild(l);
     var m = document.querySelector('meta[name="theme-color"]');
-    if (m) m.setAttribute("content", "#000080");
+    if (m) m.setAttribute("content", SHEET[look][1]);
   }
   function addSwitch() {
     var menu = document.getElementById("menu");
-    if (!menu || document.getElementById("look-switch")) return;
-    var b = document.createElement("button");
-    b.id = "look-switch";
-    b.textContent = look === "retro" ? "Classic look" : "Retro look";
-    b.onclick = function () {
-      try { localStorage.setItem("hub-look", look === "retro" ? "classic" : "retro"); } catch (e) {}
-      location.reload();
-    };
+    if (!menu || menu.querySelector(".look-switch")) return;
     var first = menu.querySelector("details");
-    menu.insertBefore(b, first);
+    Object.keys(NAME).forEach(function (k) {
+      if (k === look) return;
+      var b = document.createElement("button");
+      b.className = "look-switch";
+      b.textContent = NAME[k];
+      b.onclick = function () {
+        try { localStorage.setItem("hub-look2", k); } catch (e) {}
+        location.reload();
+      };
+      menu.insertBefore(b, first);
+    });
   }
   if (document.readyState === "complete") addSwitch();
   else window.addEventListener("load", function () { setTimeout(addSwitch, 300); });
