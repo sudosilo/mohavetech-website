@@ -441,3 +441,34 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", go);
   else go();
 })();
+/* retromark */
+(function () {
+  /* DEFAULT is the look every visitor gets. Change "retro" to "classic" to put the old look back for everyone. */
+  var DEFAULT = "retro";
+  var look = DEFAULT;
+  try { look = localStorage.getItem("hub-look") || DEFAULT; } catch (e) {}
+  if (look === "retro") {
+    document.documentElement.classList.add("retro");
+    var l = document.createElement("link");
+    l.rel = "stylesheet";
+    l.href = "retro.css?v=1";
+    document.head.appendChild(l);
+    var m = document.querySelector('meta[name="theme-color"]');
+    if (m) m.setAttribute("content", "#000080");
+  }
+  function addSwitch() {
+    var menu = document.getElementById("menu");
+    if (!menu || document.getElementById("look-switch")) return;
+    var b = document.createElement("button");
+    b.id = "look-switch";
+    b.textContent = look === "retro" ? "Classic look" : "Retro look";
+    b.onclick = function () {
+      try { localStorage.setItem("hub-look", look === "retro" ? "classic" : "retro"); } catch (e) {}
+      location.reload();
+    };
+    var first = menu.querySelector("details");
+    menu.insertBefore(b, first);
+  }
+  if (document.readyState === "complete") addSwitch();
+  else window.addEventListener("load", function () { setTimeout(addSwitch, 300); });
+})();
