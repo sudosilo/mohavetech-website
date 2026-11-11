@@ -443,12 +443,12 @@
 })();
 /* retromark */
 (function () {
-  /* DEFAULT is the look every visitor gets: "future", "retro" or "classic". Change it to put another look back for everyone. */
-  var DEFAULT = "future";
-  var SHEET = { future: ["future.css?v=1", "#eef1ec"], retro: ["retro.css?v=1", "#000080"] };
-  var NAME = { future: "Future retro look", retro: "Retro look", classic: "Classic look" };
+  /* DEFAULT is the look every visitor gets: "modern", "future", "retro" or "classic". Change it to put another look back for everyone. */
+  var DEFAULT = "modern";
+  var SHEET = { modern: ["modern.css?v=1", "#ffffff"], future: ["future.css?v=1", "#eef1ec"], retro: ["retro.css?v=1", "#000080"] };
+  var NAME = { modern: "Modern look", future: "Future retro look", retro: "Retro look", classic: "Classic look" };
   var look = DEFAULT;
-  try { look = localStorage.getItem("hub-look2") || DEFAULT; } catch (e) {}
+  try { look = localStorage.getItem("hub-look3") || DEFAULT; } catch (e) {}
   if (!NAME[look]) look = DEFAULT;
   if (SHEET[look]) {
     document.documentElement.classList.add(look);
@@ -469,7 +469,7 @@
       b.className = "look-switch";
       b.textContent = NAME[k];
       b.onclick = function () {
-        try { localStorage.setItem("hub-look2", k); } catch (e) {}
+        try { localStorage.setItem("hub-look3", k); } catch (e) {}
         location.reload();
       };
       menu.insertBefore(b, first);
