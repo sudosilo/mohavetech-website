@@ -126,3 +126,13 @@ html.modern #links-view .tag a { -webkit-text-fill-color: var(--link); text-deco
   html.modern .tag { margin-left: 3px; font-size: .8em; }
   html.modern .gh-btn svg { width: .9em; height: .9em; }
 }
+
+/* open panels: the stars run behind the links, nothing blocks them */
+html.modern #category-view, html.modern #alpha-view, html.modern #stats-view, html.modern #links-view {
+  background: transparent !important; box-shadow: none !important; border-color: transparent !important;
+}
+html.modern h2 { background: transparent !important; border: 0 !important; border-bottom: 1px solid var(--hair) !important; border-radius: 0; }
+html.modern .troll-panel { background: transparent !important; box-shadow: none !important; }
+html.modern #category-view p:hover, html.modern #alpha-view p:hover { background: transparent; }
+html.modern #category-view p > a, html.modern #alpha-view p > a, html.modern h2, html.modern h1 { text-shadow: 0 0 6px var(--bg), 0 0 2px var(--bg); }
+html.modern.dark { --hair: rgba(111, 140, 255, .35); }
