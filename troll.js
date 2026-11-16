@@ -191,14 +191,7 @@
       if (!words.length) return;
       t.setAttribute("data-stars", "1");
       t.textContent = "";
-      words.forEach(function (w) {
-        var s = document.createElement("span");
-        s.textContent = String.fromCharCode(9733);
-        s.style.color = COLORS[w];
-        s.style.marginRight = "2px";
-        s.style.pointerEvents = "none";
-        t.appendChild(s);
-      });
+      t.style.margin = "0";
       var h = document.createElement("span");
       h.textContent = " " + words.join(" ");
       h.style.display = "none";
