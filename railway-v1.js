@@ -2,7 +2,7 @@
 (function () {
   var BLUE = "#2447f5";
   var feed = null;
-  var ICON = '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" style="display:block"><rect x="3" y="1.5" width="10" height="10" rx="2.5" fill="none" stroke="#7aa2ff" stroke-width="1.6"/><rect x="5" y="3.5" width="6" height="3" rx="0.8" fill="#7aa2ff"/><circle cx="5.6" cy="9" r="0.9" fill="#7aa2ff"/><circle cx="10.4" cy="9" r="0.9" fill="#7aa2ff"/><path d="M5 12.5 L3.5 14.8 M11 12.5 L12.5 14.8" stroke="#7aa2ff" stroke-width="1.4" stroke-linecap="round"/></svg>';
+  var ICON = '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" style="vertical-align:middle"><rect x="3" y="1.5" width="10" height="10" rx="2.5" fill="none" stroke="#7aa2ff" stroke-width="1.6"/><rect x="5" y="3.5" width="6" height="3" rx="0.8" fill="#7aa2ff"/><circle cx="5.6" cy="9" r="0.9" fill="#7aa2ff"/><circle cx="10.4" cy="9" r="0.9" fill="#7aa2ff"/><path d="M5 12.5 L3.5 14.8 M11 12.5 L12.5 14.8" stroke="#7aa2ff" stroke-width="1.4" stroke-linecap="round"/></svg>';
 
   function norm(s) {
     s = String(s || "").toLowerCase().trim();
@@ -17,7 +17,7 @@
       "#railway-frame { display: block; width: 100%; height: 80vh; border: 1px solid " + BLUE + "; background: #f4f7fc; margin-top: 10px; }" +
       "html.modern #railway-view { background: var(--panel); border: 1px solid var(--hair); border-radius: 12px; padding: 10px 12px 12px; }" +
       "html.modern #railway-view > h2:first-child { margin-top: 0; }" +
-      "html.modern #category-view p button.rw-btn, html.modern #alpha-view p button.rw-btn { border-color: #b9c7fb !important; color: " + BLUE + " !important; -webkit-text-fill-color: " + BLUE + "; }";
+      "@media (min-width: 900px) and (hover: hover) and (pointer: fine) { html.modern .rw-btn svg, html.future .rw-btn svg, html.retro .rw-btn svg { width: .9em; height: .9em; } }";
     document.head.appendChild(css);
   }
 
@@ -92,7 +92,7 @@
       b.innerHTML = ICON;
       b.title = "Open " + name + " in Railway";
       b.setAttribute("aria-label", "Open " + name + " in Railway");
-      b.style.cssText = "margin-left:8px;background:black;color:#7aa2ff;border:1px solid " + BLUE + ";padding:1px 4px;cursor:pointer;line-height:1;vertical-align:middle;";
+      b.style.cssText = "margin-left:8px;background:black;color:#ffffff;border:1px solid #888888;padding:1px 5px;cursor:pointer;line-height:1;";
       b.onclick = function () { window.open(url, "_blank", "noopener"); };
       var after = p.querySelector("button[title*='itch']") || gh || a;
       after.insertAdjacentElement("afterend", b);
