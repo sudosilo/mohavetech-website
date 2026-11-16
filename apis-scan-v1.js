@@ -54,7 +54,7 @@ const KNOWN = [
   [/(^|\.)purelymail\.com$/, "Purelymail", "https://purelymail.com/"]
 ];
 
-const SKIP = /(^|\.)(w3\.org|schema\.org|example\.(com|org)|localhost|github\.com|githubusercontent\.com|vercel\.app|vercel\.com|jsdelivr\.net|unpkg\.com|cdnjs\.cloudflare\.com|fonts\.googleapis\.com|fonts\.gstatic\.com|gstatic\.com|google\.com|googletagmanager\.com|linkedin\.com|itch\.io|itch\.zone|railway\.com|mohave\.wtf|mohavetech\.wtf|npmjs\.(com|org)|nodejs\.org|mozilla\.org|developer\.mozilla\.org|reactjs\.org|react\.dev|vitejs\.dev|tailwindcss\.com|esm\.sh|skypack\.dev|twitter\.com|x\.com|facebook\.com|instagram\.com|creativecommons\.org|opensource\.org|apache\.org|gnu\.org|json-schema\.org|xmlns\.com|purl\.org|ogp\.me|wikipedia\.org\/wiki|claude\.ai|anthropic\.com\/news|0\.0\.0\.0|127\.0\.0\.1)$/;
+const SKIP = /(^|\.)(w3\.org|schema\.org|example\.(com|org)|localhost|github\.com|githubusercontent\.com|vercel\.com|jsdelivr\.net|unpkg\.com|cdnjs\.cloudflare\.com|fonts\.googleapis\.com|fonts\.gstatic\.com|gstatic\.com|google\.com|googletagmanager\.com|linkedin\.com|itch\.io|itch\.zone|railway\.com|mohave\.wtf|mohavetech\.wtf|npmjs\.(com|org)|nodejs\.org|mozilla\.org|developer\.mozilla\.org|reactjs\.org|react\.dev|vitejs\.dev|tailwindcss\.com|esm\.sh|skypack\.dev|twitter\.com|x\.com|facebook\.com|instagram\.com|creativecommons\.org|opensource\.org|apache\.org|gnu\.org|json-schema\.org|xmlns\.com|purl\.org|ogp\.me|wikipedia\.org\/wiki|claude\.ai|anthropic\.com\/news|0\.0\.0\.0|127\.0\.0\.1)$/;
 
 const EXT = /\.(js|mjs|cjs|jsx|ts|tsx|html|htm|py|json|toml|yaml|yml|sh|vue|svelte)$/i;
 const URL_RE = /https?:\/\/([a-z0-9][a-z0-9.-]*\.[a-z]{2,})(?::\d+)?/gi;
@@ -76,6 +76,8 @@ if (!repoList.length) { console.log("\nGITHUB REPO LIST CAME BACK EMPTY\n"); pro
 
 const tmp = path.join(os.tmpdir(), "mohave-apis-scan");
 const repos = {};
+const links = {};
+const OWN = /\.vercel\.app$|\.up\.railway\.app$/;
 repoList.forEach((name, i) => {
   if (name === "mohavetech-website") return;
   const dir = path.join(tmp, name);
@@ -84,12 +86,14 @@ repoList.forEach((name, i) => {
   const files = [];
   walk(dir, files);
   const hosts = {};
+  const own = {};
   files.forEach(f => {
     let txt = "";
     try { if (fs.statSync(f).size < 2000000) txt = fs.readFileSync(f, "utf8"); } catch (e) {}
     let m; URL_RE.lastIndex = 0;
     while ((m = URL_RE.exec(txt))) {
       const h = m[1].toLowerCase().replace(/\.$/, "");
+      if (OWN.test(h)) { own[h] = true; continue; }
       if (SKIP.test(h)) continue;
       hosts[h] = true;
     }
@@ -104,12 +108,15 @@ repoList.forEach((name, i) => {
   });
   const list = Object.values(found).sort((a, b) => (KNOWN.some(k => k[1] === b.label) - KNOWN.some(k => k[1] === a.label)) || a.label.localeCompare(b.label));
   if (list.length) repos[name.toLowerCase()] = list;
+  const ownList = Object.keys(own).filter(h => h.split(".")[0] !== name.toLowerCase());
+  if (ownList.length) links[name.toLowerCase()] = ownList.sort();
   process.stdout.write("\rSCANNED " + (i + 1) + " OF " + repoList.length + "   ");
 });
 
-const out = { generated: new Date().toISOString(), repos };
+const out = { generated: new Date().toISOString(), repos, links };
 fs.writeFileSync("apis-v1.json", JSON.stringify(out, null, 1));
 console.log("\nAPPS WITH OUTSIDE APIS: " + Object.keys(repos).length);
+console.log("APPS LINKED TO YOUR OTHER APPS: " + Object.keys(links).length);
 run("git add apis-v1.json");
 run('git commit -m "Outside API list"');
 run("git pull --rebase origin master");
