@@ -8,6 +8,7 @@ function run(cmd) {
 }
 
 function search(q, extra) {
+  run("sleep 7");
   const out = run("gh search code " + JSON.stringify(q) + " --owner sudosilo --limit 1000 " + (extra || "") + " --json repository,path,textMatches");
   try { return JSON.parse(out); } catch (e) { return []; }
 }
