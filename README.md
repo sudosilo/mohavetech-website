@@ -8,6 +8,6 @@ Live at mohavetech-website.vercel.app.
 
 This app is checked every morning by Control Troll.
 
-Latest change. 2026-11-16, v2026.11.16. Added a Railway tab and railway buttons on apps with a Railway backend.
+Latest change. 2026-11-16, v2026.11.16. Added a Railway tab and railway buttons on apps with a Railway backend. Hire Portal got its orange phone star.
 
 Full history is in CHANGELOG.md.
