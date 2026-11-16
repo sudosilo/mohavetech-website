@@ -99,19 +99,7 @@
     });
   }
 
-  function pill(text, ok) {
-    var el = document.getElementById("rw-pill");
-    if (!el) {
-      el = document.createElement("button");
-      el.id = "rw-pill";
-      el.type = "button";
-      el.style.cssText = "position:fixed;top:8px;right:8px;z-index:9999;font:600 12px monospace;padding:4px 8px;border-radius:6px;border:1px solid " + BLUE + ";background:#ffffff;color:" + BLUE + ";cursor:pointer;max-width:70vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;";
-      el.onclick = function () { if (window.showRailway) window.showRailway(); };
-      document.body.appendChild(el);
-    }
-    el.textContent = text;
-    el.style.background = ok ? "#ffffff" : "#fff3e0";
-  }
+  function pill() {}
 
   function start() {
     addCss();
