@@ -44,5 +44,6 @@ fs.writeFileSync("cloudflare-v1.json", JSON.stringify(out, null, 1));
 console.log("CLOUDFLARE APPS FOUND: " + Object.keys(repos).length);
 run("git add cloudflare-v1.json");
 run('git commit -m "Cloudflare app list"');
+run("git pull --rebase origin master");
 const pushed = run("git push origin master 2>&1 && echo PUSHED");
 console.log(/PUSHED/.test(pushed) ? "CLOUDFLARE LIST PUSHED" : "CLOUDFLARE LIST PUSH FAILED");

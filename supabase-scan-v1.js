@@ -44,5 +44,6 @@ fs.writeFileSync("supabase-v1.json", JSON.stringify(out, null, 1));
 console.log("SUPABASE APPS FOUND: " + Object.keys(repos).length);
 run("git add supabase-v1.json");
 run('git commit -m "Supabase app list"');
+run("git pull --rebase origin master");
 const pushed = run("git push origin master 2>&1 && echo PUSHED");
 console.log(/PUSHED/.test(pushed) ? "SUPABASE LIST PUSHED" : "SUPABASE LIST PUSH FAILED");

@@ -80,5 +80,6 @@ fs.writeFileSync("railway-snapshot-v1.json", JSON.stringify(out, null, 1));
 console.log("RAILWAY PROJECTS FOUND: " + projects.length);
 run("git add railway-snapshot-v1.json");
 run('git commit -m "Railway snapshot"');
+run("git pull --rebase origin master");
 const pushed = run("git push origin master 2>&1 && echo PUSHED");
 console.log(/PUSHED/.test(pushed) ? "RAILWAY SNAPSHOT PUSHED" : "RAILWAY SNAPSHOT PUSH FAILED");

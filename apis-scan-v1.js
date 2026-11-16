@@ -112,5 +112,6 @@ fs.writeFileSync("apis-v1.json", JSON.stringify(out, null, 1));
 console.log("\nAPPS WITH OUTSIDE APIS: " + Object.keys(repos).length);
 run("git add apis-v1.json");
 run('git commit -m "Outside API list"');
+run("git pull --rebase origin master");
 const pushed = run("git push origin master 2>&1 && echo PUSHED");
 console.log(/PUSHED/.test(pushed) ? "API LIST PUSHED" : "API LIST PUSH FAILED");

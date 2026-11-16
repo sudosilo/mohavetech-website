@@ -38,5 +38,6 @@ console.log("MUSICBRAINZ APPS FOUND: " + Object.keys(out.musicbrainz).length);
 console.log("AUDD APPS FOUND: " + Object.keys(out.audd).length);
 run("git add ai-v1.json");
 run('git commit -m "API app list"');
+run("git pull --rebase origin master");
 const pushed = run("git push origin master 2>&1 && echo PUSHED");
 console.log(/PUSHED/.test(pushed) ? "AI LIST PUSHED" : "AI LIST PUSH FAILED");
