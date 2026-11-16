@@ -17,7 +17,7 @@
       "#railway-frame { display: block; width: 100%; height: 80vh; border: 1px solid " + BLUE + "; background: #f4f7fc; margin-top: 10px; }" +
       "html.modern #railway-view { background: var(--panel); border: 1px solid var(--hair); border-radius: 12px; padding: 10px 12px 12px; }" +
       "html.modern #railway-view > h2:first-child { margin-top: 0; }" +
-      "@media (min-width: 900px) and (hover: hover) and (pointer: fine) { html.modern .rw-btn svg, html.future .rw-btn svg, html.retro .rw-btn svg { width: .9em; height: .9em; } }";
+      "@media (min-width: 900px) and (hover: hover) and (pointer: fine) { html.modern .rw-btn svg, html.future .rw-btn svg, html.retro .rw-btn svg, html.modern button[title*=\"itch\"] svg, html.future button[title*=\"itch\"] svg, html.retro button[title*=\"itch\"] svg { width: .9em; height: .9em; } }";
     document.head.appendChild(css);
   }
 
