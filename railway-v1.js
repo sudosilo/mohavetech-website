@@ -116,17 +116,27 @@
     addCss();
     addView();
     pill("railway ...", true);
-    fetch("/api/railway-v1", { cache: "no-store" }).then(function (r) { return r.json().catch(function () { return { error: "railway feed missing (" + r.status + ")" }; }); }).then(function (j) {
-      if (j && j.projects) {
-        feed = j;
-        badges();
-        var n = 0, t = setInterval(function () { badges(); if (++n > 20) clearInterval(t); }, 1500);
-        var now = 0; (j.workspaces || []).forEach(function (w) { now += w.currentUsage || 0; });
-        pill("railway $" + now.toFixed(2) + " \u00b7 " + j.projects.length + " projects", true);
-      } else {
-        pill("railway: " + ((j && j.error) || "no data"), false);
-      }
-    }).catch(function (e) { pill("railway: " + (e.message || e), false); });
+    var apiError = "";
+    fetch("/api/railway-v1", { cache: "no-store" })
+      .then(function (r) { return r.json().catch(function () { return { error: "railway feed missing (" + r.status + ")" }; }); })
+      .then(function (j) {
+        if (j && j.projects && j.projects.length) return j;
+        apiError = (j && j.error) || "no data";
+        return fetch("/railway-snapshot-v1.json", { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
+      })
+      .then(function (j) {
+        if (j && j.projects && j.projects.length) {
+          feed = j;
+          badges();
+          var n = 0, t = setInterval(function () { badges(); if (++n > 20) clearInterval(t); }, 1500);
+          if (j.snapshot) { pill("railway \u00b7 " + j.projects.length + " projects", true); return; }
+          var now = 0; (j.workspaces || []).forEach(function (w) { now += w.currentUsage || 0; });
+          pill("railway $" + now.toFixed(2) + " \u00b7 " + j.projects.length + " projects", true);
+        } else {
+          pill("railway: " + (apiError || "no data"), false);
+        }
+      })
+      .catch(function (e) { pill("railway: " + (e.message || e), false); });
   }
 
   if (document.readyState === "complete") setTimeout(start, 400);
