@@ -98,12 +98,35 @@
     });
   }
 
+  function pill(text, ok) {
+    var el = document.getElementById("rw-pill");
+    if (!el) {
+      el = document.createElement("button");
+      el.id = "rw-pill";
+      el.type = "button";
+      el.style.cssText = "position:fixed;top:8px;right:8px;z-index:9999;font:600 12px monospace;padding:4px 8px;border-radius:6px;border:1px solid " + BLUE + ";background:#ffffff;color:" + BLUE + ";cursor:pointer;max-width:70vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;";
+      el.onclick = function () { if (window.showRailway) window.showRailway(); };
+      document.body.appendChild(el);
+    }
+    el.textContent = text;
+    el.style.background = ok ? "#ffffff" : "#fff3e0";
+  }
+
   function start() {
     addCss();
     addView();
-    fetch("/api/railway-v1").then(function (r) { return r.json(); }).then(function (j) {
-      if (j && j.projects) { feed = j; badges(); var n = 0, t = setInterval(function () { badges(); if (++n > 20) clearInterval(t); }, 1500); }
-    }).catch(function () {});
+    pill("railway ...", true);
+    fetch("/api/railway-v1", { cache: "no-store" }).then(function (r) { return r.json().catch(function () { return { error: "railway feed missing (" + r.status + ")" }; }); }).then(function (j) {
+      if (j && j.projects) {
+        feed = j;
+        badges();
+        var n = 0, t = setInterval(function () { badges(); if (++n > 20) clearInterval(t); }, 1500);
+        var now = 0; (j.workspaces || []).forEach(function (w) { now += w.currentUsage || 0; });
+        pill("railway $" + now.toFixed(2) + " \u00b7 " + j.projects.length + " projects", true);
+      } else {
+        pill("railway: " + ((j && j.error) || "no data"), false);
+      }
+    }).catch(function (e) { pill("railway: " + (e.message || e), false); });
   }
 
   if (document.readyState === "complete") setTimeout(start, 400);
