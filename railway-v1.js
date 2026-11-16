@@ -60,21 +60,30 @@
     }
   }
 
+  function repoKey(r) { return String(r || "").toLowerCase().split("/").pop(); }
+
   function badges() {
     if (!feed || !feed.projects) return;
-    var map = {};
+    var byName = {}, byRepo = {};
     feed.projects.forEach(function (p) {
       var k = norm(p.name);
-      if (k && !map[k]) map[k] = p.url;
+      if (k && !byName[k]) byName[k] = p.url;
       p.services.forEach(function (s) {
         var ks = norm(s.name);
-        if (ks && !map[ks]) map[ks] = s.url;
+        if (ks && !byName[ks]) byName[ks] = s.url;
+        var kr = repoKey(s.repo);
+        if (kr && !byRepo[kr]) byRepo[kr] = s.url;
       });
     });
     var links = document.querySelectorAll("#category-view a, #alpha-view a");
     Array.prototype.forEach.call(links, function (a) {
-      var p = a.parentNode, name = a.textContent.trim(), url = map[norm(name)];
-      if (!p || !url || p.getAttribute("data-rw")) return;
+      var p = a.parentNode;
+      if (!p || p.getAttribute("data-rw")) return;
+      var name = a.textContent.trim();
+      var gh = p.querySelector(".gh-btn");
+      var ghRepo = gh ? repoKey((gh.title || "").replace(/^View\s+/, "").replace(/\s+on GitHub$/, "")) : "";
+      var url = (ghRepo && byRepo[ghRepo]) || byRepo[repoKey(name)] || byName[norm(name)] || (ghRepo && byName[norm(ghRepo)]);
+      if (!url) return;
       p.setAttribute("data-rw", "1");
       var b = document.createElement("button");
       b.type = "button";
@@ -84,7 +93,7 @@
       b.setAttribute("aria-label", "Open " + name + " in Railway");
       b.style.cssText = "margin-left:8px;background:black;color:#7aa2ff;border:1px solid " + BLUE + ";padding:1px 5px;cursor:pointer;line-height:1;font-family:monospace;font-size:11px;";
       b.onclick = function () { window.open(url, "_blank", "noopener"); };
-      var after = p.querySelector("button[title*='itch']") || p.querySelector(".gh-btn") || a;
+      var after = p.querySelector("button[title*='itch']") || gh || a;
       after.insertAdjacentElement("afterend", b);
     });
   }
@@ -93,7 +102,7 @@
     addCss();
     addView();
     fetch("/api/railway-v1").then(function (r) { return r.json(); }).then(function (j) {
-      if (j && j.projects) { feed = j; badges(); setTimeout(badges, 2500); setTimeout(badges, 6000); }
+      if (j && j.projects) { feed = j; badges(); var n = 0, t = setInterval(function () { badges(); if (++n > 20) clearInterval(t); }, 1500); }
     }).catch(function () {});
   }
 

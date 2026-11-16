@@ -42,7 +42,7 @@ const Q_DATA = `query D($w: String!, $m: [MetricMeasurement!]!, $s: DateTime!, $
       services { edges { node {
         id name createdAt updatedAt
         serviceInstances { edges { node {
-          environmentId sleepApplication
+          environmentId sleepApplication source { repo image }
           latestDeployment { status createdAt staticUrl }
         } } }
       } } }
@@ -83,6 +83,7 @@ async function workspaceData(token, ws) {
       return {
         id: s.id,
         name: s.name,
+        repo: (main.source && main.source.repo) || (inst.find(x => x.source && x.source.repo) || {source: {}}).source.repo || null,
         url: "https://railway.com/project/" + p.id + "/service/" + s.id + (main.environmentId ? "?environmentId=" + main.environmentId : ""),
         status: dep.status || "NONE",
         lastDeploy: dep.createdAt || null,
