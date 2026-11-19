@@ -26,6 +26,9 @@ button:focus-visible,.back:focus-visible{outline:3px solid #2f6fd6;outline-offse
 .surfaces{position:fixed;left:14px;right:80px;top:calc(env(safe-area-inset-top,0px) + 70px);display:flex;flex-wrap:wrap;gap:6px}
 .surfaces button{background:rgba(255,255,255,.85);color:var(--ink);padding:7px 11px;font-size:14px;border:1px solid var(--line)}
 .surfaces button[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.organize{position:fixed;left:14px;bottom:calc(env(safe-area-inset-bottom,0px) + 14px);display:flex;gap:6px}
+.organize[hidden]{display:none}
+.organize button{background:rgba(255,255,255,.9);color:var(--ink);padding:8px 12px;font-size:14px;border:1px solid var(--line)}
 @media (prefers-reduced-motion:reduce){.sheet{transition:none}}
 </style>
 </head>
@@ -33,6 +36,7 @@ button:focus-visible,.back:focus-visible{outline:3px solid #2f6fd6;outline-offse
 <canvas id="cv"></canvas>
 <div class="title">Sticky notes<span id="count"></span></div>
 <div id="surfaces" class="surfaces" role="group" aria-label="Surface"></div>
+<div id="organize" class="organize" role="group" aria-label="Arrange notes"></div>
 <a class="back" href="/">Back</a>
 <div class="sheet" id="sheet" role="dialog" aria-live="polite">
   <h2 id="bname"></h2>

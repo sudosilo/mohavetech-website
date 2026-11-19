@@ -34,7 +34,7 @@ const notes=[];
   let k=0;
   plan.forEach(([y,n],r)=>{
     const cnt=r===plan.length-1?apps.length-k:Math.min(apps.length-k,Math.round(n*apps.length/total));
-    for(let i=0;i<cnt;i++){const p=apps[k++];notes.push({p,y,u:(i+(r%2?0.5:0))/cnt*6.2832,row:r,size:cell*1.06,tilt:(h32(p.name,9)-0.5)*0.22,curl:0.04+0.1*h32(p.name,11),ph:h32(p.name,12)*6.28});}
+    for(let i=0;i<cnt;i++){const p=apps[k++];notes.push({p,b:y,a:(i+(r%2?0.5:0))/cnt*6.2832,row:r,size:cell*1.06,tilt:(h32(p.name,9)-0.5)*0.22,curl:0.04+0.1*h32(p.name,11),ph:h32(p.name,12)*6.28});}
   });
 })();
 
@@ -86,9 +86,9 @@ function head(){
 }
 
 function mannequinQuad(n,t){
-  const out=0.002*(n.row%2+1);
-  const c=surf(gown,n.u,n.y,out),du=0.01,dy=0.01;
-  const tu=norm(sub(surf(gown,n.u+du,n.y,out),c)),tv=norm(sub(surf(gown,n.u,n.y-dy,out),c));
+  const out=0.002*(n.row%2+1)+0.0004*(n.rank||0);
+  const c=surf(gown,n.a,n.b,out),du=0.01,dy=0.01;
+  const tu=norm(sub(surf(gown,n.a+du,n.b,out),c)),tv=norm(sub(surf(gown,n.a,n.b-dy,out),c));
   return quad(n,c,tu,tv,norm(cross(tv,tu)),n.size,t);
 }
 /* one sticky note: square with a lifted, slightly curled bottom corner */
@@ -108,19 +108,18 @@ function wheel(segs,x,y,z,r){ring3(segs,[x,y,z],[1,0,0],[0,1,0],r,20,1);ring3(se
 function floor(segs,x0,x1,z0,z1,step){for(let x=x0;x<=x1+1e-6;x+=step)segs.push([[x,0,z0],[x,0,z1],0]);for(let z=z0;z<=z1+1e-6;z+=step)segs.push([[x0,0,z],[x1,0,z],0]);}
 
 /* grid of notes on a flat patch, newest first, laid out in a square block */
-function gridNotes(origin,tu,tv,nrm,colsMax){
-  const N=apps.length,cols=Math.min(colsMax||99,Math.ceil(Math.sqrt(N))),pitch=NOTE*1.02,out=[];
-  apps.forEach((p,i)=>{const r=Math.floor(i/cols),cI=i%cols;
-    const c=add(add(add(origin,tu,(cI+0.5)*pitch),tv,(r+0.5)*pitch),nrm,0.004);
-    out.push({p,c,tu,tv,nrm,tilt:(h32(p.name,9)-0.5)*0.16,curl:0.05+0.12*h32(p.name,11),ph:h32(p.name,12)*6.28});});
-  return out;
-}
-function flatScene(o){const notes=o.notes;return Object.assign(o,{quads:t=>notes.map(n=>({n,...quad(n,n.c,n.tu,n.tv,n.nrm,NOTE,t)}))});}
-
+/* notes on a surface: each note has surface coordinates a,b; the surface maps them to 3D */
+function gridSlots(colsMax){const N=apps.length,cols=Math.min(colsMax||99,Math.ceil(Math.sqrt(N))),pitch=NOTE*1.02;return apps.map((p,i)=>[(i%cols+0.5)*pitch,(Math.floor(i/cols)+0.5)*pitch]);}
+function mkNotes(){return apps.map(p=>({p,a:0,b:0,rank:0,tilt:(h32(p.name,9)-0.5)*0.16,curl:0.05+0.12*h32(p.name,11),ph:h32(p.name,12)*6.28}));}
+function plane(origin,tu,tv,nrm){return {
+  map:(a,b,k)=>({c:add(add(add(origin,tu,a),tv,b),nrm,0.004+0.0004*k),tu,tv,nrm}),
+  hit(o,d){const den=d[0]*nrm[0]+d[1]*nrm[1]+d[2]*nrm[2];if(Math.abs(den)<1e-6)return null;const w=sub(origin,o),t=(w[0]*nrm[0]+w[1]*nrm[1]+w[2]*nrm[2])/den;if(t<=0)return null;const q=sub(add(o,d,t),origin);return [q[0]*tu[0]+q[1]*tu[1]+q[2]*tu[2],q[0]*tv[0]+q[1]*tv[1]+q[2]*tv[2]];}};}
+function flatScene(o){const notes=mkNotes();o.notes=notes;o.quads=t=>notes.map(n=>{const m=o.surface.map(n.a,n.b,n.rank);return {n,...quad(n,m.c,m.tu,m.tv,m.nrm,NOTE,t)};});return o;}
 const SCENES={};
 SCENES.mannequin={label:'Mannequin',target:[0,0.95,0],dist:2.4,min:0.4,max:6,
   back(){stand();legs();torsoLines();arms(false);},front(){arms(true);head();},
-  quads:t=>notes.map(n=>({n,...mannequinQuad(n,t)})),
+  quads:t=>notes.map(n=>({n,...mannequinQuad(n,t)})),notes,slots:notes.map(n=>[n.a,n.b]),
+  surface:{hit(o,d,n){const c=surf(gown,n.a,n.b,0),w=sub(c,o),nd=norm(d),t=w[0]*nd[0]+w[1]*nd[1]+w[2]*nd[2];if(t<=0)return null;const q=add(o,nd,t);return [Math.atan2(q[0],q[2]),Math.max(HEM+0.02,Math.min(TOP,q[1]))];}},
   count:()=>notes.length+' sticky notes, newest at the top'};
 
 SCENES.wall=(function(){const segs=[];
@@ -128,8 +127,7 @@ SCENES.wall=(function(){const segs=[];
   for(let x=-2.4;x<2.5;x+=0.4)segs.push([[x,0,0],[x,2.6,0],0]);
   segs.push([[-2.5,0.1,0.02],[2.5,0.1,0.02],1]);floor(segs,-2.5,2.5,0,2.5,0.5);
   const cols=Math.ceil(Math.sqrt(apps.length)),w=cols*NOTE*1.02;
-  const ns=gridNotes([-w/2,1.95,0],[1,0,0],[0,-1,0],[0,0,1]);
-  return flatScene({label:'Wall',segs,notes:ns,target:[0,1.45,0.3],dist:3.2,min:0.3,max:9,yaw:0.35,pitch:0.08,count:()=>'One block of notes on a 5 meter wall'});})();
+  return flatScene({label:'Wall',segs,surface:plane([-w/2,1.95,0],[1,0,0],[0,-1,0],[0,0,1]),slots:gridSlots(),target:[0,1.45,0.3],dist:3.2,min:0.3,max:9,yaw:0.35,pitch:0.08,count:()=>'One block of notes on a 5 meter wall'});})();
 
 SCENES.car=(function(){const segs=[];
   const prof=[[-2.3,0.35],[-2.3,0.8],[-2.0,0.92],[-1.2,0.96],[-0.7,1.4],[0.6,1.42],[1.1,1.0],[2.2,0.86],[2.32,0.55],[2.25,0.35]];
@@ -139,8 +137,7 @@ SCENES.car=(function(){const segs=[];
   for(const z of [-0.9,0.9])for(const x of [-1.45,1.45])wheel(segs,x,0.34,z,0.33);
   floor(segs,-3,3,-2,2,0.5);
   const a=[1.12,1.0],b=[2.2,0.86],tv=norm([b[0]-a[0],b[1]-a[1],0]),nrm=norm(cross([0,0,1],tv));
-  const ns=gridNotes([a[0]+0.03,a[1]+0.005,-0.72],[0,0,1],tv,nrm,18);
-  return flatScene({label:'Car',segs,notes:ns,target:[0.6,0.8,0],dist:6.5,min:0.3,max:16,yaw:0.9,pitch:0.4,count:()=>'Notes across the hood of a sedan'});})();
+  return flatScene({label:'Car',segs,surface:plane([a[0]+0.03,a[1]+0.005,-0.72],[0,0,1],tv,nrm),slots:gridSlots(18),target:[0.6,0.8,0],dist:6.5,min:0.3,max:16,yaw:0.9,pitch:0.4,count:()=>'Notes across the hood of a sedan'});})();
 
 SCENES.trailer=(function(){const segs=[];
   boxEdges(segs,-8,1.15,-1.3,8.2,4.1,1.3,1);
@@ -150,8 +147,7 @@ SCENES.trailer=(function(){const segs=[];
   for(const z of [-0.9,0.9])segs.push([[5.6,0,z],[5.6,1.15,z],1]);
   segs.push([[-8,0.9,-1.3],[-8,0.9,1.3],1]);floor(segs,-10,10,-4,4,1);
   const cols=Math.ceil(Math.sqrt(apps.length)),w=cols*NOTE*1.02;
-  const ns=gridNotes([-w/2,3.1,1.3],[1,0,0],[0,-1,0],[0,0,1]);
-  return flatScene({label:'Semi trailer',segs,notes:ns,target:[0,2.6,1.3],dist:16,min:0.3,max:40,yaw:0.4,pitch:0.12,count:()=>'One patch on a 53 foot trailer'});})();
+  return flatScene({label:'Semi trailer',segs,surface:plane([-w/2,3.1,1.3],[1,0,0],[0,-1,0],[0,0,1]),slots:gridSlots(),target:[0,2.6,1.3],dist:16,min:0.3,max:40,yaw:0.4,pitch:0.12,count:()=>'One patch on a 53 foot trailer'});})();
 
 SCENES.jet=(function(){const segs=[];
   const R=x=>x>27?3.1*Math.sqrt(Math.max(0,1-Math.pow((x-27)/8.2,2))):x<-22?3.1*Math.max(0.12,1-(-22-x)/14):3.1;
@@ -167,12 +163,11 @@ SCENES.jet=(function(){const segs=[];
   path3(segs,[[-26,7.5,0],[-33,19,0],[-36.5,19,0],[-35,7,0]],true,1);
   segs.push([[25,2,0],[25,0.55,0],1]);wheel(segs,25,0.55,0,0.55);
   floor(segs,-40,40,-36,36,4);
-  /* a patch near the forward door: rows wrap around the curve of the fuselage */
-  const N=apps.length,cols=Math.ceil(Math.sqrt(N)),pitch=NOTE*1.02,x0=22,r=3.1+0.004,ns=[];
-  apps.forEach((p,i)=>{const row=Math.floor(i/cols),cI=i%cols,x=x0-(cI+0.5)*pitch,a=0.12-(row+0.5)*pitch/r;
-    const c=[x,5+Math.sin(a)*r,Math.cos(a)*r],nrm=[0,Math.sin(a),Math.cos(a)],tu=[-1,0,0],tv=[0,-Math.cos(a),Math.sin(a)];
-    ns.push({p,c,tu,tv,nrm,tilt:(h32(p.name,9)-0.5)*0.16,curl:0.05+0.12*h32(p.name,11),ph:h32(p.name,12)*6.28});});
-  return flatScene({label:'747',segs,notes:ns,target:[21.4,5,3.1],dist:95,min:0.3,max:180,yaw:0.9,pitch:0.25,count:()=>'Zoom in by the front door to find them'});})();
+  /* a patch near the forward door: a runs back along the fuselage, b wraps down around its curve */
+  const x0=22,r=3.1;
+  const surface={map:(a,b,k)=>{const ang=0.12-b/r,rr=r+0.004+0.0004*k;return {c:[x0-a,5+Math.sin(ang)*rr,Math.cos(ang)*rr],nrm:[0,Math.sin(ang),Math.cos(ang)],tu:[-1,0,0],tv:[0,-Math.cos(ang),Math.sin(ang)]};},
+    hit(o,d){const A=d[1]*d[1]+d[2]*d[2],B=2*((o[1]-5)*d[1]+o[2]*d[2]),C=(o[1]-5)*(o[1]-5)+o[2]*o[2]-r*r,D=B*B-4*A*C;if(D<0||A<1e-9)return null;const t=(-B-Math.sqrt(D))/(2*A);if(t<=0)return null;const q=add(o,d,t);return [x0-q[0],(0.12-Math.atan2(q[1]-5,q[2]))*r];}};
+  return flatScene({label:'747',segs,surface,slots:gridSlots(),target:[21.4,5,3.1],dist:95,min:0.3,max:180,yaw:0.9,pitch:0.25,count:()=>'Zoom in by the front door to find them'});})();
 
 SCENES.wind=(function(){const segs=[];floor(segs,-4,4,-3,3,0.5);
   segs.push([[-3.6,0,-2.4],[-3.6,3.2,-2.4],1]);
@@ -191,15 +186,36 @@ SCENES.wind=(function(){const segs=[];floor(segs,-4,4,-3,3,0.5);
       });}};})();
 
 const ORDER=['mannequin','wall','car','trailer','jet','wind'];
-let scene;
+let scene,sceneKey='mannequin',rankTop=1;
+/* layouts: an order for the slots, plus any notes moved by hand, saved per surface */
+const STORE='sticky-layout-v1';
+let saved={};try{saved=JSON.parse(localStorage.getItem(STORE)||'{}')||{};}catch(e){}
+function save(){try{localStorage.setItem(STORE,JSON.stringify(saved));}catch(e){}}
+const SORTS={age:a=>a.slice(),name:a=>a.slice().sort((x,y)=>x.p.name.localeCompare(y.p.name)),shuffle:a=>{const r=a.slice();for(let i=r.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[r[i],r[j]]=[r[j],r[i]];}return r;}};
+function layout(k){
+  const sc=SCENES[k];if(!sc.slots)return;const st=saved[k]||{order:'age',seq:null,pos:{}};
+  let seq=st.seq?st.seq.map(nm=>sc.notes.find(n=>n.p.name===nm)).filter(Boolean):null;
+  if(!seq||seq.length!==sc.notes.length)seq=SORTS.age(sc.notes);
+  seq.forEach((n,i)=>{const s=sc.slots[i];n.a=s[0];n.b=s[1];n.rank=0;});
+  for(const n of sc.notes){const q=st.pos[n.p.name];if(q){n.a=q[0];n.b=q[1];n.rank=q[2]||0;rankTop=Math.max(rankTop,n.rank+1);}}
+}
+function organize(mode){
+  const sc=SCENES[sceneKey];if(!sc.slots)return;
+  const seq=SORTS[mode](SORTS.age(sc.notes.slice().sort((a,b)=>apps.indexOf(a.p)-apps.indexOf(b.p))));
+  saved[sceneKey]={order:mode,seq:seq.map(n=>n.p.name),pos:{}};save();layout(sceneKey);
+}
+ORDER.forEach(k=>{if(SCENES[k].slots){SCENES[k].notes.sort((a,b)=>apps.indexOf(a.p)-apps.indexOf(b.p));layout(k);}});
 function useScene(k){
-  scene=SCENES[k]||SCENES.mannequin;TG=scene.target;dist=scene.dist;yaw=scene.yaw!=null?scene.yaw:0.5;pitch=scene.pitch!=null?scene.pitch:0.12;auto=true;VZ.close();
+  if(!SCENES[k])k='mannequin';sceneKey=k;scene=SCENES[k];
+  document.getElementById('organize').hidden=!scene.slots;TG=scene.target;dist=scene.dist;yaw=scene.yaw!=null?scene.yaw:0.5;pitch=scene.pitch!=null?scene.pitch:0.12;auto=true;VZ.close();
   document.getElementById('count').textContent=scene.count();
   document.querySelectorAll('#surfaces button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===k?'true':'false'));
   try{history.replaceState(null,'','#'+k);}catch(e){}
 }
 const bar=document.getElementById('surfaces');
 ORDER.forEach(k=>{const b=document.createElement('button');b.textContent=SCENES[k].label;b.dataset.k=k;b.onclick=()=>useScene(k);bar.appendChild(b);});
+const org=document.getElementById('organize');
+[['Newest first','age'],['A to Z','name'],['Shuffle','shuffle']].forEach(([t,m])=>{const b=document.createElement('button');b.textContent=t;b.onclick=()=>organize(m);org.appendChild(b);});
 
 function drawSegs(segs){
   for(const s of segs){const p=proj(s[0]),q=proj(s[1]);if(p[2]<0.03||q[2]<0.03)continue;ctx.strokeStyle=s[2]?LINE:FAINT;ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(p[0],p[1]);ctx.lineTo(q[0],q[1]);ctx.stroke();}
@@ -231,15 +247,27 @@ function frame(now){
 function inside(pt,poly){let c=false;for(let i=0,j=poly.length-1;i<poly.length;j=i++){const a=poly[i],b=poly[j];if((a[1]>pt[1])!==(b[1]>pt[1])&&pt[0]<(b[0]-a[0])*(pt[1]-a[1])/(b[1]-a[1])+a[0])c=!c;}return c;}
 function pick(x,y){for(let i=drawn.length-1;i>=0;i--)if(inside([x,y],drawn[i].pp))return drawn[i].n;return null;}
 const clampD=d=>Math.max(scene.min,Math.min(scene.max,d));
-const ptrs=new Map();let moved=0,pinch0=0,dist0=dist;
-cv.addEventListener('pointerdown',e=>{cv.setPointerCapture(e.pointerId);ptrs.set(e.pointerId,[e.clientX,e.clientY]);moved=0;auto=false;idle=0;if(ptrs.size===2){const [a,b]=[...ptrs.values()];pinch0=Math.hypot(a[0]-b[0],a[1]-b[1]);dist0=dist;}});
+/* screen point to a ray in the world */
+function ray(sx,sy){
+  setCam();const dx=(sx-W/2)/cam.f,dy=-(sy-H*0.52)/cam.f;
+  const toW=v=>{const y=v[1]*cam.cp+v[2]*cam.sp,z1=-v[1]*cam.sp+v[2]*cam.cp;return [v[0]*cam.cy+z1*cam.sy,y,-v[0]*cam.sy+z1*cam.cy];};
+  const o=toW([0,0,dist]);return {o:[o[0]+TG[0],o[1]+TG[1],o[2]+TG[2]],d:norm(toW([dx,dy,-1]))};
+}
+const ptrs=new Map();let moved=0,pinch0=0,dist0=dist,drag=null;
+cv.addEventListener('pointerdown',e=>{cv.setPointerCapture(e.pointerId);ptrs.set(e.pointerId,[e.clientX,e.clientY]);moved=0;auto=false;idle=0;
+  if(ptrs.size===1&&scene.surface){const n=pick(e.clientX,e.clientY);if(n){const r=ray(e.clientX,e.clientY),h=scene.surface.hit(r.o,r.d,n);if(h)drag={n,da:n.a-h[0],db:n.b-h[1]};}}
+  if(ptrs.size===2){drag=null;const [a,b]=[...ptrs.values()];pinch0=Math.hypot(a[0]-b[0],a[1]-b[1]);dist0=dist;}});
 cv.addEventListener('pointermove',e=>{
   if(!ptrs.has(e.pointerId))return;const p=ptrs.get(e.pointerId),dx=e.clientX-p[0],dy=e.clientY-p[1];ptrs.set(e.pointerId,[e.clientX,e.clientY]);idle=0;
-  if(ptrs.size===1){moved+=Math.abs(dx)+Math.abs(dy);yaw-=dx*0.008;pitch=Math.max(-0.6,Math.min(1.3,pitch+dy*0.006));}
+  if(ptrs.size===1&&drag){moved+=Math.abs(dx)+Math.abs(dy);if(moved<6)return;const r=ray(e.clientX,e.clientY),h=scene.surface.hit(r.o,r.d,drag.n);if(h){drag.n.a=h[0]+drag.da;drag.n.b=h[1]+drag.db;drag.n.rank=rankTop;}}
+  else if(ptrs.size===1){moved+=Math.abs(dx)+Math.abs(dy);yaw-=dx*0.008;pitch=Math.max(-0.6,Math.min(1.3,pitch+dy*0.006));}
   else if(ptrs.size===2){moved=99;const [a,b]=[...ptrs.values()],d=Math.hypot(a[0]-b[0],a[1]-b[1]);if(pinch0)dist=clampD(dist0*pinch0/d);}
 });
-function up(e){if(ptrs.size===1&&moved<8){const n=pick(e.clientX,e.clientY);if(n){const p=n.p;VZ.open({ref:n,title:p.name,kind:p.itch?'Sticky note, also on itch.io':'Sticky note',age:VZ.ageText(p),host:p.host});}else VZ.close();}ptrs.delete(e.pointerId);if(ptrs.size<2)pinch0=0;}
-cv.addEventListener('pointerup',up);cv.addEventListener('pointercancel',e=>{ptrs.delete(e.pointerId);pinch0=0;});
+function up(e){
+  if(drag&&moved>=6){const n=drag.n;rankTop++;const st=saved[sceneKey]||(saved[sceneKey]={order:'age',seq:null,pos:{}});st.pos[n.p.name]=[+n.a.toFixed(4),+n.b.toFixed(4),n.rank];save();}
+  else if(ptrs.size===1&&moved<8){const n=pick(e.clientX,e.clientY);if(n){const p=n.p;VZ.open({ref:n,title:p.name,kind:p.itch?'Sticky note, also on itch.io':'Sticky note',age:VZ.ageText(p),host:p.host});}else VZ.close();}
+  drag=null;ptrs.delete(e.pointerId);if(ptrs.size<2)pinch0=0;}
+cv.addEventListener('pointerup',up);cv.addEventListener('pointercancel',e=>{drag=null;ptrs.delete(e.pointerId);pinch0=0;});
 cv.addEventListener('wheel',e=>{e.preventDefault();auto=false;idle=0;dist=clampD(dist*Math.exp(e.deltaY*0.0012));},{passive:false});
 function resize(){DPR=Math.min(devicePixelRatio||1,2);W=innerWidth;H=innerHeight;cv.width=W*DPR;cv.height=H*DPR;}
 addEventListener('resize',resize);resize();useScene((location.hash||'').slice(1));requestAnimationFrame(frame);
