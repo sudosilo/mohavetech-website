@@ -1,0 +1,33 @@
+name: vercel-sync
+# Keeps the app list on mohave.wtf matching Vercel: adds new apps, drops deleted ones, updates dates.
+# Runs every 3 hours and on demand. The push it makes is deployed by Vercel like any other push.
+on:
+  schedule:
+    - cron: "23 */3 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Read Vercel and update the list
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_SLUG: sudosilo2-1771s-projects
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then echo "VERCEL_TOKEN secret is missing"; exit 1; fi
+          node mohavetech-sync-v1.js
+      - name: Save
+        run: |
+          git config user.name "mohave-sync-bot"
+          git config user.email "mohave-sync-bot@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m "sync app list with vercel"
+          git pull --rebase origin master
+          git push
