@@ -1,7 +1,7 @@
 [
  {
   "name": "2026-10-18-orange-testbed",
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "aliases": [
    "2026-10-18-orange-testbed-sudosilo2-1771s-projects.vercel.app",
    "2026-10-18-orange-testbed-git-main-sudosilo2-1771s-projects.vercel.app"
@@ -114,6 +114,11 @@
    "2026-11-16-pipe-weave-sudosilo2-1771s-projects.vercel.app",
    "2026-11-16-pipe-weave-git-main-sudosilo2-1771s-projects.vercel.app"
   ]
+ },
+ {
+  "name": "2026-11-19-blue-just-five-more",
+  "date": "2026-11-19",
+  "aliases": []
  },
  {
   "name": "67-idea-generator",
@@ -244,6 +249,15 @@
   ]
  },
  {
+  "name": "beewars",
+  "date": "2026-11-18",
+  "aliases": [
+   "beewars.vercel.app",
+   "beewars-sudosilo2-1771s-projects.vercel.app",
+   "beewars-git-main-sudosilo2-1771s-projects.vercel.app"
+  ]
+ },
+ {
   "name": "birdix",
   "date": "2026-10-31",
   "aliases": [
@@ -355,11 +369,20 @@
   ]
  },
  {
+  "name": "cipher-wars-v3",
+  "date": "2026-11-18",
+  "aliases": [
+   "cipher-wars-v3.vercel.app",
+   "cipher-wars-v3-sudosilo2-1771s-projects.vercel.app"
+  ]
+ },
+ {
   "name": "circuit-musicfx",
-  "date": "2026-09-11",
+  "date": "2026-11-18",
   "aliases": [
    "circuit-musicfx.vercel.app",
-   "circuit-musicfx-sudosilo2-1771s-projects.vercel.app"
+   "circuit-musicfx-sudosilo2-1771s-projects.vercel.app",
+   "circuit-musicfx-git-master-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
@@ -399,7 +422,7 @@
  },
  {
   "name": "control-troll",
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "aliases": [
    "control-troll-sudosilo2-1771s-projects.vercel.app",
    "control-troll-git-main-sudosilo2-1771s-projects.vercel.app"
@@ -688,7 +711,7 @@
  },
  {
   "name": "hackercons-roulette",
-  "date": "2026-10-20",
+  "date": "2026-11-18",
   "aliases": [
    "hackercons-roulette.vercel.app",
    "hackercons-roulette-sudosilo2-1771s-projects.vercel.app",
@@ -890,7 +913,7 @@
  },
  {
   "name": "mohavetech-website",
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "aliases": [
    "mohave.wtf",
    "mohavetech.wtf",
@@ -1319,15 +1342,6 @@
   ]
  },
  {
-  "name": "swh-sumbler",
-  "date": "2026-07-14",
-  "aliases": [
-   "swh-sumbler.vercel.app",
-   "swh-sumbler-sudosilo2-1771s-projects.vercel.app",
-   "swh-sumbler-sudosilo2-1771-sudosilo2-1771s-projects.vercel.app"
-  ]
- },
- {
   "name": "tanksandzombies",
   "date": "2026-10-13",
   "aliases": [
@@ -1391,10 +1405,20 @@
  },
  {
   "name": "tile-spinner",
-  "date": "2026-09-11",
+  "date": "2026-11-18",
   "aliases": [
    "tile-spinner.vercel.app",
-   "tile-spinner-sudosilo2-1771s-projects.vercel.app"
+   "tile-spinner-sudosilo2-1771s-projects.vercel.app",
+   "tile-spinner-git-master-sudosilo2-1771s-projects.vercel.app"
+  ]
+ },
+ {
+  "name": "tile-topia",
+  "date": "2026-11-19",
+  "aliases": [
+   "tile-topia.vercel.app",
+   "tile-topia-sudosilo2-1771s-projects.vercel.app",
+   "tile-topia-git-main-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
