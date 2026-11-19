@@ -11,6 +11,6 @@ if (!login) { console.log('No Vercel login found on this phone. Run: vercel logi
   const j = await r.json();
   if (!j.bearerToken) { console.log('Vercel said: ' + JSON.stringify(j.error || j) + '\nRun: vercel login, then this again.'); process.exit(1); }
   execSync('gh secret set VERCEL_TOKEN -R sudosilo/mohavetech-website', { input: j.bearerToken });
-  execSync('gh workflow run vercel-sync -R sudosilo/mohavetech-website', { stdio: 'ignore' });
+  try { execSync('gh workflow run vercel-sync -R sudosilo/mohavetech-website', { stdio: 'ignore' }); } catch (e) {}
   console.log('Done. GitHub now keeps the mohave.wtf app list in sync every 3 hours.');
 })();
