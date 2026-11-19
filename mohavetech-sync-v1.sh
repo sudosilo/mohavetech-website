@@ -6,7 +6,9 @@ cd ~/mohavetech-website
 gh auth setup-git
 git fetch origin
 git reset --hard origin/master
-node mohavetech-sync-v1.js
+# any vercel command refreshes the saved login token before the sync reads it
+vercel whoami >/dev/null 2>&1 || true
+node mohavetech-sync-v1.js || echo "App list sync skipped, deploying the site anyway"
 git add -A
 git commit -m "sync dates with vercel" || true
 if ! git push origin HEAD:master; then
