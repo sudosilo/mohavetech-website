@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light">
-<title>Mannequin</title>
+<title>Sticky Notes</title>
 <style>
 :root{--land:#f3f1ee;--ink:#123a4a;--card:#ffffff;--muted:#4f6f7c;--line:#d5e7ec;color-scheme:light}
 *{box-sizing:border-box}
@@ -23,12 +23,16 @@ button{font:inherit;font-weight:600;border:0;border-radius:10px;padding:10px 16p
 .go[hidden]{display:none}
 .close{background:var(--line);color:var(--ink)}
 button:focus-visible,.back:focus-visible{outline:3px solid #2f6fd6;outline-offset:2px}
+.surfaces{position:fixed;left:14px;right:80px;top:calc(env(safe-area-inset-top,0px) + 70px);display:flex;flex-wrap:wrap;gap:6px}
+.surfaces button{background:rgba(255,255,255,.85);color:var(--ink);padding:7px 11px;font-size:14px;border:1px solid var(--line)}
+.surfaces button[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
 @media (prefers-reduced-motion:reduce){.sheet{transition:none}}
 </style>
 </head>
 <body>
 <canvas id="cv"></canvas>
-<div class="title">Mannequin<span id="count"></span></div>
+<div class="title">Sticky notes<span id="count"></span></div>
+<div id="surfaces" class="surfaces" role="group" aria-label="Surface"></div>
 <a class="back" href="/">Back</a>
 <div class="sheet" id="sheet" role="dialog" aria-live="polite">
   <h2 id="bname"></h2>
