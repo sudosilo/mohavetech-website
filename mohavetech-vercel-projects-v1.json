@@ -36,7 +36,7 @@
  },
  {
   "name": "2026-10-30-orange-scores",
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "aliases": [
    "2026-10-30-orange-scores.vercel.app",
    "2026-10-30-orange-scores-sudosilo2-1771s-projects.vercel.app",
@@ -108,7 +108,7 @@
  },
  {
   "name": "2026-11-16-pipe-weave",
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "aliases": [
    "2026-11-16-pipe-weave.vercel.app",
    "2026-11-16-pipe-weave-sudosilo2-1771s-projects.vercel.app",
@@ -118,7 +118,11 @@
  {
   "name": "2026-11-19-blue-just-five-more",
   "date": "2026-11-19",
-  "aliases": []
+  "aliases": [
+   "2026-11-19-blue-just-five-more.vercel.app",
+   "2026-11-19-blue-just-five-more-sudosilo2-1771s-projects.vercel.app",
+   "2026-11-19-blue-just-five-m-git-c33084-sudosilo2-1771s-projects.vercel.app"
+  ]
  },
  {
   "name": "67-idea-generator",
@@ -250,7 +254,7 @@
  },
  {
   "name": "beewars",
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "aliases": [
    "beewars.vercel.app",
    "beewars-sudosilo2-1771s-projects.vercel.app",
@@ -370,15 +374,16 @@
  },
  {
   "name": "cipher-wars-v3",
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "aliases": [
    "cipher-wars-v3.vercel.app",
-   "cipher-wars-v3-sudosilo2-1771s-projects.vercel.app"
+   "cipher-wars-v3-sudosilo2-1771s-projects.vercel.app",
+   "cipher-wars-v3-git-master-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
   "name": "circuit-musicfx",
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "aliases": [
    "circuit-musicfx.vercel.app",
    "circuit-musicfx-sudosilo2-1771s-projects.vercel.app",
@@ -474,7 +479,7 @@
  },
  {
   "name": "defcon-trail",
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "aliases": [
    "defcon-trail.vercel.app",
    "defcon-trail-sudosilo2-1771s-projects.vercel.app",
@@ -711,7 +716,7 @@
  },
  {
   "name": "hackercons-roulette",
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "aliases": [
    "hackercons-roulette.vercel.app",
    "hackercons-roulette-sudosilo2-1771s-projects.vercel.app",
@@ -720,7 +725,7 @@
  },
  {
   "name": "heckle-troll",
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "aliases": [
    "heckle-troll.vercel.app",
    "heckle-troll-sudosilo2-1771s-projects.vercel.app",
@@ -1405,7 +1410,7 @@
  },
  {
   "name": "tile-spinner",
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "aliases": [
    "tile-spinner.vercel.app",
    "tile-spinner-sudosilo2-1771s-projects.vercel.app",
