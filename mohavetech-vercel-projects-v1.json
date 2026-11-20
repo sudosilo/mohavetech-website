@@ -432,7 +432,7 @@
  },
  {
   "name": "control-troll",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "aliases": [
    "control-troll-sudosilo2-1771s-projects.vercel.app",
    "control-troll-git-main-sudosilo2-1771s-projects.vercel.app"
@@ -753,6 +753,11 @@
    "hire-portal-sudosilo2-1771s-projects.vercel.app",
    "hire-portal-git-main-sudosilo2-1771s-projects.vercel.app"
   ]
+ },
+ {
+  "name": "home",
+  "date": "2026-11-19",
+  "aliases": []
  },
  {
   "name": "hoofer-sync",
