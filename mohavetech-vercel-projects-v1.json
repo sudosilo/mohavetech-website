@@ -1335,7 +1335,7 @@
  },
  {
   "name": "stackloom-meta",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "aliases": [
    "stackloom-meta.vercel.app",
    "stackloom-meta-sudosilo2-1771s-projects.vercel.app",
@@ -1420,6 +1420,11 @@
    "threat-atlas-two.vercel.app",
    "threat-atlas-sudosilo2-1771s-projects.vercel.app"
   ]
+ },
+ {
+  "name": "threat-atlas-v3",
+  "date": "2026-11-20",
+  "aliases": []
  },
  {
   "name": "tickle-boxie",
