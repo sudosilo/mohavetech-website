@@ -71,7 +71,7 @@ const baseDates = {
   "fashionocalypse": "2026-11-16",
   "fatty-fart-pedal": "2026-10-26",
   "field-study": "2026-10-08",
-  "field-twin": "2026-11-16",
+  "field-twin": "2026-11-21",
   "field-twin-glaucous": "2026-11-11",
   "field-twin-violet": "2026-11-11",
   "field-twin-viridian": "2026-10-25",
