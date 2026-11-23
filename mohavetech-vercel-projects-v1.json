@@ -1100,10 +1100,11 @@
  },
  {
   "name": "pipeline-builder",
-  "date": "2026-09-11",
+  "date": "2026-11-22",
   "aliases": [
    "pipeline-builder-azure-kappa.vercel.app",
-   "pipeline-builder-sudosilo2-1771s-projects.vercel.app"
+   "pipeline-builder-sudosilo2-1771s-projects.vercel.app",
+   "pipeline-builder-git-master-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
@@ -1194,7 +1195,7 @@
  },
  {
   "name": "repofind",
-  "date": "2026-11-04",
+  "date": "2026-11-22",
   "aliases": [
    "repofind-delta.vercel.app",
    "repofind-sudosilo2-1771s-projects.vercel.app"
