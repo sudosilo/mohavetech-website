@@ -46,7 +46,6 @@ const baseDates = {
   "chassisquiver": "2026-11-11",
   "checkin-kiosk": "2026-10-22",
   "chromahum-zq": "2026-11-23",
-  "chromatogram": "2026-08-16",
   "cipher-wars-v3": "2026-11-19",
   "circuit-musicfx": "2026-11-19",
   "city-seek": "2026-11-17",
