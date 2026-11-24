@@ -1,7 +1,7 @@
 [
  {
   "name": "2026-10-18-orange-testbed",
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "aliases": [
    "2026-10-18-orange-testbed-sudosilo2-1771s-projects.vercel.app",
    "2026-10-18-orange-testbed-git-main-sudosilo2-1771s-projects.vercel.app"
@@ -108,7 +108,7 @@
  },
  {
   "name": "2026-11-16-pipe-weave",
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "aliases": [
    "2026-11-16-pipe-weave.vercel.app",
    "2026-11-16-pipe-weave-sudosilo2-1771s-projects.vercel.app",
@@ -144,11 +144,20 @@
  },
  {
   "name": "2026-11-22-orange-hubview",
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "aliases": [
    "2026-11-22-orange-hubview.vercel.app",
    "2026-11-22-orange-hubview-sudosilo2-1771s-projects.vercel.app",
    "2026-11-22-orange-hubview-git-main-sudosilo2-1771s-projects.vercel.app"
+  ]
+ },
+ {
+  "name": "2026-11-23-orange-explode",
+  "date": "2026-11-23",
+  "aliases": [
+   "2026-11-23-orange-explode.vercel.app",
+   "2026-11-23-orange-explode-sudosilo2-1771s-projects.vercel.app",
+   "2026-11-23-orange-explode-git-main-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
@@ -246,7 +255,7 @@
  },
  {
   "name": "artifactium",
-  "date": "2026-11-14",
+  "date": "2026-11-23",
   "aliases": [
    "artifactium.vercel.app",
    "artifactium-sudosilo2-1771s-projects.vercel.app",
@@ -349,7 +358,7 @@
  },
  {
   "name": "campus-ebutuoy",
-  "date": "2026-11-18",
+  "date": "2026-11-23",
   "aliases": [
    "campus-ebutuoy.vercel.app",
    "campus-ebutuoy-sudosilo2-1771s-projects.vercel.app",
@@ -384,7 +393,7 @@
  },
  {
   "name": "chromahum-zq",
-  "date": "2026-10-26",
+  "date": "2026-11-23",
   "aliases": [
    "chromahum-zq.vercel.app",
    "chromahum-zq-sudosilo2-1771s-projects.vercel.app",
@@ -462,7 +471,7 @@
  },
  {
   "name": "conveyor-sim",
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "aliases": [
    "conveyor-sim.vercel.app",
    "conveyor-sim-sudosilo2-1771s-projects.vercel.app",
@@ -551,7 +560,7 @@
  },
  {
   "name": "downfree-foundry",
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "aliases": [
    "downfree-foundry.vercel.app",
    "downfree-foundry-sudosilo2-1771s-projects.vercel.app",
@@ -645,7 +654,7 @@
  },
  {
   "name": "field-twin",
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "aliases": [
    "field-twin-teal.vercel.app",
    "field-twin-sudosilo2-1771s-projects.vercel.app",
@@ -672,7 +681,7 @@
  },
  {
   "name": "field-twin-viridian",
-  "date": "2026-10-25",
+  "date": "2026-11-23",
   "aliases": [
    "field-twin-viridian.vercel.app",
    "field-twin-viridian-sudosilo2-1771s-projects.vercel.app",
@@ -769,7 +778,7 @@
  },
  {
   "name": "hire-portal",
-  "date": "2026-11-16",
+  "date": "2026-11-23",
   "aliases": [
    "hire-portal-six.vercel.app",
    "hire-portal-sudosilo2-1771s-projects.vercel.app",
@@ -810,7 +819,7 @@
  },
  {
   "name": "itchy-troll",
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "aliases": [
    "itchy-troll.vercel.app",
    "itchy-troll-sudosilo2-1771s-projects.vercel.app",
@@ -950,7 +959,7 @@
  },
  {
   "name": "mohavetech-website",
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "aliases": [
    "mohave.wtf",
    "mohavetech.wtf",
@@ -1091,7 +1100,7 @@
  },
  {
   "name": "pdf-yourself",
-  "date": "2026-10-30",
+  "date": "2026-11-23",
   "aliases": [
    "pdf-yourself.vercel.app",
    "pdf-yourself-sudosilo2-1771s-projects.vercel.app",
@@ -1100,7 +1109,7 @@
  },
  {
   "name": "pipeline-builder",
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "aliases": [
    "pipeline-builder-azure-kappa.vercel.app",
    "pipeline-builder-sudosilo2-1771s-projects.vercel.app",
@@ -1354,6 +1363,15 @@
   ]
  },
  {
+  "name": "starwake-game",
+  "date": "2026-11-23",
+  "aliases": [
+   "starwake-game-fawn.vercel.app",
+   "starwake-game-sudosilo2-1771s-projects.vercel.app",
+   "starwake-game-git-main-sudosilo2-1771s-projects.vercel.app"
+  ]
+ },
+ {
   "name": "stompbox-lab",
   "date": "2026-11-10",
   "aliases": [
@@ -1434,8 +1452,12 @@
  },
  {
   "name": "threat-atlas-v3",
-  "date": "2026-11-20",
-  "aliases": []
+  "date": "2026-11-23",
+  "aliases": [
+   "threat-atlas-v3.vercel.app",
+   "threat-atlas-v3-sudosilo2-1771s-projects.vercel.app",
+   "threat-atlas-v3-git-master-sudosilo2-1771s-projects.vercel.app"
+  ]
  },
  {
   "name": "tickle-boxie",
