@@ -1,8 +1,9 @@
 [
  {
   "name": "2026-10-18-orange-testbed",
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "aliases": [
+   "2026-10-18-orange-testbed.vercel.app",
    "2026-10-18-orange-testbed-sudosilo2-1771s-projects.vercel.app",
    "2026-10-18-orange-testbed-git-main-sudosilo2-1771s-projects.vercel.app"
   ]
@@ -153,7 +154,7 @@
  },
  {
   "name": "2026-11-23-orange-explode",
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "aliases": [
    "2026-11-23-orange-explode.vercel.app",
    "2026-11-23-orange-explode-sudosilo2-1771s-projects.vercel.app",
@@ -480,7 +481,7 @@
  },
  {
   "name": "conveyor-sim",
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "aliases": [
    "conveyor-sim.vercel.app",
    "conveyor-sim-sudosilo2-1771s-projects.vercel.app",
@@ -506,7 +507,7 @@
  },
  {
   "name": "datacenter-osint",
-  "date": "2026-10-22",
+  "date": "2026-11-24",
   "aliases": [
    "datacenter-osint.vercel.app",
    "datacenter-osint-sudosilo2-1771s-projects.vercel.app",
@@ -689,7 +690,7 @@
  },
  {
   "name": "field-twin-viridian",
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "aliases": [
    "field-twin-viridian.vercel.app",
    "field-twin-viridian-sudosilo2-1771s-projects.vercel.app",
@@ -769,7 +770,7 @@
  },
  {
   "name": "heckle-troll",
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "aliases": [
    "heckle-troll.vercel.app",
    "heckle-troll-sudosilo2-1771s-projects.vercel.app",
@@ -786,7 +787,7 @@
  },
  {
   "name": "hire-portal",
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "aliases": [
    "hire-portal-six.vercel.app",
    "hire-portal-sudosilo2-1771s-projects.vercel.app",
@@ -827,7 +828,7 @@
  },
  {
   "name": "itchy-troll",
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "aliases": [
    "itchy-troll.vercel.app",
    "itchy-troll-sudosilo2-1771s-projects.vercel.app",
@@ -896,11 +897,10 @@
  },
  {
   "name": "mary-jane-man",
-  "date": "2026-10-21",
+  "date": "2026-10-08",
   "aliases": [
    "mary-jane-man.vercel.app",
-   "mary-jane-man-sudosilo2-1771s-projects.vercel.app",
-   "mary-jane-man-git-master-sudosilo2-1771s-projects.vercel.app"
+   "mary-jane-man-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
@@ -967,7 +967,7 @@
  },
  {
   "name": "mohavetech-website",
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "aliases": [
    "mohave.wtf",
    "mohavetech.wtf",
@@ -1056,7 +1056,7 @@
  },
  {
   "name": "pajamastan-warrants",
-  "date": "2026-10-20",
+  "date": "2026-11-24",
   "aliases": [
    "pajamastan-warrants.vercel.app",
    "pajamastan-warrants-sudosilo2-1771s-projects.vercel.app",
@@ -1108,7 +1108,7 @@
  },
  {
   "name": "pdf-yourself",
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "aliases": [
    "pdf-yourself.vercel.app",
    "pdf-yourself-sudosilo2-1771s-projects.vercel.app",
@@ -1270,11 +1270,10 @@
  },
  {
   "name": "secureops",
-  "date": "2026-10-21",
+  "date": "2026-11-24",
   "aliases": [
    "secureops-pi.vercel.app",
-   "secureops-sudosilo2-1771s-projects.vercel.app",
-   "secureops-git-master-sudosilo2-1771s-projects.vercel.app"
+   "secureops-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
@@ -1321,9 +1320,8 @@
  },
  {
   "name": "snapshot-engine",
-  "date": "2026-09-28",
+  "date": "2026-11-24",
   "aliases": [
-   "snapshot-engine-pied.vercel.app",
    "snapshot-engine-sudosilo2-1771s-projects.vercel.app"
   ]
  },
@@ -1338,7 +1336,7 @@
  },
  {
   "name": "spectral-engine",
-  "date": "2026-10-25",
+  "date": "2026-11-24",
   "aliases": [
    "spectral-engine.vercel.app",
    "spectral-engine-sudosilo2-1771s-projects.vercel.app",
@@ -1372,7 +1370,7 @@
  },
  {
   "name": "starwake-game",
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "aliases": [
    "starwake-game-fawn.vercel.app",
    "starwake-game-sudosilo2-1771s-projects.vercel.app",
@@ -1539,7 +1537,7 @@
  },
  {
   "name": "topo-wars-server",
-  "date": "2026-10-26",
+  "date": "2026-11-24",
   "aliases": [
    "topo-wars-server.vercel.app",
    "topo-wars-server-sudosilo2-1771s-projects.vercel.app",
@@ -1574,7 +1572,7 @@
  },
  {
   "name": "virality-snapshot",
-  "date": "2026-09-28",
+  "date": "2026-11-24",
   "aliases": [
    "virality-snapshot.vercel.app",
    "virality-snapshot-sudosilo2-1771s-projects.vercel.app"
