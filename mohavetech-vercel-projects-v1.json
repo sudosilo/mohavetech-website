@@ -9,7 +9,7 @@
  },
  {
   "name": "2026-10-20-orange-dialbeat",
-  "date": "2026-10-22",
+  "date": "2026-11-25",
   "aliases": [
    "2026-10-20-orange-dialbeat.vercel.app",
    "2026-10-20-orange-dialbeat-sudosilo2-1771s-projects.vercel.app",
@@ -169,6 +169,15 @@
   ]
  },
  {
+  "name": "2026-11-25-blue-manualrebuild",
+  "date": "2026-11-25",
+  "aliases": [
+   "2026-11-25-blue-manualrebuild.vercel.app",
+   "2026-11-25-blue-manualrebuild-sudosilo2-1771s-projects.vercel.app",
+   "2026-11-25-blue-manualrebuild-git-main-sudosilo2-1771s-projects.vercel.app"
+  ]
+ },
+ {
   "name": "67-idea-generator",
   "date": "2026-11-04",
   "aliases": [
@@ -281,7 +290,7 @@
  },
  {
   "name": "axiom",
-  "date": "2026-10-25",
+  "date": "2026-11-25",
   "aliases": [
    "axiom-eight-xi.vercel.app",
    "axiom-sudosilo2-1771s-projects.vercel.app",
@@ -383,7 +392,7 @@
  },
  {
   "name": "chassisquiver",
-  "date": "2026-11-11",
+  "date": "2026-11-25",
   "aliases": [
    "chassisquiver.vercel.app",
    "chassisquiver-sudosilo2-1771s-projects.vercel.app",
@@ -392,7 +401,7 @@
  },
  {
   "name": "checkin-kiosk",
-  "date": "2026-10-22",
+  "date": "2026-11-25",
   "aliases": [
    "checkin-kiosk-bice.vercel.app",
    "checkin-kiosk-sudosilo2-1771s-projects.vercel.app",
@@ -401,7 +410,7 @@
  },
  {
   "name": "chromahum-zq",
-  "date": "2026-11-23",
+  "date": "2026-11-25",
   "aliases": [
    "chromahum-zq.vercel.app",
    "chromahum-zq-sudosilo2-1771s-projects.vercel.app",
@@ -559,7 +568,7 @@
  },
  {
   "name": "doctrine-duel-qx",
-  "date": "2026-11-21",
+  "date": "2026-11-25",
   "aliases": [
    "doctrine-duel-qx.vercel.app",
    "doctrine-duel-qx-sudosilo2-1771s-projects.vercel.app",
@@ -644,7 +653,7 @@
  },
  {
   "name": "fatty-fart-pedal",
-  "date": "2026-10-26",
+  "date": "2026-11-25",
   "aliases": [
    "fatty-fart-pedal.vercel.app",
    "fatty-fart-pedal-sudosilo2-1771s-projects.vercel.app",
@@ -661,7 +670,7 @@
  },
  {
   "name": "field-twin",
-  "date": "2026-11-23",
+  "date": "2026-11-25",
   "aliases": [
    "field-twin-teal.vercel.app",
    "field-twin-sudosilo2-1771s-projects.vercel.app",
@@ -670,7 +679,7 @@
  },
  {
   "name": "field-twin-glaucous",
-  "date": "2026-11-11",
+  "date": "2026-11-25",
   "aliases": [
    "field-twin-glaucous.vercel.app",
    "field-twin-glaucous-sudosilo2-1771s-projects.vercel.app",
@@ -679,7 +688,7 @@
  },
  {
   "name": "field-twin-violet",
-  "date": "2026-11-11",
+  "date": "2026-11-25",
   "aliases": [
    "field-twin-violet.vercel.app",
    "field-twin-violet-sudosilo2-1771s-projects.vercel.app",
@@ -688,7 +697,7 @@
  },
  {
   "name": "field-twin-viridian",
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "aliases": [
    "field-twin-viridian.vercel.app",
    "field-twin-viridian-sudosilo2-1771s-projects.vercel.app",
@@ -697,7 +706,7 @@
  },
  {
   "name": "final-victor",
-  "date": "2026-10-25",
+  "date": "2026-11-25",
   "aliases": [
    "final-victor.vercel.app",
    "final-victor-git-master-sudosilo2-1771s-projects.vercel.app"
