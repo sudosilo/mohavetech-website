@@ -180,7 +180,20 @@
  {
   "name": "2026-11-25-green-hopper",
   "date": "2026-11-25",
-  "aliases": []
+  "aliases": [
+   "2026-11-25-green-hopper.vercel.app",
+   "2026-11-25-green-hopper-sudosilo2-1771s-projects.vercel.app",
+   "2026-11-25-green-hopper-git-main-sudosilo2-1771s-projects.vercel.app"
+  ]
+ },
+ {
+  "name": "2026-11-25-purple-lobhill",
+  "date": "2026-11-26",
+  "aliases": [
+   "2026-11-25-purple-lobhill.vercel.app",
+   "2026-11-25-purple-lobhill-sudosilo2-1771s-projects.vercel.app",
+   "2026-11-25-purple-lobhill-git-main-sudosilo2-1771s-projects.vercel.app"
+  ]
  },
  {
   "name": "2026-11-25-ten-turn-machine",
@@ -493,7 +506,7 @@
  },
  {
   "name": "control-troll",
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "aliases": [
    "control-troll-sudosilo2-1771s-projects.vercel.app",
    "control-troll-git-main-sudosilo2-1771s-projects.vercel.app"
@@ -798,7 +811,7 @@
  },
  {
   "name": "heckle-troll",
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "aliases": [
    "heckle-troll.vercel.app",
    "heckle-troll-sudosilo2-1771s-projects.vercel.app",
@@ -1596,6 +1609,15 @@
    "tractor-tool.vercel.app",
    "tractor-tool-sudosilo2-1771s-projects.vercel.app",
    "tractor-tool-git-main-sudosilo2-1771s-projects.vercel.app"
+  ]
+ },
+ {
+  "name": "turret-sight",
+  "date": "2026-11-25",
+  "aliases": [
+   "turret-sight.vercel.app",
+   "turret-sight-sudosilo2-1771s-projects.vercel.app",
+   "turret-sight-git-main-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
