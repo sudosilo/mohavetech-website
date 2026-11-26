@@ -178,6 +178,20 @@
   ]
  },
  {
+  "name": "2026-11-25-green-hopper",
+  "date": "2026-11-25",
+  "aliases": []
+ },
+ {
+  "name": "2026-11-25-ten-turn-machine",
+  "date": "2026-11-25",
+  "aliases": [
+   "2026-11-25-ten-turn-machine.vercel.app",
+   "2026-11-25-ten-turn-machine-sudosilo2-1771s-projects.vercel.app",
+   "2026-11-25-ten-turn-machine-git-main-sudosilo2-1771s-projects.vercel.app"
+  ]
+ },
+ {
   "name": "67-idea-generator",
   "date": "2026-11-04",
   "aliases": [
@@ -284,8 +298,7 @@
   "date": "2026-11-25",
   "aliases": [
    "ascend-pearl-ten.vercel.app",
-   "ascend-sudosilo2-1771s-projects.vercel.app",
-   "ascend-git-master-sudosilo2-1771s-projects.vercel.app"
+   "ascend-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
@@ -746,6 +759,14 @@
    "gladhand-dockyard.vercel.app",
    "gladhand-dockyard-sudosilo2-1771s-projects.vercel.app",
    "gladhand-dockyard-git-main-sudosilo2-1771s-projects.vercel.app"
+  ]
+ },
+ {
+  "name": "gr33n-5t4rf1ght3r",
+  "date": "2026-11-25",
+  "aliases": [
+   "gr33n-5t4rf1ght3r.vercel.app",
+   "gr33n-5t4rf1ght3r-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
@@ -1285,7 +1306,7 @@
  },
  {
   "name": "shared-server",
-  "date": "2026-11-17",
+  "date": "2026-11-25",
   "aliases": [
    "shared-server-azure.vercel.app",
    "shared-server-sudosilo2-1771s-projects.vercel.app",
