@@ -2,306 +2,6 @@
  "note": "Apps whose GitHub pushes never reached Vercel. The redeploy job links each to its repo and deploys it, a batch per day.",
  "pending": [
   {
-   "project": "2026-10-22-orange-agent",
-   "repo": "sudosilo/2026-10-22-orange-agent",
-   "branch": "main"
-  },
-  {
-   "project": "2026-10-23-orange-smash",
-   "repo": "sudosilo/2026-10-23-orange-smash",
-   "branch": "main"
-  },
-  {
-   "project": "2026-11-01-orange-decimalday",
-   "repo": "sudosilo/2026-11-01-orange-decimalday",
-   "branch": "main"
-  },
-  {
-   "project": "2026-11-04-field-dispatch",
-   "repo": "sudosilo/2026-11-04-field-dispatch",
-   "branch": "main"
-  },
-  {
-   "project": "2026-11-05-drive-thru-dental",
-   "repo": "sudosilo/2026-11-05-drive-thru-dental",
-   "branch": "main"
-  },
-  {
-   "project": "2026-11-09-orange-icefiles",
-   "repo": "sudosilo/2026-11-09-orange-icefiles",
-   "branch": "main"
-  },
-  {
-   "project": "2026-11-11-orange-codelens",
-   "repo": "sudosilo/2026-11-11-orange-codelens",
-   "branch": "main"
-  },
-  {
-   "project": "2026-11-15-orange-keydecode",
-   "repo": "sudosilo/2026-11-15-orange-keydecode",
-   "branch": "main"
-  },
-  {
-   "project": "2026-11-16-pipe-weave",
-   "repo": "sudosilo/2026-11-16-pipe-weave",
-   "branch": "main"
-  },
-  {
-   "project": "2026-11-19-blue-just-five-more",
-   "repo": "sudosilo/2026-11-19-blue-just-five-more",
-   "branch": "main"
-  },
-  {
-   "project": "2026-11-19-orange-drivethru",
-   "repo": "sudosilo/2026-11-19-orange-drivethru",
-   "branch": "main"
-  },
-  {
-   "project": "2026-11-19-orange-packets",
-   "repo": "sudosilo/2026-11-19-orange-packets",
-   "branch": "main"
-  },
-  {
-   "project": "2026-11-23-orange-explode",
-   "repo": "sudosilo/2026-11-23-orange-explode",
-   "branch": "main"
-  },
-  {
-   "project": "2026-11-24-blue-estate-dossier",
-   "repo": "sudosilo/2026-11-24-blue-estate-dossier",
-   "branch": "main"
-  },
-  {
-   "project": "2026-11-26-orange-centipede",
-   "repo": "sudosilo/2026-11-26-orange-centipede",
-   "branch": "main"
-  },
-  {
-   "project": "67-idea-generator",
-   "repo": "sudosilo/67-idea-generator",
-   "branch": "main"
-  },
-  {
-   "project": "67-press-proccessor",
-   "repo": "sudosilo/67-press-proccessor",
-   "branch": "master"
-  },
-  {
-   "project": "a-canticle-for-pajamastan",
-   "repo": "sudosilo/a-canticle-for-pajamastan",
-   "branch": "main"
-  },
-  {
-   "project": "aerophin-twin",
-   "repo": "sudosilo/aerophin-twin",
-   "branch": "master"
-  },
-  {
-   "project": "aliens-win",
-   "repo": "sudosilo/aliens-win",
-   "branch": "main"
-  },
-  {
-   "project": "anthropic-percentage-pop-up-game",
-   "repo": "sudosilo/anthropic-percentage-pop-up-game",
-   "branch": "main"
-  },
-  {
-   "project": "artifactium",
-   "repo": "sudosilo/artifactium",
-   "branch": "main"
-  },
-  {
-   "project": "beesim-green",
-   "repo": "sudosilo/beesim-green",
-   "branch": "master"
-  },
-  {
-   "project": "beewars",
-   "repo": "sudosilo/beewars",
-   "branch": "main"
-  },
-  {
-   "project": "birdix",
-   "repo": "sudosilo/birdix",
-   "branch": "master"
-  },
-  {
-   "project": "bitfield-synth",
-   "repo": "sudosilo/bitfield-synth",
-   "branch": "master"
-  },
-  {
-   "project": "bloxx",
-   "repo": "sudosilo/bloxx",
-   "branch": "main"
-  },
-  {
-   "project": "blue-agent",
-   "repo": "sudosilo/blue-agent",
-   "branch": "main"
-  },
-  {
-   "project": "boba-breakeven-x8k4",
-   "repo": "sudosilo/boba-breakeven-x8k4",
-   "branch": "master"
-  },
-  {
-   "project": "bpm-finder",
-   "repo": "sudosilo/bpm-finder",
-   "branch": "main"
-  },
-  {
-   "project": "carchive",
-   "repo": "sudosilo/carchive",
-   "branch": "master"
-  },
-  {
-   "project": "cipher-wars-v3",
-   "repo": "sudosilo/cipher-wars-v3",
-   "branch": "master"
-  },
-  {
-   "project": "circuit-musicfx",
-   "repo": "sudosilo/circuit-musicfx",
-   "branch": "master"
-  },
-  {
-   "project": "city-seek",
-   "repo": "sudosilo/city-seek",
-   "branch": "main"
-  },
-  {
-   "project": "cockpit-racer",
-   "repo": "sudosilo/cockpit-racer",
-   "branch": "main"
-  },
-  {
-   "project": "coffee-autosim",
-   "repo": "sudosilo/coffee-autosim",
-   "branch": "main"
-  },
-  {
-   "project": "coffeekit1",
-   "repo": "sudosilo/coffeekit1",
-   "branch": "main"
-  },
-  {
-   "project": "conveyor-sim",
-   "repo": "sudosilo/conveyor-sim",
-   "branch": "master"
-  },
-  {
-   "project": "daily-outline",
-   "repo": "sudosilo/daily-outline",
-   "branch": "main"
-  },
-  {
-   "project": "datacenter-osint",
-   "repo": "sudosilo/datacenter-osint",
-   "branch": "main"
-  },
-  {
-   "project": "defcon-trail",
-   "repo": "sudosilo/defcon-trail",
-   "branch": "main"
-  },
-  {
-   "project": "delivery-twin",
-   "repo": "sudosilo/delivery-twin",
-   "branch": "master"
-  },
-  {
-   "project": "delivery-twin-violet",
-   "repo": "sudosilo/delivery-twin-violet",
-   "branch": "main"
-  },
-  {
-   "project": "diamond-driller",
-   "repo": "sudosilo/diamond-driller",
-   "branch": "master"
-  },
-  {
-   "project": "dronecamp",
-   "repo": "sudosilo/dronecamp",
-   "branch": "master"
-  },
-  {
-   "project": "edmia",
-   "repo": "sudosilo/edmia",
-   "branch": "main"
-  },
-  {
-   "project": "engine-companion",
-   "repo": "sudosilo/engine-companion",
-   "branch": "master"
-  },
-  {
-   "project": "ether-wand",
-   "repo": "sudosilo/ether-wand",
-   "branch": "main"
-  },
-  {
-   "project": "fashionocalypse",
-   "repo": "sudosilo/fashionocalypse",
-   "branch": "main"
-  },
-  {
-   "project": "field-study",
-   "repo": "sudosilo/field-study",
-   "branch": "master"
-  },
-  {
-   "project": "flipcount-game",
-   "repo": "sudosilo/flipcount-game",
-   "branch": "main"
-  },
-  {
-   "project": "fogwarren-vx",
-   "repo": "sudosilo/fogwarren-vx",
-   "branch": "main"
-  },
-  {
-   "project": "ghost-kitchen-builder",
-   "repo": "sudosilo/ghost-kitchen-builder",
-   "branch": "master"
-  },
-  {
-   "project": "gladhand-dockyard",
-   "repo": "sudosilo/gladhand-dockyard",
-   "branch": "main"
-  },
-  {
-   "project": "hackercons-roulette",
-   "repo": "sudosilo/hackercons-roulette",
-   "branch": "master"
-  },
-  {
-   "project": "hire-portal",
-   "repo": "sudosilo/hire-portal",
-   "branch": "main"
-  },
-  {
-   "project": "hoofer-sync",
-   "repo": "sudosilo/hoofer-sync",
-   "branch": "main"
-  },
-  {
-   "project": "infinicanvan",
-   "repo": "sudosilo/infinicanvan",
-   "branch": "master"
-  },
-  {
-   "project": "inkrunner",
-   "repo": "sudosilo/inkrunner",
-   "branch": "main"
-  },
-  {
-   "project": "j30p4rdy",
-   "repo": "sudosilo/j30p4rdy",
-   "branch": "main"
-  },
-  {
    "project": "kat-chat",
    "repo": "sudosilo/kat-chat",
    "branch": "master"
@@ -597,5 +297,306 @@
    "branch": "main"
   }
  ],
- "done": []
+ "done": [
+  {
+   "project": "2026-10-22-orange-agent",
+   "link": "already linked to sudosilo/2026-10-22-orange-agent",
+   "deploy": "started 2026-10-22-orange-agent-jsbvuer1i-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "2026-10-23-orange-smash",
+   "link": "already linked to sudosilo/2026-10-23-orange-smash",
+   "deploy": "started 2026-10-23-orange-smash-hy60zn71i-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "2026-11-01-orange-decimalday",
+   "link": "already linked to sudosilo/2026-11-01-orange-decimalday",
+   "deploy": "started 2026-11-01-orange-decimalday-pbfwwu48c-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "2026-11-04-field-dispatch",
+   "link": "already linked to sudosilo/2026-11-04-field-dispatch",
+   "deploy": "started 2026-11-04-field-dispatch-7ol111qmi-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "2026-11-05-drive-thru-dental",
+   "link": "already linked to sudosilo/2026-11-05-drive-thru-dental",
+   "deploy": "started 2026-11-05-drive-thru-dental-l8a3xklnq-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "2026-11-09-orange-icefiles",
+   "link": "already linked to sudosilo/2026-11-09-orange-icefiles",
+   "deploy": "started 2026-11-09-orange-icefiles-2l3bw15wv-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "2026-11-11-orange-codelens",
+   "link": "already linked to sudosilo/2026-11-11-orange-codelens",
+   "deploy": "started 2026-11-11-orange-codelens-2qe4dt57q-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "2026-11-15-orange-keydecode",
+   "link": "already linked to sudosilo/2026-11-15-orange-keydecode",
+   "deploy": "started 2026-11-15-orange-keydecode-5125j1bd6-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "2026-11-16-pipe-weave",
+   "link": "already linked to sudosilo/2026-11-16-pipe-weave",
+   "deploy": "started 2026-11-16-pipe-weave-7g3klkjpj-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "2026-11-19-blue-just-five-more",
+   "link": "already linked to sudosilo/2026-11-19-blue-just-five-more",
+   "deploy": "started 2026-11-19-blue-just-five-more-qkrpzhgw0.vercel.app"
+  },
+  {
+   "project": "2026-11-19-orange-drivethru",
+   "link": "already linked to sudosilo/2026-11-19-orange-drivethru",
+   "deploy": "started 2026-11-19-orange-drivethru-rl444yyac-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "2026-11-19-orange-packets",
+   "link": "already linked to sudosilo/2026-11-19-orange-packets",
+   "deploy": "started 2026-11-19-orange-packets-g3u3batgi-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "2026-11-23-orange-explode",
+   "link": "already linked to sudosilo/2026-11-23-orange-explode",
+   "deploy": "started 2026-11-23-orange-explode-7u62jis8i-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "2026-11-24-blue-estate-dossier",
+   "link": "already linked to sudosilo/2026-11-24-blue-estate-dossier",
+   "deploy": "started 2026-11-24-blue-estate-dossier-oaf7jxedd.vercel.app"
+  },
+  {
+   "project": "2026-11-26-orange-centipede",
+   "link": "already linked to sudosilo/2026-11-26-orange-centipede",
+   "deploy": "started 2026-11-26-orange-centipede-pjhe54yz0-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "67-idea-generator",
+   "link": "already linked to sudosilo/67-idea-generator",
+   "deploy": "started 67-idea-generator-nr7h94x8b-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "67-press-proccessor",
+   "link": "linked",
+   "deploy": "started 67-press-proccessor-qvmfe0urv-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "a-canticle-for-pajamastan",
+   "link": "already linked to sudosilo/a-canticle-for-pajamastan",
+   "deploy": "started a-canticle-for-pajamastan-eojib8srt-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "aerophin-twin",
+   "link": "already linked to sudosilo/aerophin-twin",
+   "deploy": "started aerophin-twin-1px359rk9-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "aliens-win",
+   "link": "already linked to sudosilo/aliens-win",
+   "deploy": "started aliens-c7vtgw33h-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "anthropic-percentage-pop-up-game",
+   "link": "already linked to sudosilo/anthropic-percentage-pop-up-game",
+   "deploy": "started anthropic-percentage-pop-up-game-pf8sg3rvt.vercel.app"
+  },
+  {
+   "project": "artifactium",
+   "link": "already linked to sudosilo/artifactium",
+   "deploy": "started artifactium-f4lc6i841-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "beesim-green",
+   "link": "linked",
+   "deploy": "started beesim-green-oqe7p4v7q-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "beewars",
+   "link": "already linked to sudosilo/beewars",
+   "deploy": "started beewars-djkc0zk94-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "birdix",
+   "link": "already linked to sudosilo/birdix",
+   "deploy": "started birdix-jsios1snw-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "bitfield-synth",
+   "link": "linked",
+   "deploy": "started bitfield-synth-6x0r73v0e-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "bloxx",
+   "link": "already linked to sudosilo/bloxx",
+   "deploy": "started bloxx-q5rxtb9zf-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "blue-agent",
+   "link": "linked",
+   "deploy": "started blue-agent-metcztopa-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "boba-breakeven-x8k4",
+   "link": "already linked to sudosilo/boba-breakeven-x8k4",
+   "deploy": "started boba-breakeven-x8k4-aygto05ox-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "bpm-finder",
+   "link": "already linked to sudosilo/bpm-finder",
+   "deploy": "started bpm-finder-4imer9h9b-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "carchive",
+   "link": "linked",
+   "deploy": "started carchive-gkhwduojd-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "cipher-wars-v3",
+   "link": "already linked to sudosilo/cipher-wars-v3",
+   "deploy": "started cipher-wars-v3-3lswwtf3b-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "circuit-musicfx",
+   "link": "already linked to sudosilo/circuit-musicfx",
+   "deploy": "started circuit-musicfx-bwdxvmxg4-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "city-seek",
+   "link": "already linked to sudosilo/city-seek",
+   "deploy": "started city-seek-gokussbks-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "cockpit-racer",
+   "link": "already linked to sudosilo/cockpit-racer",
+   "deploy": "started cockpit-racer-ni5aarv4j-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "coffee-autosim",
+   "link": "already linked to sudosilo/coffee-autosim",
+   "deploy": "started coffee-autosim-6ayr5e42h-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "coffeekit1",
+   "link": "linked",
+   "deploy": "started coffeekit1-e6nhzx9or-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "conveyor-sim",
+   "link": "already linked to sudosilo/conveyor-sim",
+   "deploy": "started conveyor-caubayf9w-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "daily-outline",
+   "link": "already linked to sudosilo/daily-outline",
+   "deploy": "started daily-outline-54wat9zji-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "datacenter-osint",
+   "link": "already linked to sudosilo/datacenter-osint",
+   "deploy": "started datacenter-osint-arjei37pi-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "defcon-trail",
+   "link": "already linked to sudosilo/defcon-trail",
+   "deploy": "started defcon-trail-6ukzjnjdc-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "delivery-twin",
+   "link": "already linked to sudosilo/delivery-twin",
+   "deploy": "started delivery-twin-p9mn7ql69-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "delivery-twin-violet",
+   "link": "already linked to sudosilo/delivery-twin-violet",
+   "deploy": "started delivery-twin-violet-50rlcf4df-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "diamond-driller",
+   "link": "already linked to sudosilo/diamond-driller",
+   "deploy": "started diamond-driller-2l40s1yaw-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "dronecamp",
+   "link": "already linked to sudosilo/dronecamp",
+   "deploy": "started dronecamp-lqoo4pd4p-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "edmia",
+   "link": "already linked to sudosilo/edmia",
+   "deploy": "started edmia-q87cazl4c-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "engine-companion",
+   "link": "linked",
+   "deploy": "started engine-companion-5xlku713u-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "ether-wand",
+   "link": "already linked to sudosilo/ether-wand",
+   "deploy": "started ether-wand-4z6ejgvq9-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "fashionocalypse",
+   "link": "already linked to sudosilo/fashionocalypse",
+   "deploy": "started fashionocalypse-lc72xfthy-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "field-study",
+   "link": "linked",
+   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
+  },
+  {
+   "project": "flipcount-game",
+   "link": "already linked to sudosilo/flipcount-game",
+   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
+  },
+  {
+   "project": "fogwarren-vx",
+   "link": "already linked to sudosilo/fogwarren-vx",
+   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
+  },
+  {
+   "project": "ghost-kitchen-builder",
+   "link": "already linked to sudosilo/ghost-kitchen-builder",
+   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
+  },
+  {
+   "project": "gladhand-dockyard",
+   "link": "already linked to sudosilo/gladhand-dockyard",
+   "deploy": "deploy failed: Resource is limited - try again in 1 day (more than 100, code: \"api-deployments-free-per-day\")."
+  },
+  {
+   "project": "hackercons-roulette",
+   "link": "already linked to sudosilo/hackercons-roulette",
+   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
+  },
+  {
+   "project": "hire-portal",
+   "link": "already linked to sudosilo/hire-portal",
+   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
+  },
+  {
+   "project": "hoofer-sync",
+   "link": "already linked to sudosilo/hoofer-sync",
+   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
+  },
+  {
+   "project": "infinicanvan",
+   "link": "already linked to sudosilo/infinicanvan",
+   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
+  },
+  {
+   "project": "inkrunner",
+   "link": "already linked to sudosilo/inkrunner",
+   "deploy": "deploy failed: Resource is limited - try again in 1 day (more than 100, code: \"api-deployments-free-per-day\")."
+  },
+  {
+   "project": "j30p4rdy",
+   "link": "linked",
+   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
+  }
+ ]
 }
