@@ -22,6 +22,7 @@ const api = async (method, path, body) => {
     const [org, repo] = it.repo.split('/');
     const dep = await api('POST', '/v13/deployments', { name: it.project, project: it.project, target: 'production', gitSource: { type: 'github', org, repo, ref: it.branch } });
     res.deploy = dep.ok ? 'started ' + (dep.j.url || '') : 'deploy failed: ' + (dep.j.error && dep.j.error.message || dep.status);
+    if (!dep.ok && /limited/i.test(JSON.stringify(dep.j))) { st.pending.unshift(it, ...batch.slice(batch.indexOf(it) + 1)); console.log('daily deploy limit reached, stopping until the next run'); break; }
     st.done.push(res);
     console.log(JSON.stringify(res));
   }
