@@ -1,7 +1,7 @@
 [
  {
   "name": "2026-10-18-orange-testbed",
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "aliases": [
    "2026-10-18-orange-testbed-sudosilo2-1771s-projects.vercel.app",
    "2026-10-18-orange-testbed-git-main-sudosilo2-1771s-projects.vercel.app"
@@ -18,7 +18,7 @@
  },
  {
   "name": "2026-10-22-orange-agent",
-  "date": "2026-10-25",
+  "date": "2026-11-27",
   "aliases": [
    "2026-10-22-orange-agent.vercel.app",
    "2026-10-22-orange-agent-sudosilo2-1771s-projects.vercel.app",
@@ -27,7 +27,7 @@
  },
  {
   "name": "2026-10-23-orange-smash",
-  "date": "2026-10-31",
+  "date": "2026-11-27",
   "aliases": [
    "2026-10-23-orange-smash.vercel.app",
    "2026-10-23-orange-smash-sudosilo2-1771s-projects.vercel.app",
@@ -45,7 +45,7 @@
  },
  {
   "name": "2026-11-01-orange-decimalday",
-  "date": "2026-11-02",
+  "date": "2026-11-27",
   "aliases": [
    "2026-11-01-orange-decimalday.vercel.app",
    "2026-11-01-orange-decimalday-sudosilo2-1771s-projects.vercel.app",
@@ -54,7 +54,7 @@
  },
  {
   "name": "2026-11-04-field-dispatch",
-  "date": "2026-11-06",
+  "date": "2026-11-27",
   "aliases": [
    "2026-11-04-field-dispatch.vercel.app",
    "2026-11-04-field-dispatch-sudosilo2-1771s-projects.vercel.app",
@@ -63,7 +63,7 @@
  },
  {
   "name": "2026-11-05-drive-thru-dental",
-  "date": "2026-11-06",
+  "date": "2026-11-27",
   "aliases": [
    "2026-11-05-drive-thru-dental.vercel.app",
    "2026-11-05-drive-thru-dental-sudosilo2-1771s-projects.vercel.app",
@@ -71,8 +71,13 @@
   ]
  },
  {
+  "name": "2026-11-05-locker-screen",
+  "date": "2026-11-27",
+  "aliases": []
+ },
+ {
   "name": "2026-11-09-orange-icefiles",
-  "date": "2026-11-10",
+  "date": "2026-11-27",
   "aliases": [
    "2026-11-09-orange-icefiles.vercel.app",
    "2026-11-09-orange-icefiles-sudosilo2-1771s-projects.vercel.app",
@@ -81,7 +86,7 @@
  },
  {
   "name": "2026-11-11-orange-codelens",
-  "date": "2026-11-13",
+  "date": "2026-11-27",
   "aliases": [
    "2026-11-11-orange-codelens.vercel.app",
    "2026-11-11-orange-codelens-sudosilo2-1771s-projects.vercel.app",
@@ -90,7 +95,7 @@
  },
  {
   "name": "2026-11-15-orange-keydecode",
-  "date": "2026-11-17",
+  "date": "2026-11-27",
   "aliases": [
    "2026-11-15-orange-keydecode.vercel.app",
    "2026-11-15-orange-keydecode-sudosilo2-1771s-projects.vercel.app",
@@ -108,7 +113,7 @@
  },
  {
   "name": "2026-11-16-pipe-weave",
-  "date": "2026-11-23",
+  "date": "2026-11-27",
   "aliases": [
    "2026-11-16-pipe-weave.vercel.app",
    "2026-11-16-pipe-weave-sudosilo2-1771s-projects.vercel.app",
@@ -117,7 +122,7 @@
  },
  {
   "name": "2026-11-19-blue-just-five-more",
-  "date": "2026-11-20",
+  "date": "2026-11-27",
   "aliases": [
    "2026-11-19-blue-just-five-more.vercel.app",
    "2026-11-19-blue-just-five-more-sudosilo2-1771s-projects.vercel.app",
@@ -126,7 +131,7 @@
  },
  {
   "name": "2026-11-19-orange-drivethru",
-  "date": "2026-11-21",
+  "date": "2026-11-27",
   "aliases": [
    "2026-11-19-orange-drivethru.vercel.app",
    "2026-11-19-orange-drivethru-sudosilo2-1771s-projects.vercel.app",
@@ -135,7 +140,7 @@
  },
  {
   "name": "2026-11-19-orange-packets",
-  "date": "2026-11-22",
+  "date": "2026-11-27",
   "aliases": [
    "2026-11-19-orange-packets.vercel.app",
    "2026-11-19-orange-packets-sudosilo2-1771s-projects.vercel.app",
@@ -153,7 +158,7 @@
  },
  {
   "name": "2026-11-23-orange-explode",
-  "date": "2026-11-24",
+  "date": "2026-11-27",
   "aliases": [
    "2026-11-23-orange-explode.vercel.app",
    "2026-11-23-orange-explode-sudosilo2-1771s-projects.vercel.app",
@@ -162,7 +167,7 @@
  },
  {
   "name": "2026-11-24-blue-estate-dossier",
-  "date": "2026-11-24",
+  "date": "2026-11-27",
   "aliases": [
    "2026-11-24-blue-estate-dossier.vercel.app",
    "2026-11-24-blue-estate-dossier-sudosilo2-1771s-projects.vercel.app",
@@ -180,7 +185,7 @@
  },
  {
   "name": "2026-11-25-green-hopper",
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "aliases": [
    "2026-11-25-green-hopper.vercel.app",
    "2026-11-25-green-hopper-sudosilo2-1771s-projects.vercel.app",
@@ -189,7 +194,7 @@
  },
  {
   "name": "2026-11-25-purple-lobhill",
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "aliases": [
    "2026-11-25-purple-lobhill.vercel.app",
    "2026-11-25-purple-lobhill-sudosilo2-1771s-projects.vercel.app",
@@ -198,7 +203,7 @@
  },
  {
   "name": "2026-11-25-ten-turn-machine",
-  "date": "2026-11-25",
+  "date": "2026-11-27",
   "aliases": [
    "2026-11-25-ten-turn-machine.vercel.app",
    "2026-11-25-ten-turn-machine-sudosilo2-1771s-projects.vercel.app",
@@ -207,23 +212,25 @@
  },
  {
   "name": "2026-11-26-orange-bingo",
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "aliases": [
    "2026-11-26-orange-bingo.vercel.app",
-   "2026-11-26-orange-bingo-sudosilo2-1771s-projects.vercel.app"
+   "2026-11-26-orange-bingo-sudosilo2-1771s-projects.vercel.app",
+   "2026-11-26-orange-bingo-git-master-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
   "name": "2026-11-26-orange-casino",
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "aliases": [
    "2026-11-26-orange-casino.vercel.app",
-   "2026-11-26-orange-casino-sudosilo2-1771s-projects.vercel.app"
+   "2026-11-26-orange-casino-sudosilo2-1771s-projects.vercel.app",
+   "2026-11-26-orange-casino-git-master-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
   "name": "2026-11-26-orange-centipede",
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "aliases": [
    "2026-11-26-orange-centipede.vercel.app",
    "2026-11-26-orange-centipede-sudosilo2-1771s-projects.vercel.app",
@@ -231,8 +238,26 @@
   ]
  },
  {
+  "name": "2026-11-26-orange-rocketbench",
+  "date": "2026-11-27",
+  "aliases": [
+   "2026-11-26-orange-rocketbench.vercel.app",
+   "2026-11-26-orange-rocketbench-sudosilo2-1771s-projects.vercel.app",
+   "2026-11-26-orange-rocketbench-git-main-sudosilo2-1771s-projects.vercel.app"
+  ]
+ },
+ {
+  "name": "2026-11-27-orange-parallaxwire",
+  "date": "2026-11-27",
+  "aliases": [
+   "2026-11-27-orange-parallaxwire.vercel.app",
+   "2026-11-27-orange-parallaxwire-sudosilo2-1771s-projects.vercel.app",
+   "2026-11-27-orange-parallaxw-git-d02bbd-sudosilo2-1771s-projects.vercel.app"
+  ]
+ },
+ {
   "name": "67-idea-generator",
-  "date": "2026-11-04",
+  "date": "2026-11-27",
   "aliases": [
    "67-idea-generator.vercel.app",
    "67-idea-generator-sudosilo2-1771s-projects.vercel.app",
@@ -241,15 +266,16 @@
  },
  {
   "name": "67-press-proccessor",
-  "date": "2026-10-08",
+  "date": "2026-11-27",
   "aliases": [
    "67-press-proccessor.vercel.app",
-   "67-press-proccessor-sudosilo2-1771s-projects.vercel.app"
+   "67-press-proccessor-sudosilo2-1771s-projects.vercel.app",
+   "67-press-proccessor-git-master-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
   "name": "a-canticle-for-pajamastan",
-  "date": "2026-11-01",
+  "date": "2026-11-27",
   "aliases": [
    "a-canticle-for-pajamastan.vercel.app",
    "a-canticle-for-pajamastan-sudosilo2-1771s-projects.vercel.app",
@@ -298,7 +324,7 @@
  },
  {
   "name": "aerophin-twin",
-  "date": "2026-10-18",
+  "date": "2026-11-27",
   "aliases": [
    "aerophin-twin.vercel.app",
    "aerophin-twin-sudosilo2-1771s-projects.vercel.app",
@@ -307,7 +333,7 @@
  },
  {
   "name": "aliens-win",
-  "date": "2026-11-01",
+  "date": "2026-11-27",
   "aliases": [
    "aliens-win.vercel.app",
    "aliens-win-sudosilo2-1771s-projects.vercel.app",
@@ -316,7 +342,7 @@
  },
  {
   "name": "anthropic-percentage-pop-up-game",
-  "date": "2026-10-24",
+  "date": "2026-11-27",
   "aliases": [
    "anthropic-percentage-pop-up-game.vercel.app",
    "anthropic-percentage-pop-up-game-sudosilo2-1771s-projects.vercel.app",
@@ -325,7 +351,7 @@
  },
  {
   "name": "artifactium",
-  "date": "2026-11-23",
+  "date": "2026-11-27",
   "aliases": [
    "artifactium.vercel.app",
    "artifactium-sudosilo2-1771s-projects.vercel.app",
@@ -351,15 +377,16 @@
  },
  {
   "name": "beesim-green",
-  "date": "2026-09-10",
+  "date": "2026-11-27",
   "aliases": [
    "beesim-green.vercel.app",
-   "beesim-green-sudosilo2-1771s-projects.vercel.app"
+   "beesim-green-sudosilo2-1771s-projects.vercel.app",
+   "beesim-green-git-master-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
   "name": "beewars",
-  "date": "2026-11-19",
+  "date": "2026-11-27",
   "aliases": [
    "beewars.vercel.app",
    "beewars-sudosilo2-1771s-projects.vercel.app",
@@ -368,23 +395,25 @@
  },
  {
   "name": "birdix",
-  "date": "2026-10-31",
+  "date": "2026-11-27",
   "aliases": [
    "birdix.vercel.app",
-   "birdix-sudosilo2-1771s-projects.vercel.app"
+   "birdix-sudosilo2-1771s-projects.vercel.app",
+   "birdix-git-master-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
   "name": "bitfield-synth",
-  "date": "2026-09-08",
+  "date": "2026-11-27",
   "aliases": [
    "bitfield-synth.vercel.app",
-   "bitfield-synth-sudosilo2-1771s-projects.vercel.app"
+   "bitfield-synth-sudosilo2-1771s-projects.vercel.app",
+   "bitfield-synth-git-master-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
   "name": "bloxx",
-  "date": "2026-11-20",
+  "date": "2026-11-27",
   "aliases": [
    "bloxx-three.vercel.app",
    "bloxx-sudosilo2-1771s-projects.vercel.app",
@@ -393,15 +422,16 @@
  },
  {
   "name": "blue-agent",
-  "date": "2026-10-22",
+  "date": "2026-11-27",
   "aliases": [
    "blue-agent-lilac.vercel.app",
-   "blue-agent-sudosilo2-1771s-projects.vercel.app"
+   "blue-agent-sudosilo2-1771s-projects.vercel.app",
+   "blue-agent-git-main-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
   "name": "boba-breakeven-x8k4",
-  "date": "2026-10-19",
+  "date": "2026-11-27",
   "aliases": [
    "boba-breakeven-x8k4.vercel.app",
    "boba-breakeven-x8k4-sudosilo2-1771s-projects.vercel.app",
@@ -410,7 +440,7 @@
  },
  {
   "name": "bpm-finder",
-  "date": "2026-10-30",
+  "date": "2026-11-27",
   "aliases": [
    "bpm-finder-sigma.vercel.app",
    "bpm-finder-sudosilo2-1771s-projects.vercel.app",
@@ -436,10 +466,11 @@
  },
  {
   "name": "carchive",
-  "date": "2026-10-06",
+  "date": "2026-11-27",
   "aliases": [
    "carchive-nine.vercel.app",
-   "carchive-sudosilo2-1771s-projects.vercel.app"
+   "carchive-sudosilo2-1771s-projects.vercel.app",
+   "carchive-git-master-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
@@ -479,7 +510,7 @@
  },
  {
   "name": "cipher-wars-v3",
-  "date": "2026-11-19",
+  "date": "2026-11-27",
   "aliases": [
    "cipher-wars-v3.vercel.app",
    "cipher-wars-v3-sudosilo2-1771s-projects.vercel.app",
@@ -488,7 +519,7 @@
  },
  {
   "name": "circuit-musicfx",
-  "date": "2026-11-19",
+  "date": "2026-11-27",
   "aliases": [
    "circuit-musicfx.vercel.app",
    "circuit-musicfx-sudosilo2-1771s-projects.vercel.app",
@@ -497,7 +528,7 @@
  },
  {
   "name": "city-seek",
-  "date": "2026-11-17",
+  "date": "2026-11-27",
   "aliases": [
    "city-seek.vercel.app",
    "city-seek-sudosilo2-1771s-projects.vercel.app",
@@ -506,7 +537,7 @@
  },
  {
   "name": "cockpit-racer",
-  "date": "2026-10-23",
+  "date": "2026-11-27",
   "aliases": [
    "cockpit-racer.vercel.app",
    "cockpit-racer-sudosilo2-1771s-projects.vercel.app",
@@ -515,7 +546,7 @@
  },
  {
   "name": "coffee-autosim",
-  "date": "2026-11-06",
+  "date": "2026-11-27",
   "aliases": [
    "coffee-autosim.vercel.app",
    "coffee-autosim-sudosilo2-1771s-projects.vercel.app",
@@ -524,10 +555,11 @@
  },
  {
   "name": "coffeekit1",
-  "date": "2026-11-05",
+  "date": "2026-11-27",
   "aliases": [
    "coffeekit1.vercel.app",
-   "coffeekit1-sudosilo2-1771s-projects.vercel.app"
+   "coffeekit1-sudosilo2-1771s-projects.vercel.app",
+   "coffeekit1-git-main-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
@@ -540,7 +572,7 @@
  },
  {
   "name": "conveyor-sim",
-  "date": "2026-11-24",
+  "date": "2026-11-27",
   "aliases": [
    "conveyor-sim.vercel.app",
    "conveyor-sim-sudosilo2-1771s-projects.vercel.app",
@@ -557,7 +589,7 @@
  },
  {
   "name": "daily-outline",
-  "date": "2026-10-21",
+  "date": "2026-11-27",
   "aliases": [
    "daily-outline.vercel.app",
    "daily-outline-sudosilo2-1771s-projects.vercel.app",
@@ -566,7 +598,7 @@
  },
  {
   "name": "datacenter-osint",
-  "date": "2026-11-24",
+  "date": "2026-11-27",
   "aliases": [
    "datacenter-osint.vercel.app",
    "datacenter-osint-sudosilo2-1771s-projects.vercel.app",
@@ -584,7 +616,7 @@
  },
  {
   "name": "defcon-trail",
-  "date": "2026-11-19",
+  "date": "2026-11-27",
   "aliases": [
    "defcon-trail.vercel.app",
    "defcon-trail-sudosilo2-1771s-projects.vercel.app",
@@ -593,7 +625,7 @@
  },
  {
   "name": "delivery-twin",
-  "date": "2026-11-17",
+  "date": "2026-11-27",
   "aliases": [
    "delivery-twin.vercel.app",
    "delivery-twin-sudosilo2-1771s-projects.vercel.app",
@@ -602,7 +634,7 @@
  },
  {
   "name": "delivery-twin-violet",
-  "date": "2026-11-14",
+  "date": "2026-11-27",
   "aliases": [
    "delivery-twin-violet.vercel.app",
    "delivery-twin-violet-sudosilo2-1771s-projects.vercel.app",
@@ -611,7 +643,7 @@
  },
  {
   "name": "diamond-driller",
-  "date": "2026-10-20",
+  "date": "2026-11-27",
   "aliases": [
    "diamond-driller.vercel.app",
    "diamond-driller-sudosilo2-1771s-projects.vercel.app",
@@ -638,7 +670,7 @@
  },
  {
   "name": "dronecamp",
-  "date": "2026-10-13",
+  "date": "2026-11-27",
   "aliases": [
    "dronecamp.vercel.app",
    "dronecamp-sudosilo2-1771s-projects.vercel.app",
@@ -664,7 +696,7 @@
  },
  {
   "name": "edmia",
-  "date": "2026-10-31",
+  "date": "2026-11-27",
   "aliases": [
    "edmia.vercel.app",
    "edmia-sudosilo2-1771s-projects.vercel.app",
@@ -673,10 +705,11 @@
  },
  {
   "name": "engine-companion",
-  "date": "2026-09-17",
+  "date": "2026-11-27",
   "aliases": [
    "engine-companion.vercel.app",
-   "engine-companion-sudosilo2-1771s-projects.vercel.app"
+   "engine-companion-sudosilo2-1771s-projects.vercel.app",
+   "engine-companion-git-master-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
@@ -689,18 +722,20 @@
  },
  {
   "name": "ether-wand",
-  "date": "2026-11-24",
+  "date": "2026-11-27",
   "aliases": [
    "ether-wand.vercel.app",
-   "ether-wand-sudosilo2-1771s-projects.vercel.app"
+   "ether-wand-sudosilo2-1771s-projects.vercel.app",
+   "ether-wand-git-main-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
   "name": "fashionocalypse",
-  "date": "2026-11-16",
+  "date": "2026-11-27",
   "aliases": [
    "fashionocalypse.vercel.app",
-   "fashionocalypse-sudosilo2-1771s-projects.vercel.app"
+   "fashionocalypse-sudosilo2-1771s-projects.vercel.app",
+   "fashionocalypse-git-main-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
@@ -810,10 +845,11 @@
  },
  {
   "name": "green-ghostwing",
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "aliases": [
    "green-ghostwing.vercel.app",
-   "green-ghostwing-sudosilo2-1771s-projects.vercel.app"
+   "green-ghostwing-sudosilo2-1771s-projects.vercel.app",
+   "green-ghostwing-git-master-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
@@ -903,7 +939,7 @@
  },
  {
   "name": "itchy-troll",
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "aliases": [
    "itchy-troll.vercel.app",
    "itchy-troll-sudosilo2-1771s-projects.vercel.app",
@@ -1042,7 +1078,7 @@
  },
  {
   "name": "mohavetech-website",
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "aliases": [
    "mohave.wtf",
    "mohavetech.wtf",
@@ -1647,7 +1683,7 @@
  },
  {
   "name": "turret-sight",
-  "date": "2026-11-25",
+  "date": "2026-11-27",
   "aliases": [
    "turret-sight.vercel.app",
    "turret-sight-sudosilo2-1771s-projects.vercel.app",
