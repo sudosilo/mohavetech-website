@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: "23 */3 * * *"
   workflow_dispatch:
+  push:
+    branches: [master]
+    paths: [.github/sync-now, .github/workflows/vercel-sync.yml]
 permissions:
   contents: write
 jobs:
