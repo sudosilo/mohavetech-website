@@ -1,0 +1,31 @@
+name: velocity-scan
+# Counts the code in every sudosilo repo and saves velocity-v1.json for the Personal Velocity part of Statistics.
+# Runs every morning and on demand. The push it makes is deployed by Vercel like any other push.
+on:
+  schedule:
+    - cron: "41 12 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Count code in every repo
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node velocity-scan-v1.js
+      - name: Save
+        run: |
+          git config user.name "mohave-sync-bot"
+          git config user.email "mohave-sync-bot@users.noreply.github.com"
+          git add velocity-v1.json
+          git diff --cached --quiet && exit 0
+          git commit -m "refresh personal velocity numbers"
+          git pull --rebase origin master
+          git push
