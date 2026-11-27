@@ -848,8 +848,7 @@
   "date": "2026-11-27",
   "aliases": [
    "green-ghostwing.vercel.app",
-   "green-ghostwing-sudosilo2-1771s-projects.vercel.app",
-   "green-ghostwing-git-master-sudosilo2-1771s-projects.vercel.app"
+   "green-ghostwing-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
@@ -1339,10 +1338,11 @@
  },
  {
   "name": "rogue-rail",
-  "date": "2026-10-09",
+  "date": "2026-11-27",
   "aliases": [
    "rogue-rail.vercel.app",
-   "rogue-rail-sudosilo2-1771s-projects.vercel.app"
+   "rogue-rail-sudosilo2-1771s-projects.vercel.app",
+   "rogue-rail-git-main-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {

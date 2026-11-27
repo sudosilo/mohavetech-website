@@ -150,7 +150,7 @@ const baseDates = {
   "repo-cloner": "2026-11-18",
   "repofind": "2026-11-22",
   "restack": "2026-10-23",
-  "rogue-rail": "2026-10-09",
+  "rogue-rail": "2026-11-27",
   "rosetta-pone": "2026-10-26",
   "rtss": "2026-11-16",
   "scope-listener": "2026-10-14",
