@@ -91,7 +91,7 @@
     });
 
     h += '<h2>How This Is Figured</h2>';
-    h += '<p style="font-size:13px">Every sudosilo repo is cloned each morning and its hand written code lines are counted, leaving out blank lines, libraries, minified files, data files, and any line over 400 characters. ';
+    h += '<p style="font-size:13px">Every sudosilo repo is cloned each morning and its hand written code lines are counted, leaving out blank lines, copied or snapshot apps, any line already counted in an older repo, libraries, minified files, data files, and any line over 400 characters. ';
     h += 'The 2016 build time assumes a solo developer finishing ' + d.linesPerHour + ' working lines per hour, counting design, debugging and testing, without AI help. ';
     h += 'The full company estimate uses the basic COCOMO organic model, 2.4 times thousands of lines to the 1.05 power person months at ' + d.hoursPerPersonMonth + ' hours each, which is how a 2016 software shop would bid the same work. ';
     h += 'The velocity score is 2016 hours claimed per calendar day divided by an eight hour workday. Last counted ' + esc(String(d.generated).slice(0, 10)) + '.</p>';

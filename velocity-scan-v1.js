@@ -20,7 +20,7 @@ function run(cmd) {
 }
 
 const CODE = /\.(js|mjs|cjs|jsx|ts|tsx|html|htm|css|scss|py|sh|vue|svelte|kt|kts|java|go|rs|sql|c|h|cpp|hpp|cs|swift|dart|lua|rb|php|gd|glsl|frag|vert|wgsl)$/i;
-const SKIP_DIR = /^(\.git|node_modules|dist|build|out|vendor|\.next|\.vercel|\.venv|venv|__pycache__|coverage|public\/lib|lib\/vendor)$/;
+const SKIP_DIR = /^(\.git|node_modules|dist|build|out|vendor|\.next|\.vercel|\.venv|venv|__pycache__|coverage|scout|builds|snapshots|mirror|mirrors|copies|archive|public\/lib|lib\/vendor)$/;
 const SKIP_FILE = /(\.min\.|-min\.|\.bundle\.|lock\.|\.map$|^three\.|^phaser|^p5\.|^tone\.|^leaflet|^chart\.|^d3\.|^jquery)/i;
 const MAX_FILE_BYTES = 400 * 1024;
 const MAX_LINE = 400;
@@ -69,17 +69,18 @@ const tmp = path.join(os.tmpdir(), "mohave-velocity-scan");
 fs.rmSync(tmp, { recursive: true, force: true });
 fs.mkdirSync(tmp, { recursive: true });
 
+// Each distinct line counts once across the whole account, credited to the oldest repo holding it,
+// so copied apps, snapshots and shared code are not counted twice.
+const seen = new Set();
 const repos = [];
+repoList.sort((a, b) => String(a.createdAt).localeCompare(String(b.createdAt)));
 repoList.filter(r => !r.isFork).forEach(r => {
   const dir = path.join(tmp, r.name);
   run(`git clone --depth 1 --quiet https://github.com/${OWNER}/${r.name}.git "${dir}"`);
   const files = [];
   walk(dir, files);
   let lines = 0;
-  const seen = new Set();
-  const per = [];
-  files.forEach(f => { const c = countLines(f, seen); lines += c; per.push([path.relative(dir, f), c]); });
-  if (lines > 30000) per.sort((a, b) => b[1] - a[1]).slice(0, 12).forEach(p => console.log("  big", r.name, p[0], p[1]));
+  files.forEach(f => { lines += countLines(f, seen); });
   fs.rmSync(dir, { recursive: true, force: true });
   if (!lines) return;
   repos.push({
