@@ -1,357 +1,6 @@
 {
  "note": "Apps whose GitHub pushes never reached Vercel. The redeploy job links each to its repo and deploys it, a batch per day.",
- "pending": [
-  {
-   "project": "field-study",
-   "repo": "sudosilo/field-study",
-   "branch": "master"
-  },
-  {
-   "project": "flipcount-game",
-   "repo": "sudosilo/flipcount-game",
-   "branch": "main"
-  },
-  {
-   "project": "fogwarren-vx",
-   "repo": "sudosilo/fogwarren-vx",
-   "branch": "main"
-  },
-  {
-   "project": "ghost-kitchen-builder",
-   "repo": "sudosilo/ghost-kitchen-builder",
-   "branch": "master"
-  },
-  {
-   "project": "gladhand-dockyard",
-   "repo": "sudosilo/gladhand-dockyard",
-   "branch": "main"
-  },
-  {
-   "project": "hackercons-roulette",
-   "repo": "sudosilo/hackercons-roulette",
-   "branch": "master"
-  },
-  {
-   "project": "hire-portal",
-   "repo": "sudosilo/hire-portal",
-   "branch": "main"
-  },
-  {
-   "project": "hoofer-sync",
-   "repo": "sudosilo/hoofer-sync",
-   "branch": "main"
-  },
-  {
-   "project": "infinicanvan",
-   "repo": "sudosilo/infinicanvan",
-   "branch": "master"
-  },
-  {
-   "project": "inkrunner",
-   "repo": "sudosilo/inkrunner",
-   "branch": "main"
-  },
-  {
-   "project": "j30p4rdy",
-   "repo": "sudosilo/j30p4rdy",
-   "branch": "main"
-  },
-  {
-   "project": "kat-chat",
-   "repo": "sudosilo/kat-chat",
-   "branch": "master"
-  },
-  {
-   "project": "lartte",
-   "repo": "sudosilo/lartte",
-   "branch": "main"
-  },
-  {
-   "project": "looper",
-   "repo": "sudosilo/looper",
-   "branch": "master"
-  },
-  {
-   "project": "lv-liquor-map",
-   "repo": "sudosilo/lv-liquor-map",
-   "branch": "main"
-  },
-  {
-   "project": "mail-ionaire",
-   "repo": "sudosilo/mail-ionaire",
-   "branch": "master"
-  },
-  {
-   "project": "mill-ionaire",
-   "repo": "sudosilo/mill-ionaire",
-   "branch": "main"
-  },
-  {
-   "project": "mission-operator-next",
-   "repo": "sudosilo/mission-operator-next",
-   "branch": "main"
-  },
-  {
-   "project": "mobbyhill",
-   "repo": "sudosilo/mobbyhill",
-   "branch": "main"
-  },
-  {
-   "project": "mohave-wtf",
-   "repo": "sudosilo/mohave-wtf",
-   "branch": "main"
-  },
-  {
-   "project": "mohavetech-contracts",
-   "repo": "sudosilo/mohavetech-contracts",
-   "branch": "master"
-  },
-  {
-   "project": "nanoverse",
-   "repo": "sudosilo/nanoverse",
-   "branch": "master"
-  },
-  {
-   "project": "note-note-note",
-   "repo": "sudosilo/note-note-note",
-   "branch": "master"
-  },
-  {
-   "project": "ordersim",
-   "repo": "sudosilo/ordersim",
-   "branch": "main"
-  },
-  {
-   "project": "page-wide-pof",
-   "repo": "sudosilo/page-wide-pof",
-   "branch": "main"
-  },
-  {
-   "project": "pajamastan-badge-tool",
-   "repo": "sudosilo/pajamastan-badge-tool",
-   "branch": "main"
-  },
-  {
-   "project": "pajamastan-invoices",
-   "repo": "sudosilo/pajamastan-invoices",
-   "branch": "main"
-  },
-  {
-   "project": "pajamastan-space-administration",
-   "repo": "sudosilo/pajamastan-space-administration",
-   "branch": "main"
-  },
-  {
-   "project": "pajamastan-warrants",
-   "repo": "sudosilo/pajamastan-warrants",
-   "branch": "master"
-  },
-  {
-   "project": "pancake-orange",
-   "repo": "sudosilo/pancake-orange",
-   "branch": "master"
-  },
-  {
-   "project": "parcelsun-kq",
-   "repo": "sudosilo/parcelsun-kq",
-   "branch": "main"
-  },
-  {
-   "project": "parkingten",
-   "repo": "sudosilo/parkingten",
-   "branch": "main"
-  },
-  {
-   "project": "particular-lenticular",
-   "repo": "sudosilo/particular-lenticular",
-   "branch": "main"
-  },
-  {
-   "project": "pdf-yourself",
-   "repo": "sudosilo/pdf-yourself",
-   "branch": "main"
-  },
-  {
-   "project": "pipeline-builder",
-   "repo": "sudosilo/pipeline-builder",
-   "branch": "master"
-  },
-  {
-   "project": "pixelcoop-farm",
-   "repo": "sudosilo/pixelcoop-farm",
-   "branch": "main"
-  },
-  {
-   "project": "pixelmill",
-   "repo": "sudosilo/pixelmill",
-   "branch": "master"
-  },
-  {
-   "project": "qsr-receipt-sim",
-   "repo": "sudosilo/qsr-receipt-sim",
-   "branch": "master"
-  },
-  {
-   "project": "rainbow-run",
-   "repo": "sudosilo/rainbow-run",
-   "branch": "main"
-  },
-  {
-   "project": "raineurysm",
-   "repo": "sudosilo/raineurysm",
-   "branch": "main"
-  },
-  {
-   "project": "repo-cloner",
-   "repo": "sudosilo/repo-cloner",
-   "branch": "main"
-  },
-  {
-   "project": "repofind",
-   "repo": "sudosilo/repofind",
-   "branch": "master"
-  },
-  {
-   "project": "rogue-rail",
-   "repo": "sudosilo/rogue-rail",
-   "branch": "main"
-  },
-  {
-   "project": "rosetta-pone",
-   "repo": "sudosilo/rosetta-pone",
-   "branch": "main"
-  },
-  {
-   "project": "rtss",
-   "repo": "sudosilo/rtss",
-   "branch": "main"
-  },
-  {
-   "project": "scope-listener",
-   "repo": "sudosilo/scope-listener",
-   "branch": "master"
-  },
-  {
-   "project": "scorpion-supper",
-   "repo": "sudosilo/scorpion-supper",
-   "branch": "main"
-  },
-  {
-   "project": "secureops",
-   "repo": "sudosilo/secureops",
-   "branch": "master"
-  },
-  {
-   "project": "skyflow-orange",
-   "repo": "sudosilo/skyflow-orange",
-   "branch": "main"
-  },
-  {
-   "project": "spaceout",
-   "repo": "sudosilo/spaceout",
-   "branch": "master"
-  },
-  {
-   "project": "stackloom-meta",
-   "repo": "sudosilo/stackloom-meta",
-   "branch": "main"
-  },
-  {
-   "project": "starwake-game",
-   "repo": "sudosilo/starwake-game",
-   "branch": "main"
-  },
-  {
-   "project": "stompbox-lab",
-   "repo": "sudosilo/stompbox-lab",
-   "branch": "main"
-  },
-  {
-   "project": "strudel-samples",
-   "repo": "sudosilo/strudel-samples",
-   "branch": "main"
-  },
-  {
-   "project": "stumbler",
-   "repo": "sudosilo/stumbler",
-   "branch": "master"
-  },
-  {
-   "project": "suno-forge",
-   "repo": "sudosilo/suno-forge",
-   "branch": "main"
-  },
-  {
-   "project": "tapperator",
-   "repo": "sudosilo/tapperator",
-   "branch": "main"
-  },
-  {
-   "project": "termbeat",
-   "repo": "sudosilo/termbeat",
-   "branch": "main"
-  },
-  {
-   "project": "text-based-game",
-   "repo": "sudosilo/text-based-game",
-   "branch": "main"
-  },
-  {
-   "project": "thanks-for-watching",
-   "repo": "sudosilo/thanks-for-watching",
-   "branch": "main"
-  },
-  {
-   "project": "threat-atlas-v3",
-   "repo": "sudosilo/threat-atlas-v3",
-   "branch": "master"
-  },
-  {
-   "project": "tile-topia",
-   "repo": "sudosilo/tile-topia",
-   "branch": "main"
-  },
-  {
-   "project": "tinewood-keys",
-   "repo": "sudosilo/tinewood-keys",
-   "branch": "main"
-  },
-  {
-   "project": "tomatomo",
-   "repo": "sudosilo/tomatomo",
-   "branch": "main"
-  },
-  {
-   "project": "topdown-pixeltown",
-   "repo": "sudosilo/topdown-pixeltown",
-   "branch": "master"
-  },
-  {
-   "project": "topo-wars",
-   "repo": "sudosilo/topo-wars",
-   "branch": "master"
-  },
-  {
-   "project": "topo-wars-server",
-   "repo": "sudosilo/topo-wars-server",
-   "branch": "master"
-  },
-  {
-   "project": "torque-converter",
-   "repo": "sudosilo/torque-converter",
-   "branch": "main"
-  },
-  {
-   "project": "tractor-tool",
-   "repo": "sudosilo/tractor-tool",
-   "branch": "main"
-  },
-  {
-   "project": "welcome-to-the-madness",
-   "repo": "sudosilo/welcome-to-the-madness",
-   "branch": "main"
-  }
- ],
+ "pending": [],
  "done": [
   {
    "project": "2026-10-22-orange-agent",
@@ -597,6 +246,356 @@
    "project": "fashionocalypse",
    "link": "already linked to sudosilo/fashionocalypse",
    "deploy": "started fashionocalypse-lc72xfthy-sudosilo2-1771s-projects.vercel.app"
+  },
+  {
+   "project": "field-study",
+   "link": "already linked to sudosilo/field-study",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "flipcount-game",
+   "link": "already linked to sudosilo/flipcount-game",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "fogwarren-vx",
+   "link": "already linked to sudosilo/fogwarren-vx",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "ghost-kitchen-builder",
+   "link": "already linked to sudosilo/ghost-kitchen-builder",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "gladhand-dockyard",
+   "link": "already linked to sudosilo/gladhand-dockyard",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "hackercons-roulette",
+   "link": "already linked to sudosilo/hackercons-roulette",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "hire-portal",
+   "link": "already linked to sudosilo/hire-portal",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "hoofer-sync",
+   "link": "already linked to sudosilo/hoofer-sync",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "infinicanvan",
+   "link": "already linked to sudosilo/infinicanvan",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "inkrunner",
+   "link": "already linked to sudosilo/inkrunner",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "j30p4rdy",
+   "link": "already linked to sudosilo/j30p4rdy",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "kat-chat",
+   "link": "linked",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "lartte",
+   "link": "already linked to sudosilo/lartte",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "looper",
+   "link": "already linked to sudosilo/looper",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "lv-liquor-map",
+   "link": "already linked to sudosilo/lv-liquor-map",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "mail-ionaire",
+   "link": "already linked to sudosilo/mail-ionaire",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "mill-ionaire",
+   "link": "already linked to sudosilo/mill-ionaire",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "mission-operator-next",
+   "link": "linked",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "mobbyhill",
+   "link": "already linked to sudosilo/mobbyhill",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "mohave-wtf",
+   "link": "already linked to sudosilo/mohave-wtf",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "mohavetech-contracts",
+   "link": "already linked to sudosilo/mohavetech-contracts",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "nanoverse",
+   "link": "already linked to sudosilo/nanoverse",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "note-note-note",
+   "link": "already linked to sudosilo/note-note-note",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "ordersim",
+   "link": "already linked to sudosilo/ordersim",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "page-wide-pof",
+   "link": "already linked to sudosilo/page-wide-pof",
+   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
+  },
+  {
+   "project": "pajamastan-badge-tool",
+   "link": "already linked to sudosilo/pajamastan-badge-tool",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "pajamastan-invoices",
+   "link": "already linked to sudosilo/pajamastan-invoices",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "pajamastan-space-administration",
+   "link": "already linked to sudosilo/pajamastan-space-administration",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "pajamastan-warrants",
+   "link": "already linked to sudosilo/pajamastan-warrants",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "pancake-orange",
+   "link": "linked",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "parcelsun-kq",
+   "link": "already linked to sudosilo/parcelsun-kq",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "parkingten",
+   "link": "already linked to sudosilo/parkingten",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "particular-lenticular",
+   "link": "already linked to sudosilo/particular-lenticular",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "pdf-yourself",
+   "link": "already linked to sudosilo/pdf-yourself",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "pipeline-builder",
+   "link": "already linked to sudosilo/pipeline-builder",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "pixelcoop-farm",
+   "link": "already linked to sudosilo/pixelcoop-farm",
+   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
+  },
+  {
+   "project": "pixelmill",
+   "link": "already linked to sudosilo/pixelmill",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "qsr-receipt-sim",
+   "link": "linked",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "rainbow-run",
+   "link": "already linked to sudosilo/rainbow-run",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "raineurysm",
+   "link": "already linked to sudosilo/raineurysm",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "repo-cloner",
+   "link": "already linked to sudosilo/repo-cloner",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "repofind",
+   "link": "already linked to sudosilo/repofind",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "rogue-rail",
+   "link": "linked",
+   "deploy": "deploy failed: Resource is limited - try again in 1 day (more than 100, code: \"api-deployments-free-per-day\")."
+  },
+  {
+   "project": "rosetta-pone",
+   "link": "already linked to sudosilo/rosetta-pone",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "rtss",
+   "link": "already linked to sudosilo/RTSS",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "scope-listener",
+   "link": "linked",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "scorpion-supper",
+   "link": "already linked to sudosilo/scorpion-supper",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "secureops",
+   "link": "already linked to sudosilo/secureops",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "skyflow-orange",
+   "link": "already linked to sudosilo/skyflow-orange",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "spaceout",
+   "link": "already linked to sudosilo/spaceout",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "stackloom-meta",
+   "link": "already linked to sudosilo/stackloom-meta",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "starwake-game",
+   "link": "already linked to sudosilo/starwake-game",
+   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
+  },
+  {
+   "project": "stompbox-lab",
+   "link": "already linked to sudosilo/stompbox-lab",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "strudel-samples",
+   "link": "already linked to sudosilo/strudel-samples",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "stumbler",
+   "link": "linked",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "suno-forge",
+   "link": "already linked to sudosilo/suno-forge",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "tapperator",
+   "link": "already linked to sudosilo/tapperator",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "termbeat",
+   "link": "already linked to sudosilo/termbeat",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "text-based-game",
+   "link": "already linked to sudosilo/text-based-game",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "thanks-for-watching",
+   "link": "already linked to sudosilo/thanks-for-watching",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "threat-atlas-v3",
+   "link": "already linked to sudosilo/threat-atlas-v3",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "tile-topia",
+   "link": "already linked to sudosilo/tile-topia",
+   "deploy": "deploy failed: Resource is limited - try again in 1 day (more than 100, code: \"api-deployments-free-per-day\")."
+  },
+  {
+   "project": "tinewood-keys",
+   "link": "already linked to sudosilo/tinewood-keys",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "tomatomo",
+   "link": "already linked to sudosilo/tomatomo",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "topdown-pixeltown",
+   "link": "linked",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "topo-wars",
+   "link": "linked",
+   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
+  },
+  {
+   "project": "topo-wars-server",
+   "link": "already linked to sudosilo/topo-wars-server",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "torque-converter",
+   "link": "already linked to sudosilo/torque-converter",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "tractor-tool",
+   "link": "already linked to sudosilo/tractor-tool",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
+  },
+  {
+   "project": "welcome-to-the-madness",
+   "link": "linked",
+   "deploy": "deploy failed: Too many requests - try again in 5 minutes (more than 60, code: \"api-deployments-flood\")."
   }
  ]
 }
