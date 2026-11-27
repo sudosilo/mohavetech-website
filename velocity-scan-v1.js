@@ -21,7 +21,7 @@ function run(cmd) {
 
 const CODE = /\.(js|mjs|cjs|jsx|ts|tsx|html|htm|css|scss|py|sh|vue|svelte|kt|kts|java|go|rs|sql|c|h|cpp|hpp|cs|swift|dart|lua|rb|php|gd|glsl|frag|vert|wgsl)$/i;
 const SKIP_DIR = /^(\.git|node_modules|dist|build|out|vendor|\.next|\.vercel|\.venv|venv|__pycache__|coverage|scout|builds|snapshots|mirror|mirrors|copies|archive|public\/lib|lib\/vendor)$/;
-const SKIP_FILE = /(\.min\.|-min\.|\.bundle\.|lock\.|\.map$|^three\.|^phaser|^p5\.|^tone\.|^leaflet|^chart\.|^d3\.|^jquery)/i;
+const SKIP_FILE = /(\.min\.|-min\.|\.bundle\.|lock\.|\.map$|^three\.|^phaser|^p5\.|^tone\.|^leaflet|^chart\.|^d3\.|^jquery|jsqr|qrcode|pako|jszip|tesseract|pdf\.worker|pdf-lib)/i;
 const MAX_FILE_BYTES = 400 * 1024;
 const MAX_LINE = 400;
 
