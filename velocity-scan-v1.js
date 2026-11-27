@@ -36,7 +36,7 @@ function walk(dir, out) {
   });
 }
 
-function countLines(file) {
+function countLines(file, seen) {
   let st;
   try { st = fs.statSync(file); } catch (e) { return 0; }
   if (st.size > MAX_FILE_BYTES) return 0;
@@ -46,6 +46,8 @@ function countLines(file) {
   text.split(/\r?\n/).forEach(line => {
     const t = line.trim();
     if (!t || t.length > MAX_LINE) return;
+    if (seen.has(t)) return;
+    seen.add(t);
     n++;
   });
   return n;
@@ -74,7 +76,10 @@ repoList.filter(r => !r.isFork).forEach(r => {
   const files = [];
   walk(dir, files);
   let lines = 0;
-  files.forEach(f => { lines += countLines(f); });
+  const seen = new Set();
+  const per = [];
+  files.forEach(f => { const c = countLines(f, seen); lines += c; per.push([path.relative(dir, f), c]); });
+  if (lines > 30000) per.sort((a, b) => b[1] - a[1]).slice(0, 12).forEach(p => console.log("  big", r.name, p[0], p[1]));
   fs.rmSync(dir, { recursive: true, force: true });
   if (!lines) return;
   repos.push({
