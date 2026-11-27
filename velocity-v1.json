@@ -1,1385 +1,989 @@
 {
- "generated": "2026-11-27T21:28:01.815Z",
+ "generated": "2026-11-27T21:31:59.984Z",
  "start": "2026-04-05",
  "linesPerHour": 15,
  "hoursPerPersonMonth": 152,
  "repos": [
   {
-   "name": "itchy-troll",
-   "created": "2026-10-21",
-   "pushed": "2026-11-27",
-   "files": 722,
-   "lines": 195369,
-   "hours": 13025,
-   "cocomo": 92780
-  },
-  {
-   "name": "control-troll",
-   "created": "2026-10-12",
-   "pushed": "2026-11-27",
-   "files": 211,
-   "lines": 145275,
-   "hours": 9685,
-   "cocomo": 67976
-  },
-  {
    "name": "rainbow-run",
    "created": "2026-11-05",
    "pushed": "2026-11-25",
    "files": 44,
-   "lines": 15578,
-   "hours": 1039,
-   "cocomo": 6519
+   "lines": 12958,
+   "hours": 864,
+   "cocomo": 5373
   },
   {
    "name": "mohavetech-website",
    "created": "2026-09-05",
    "pushed": "2026-11-27",
    "files": 87,
-   "lines": 5457,
-   "hours": 364,
-   "cocomo": 2167
-  },
-  {
-   "name": "mill-ionaire",
-   "created": "2026-10-11",
-   "pushed": "2026-11-25",
-   "files": 3,
-   "lines": 4916,
-   "hours": 328,
-   "cocomo": 1942
+   "lines": 5156,
+   "hours": 344,
+   "cocomo": 2042
   },
   {
    "name": "RTSS",
    "created": "2026-04-02",
    "pushed": "2026-11-27",
    "files": 13,
-   "lines": 4887,
-   "hours": 326,
-   "cocomo": 1930
+   "lines": 4864,
+   "hours": 324,
+   "cocomo": 1920
+  },
+  {
+   "name": "mill-ionaire",
+   "created": "2026-10-11",
+   "pushed": "2026-11-25",
+   "files": 3,
+   "lines": 4631,
+   "hours": 309,
+   "cocomo": 1824
   },
   {
    "name": "nanoverse",
    "created": "2026-10-08",
    "pushed": "2026-11-25",
    "files": 2,
-   "lines": 4833,
-   "hours": 322,
-   "cocomo": 1908
+   "lines": 4489,
+   "hours": 299,
+   "cocomo": 1765
   },
   {
    "name": "song-offset-listener",
    "created": "2026-08-01",
    "pushed": "2026-11-25",
    "files": 37,
-   "lines": 4776,
-   "hours": 318,
-   "cocomo": 1884
-  },
-  {
-   "name": "mail-ionaire",
-   "created": "2026-11-11",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 4144,
-   "hours": 276,
-   "cocomo": 1623
-  },
-  {
-   "name": "topo-wars",
-   "created": "2026-09-29",
-   "pushed": "2026-11-25",
-   "files": 2,
-   "lines": 4080,
-   "hours": 272,
-   "cocomo": 1597
-  },
-  {
-   "name": "2026-10-23-orange-smash",
-   "created": "2026-10-23",
-   "pushed": "2026-11-27",
-   "files": 18,
-   "lines": 4036,
-   "hours": 269,
-   "cocomo": 1579
+   "lines": 4468,
+   "hours": 298,
+   "cocomo": 1757
   },
   {
    "name": "artifactium",
    "created": "2026-11-13",
    "pushed": "2026-11-27",
    "files": 7,
-   "lines": 4029,
-   "hours": 269,
-   "cocomo": 1576
+   "lines": 3696,
+   "hours": 246,
+   "cocomo": 1439
   },
   {
    "name": "2026-11-24-green-filecensus",
    "created": "2026-11-24",
    "pushed": "2026-11-26",
    "files": 11,
-   "lines": 3877,
-   "hours": 258,
-   "cocomo": 1513
+   "lines": 3694,
+   "hours": 246,
+   "cocomo": 1439
   },
   {
    "name": "gladhand-dockyard",
    "created": "2026-10-13",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 3835,
-   "hours": 256,
-   "cocomo": 1496
+   "lines": 3589,
+   "hours": 239,
+   "cocomo": 1396
+  },
+  {
+   "name": "2026-10-23-orange-smash",
+   "created": "2026-10-23",
+   "pushed": "2026-11-27",
+   "files": 18,
+   "lines": 3557,
+   "hours": 237,
+   "cocomo": 1383
   },
   {
    "name": "a-canticle-for-pajamastan",
    "created": "2026-10-31",
    "pushed": "2026-11-25",
    "files": 32,
-   "lines": 3820,
-   "hours": 255,
-   "cocomo": 1490
+   "lines": 3525,
+   "hours": 235,
+   "cocomo": 1370
   },
   {
-   "name": "kat-chat",
-   "created": "2026-10-07",
-   "pushed": "2026-11-25",
-   "files": 17,
-   "lines": 3244,
-   "hours": 216,
-   "cocomo": 1255
-  },
-  {
-   "name": "ascend",
-   "created": "2026-09-10",
-   "pushed": "2026-11-26",
-   "files": 4,
-   "lines": 3239,
-   "hours": 216,
-   "cocomo": 1253
-  },
-  {
-   "name": "repofind",
-   "created": "2026-10-08",
-   "pushed": "2026-11-25",
-   "files": 3,
-   "lines": 3217,
-   "hours": 214,
-   "cocomo": 1244
-  },
-  {
-   "name": "2026-11-22-orange-hubview",
-   "created": "2026-11-22",
+   "name": "itchy-troll",
+   "created": "2026-10-21",
    "pushed": "2026-11-27",
-   "files": 22,
-   "lines": 3064,
-   "hours": 204,
-   "cocomo": 1182
+   "files": 14,
+   "lines": 3485,
+   "hours": 232,
+   "cocomo": 1353
+  },
+  {
+   "name": "topo-wars",
+   "created": "2026-09-29",
+   "pushed": "2026-11-25",
+   "files": 2,
+   "lines": 3196,
+   "hours": 213,
+   "cocomo": 1236
   },
   {
    "name": "2026-11-25-blue-cliprig",
    "created": "2026-11-25",
    "pushed": "2026-11-26",
    "files": 18,
-   "lines": 3021,
-   "hours": 201,
-   "cocomo": 1165
+   "lines": 2944,
+   "hours": 196,
+   "cocomo": 1134
   },
   {
-   "name": "2026-10-22-orange-agent",
-   "created": "2026-10-23",
-   "pushed": "2026-11-27",
-   "files": 16,
-   "lines": 2932,
+   "name": "kat-chat",
+   "created": "2026-10-07",
+   "pushed": "2026-11-25",
+   "files": 17,
+   "lines": 2943,
+   "hours": 196,
+   "cocomo": 1133
+  },
+  {
+   "name": "ascend",
+   "created": "2026-09-10",
+   "pushed": "2026-11-26",
+   "files": 4,
+   "lines": 2924,
    "hours": 195,
-   "cocomo": 1129
+   "cocomo": 1125
+  },
+  {
+   "name": "repofind",
+   "created": "2026-10-08",
+   "pushed": "2026-11-25",
+   "files": 3,
+   "lines": 2886,
+   "hours": 192,
+   "cocomo": 1110
   },
   {
    "name": "skyflow-orange",
    "created": "2026-11-10",
    "pushed": "2026-11-25",
    "files": 11,
-   "lines": 2887,
-   "hours": 192,
-   "cocomo": 1111
+   "lines": 2700,
+   "hours": 180,
+   "cocomo": 1035
   },
   {
    "name": "parcelsun-kq",
    "created": "2026-10-13",
    "pushed": "2026-11-25",
    "files": 4,
-   "lines": 2848,
-   "hours": 190,
-   "cocomo": 1095
+   "lines": 2496,
+   "hours": 166,
+   "cocomo": 953
   },
   {
    "name": "city-seek",
    "created": "2026-11-10",
    "pushed": "2026-11-25",
    "files": 7,
-   "lines": 2785,
-   "hours": 186,
-   "cocomo": 1069
+   "lines": 2489,
+   "hours": 166,
+   "cocomo": 950
   },
   {
    "name": "qsr-timeline-Orange",
    "created": "2026-10-28",
    "pushed": "2026-11-25",
    "files": 2,
-   "lines": 2714,
-   "hours": 181,
-   "cocomo": 1041
+   "lines": 2408,
+   "hours": 161,
+   "cocomo": 918
   },
   {
    "name": "coffee-autosim",
    "created": "2026-10-11",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 2639,
-   "hours": 176,
-   "cocomo": 1011
-  },
-  {
-   "name": "raineurysm",
-   "created": "2026-11-14",
-   "pushed": "2026-11-25",
-   "files": 21,
-   "lines": 2522,
-   "hours": 168,
-   "cocomo": 964
-  },
-  {
-   "name": "2026-11-24-blue-estate-dossier",
-   "created": "2026-11-24",
-   "pushed": "2026-11-27",
-   "files": 2,
-   "lines": 2485,
-   "hours": 166,
-   "cocomo": 949
+   "lines": 2373,
+   "hours": 158,
+   "cocomo": 904
   },
   {
    "name": "tanks-and-zombies",
    "created": "2026-07-04",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 2460,
-   "hours": 164,
-   "cocomo": 939
+   "lines": 2213,
+   "hours": 148,
+   "cocomo": 840
+  },
+  {
+   "name": "raineurysm",
+   "created": "2026-11-14",
+   "pushed": "2026-11-25",
+   "files": 21,
+   "lines": 2209,
+   "hours": 147,
+   "cocomo": 838
   },
   {
    "name": "beesim-green",
    "created": "2026-09-11",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 2417,
-   "hours": 161,
-   "cocomo": 921
+   "lines": 2154,
+   "hours": 144,
+   "cocomo": 817
+  },
+  {
+   "name": "2026-11-24-blue-estate-dossier",
+   "created": "2026-11-24",
+   "pushed": "2026-11-27",
+   "files": 2,
+   "lines": 2112,
+   "hours": 141,
+   "cocomo": 800
   },
   {
    "name": "downfree-foundry",
    "created": "2026-11-07",
    "pushed": "2026-11-27",
    "files": 4,
-   "lines": 2396,
-   "hours": 160,
-   "cocomo": 913
-  },
-  {
-   "name": "pajamastan-badge-tool",
-   "created": "2026-11-07",
-   "pushed": "2026-11-25",
-   "files": 4,
-   "lines": 2353,
-   "hours": 157,
-   "cocomo": 896
+   "lines": 2073,
+   "hours": 138,
+   "cocomo": 784
   },
   {
    "name": "tilespinneratlas",
    "created": "2026-09-12",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 2329,
-   "hours": 155,
-   "cocomo": 886
+   "lines": 2062,
+   "hours": 137,
+   "cocomo": 780
   },
   {
-   "name": "datacenter-osint",
-   "created": "2026-10-09",
+   "name": "pajamastan-badge-tool",
+   "created": "2026-11-07",
    "pushed": "2026-11-25",
-   "files": 3,
-   "lines": 2200,
-   "hours": 147,
-   "cocomo": 835
+   "files": 4,
+   "lines": 2046,
+   "hours": 136,
+   "cocomo": 774
   },
   {
-   "name": "infinicanvan",
-   "created": "2026-11-01",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 2176,
-   "hours": 145,
-   "cocomo": 825
-  },
-  {
-   "name": "hoofer-sync",
-   "created": "2026-10-14",
-   "pushed": "2026-11-25",
-   "files": 2,
-   "lines": 2159,
-   "hours": 144,
-   "cocomo": 819
-  },
-  {
-   "name": "topo-wars-server",
-   "created": "2026-09-30",
-   "pushed": "2026-11-25",
-   "files": 6,
-   "lines": 2112,
-   "hours": 141,
-   "cocomo": 800
-  },
-  {
-   "name": "aerophin-twin",
-   "created": "2026-08-29",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 2108,
-   "hours": 141,
-   "cocomo": 798
-  },
-  {
-   "name": "stompbox-lab",
-   "created": "2026-10-11",
-   "pushed": "2026-11-25",
-   "files": 7,
-   "lines": 2087,
-   "hours": 139,
-   "cocomo": 790
-  },
-  {
-   "name": "2026-10-18-orange-testbed",
-   "created": "2026-10-19",
+   "name": "2026-10-22-orange-agent",
+   "created": "2026-10-23",
    "pushed": "2026-11-27",
-   "files": 21,
-   "lines": 2081,
-   "hours": 139,
-   "cocomo": 787
+   "files": 16,
+   "lines": 1961,
+   "hours": 131,
+   "cocomo": 740
   },
   {
    "name": "smash-bender",
    "created": "2026-10-27",
    "pushed": "2026-11-13",
    "files": 22,
-   "lines": 2048,
-   "hours": 137,
-   "cocomo": 774
+   "lines": 1959,
+   "hours": 131,
+   "cocomo": 739
   },
   {
-   "name": "lartte",
-   "created": "2026-11-16",
+   "name": "datacenter-osint",
+   "created": "2026-10-09",
+   "pushed": "2026-11-25",
+   "files": 3,
+   "lines": 1898,
+   "hours": 127,
+   "cocomo": 715
+  },
+  {
+   "name": "aerophin-twin",
+   "created": "2026-08-29",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 2002,
-   "hours": 133,
-   "cocomo": 756
+   "lines": 1889,
+   "hours": 126,
+   "cocomo": 711
   },
   {
-   "name": "chromahum-zq",
-   "created": "2026-10-18",
+   "name": "hoofer-sync",
+   "created": "2026-10-14",
    "pushed": "2026-11-25",
    "files": 2,
-   "lines": 1964,
-   "hours": 131,
-   "cocomo": 741
+   "lines": 1842,
+   "hours": 123,
+   "cocomo": 693
   },
   {
-   "name": "rogue-rail",
-   "created": "2026-06-08",
-   "pushed": "2026-11-27",
+   "name": "infinicanvan",
+   "created": "2026-11-01",
+   "pushed": "2026-11-25",
    "files": 1,
-   "lines": 1901,
-   "hours": 127,
-   "cocomo": 716
+   "lines": 1835,
+   "hours": 122,
+   "cocomo": 690
   },
   {
-   "name": "2026-11-26-green-ghostwing",
-   "created": "2026-11-27",
+   "name": "2026-10-18-orange-testbed",
+   "created": "2026-10-19",
    "pushed": "2026-11-27",
-   "files": 1,
-   "lines": 1896,
-   "hours": 126,
-   "cocomo": 714
+   "files": 21,
+   "lines": 1822,
+   "hours": 121,
+   "cocomo": 685
   },
   {
    "name": "field-twin",
    "created": "2026-10-06",
    "pushed": "2026-11-26",
    "files": 21,
-   "lines": 1851,
-   "hours": 123,
-   "cocomo": 696
+   "lines": 1789,
+   "hours": 119,
+   "cocomo": 672
+  },
+  {
+   "name": "lartte",
+   "created": "2026-11-16",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 1730,
+   "hours": 115,
+   "cocomo": 649
+  },
+  {
+   "name": "rogue-rail",
+   "created": "2026-06-08",
+   "pushed": "2026-11-27",
+   "files": 1,
+   "lines": 1663,
+   "hours": 111,
+   "cocomo": 622
   },
   {
    "name": "field-study",
    "created": "2026-10-08",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 1850,
-   "hours": 123,
-   "cocomo": 696
+   "lines": 1613,
+   "hours": 108,
+   "cocomo": 603
+  },
+  {
+   "name": "stompbox-lab",
+   "created": "2026-10-11",
+   "pushed": "2026-11-25",
+   "files": 7,
+   "lines": 1568,
+   "hours": 105,
+   "cocomo": 585
   },
   {
    "name": "mobbyhill",
    "created": "2026-11-15",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 1847,
-   "hours": 123,
-   "cocomo": 695
+   "lines": 1553,
+   "hours": 104,
+   "cocomo": 579
   },
   {
    "name": "circuit-musicfx",
    "created": "2026-11-18",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 1837,
-   "hours": 122,
-   "cocomo": 691
-  },
-  {
-   "name": "termbeat",
-   "created": "2026-07-19",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 1783,
-   "hours": 119,
-   "cocomo": 670
-  },
-  {
-   "name": "pixelmill",
-   "created": "2026-10-11",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 1767,
-   "hours": 118,
-   "cocomo": 663
-  },
-  {
-   "name": "birdix",
-   "created": "2026-05-10",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 1727,
-   "hours": 115,
-   "cocomo": 647
-  },
-  {
-   "name": "ordersim",
-   "created": "2026-10-10",
-   "pushed": "2026-11-25",
-   "files": 2,
-   "lines": 1677,
-   "hours": 112,
-   "cocomo": 628
-  },
-  {
-   "name": "flipcount-game",
-   "created": "2026-11-09",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 1671,
-   "hours": 111,
-   "cocomo": 625
-  },
-  {
-   "name": "page-wide-pof",
-   "created": "2026-10-11",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 1644,
-   "hours": 110,
-   "cocomo": 615
-  },
-  {
-   "name": "tile-topia",
-   "created": "2026-11-19",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 1621,
-   "hours": 108,
-   "cocomo": 606
-  },
-  {
-   "name": "scope-listener",
-   "created": "2026-09-22",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 1609,
-   "hours": 107,
-   "cocomo": 601
+   "lines": 1490,
+   "hours": 99,
+   "cocomo": 554
   },
   {
    "name": "groundcore",
    "created": "2026-04-05",
    "pushed": "2026-10-30",
    "files": 3,
-   "lines": 1599,
-   "hours": 107,
-   "cocomo": 597
+   "lines": 1483,
+   "hours": 99,
+   "cocomo": 552
   },
   {
-   "name": "blue-agent",
-   "created": "2026-10-19",
-   "pushed": "2026-11-27",
-   "files": 20,
-   "lines": 1568,
-   "hours": 105,
-   "cocomo": 585
-  },
-  {
-   "name": "algorithm-albatross",
-   "created": "2026-11-01",
+   "name": "termbeat",
+   "created": "2026-07-19",
    "pushed": "2026-11-25",
-   "files": 8,
-   "lines": 1565,
-   "hours": 104,
-   "cocomo": 584
+   "files": 1,
+   "lines": 1466,
+   "hours": 98,
+   "cocomo": 545
   },
   {
    "name": "2026-11-26-orange-rocketbench",
    "created": "2026-11-27",
    "pushed": "2026-11-27",
    "files": 2,
-   "lines": 1548,
-   "hours": 103,
-   "cocomo": 577
+   "lines": 1463,
+   "hours": 98,
+   "cocomo": 544
   },
   {
-   "name": "2026-11-25-blue-manualrebuild",
-   "created": "2026-11-25",
-   "pushed": "2026-11-27",
-   "files": 4,
-   "lines": 1546,
-   "hours": 103,
-   "cocomo": 576
-  },
-  {
-   "name": "delivery-twin",
-   "created": "2026-11-11",
-   "pushed": "2026-11-25",
-   "files": 17,
-   "lines": 1540,
-   "hours": 103,
-   "cocomo": 574
-  },
-  {
-   "name": "2026-11-16-pipe-weave",
-   "created": "2026-11-17",
-   "pushed": "2026-11-27",
-   "files": 1,
-   "lines": 1518,
-   "hours": 101,
-   "cocomo": 565
-  },
-  {
-   "name": "stumbler",
-   "created": "2026-09-02",
+   "name": "birdix",
+   "created": "2026-05-10",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 1502,
-   "hours": 100,
-   "cocomo": 559
+   "lines": 1445,
+   "hours": 96,
+   "cocomo": 537
   },
   {
-   "name": "axiom",
+   "name": "pixelmill",
    "created": "2026-10-11",
    "pushed": "2026-11-25",
-   "files": 3,
-   "lines": 1493,
-   "hours": 100,
-   "cocomo": 556
+   "files": 1,
+   "lines": 1404,
+   "hours": 94,
+   "cocomo": 521
   },
   {
-   "name": "looper",
-   "created": "2026-04-21",
+   "name": "ordersim",
+   "created": "2026-10-10",
    "pushed": "2026-11-25",
-   "files": 3,
-   "lines": 1492,
-   "hours": 99,
-   "cocomo": 555
+   "files": 2,
+   "lines": 1387,
+   "hours": 92,
+   "cocomo": 514
   },
   {
-   "name": "field-twin-viridian",
-   "created": "2026-10-15",
+   "name": "page-wide-pof",
+   "created": "2026-10-11",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 1476,
-   "hours": 98,
-   "cocomo": 549
-  },
-  {
-   "name": "bloxx",
-   "created": "2026-11-17",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 1437,
-   "hours": 96,
-   "cocomo": 534
-  },
-  {
-   "name": "skwiggle-v105",
-   "created": "2026-09-01",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 1436,
-   "hours": 96,
-   "cocomo": 533
+   "lines": 1357,
+   "hours": 90,
+   "cocomo": 503
   },
   {
    "name": "2026-11-25-green-starfighter",
    "created": "2026-11-26",
    "pushed": "2026-11-27",
    "files": 2,
-   "lines": 1415,
-   "hours": 94,
-   "cocomo": 525
+   "lines": 1327,
+   "hours": 88,
+   "cocomo": 491
   },
   {
-   "name": "ghost-kitchen-builder",
-   "created": "2026-10-11",
+   "name": "flipcount-game",
+   "created": "2026-11-09",
    "pushed": "2026-11-25",
-   "files": 10,
-   "lines": 1404,
-   "hours": 94,
-   "cocomo": 521
+   "files": 1,
+   "lines": 1298,
+   "hours": 87,
+   "cocomo": 480
+  },
+  {
+   "name": "2026-11-25-blue-manualrebuild",
+   "created": "2026-11-25",
+   "pushed": "2026-11-27",
+   "files": 4,
+   "lines": 1297,
+   "hours": 86,
+   "cocomo": 479
+  },
+  {
+   "name": "blue-agent",
+   "created": "2026-10-19",
+   "pushed": "2026-11-27",
+   "files": 20,
+   "lines": 1291,
+   "hours": 86,
+   "cocomo": 477
+  },
+  {
+   "name": "2026-11-16-pipe-weave",
+   "created": "2026-11-17",
+   "pushed": "2026-11-27",
+   "files": 1,
+   "lines": 1277,
+   "hours": 85,
+   "cocomo": 472
+  },
+  {
+   "name": "algorithm-albatross",
+   "created": "2026-11-01",
+   "pushed": "2026-11-25",
+   "files": 8,
+   "lines": 1258,
+   "hours": 84,
+   "cocomo": 464
+  },
+  {
+   "name": "skwiggle-v105",
+   "created": "2026-09-01",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 1193,
+   "hours": 80,
+   "cocomo": 439
+  },
+  {
+   "name": "looper",
+   "created": "2026-04-21",
+   "pushed": "2026-11-25",
+   "files": 3,
+   "lines": 1186,
+   "hours": 79,
+   "cocomo": 436
+  },
+  {
+   "name": "field-twin-viridian",
+   "created": "2026-10-15",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 1185,
+   "hours": 79,
+   "cocomo": 436
   },
   {
    "name": "chassisquiver",
    "created": "2026-10-12",
    "pushed": "2026-11-25",
    "files": 7,
-   "lines": 1375,
-   "hours": 92,
-   "cocomo": 510
+   "lines": 1123,
+   "hours": 75,
+   "cocomo": 412
   },
   {
-   "name": "pajamastan-space-administration",
-   "created": "2026-11-08",
-   "pushed": "2026-11-25",
-   "files": 6,
-   "lines": 1367,
-   "hours": 91,
-   "cocomo": 507
-  },
-  {
-   "name": "carchive",
-   "created": "2026-10-06",
+   "name": "bloxx",
+   "created": "2026-11-17",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 1334,
-   "hours": 89,
-   "cocomo": 494
-  },
-  {
-   "name": "defcon-trail",
-   "created": "2026-11-18",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 1327,
-   "hours": 88,
-   "cocomo": 491
-  },
-  {
-   "name": "mohave-wtf",
-   "created": "2026-10-17",
-   "pushed": "2026-11-25",
-   "files": 2,
-   "lines": 1321,
-   "hours": 88,
-   "cocomo": 489
+   "lines": 1105,
+   "hours": 74,
+   "cocomo": 405
   },
   {
    "name": "spectral-engine",
    "created": "2026-09-02",
    "pushed": "2026-11-25",
    "files": 5,
-   "lines": 1288,
-   "hours": 86,
-   "cocomo": 476
+   "lines": 1103,
+   "hours": 74,
+   "cocomo": 404
   },
   {
-   "name": "thanks-for-watching",
-   "created": "2026-11-12",
-   "pushed": "2026-11-25",
-   "files": 7,
-   "lines": 1276,
-   "hours": 85,
-   "cocomo": 471
-  },
-  {
-   "name": "synth",
-   "created": "2026-10-11",
+   "name": "carchive",
+   "created": "2026-10-06",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 1266,
-   "hours": 84,
-   "cocomo": 467
+   "lines": 1103,
+   "hours": 74,
+   "cocomo": 404
   },
   {
-   "name": "j30p4rdy",
-   "created": "2026-11-02",
+   "name": "mohave-wtf",
+   "created": "2026-10-17",
    "pushed": "2026-11-25",
    "files": 2,
-   "lines": 1239,
-   "hours": 83,
-   "cocomo": 457
+   "lines": 1100,
+   "hours": 73,
+   "cocomo": 403
   },
   {
-   "name": "pixelcoop-farm",
-   "created": "2026-10-11",
+   "name": "pajamastan-space-administration",
+   "created": "2026-11-08",
+   "pushed": "2026-11-25",
+   "files": 6,
+   "lines": 1078,
+   "hours": 72,
+   "cocomo": 395
+  },
+  {
+   "name": "defcon-trail",
+   "created": "2026-11-18",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 1225,
-   "hours": 82,
-   "cocomo": 451
+   "lines": 1065,
+   "hours": 71,
+   "cocomo": 390
   },
   {
    "name": "threat-atlas-v3",
    "created": "2026-09-11",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 1223,
-   "hours": 82,
-   "cocomo": 451
-  },
-  {
-   "name": "coffeekit1",
-   "created": "2026-11-05",
-   "pushed": "2026-11-25",
-   "files": 2,
-   "lines": 1207,
-   "hours": 80,
-   "cocomo": 444
-  },
-  {
-   "name": "phasewell-scope",
-   "created": "2026-09-22",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 1202,
-   "hours": 80,
-   "cocomo": 443
-  },
-  {
-   "name": "topo-war",
-   "created": "2026-09-29",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 1169,
-   "hours": 78,
-   "cocomo": 430
-  },
-  {
-   "name": "tomatomo",
-   "created": "2026-10-31",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 1164,
-   "hours": 78,
-   "cocomo": 428
-  },
-  {
-   "name": "parkingten",
-   "created": "2026-04-21",
-   "pushed": "2026-11-25",
-   "files": 9,
-   "lines": 1136,
-   "hours": 76,
-   "cocomo": 417
-  },
-  {
-   "name": "edmia",
-   "created": "2026-05-22",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 1135,
-   "hours": 76,
-   "cocomo": 417
-  },
-  {
-   "name": "checkin-kiosk",
-   "created": "2026-10-10",
-   "pushed": "2026-11-25",
-   "files": 3,
-   "lines": 1118,
-   "hours": 75,
-   "cocomo": 410
-  },
-  {
-   "name": "blue-agent-sandbox",
-   "created": "2026-10-19",
-   "pushed": "2026-11-25",
-   "files": 16,
-   "lines": 1111,
-   "hours": 74,
-   "cocomo": 407
-  },
-  {
-   "name": "tractor-tool",
-   "created": "2026-10-12",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 1110,
-   "hours": 74,
-   "cocomo": 407
-  },
-  {
-   "name": "mission-operator-next",
-   "created": "2026-10-31",
-   "pushed": "2026-11-25",
-   "files": 11,
-   "lines": 1100,
-   "hours": 73,
-   "cocomo": 403
-  },
-  {
-   "name": "dronesim",
-   "created": "2026-09-11",
-   "pushed": "2026-11-25",
-   "files": 7,
-   "lines": 1096,
-   "hours": 73,
-   "cocomo": 402
-  },
-  {
-   "name": "2026-11-17-orange-campus",
-   "created": "2026-11-18",
-   "pushed": "2026-11-27",
-   "files": 1,
-   "lines": 1072,
-   "hours": 71,
-   "cocomo": 392
+   "lines": 991,
+   "hours": 66,
+   "cocomo": 361
   },
   {
    "name": "mind-globe",
    "created": "2026-06-01",
    "pushed": "2026-11-01",
    "files": 3,
-   "lines": 1048,
-   "hours": 70,
-   "cocomo": 383
-  },
-  {
-   "name": "inkrunner",
-   "created": "2026-10-17",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 1038,
-   "hours": 69,
-   "cocomo": 379
-  },
-  {
-   "name": "2026-11-11-orange-codelens",
-   "created": "2026-11-11",
-   "pushed": "2026-11-27",
-   "files": 1,
-   "lines": 1032,
-   "hours": 69,
-   "cocomo": 377
-  },
-  {
-   "name": "suno-forge",
-   "created": "2026-04-06",
-   "pushed": "2026-11-25",
-   "files": 25,
-   "lines": 1030,
-   "hours": 69,
-   "cocomo": 376
-  },
-  {
-   "name": "fogwarren-vx",
-   "created": "2026-10-18",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 1026,
-   "hours": 68,
-   "cocomo": 375
-  },
-  {
-   "name": "ebutuoy-frontend",
-   "created": "2026-10-11",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 994,
-   "hours": 66,
-   "cocomo": 363
-  },
-  {
-   "name": "cipher-wars-v3",
-   "created": "2026-11-18",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 993,
-   "hours": 66,
-   "cocomo": 362
-  },
-  {
-   "name": "fashionocalypse",
-   "created": "2026-11-15",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 983,
-   "hours": 66,
+   "lines": 981,
+   "hours": 65,
    "cocomo": 358
   },
   {
-   "name": "repo-cloner",
-   "created": "2026-11-17",
+   "name": "j30p4rdy",
+   "created": "2026-11-02",
    "pushed": "2026-11-25",
-   "files": 1,
+   "files": 2,
    "lines": 973,
    "hours": 65,
    "cocomo": 354
   },
   {
-   "name": "note-note-note",
-   "created": "2026-09-29",
+   "name": "phasewell-scope",
+   "created": "2026-09-22",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 961,
+   "lines": 967,
    "hours": 64,
-   "cocomo": 350
+   "cocomo": 352
   },
   {
-   "name": "2026-10-30-orange-scores",
-   "created": "2026-10-30",
-   "pushed": "2026-11-27",
-   "files": 21,
+   "name": "thanks-for-watching",
+   "created": "2026-11-12",
+   "pushed": "2026-11-25",
+   "files": 7,
+   "lines": 967,
+   "hours": 64,
+   "cocomo": 352
+  },
+  {
+   "name": "coffeekit1",
+   "created": "2026-11-05",
+   "pushed": "2026-11-25",
+   "files": 2,
    "lines": 953,
    "hours": 64,
    "cocomo": 347
+  },
+  {
+   "name": "synth",
+   "created": "2026-10-11",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 933,
+   "hours": 62,
+   "cocomo": 339
+  },
+  {
+   "name": "pixelcoop-farm",
+   "created": "2026-10-11",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 925,
+   "hours": 62,
+   "cocomo": 336
+  },
+  {
+   "name": "tomatomo",
+   "created": "2026-10-31",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 916,
+   "hours": 61,
+   "cocomo": 333
+  },
+  {
+   "name": "topo-war",
+   "created": "2026-09-29",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 903,
+   "hours": 60,
+   "cocomo": 328
+  },
+  {
+   "name": "edmia",
+   "created": "2026-05-22",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 893,
+   "hours": 60,
+   "cocomo": 324
   },
   {
    "name": "tower2",
    "created": "2026-09-02",
    "pushed": "2026-11-07",
    "files": 1,
-   "lines": 951,
-   "hours": 63,
-   "cocomo": 346
+   "lines": 853,
+   "hours": 57,
+   "cocomo": 309
   },
   {
-   "name": "2026-11-05-locker-screen",
-   "created": "2026-11-05",
-   "pushed": "2026-11-27",
+   "name": "checkin-kiosk",
+   "created": "2026-10-10",
+   "pushed": "2026-11-25",
    "files": 3,
-   "lines": 948,
-   "hours": 63,
-   "cocomo": 345
+   "lines": 851,
+   "hours": 57,
+   "cocomo": 308
   },
   {
-   "name": "strudel-samples",
-   "created": "2026-11-09",
-   "pushed": "2026-11-25",
-   "files": 5,
-   "lines": 939,
-   "hours": 63,
-   "cocomo": 341
-  },
-  {
-   "name": "2026-10-20-orange-dialbeat",
-   "created": "2026-10-20",
-   "pushed": "2026-11-27",
-   "files": 1,
-   "lines": 935,
-   "hours": 62,
-   "cocomo": 340
-  },
-  {
-   "name": "conveyor-sim",
-   "created": "2026-10-28",
-   "pushed": "2026-11-25",
-   "files": 8,
-   "lines": 924,
-   "hours": 62,
-   "cocomo": 336
-  },
-  {
-   "name": "pipeline-builder",
-   "created": "2026-11-22",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 915,
-   "hours": 61,
-   "cocomo": 332
-  },
-  {
-   "name": "rat",
-   "created": "2026-04-10",
+   "name": "chromahum-zq",
+   "created": "2026-10-18",
    "pushed": "2026-11-25",
    "files": 2,
-   "lines": 906,
-   "hours": 60,
-   "cocomo": 329
+   "lines": 848,
+   "hours": 57,
+   "cocomo": 307
   },
   {
-   "name": "secureops",
-   "created": "2026-10-08",
+   "name": "parkingten",
+   "created": "2026-04-21",
    "pushed": "2026-11-25",
    "files": 9,
-   "lines": 899,
-   "hours": 60,
-   "cocomo": 326
-  },
-  {
-   "name": "threat-dash",
-   "created": "2026-08-07",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 896,
-   "hours": 60,
-   "cocomo": 325
+   "lines": 847,
+   "hours": 56,
+   "cocomo": 306
   },
   {
    "name": "cross-venue-equivalence-engine",
    "created": "2026-10-09",
    "pushed": "2026-11-25",
    "files": 5,
-   "lines": 890,
-   "hours": 59,
-   "cocomo": 323
+   "lines": 844,
+   "hours": 56,
+   "cocomo": 305
   },
   {
-   "name": "beewars",
+   "name": "2026-11-17-orange-campus",
    "created": "2026-11-18",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 890,
-   "hours": 59,
-   "cocomo": 323
-  },
-  {
-   "name": "welcome-to-the-madness",
-   "created": "2026-10-26",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 876,
-   "hours": 58,
-   "cocomo": 317
-  },
-  {
-   "name": "67-idea-generator",
-   "created": "2026-11-03",
    "pushed": "2026-11-27",
-   "files": 5,
-   "lines": 875,
-   "hours": 58,
-   "cocomo": 317
+   "files": 1,
+   "lines": 817,
+   "hours": 54,
+   "cocomo": 295
   },
   {
    "name": "nota-city",
    "created": "2026-04-20",
    "pushed": "2026-10-14",
    "files": 23,
-   "lines": 867,
-   "hours": 58,
-   "cocomo": 314
-  },
-  {
-   "name": "2026-11-04-field-dispatch",
-   "created": "2026-11-04",
-   "pushed": "2026-11-27",
-   "files": 10,
-   "lines": 857,
-   "hours": 57,
-   "cocomo": 310
-  },
-  {
-   "name": "lv-liquor-map",
-   "created": "2026-11-10",
-   "pushed": "2026-11-25",
-   "files": 3,
-   "lines": 857,
-   "hours": 57,
-   "cocomo": 310
-  },
-  {
-   "name": "2026-11-19-orange-packets",
-   "created": "2026-11-19",
-   "pushed": "2026-11-27",
-   "files": 1,
-   "lines": 856,
-   "hours": 57,
-   "cocomo": 310
-  },
-  {
-   "name": "pdf-yourself",
-   "created": "2026-10-30",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 853,
-   "hours": 57,
-   "cocomo": 309
-  },
-  {
-   "name": "aliens-win",
-   "created": "2026-10-11",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 850,
-   "hours": 57,
-   "cocomo": 308
-  },
-  {
-   "name": "2026-11-25-purple-lobhill",
-   "created": "2026-11-26",
-   "pushed": "2026-11-27",
-   "files": 2,
-   "lines": 842,
-   "hours": 56,
-   "cocomo": 305
-  },
-  {
-   "name": "diamond-driller",
-   "created": "2026-09-25",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 830,
-   "hours": 55,
-   "cocomo": 300
-  },
-  {
-   "name": "kvs-roulette",
-   "created": "2026-10-10",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 827,
-   "hours": 55,
-   "cocomo": 299
-  },
-  {
-   "name": "forkmill-zx",
-   "created": "2026-10-21",
-   "pushed": "2026-11-25",
-   "files": 2,
-   "lines": 813,
-   "hours": 54,
-   "cocomo": 294
-  },
-  {
-   "name": "tapperator",
-   "created": "2026-10-17",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 799,
-   "hours": 53,
-   "cocomo": 288
-  },
-  {
-   "name": "heckle-troll",
-   "created": "2026-10-15",
-   "pushed": "2026-11-27",
-   "files": 3,
-   "lines": 798,
-   "hours": 53,
-   "cocomo": 288
-  },
-  {
-   "name": "text-based-game",
-   "created": "2026-10-21",
-   "pushed": "2026-11-25",
-   "files": 2,
-   "lines": 797,
-   "hours": 53,
-   "cocomo": 287
-  },
-  {
-   "name": "2026-11-26-orange-centipede",
-   "created": "2026-11-27",
-   "pushed": "2026-11-27",
-   "files": 1,
-   "lines": 792,
+   "lines": 794,
    "hours": 53,
    "cocomo": 286
   },
   {
-   "name": "hire-portal",
-   "created": "2026-11-05",
-   "pushed": "2026-11-25",
+   "name": "2026-11-11-orange-codelens",
+   "created": "2026-11-11",
+   "pushed": "2026-11-27",
    "files": 1,
-   "lines": 789,
+   "lines": 790,
    "hours": 53,
-   "cocomo": 284
+   "cocomo": 285
   },
   {
-   "name": "pajamastan-invoices",
+   "name": "fogwarren-vx",
+   "created": "2026-10-18",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 776,
+   "hours": 52,
+   "cocomo": 280
+  },
+  {
+   "name": "dronesim",
+   "created": "2026-09-11",
+   "pushed": "2026-11-25",
+   "files": 7,
+   "lines": 768,
+   "hours": 51,
+   "cocomo": 276
+  },
+  {
+   "name": "cipher-wars-v3",
+   "created": "2026-11-18",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 752,
+   "hours": 50,
+   "cocomo": 270
+  },
+  {
+   "name": "tractor-tool",
    "created": "2026-10-12",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 788,
-   "hours": 53,
-   "cocomo": 284
+   "lines": 749,
+   "hours": 50,
+   "cocomo": 269
   },
   {
    "name": "2026-11-04-orange-hush",
    "created": "2026-11-04",
    "pushed": "2026-11-24",
    "files": 7,
-   "lines": 787,
-   "hours": 52,
-   "cocomo": 284
+   "lines": 749,
+   "hours": 50,
+   "cocomo": 269
   },
   {
-   "name": "scorpion-supper",
-   "created": "2026-11-10",
+   "name": "ebutuoy-frontend",
+   "created": "2026-10-11",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 786,
-   "hours": 52,
-   "cocomo": 283
-  },
-  {
-   "name": "delivery-twin-violet",
-   "created": "2026-11-13",
-   "pushed": "2026-11-25",
-   "files": 19,
-   "lines": 768,
-   "hours": 51,
-   "cocomo": 276
-  },
-  {
-   "name": "field-twin-violet-api",
-   "created": "2026-10-14",
-   "pushed": "2026-11-25",
-   "files": 19,
-   "lines": 768,
-   "hours": 51,
-   "cocomo": 276
-  },
-  {
-   "name": "starwake-game",
-   "created": "2026-11-24",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 760,
-   "hours": 51,
-   "cocomo": 273
-  },
-  {
-   "name": "x",
-   "created": "2026-10-08",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 733,
+   "lines": 740,
    "hours": 49,
-   "cocomo": 263
+   "cocomo": 266
   },
   {
-   "name": "2026-11-15-orange-keydecode",
-   "created": "2026-11-16",
-   "pushed": "2026-11-27",
+   "name": "fashionocalypse",
+   "created": "2026-11-15",
+   "pushed": "2026-11-25",
    "files": 1,
-   "lines": 731,
+   "lines": 737,
    "hours": 49,
-   "cocomo": 263
+   "cocomo": 265
   },
   {
-   "name": "2026-11-27-orange-parallaxwire",
-   "created": "2026-11-27",
+   "name": "2026-11-22-orange-hubview",
+   "created": "2026-11-22",
    "pushed": "2026-11-27",
-   "files": 3,
+   "files": 22,
    "lines": 729,
    "hours": 49,
    "cocomo": 262
   },
   {
-   "name": "daily-outline",
-   "created": "2026-06-02",
+   "name": "inkrunner",
+   "created": "2026-10-17",
    "pushed": "2026-11-25",
-   "files": 2,
-   "lines": 726,
-   "hours": 48,
-   "cocomo": 261
-  },
-  {
-   "name": "2026-11-25-purple-turret-sight",
-   "created": "2026-11-26",
-   "pushed": "2026-11-27",
    "files": 1,
-   "lines": 718,
+   "lines": 720,
    "hours": 48,
    "cocomo": 258
+  },
+  {
+   "name": "suno-forge",
+   "created": "2026-04-06",
+   "pushed": "2026-11-25",
+   "files": 25,
+   "lines": 716,
+   "hours": 48,
+   "cocomo": 257
+  },
+  {
+   "name": "note-note-note",
+   "created": "2026-09-29",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 705,
+   "hours": 47,
+   "cocomo": 253
+  },
+  {
+   "name": "2026-10-20-orange-dialbeat",
+   "created": "2026-10-20",
+   "pushed": "2026-11-27",
+   "files": 1,
+   "lines": 705,
+   "hours": 47,
+   "cocomo": 253
+  },
+  {
+   "name": "repo-cloner",
+   "created": "2026-11-17",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 696,
+   "hours": 46,
+   "cocomo": 249
   },
   {
    "name": "ebutuoy-backend",
    "created": "2026-05-19",
    "pushed": "2026-11-09",
    "files": 1,
-   "lines": 710,
-   "hours": 47,
-   "cocomo": 255
-  },
-  {
-   "name": "charley-douglass",
-   "created": "2026-10-26",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 707,
-   "hours": 47,
-   "cocomo": 253
-  },
-  {
-   "name": "bitfield-synth",
-   "created": "2026-06-12",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 698,
-   "hours": 47,
-   "cocomo": 250
-  },
-  {
-   "name": "cockpit-racer",
-   "created": "2026-10-11",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 694,
+   "lines": 685,
    "hours": 46,
-   "cocomo": 249
+   "cocomo": 245
   },
   {
-   "name": "2026-11-23-orange-explode",
-   "created": "2026-11-23",
-   "pushed": "2026-11-27",
-   "files": 1,
-   "lines": 690,
-   "hours": 46,
-   "cocomo": 247
-  },
-  {
-   "name": "2026-11-19-blue-just-five-more",
-   "created": "2026-11-19",
-   "pushed": "2026-11-27",
-   "files": 1,
-   "lines": 668,
+   "name": "rat",
+   "created": "2026-04-10",
+   "pushed": "2026-11-25",
+   "files": 2,
+   "lines": 681,
    "hours": 45,
-   "cocomo": 239
+   "cocomo": 244
   },
   {
-   "name": "coffeekit",
-   "created": "2026-06-21",
-   "pushed": "2026-10-14",
-   "files": 1,
-   "lines": 666,
+   "name": "field-twin-violet-api",
+   "created": "2026-10-14",
+   "pushed": "2026-11-25",
+   "files": 19,
+   "lines": 677,
+   "hours": 45,
+   "cocomo": 242
+  },
+  {
+   "name": "2026-10-30-orange-scores",
+   "created": "2026-10-30",
+   "pushed": "2026-11-27",
+   "files": 21,
+   "lines": 672,
+   "hours": 45,
+   "cocomo": 240
+  },
+  {
+   "name": "2026-11-27-orange-parallaxwire",
+   "created": "2026-11-27",
+   "pushed": "2026-11-27",
+   "files": 3,
+   "lines": 672,
+   "hours": 45,
+   "cocomo": 240
+  },
+  {
+   "name": "2026-11-25-purple-lobhill",
+   "created": "2026-11-26",
+   "pushed": "2026-11-27",
+   "files": 2,
+   "lines": 660,
    "hours": 44,
-   "cocomo": 238
+   "cocomo": 236
   },
   {
-   "name": "2026-11-09-orange-icefiles",
-   "created": "2026-11-10",
+   "name": "2026-11-26-green-ghostwing",
+   "created": "2026-11-27",
    "pushed": "2026-11-27",
    "files": 1,
-   "lines": 662,
+   "lines": 654,
    "hours": 44,
-   "cocomo": 237
+   "cocomo": 234
+  },
+  {
+   "name": "strudel-samples",
+   "created": "2026-11-09",
+   "pushed": "2026-11-25",
+   "files": 5,
+   "lines": 651,
+   "hours": 43,
+   "cocomo": 232
+  },
+  {
+   "name": "secureops",
+   "created": "2026-10-08",
+   "pushed": "2026-11-25",
+   "files": 9,
+   "lines": 650,
+   "hours": 43,
+   "cocomo": 232
+  },
+  {
+   "name": "conveyor-sim",
+   "created": "2026-10-28",
+   "pushed": "2026-11-25",
+   "files": 8,
+   "lines": 644,
+   "hours": 43,
+   "cocomo": 230
+  },
+  {
+   "name": "beewars",
+   "created": "2026-11-18",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 644,
+   "hours": 43,
+   "cocomo": 230
   },
   {
    "name": "mission-operator",
@@ -1391,80 +995,98 @@
    "cocomo": 229
   },
   {
-   "name": "67-press-proccessor",
-   "created": "2026-10-09",
-   "pushed": "2026-11-27",
+   "name": "welcome-to-the-madness",
+   "created": "2026-10-26",
+   "pushed": "2026-11-25",
    "files": 1,
-   "lines": 642,
-   "hours": 43,
-   "cocomo": 229
+   "lines": 617,
+   "hours": 41,
+   "cocomo": 220
+  },
+  {
+   "name": "67-idea-generator",
+   "created": "2026-11-03",
+   "pushed": "2026-11-27",
+   "files": 5,
+   "lines": 617,
+   "hours": 41,
+   "cocomo": 220
   },
   {
    "name": "qsr-tracker-backend",
    "created": "2026-08-29",
    "pushed": "2026-10-19",
    "files": 13,
-   "lines": 641,
-   "hours": 43,
-   "cocomo": 229
-  },
-  {
-   "name": "2026-11-19-orange-drivethru",
-   "created": "2026-11-20",
-   "pushed": "2026-11-27",
-   "files": 1,
-   "lines": 637,
-   "hours": 42,
-   "cocomo": 227
-  },
-  {
-   "name": "mohavetech-contracts",
-   "created": "2026-09-10",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 637,
-   "hours": 42,
-   "cocomo": 227
-  },
-  {
-   "name": "hackercons-roulette",
-   "created": "2026-10-05",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 632,
-   "hours": 42,
-   "cocomo": 225
-  },
-  {
-   "name": "anthropic-percentage-pop-up-game",
-   "created": "2026-10-13",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 618,
+   "lines": 614,
    "hours": 41,
-   "cocomo": 220
+   "cocomo": 219
   },
   {
-   "name": "gridmark",
-   "created": "2026-04-14",
-   "pushed": "2026-11-25",
-   "files": 1,
+   "name": "2026-11-04-field-dispatch",
+   "created": "2026-11-04",
+   "pushed": "2026-11-27",
+   "files": 10,
    "lines": 612,
    "hours": 41,
    "cocomo": 218
   },
   {
-   "name": "boba-breakeven-x8k4",
-   "created": "2026-09-11",
+   "name": "pdf-yourself",
+   "created": "2026-10-30",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 565,
-   "hours": 38,
-   "cocomo": 200
+   "lines": 611,
+   "hours": 41,
+   "cocomo": 217
   },
   {
-   "name": "fatty-fart-pedal",
-   "created": "2026-10-19",
+   "name": "aliens-win",
+   "created": "2026-10-11",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 609,
+   "hours": 41,
+   "cocomo": 217
+  },
+  {
+   "name": "threat-dash",
+   "created": "2026-08-07",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 599,
+   "hours": 40,
+   "cocomo": 213
+  },
+  {
+   "name": "diamond-driller",
+   "created": "2026-09-25",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 587,
+   "hours": 39,
+   "cocomo": 209
+  },
+  {
+   "name": "coffeekit",
+   "created": "2026-06-21",
+   "pushed": "2026-10-14",
+   "files": 1,
+   "lines": 570,
+   "hours": 38,
+   "cocomo": 202
+  },
+  {
+   "name": "lv-liquor-map",
+   "created": "2026-11-10",
+   "pushed": "2026-11-25",
+   "files": 3,
+   "lines": 562,
+   "hours": 37,
+   "cocomo": 199
+  },
+  {
+   "name": "scorpion-supper",
+   "created": "2026-11-10",
    "pushed": "2026-11-25",
    "files": 1,
    "lines": 559,
@@ -1472,44 +1094,71 @@
    "cocomo": 198
   },
   {
-   "name": "sound-bender",
-   "created": "2026-10-25",
+   "name": "kvs-roulette",
+   "created": "2026-10-10",
    "pushed": "2026-11-25",
-   "files": 3,
-   "lines": 553,
+   "files": 1,
+   "lines": 555,
    "hours": 37,
-   "cocomo": 196
+   "cocomo": 197
   },
   {
-   "name": "shared-server",
-   "created": "2026-10-21",
+   "name": "pipeline-builder",
+   "created": "2026-11-22",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 552,
+   "hours": 37,
+   "cocomo": 195
+  },
+  {
+   "name": "2026-11-26-orange-centipede",
+   "created": "2026-11-27",
    "pushed": "2026-11-27",
-   "files": 3,
+   "files": 1,
+   "lines": 551,
+   "hours": 37,
+   "cocomo": 195
+  },
+  {
+   "name": "hire-portal",
+   "created": "2026-11-05",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 549,
+   "hours": 37,
+   "cocomo": 194
+  },
+  {
+   "name": "tapperator",
+   "created": "2026-10-17",
+   "pushed": "2026-11-25",
+   "files": 1,
    "lines": 547,
    "hours": 36,
    "cocomo": 194
   },
   {
-   "name": "graceland-diagram",
-   "created": "2026-05-09",
+   "name": "pajamastan-invoices",
+   "created": "2026-10-12",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 538,
+   "lines": 546,
    "hours": 36,
-   "cocomo": 190
+   "cocomo": 193
   },
   {
-   "name": "2026-11-17-orange-campusapi",
-   "created": "2026-11-18",
-   "pushed": "2026-11-23",
-   "files": 1,
-   "lines": 529,
-   "hours": 35,
-   "cocomo": 187
+   "name": "forkmill-zx",
+   "created": "2026-10-21",
+   "pushed": "2026-11-25",
+   "files": 2,
+   "lines": 544,
+   "hours": 36,
+   "cocomo": 193
   },
   {
-   "name": "tickle-boxie",
-   "created": "2026-10-18",
+   "name": "starwake-game",
+   "created": "2026-11-24",
    "pushed": "2026-11-25",
    "files": 1,
    "lines": 528,
@@ -1517,161 +1166,179 @@
    "cocomo": 187
   },
   {
-   "name": "ether-wand",
-   "created": "2026-10-11",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 527,
-   "hours": 35,
-   "cocomo": 186
+   "name": "control-troll",
+   "created": "2026-10-12",
+   "pushed": "2026-11-27",
+   "files": 6,
+   "lines": 499,
+   "hours": 33,
+   "cocomo": 176
   },
   {
-   "name": "tinewood-keys",
-   "created": "2026-10-11",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 526,
-   "hours": 35,
-   "cocomo": 186
-  },
-  {
-   "name": "qsr-receipt-sim",
-   "created": "2026-10-09",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 511,
-   "hours": 34,
-   "cocomo": 180
-  },
-  {
-   "name": "2026-11-01-orange-decimalday",
-   "created": "2026-11-01",
+   "name": "2026-11-15-orange-keydecode",
+   "created": "2026-11-16",
    "pushed": "2026-11-27",
    "files": 1,
-   "lines": 509,
-   "hours": 34,
-   "cocomo": 180
+   "lines": 483,
+   "hours": 32,
+   "cocomo": 170
   },
   {
-   "name": "dronecamp",
-   "created": "2026-07-03",
+   "name": "x",
+   "created": "2026-10-08",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 490,
-   "hours": 33,
-   "cocomo": 172
+   "lines": 481,
+   "hours": 32,
+   "cocomo": 169
   },
   {
-   "name": "engine-companion",
-   "created": "2026-09-17",
+   "name": "tickle-boxie",
+   "created": "2026-10-18",
    "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 481,
+   "hours": 32,
+   "cocomo": 169
+  },
+  {
+   "name": "bitfield-synth",
+   "created": "2026-06-12",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 480,
+   "hours": 32,
+   "cocomo": 169
+  },
+  {
+   "name": "heckle-troll",
+   "created": "2026-10-15",
+   "pushed": "2026-11-27",
+   "files": 3,
+   "lines": 480,
+   "hours": 32,
+   "cocomo": 169
+  },
+  {
+   "name": "2026-11-25-purple-turret-sight",
+   "created": "2026-11-26",
+   "pushed": "2026-11-27",
    "files": 1,
    "lines": 474,
    "hours": 32,
    "cocomo": 167
   },
   {
-   "name": "torque-converter",
-   "created": "2026-10-12",
+   "name": "cockpit-racer",
+   "created": "2026-10-11",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 472,
+   "lines": 471,
    "hours": 31,
-   "cocomo": 166
+   "cocomo": 165
+  },
+  {
+   "name": "daily-outline",
+   "created": "2026-06-02",
+   "pushed": "2026-11-25",
+   "files": 2,
+   "lines": 467,
+   "hours": 31,
+   "cocomo": 164
   },
   {
    "name": "mohavetech-contracts-api",
    "created": "2026-09-10",
    "pushed": "2026-10-19",
    "files": 6,
-   "lines": 465,
-   "hours": 31,
-   "cocomo": 163
+   "lines": 437,
+   "hours": 29,
+   "cocomo": 153
   },
   {
-   "name": "paycheck-hub",
-   "created": "2026-10-02",
-   "pushed": "2026-11-25",
+   "name": "2026-11-19-blue-just-five-more",
+   "created": "2026-11-19",
+   "pushed": "2026-11-27",
    "files": 1,
-   "lines": 460,
-   "hours": 31,
-   "cocomo": 161
+   "lines": 432,
+   "hours": 29,
+   "cocomo": 151
   },
   {
    "name": "2026-11-25-green-hopper",
    "created": "2026-11-26",
    "pushed": "2026-11-27",
    "files": 1,
-   "lines": 457,
-   "hours": 30,
-   "cocomo": 160
-  },
-  {
-   "name": "spyhunt",
-   "created": "2026-11-10",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 436,
-   "hours": 29,
-   "cocomo": 153
-  },
-  {
-   "name": "pancake-orange",
-   "created": "2026-10-05",
-   "pushed": "2026-11-25",
-   "files": 1,
    "lines": 429,
    "hours": 29,
    "cocomo": 150
   },
   {
-   "name": "pajamastan-warrants",
-   "created": "2026-10-02",
-   "pushed": "2026-11-25",
-   "files": 3,
-   "lines": 426,
-   "hours": 28,
-   "cocomo": 149
+   "name": "2026-11-23-orange-explode",
+   "created": "2026-11-23",
+   "pushed": "2026-11-27",
+   "files": 1,
+   "lines": 428,
+   "hours": 29,
+   "cocomo": 150
   },
   {
-   "name": "2026-11-26-orange-casino-server",
-   "created": "2026-11-27",
+   "name": "2026-11-09-orange-icefiles",
+   "created": "2026-11-10",
    "pushed": "2026-11-27",
-   "files": 2,
+   "files": 1,
    "lines": 425,
    "hours": 28,
    "cocomo": 149
   },
   {
-   "name": "signal-snapshot",
-   "created": "2026-09-28",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 411,
-   "hours": 27,
-   "cocomo": 143
-  },
-  {
-   "name": "2026-11-05-drive-thru-dental",
-   "created": "2026-11-05",
+   "name": "67-press-proccessor",
+   "created": "2026-10-09",
    "pushed": "2026-11-27",
    "files": 1,
-   "lines": 402,
+   "lines": 405,
+   "hours": 27,
+   "cocomo": 141
+  },
+  {
+   "name": "2026-11-19-orange-drivethru",
+   "created": "2026-11-20",
+   "pushed": "2026-11-27",
+   "files": 1,
+   "lines": 403,
    "hours": 27,
    "cocomo": 140
   },
   {
-   "name": "steward-repo",
-   "created": "2026-10-19",
+   "name": "hackercons-roulette",
+   "created": "2026-10-05",
    "pushed": "2026-11-25",
-   "files": 2,
-   "lines": 396,
+   "files": 1,
+   "lines": 398,
+   "hours": 27,
+   "cocomo": 139
+  },
+  {
+   "name": "anthropic-percentage-pop-up-game",
+   "created": "2026-10-13",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 397,
    "hours": 26,
    "cocomo": 138
   },
   {
-   "name": "irrigation-demo",
-   "created": "2026-10-12",
+   "name": "gridmark",
+   "created": "2026-04-14",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 393,
+   "hours": 26,
+   "cocomo": 137
+  },
+  {
+   "name": "mohavetech-contracts",
+   "created": "2026-09-10",
    "pushed": "2026-11-25",
    "files": 1,
    "lines": 391,
@@ -1679,85 +1346,130 @@
    "cocomo": 136
   },
   {
-   "name": "2026-11-16-orange-zion",
-   "created": "2026-11-16",
+   "name": "scope-listener",
+   "created": "2026-09-22",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 381,
+   "hours": 25,
+   "cocomo": 132
+  },
+  {
+   "name": "steward-repo",
+   "created": "2026-10-19",
+   "pushed": "2026-11-25",
+   "files": 2,
+   "lines": 377,
+   "hours": 25,
+   "cocomo": 131
+  },
+  {
+   "name": "2026-11-26-orange-casino-server",
+   "created": "2026-11-27",
    "pushed": "2026-11-27",
-   "files": 1,
-   "lines": 384,
-   "hours": 26,
-   "cocomo": 134
+   "files": 2,
+   "lines": 367,
+   "hours": 24,
+   "cocomo": 127
   },
   {
-   "name": "bpm-finder",
-   "created": "2026-10-28",
+   "name": "boba-breakeven-x8k4",
+   "created": "2026-09-11",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 383,
-   "hours": 26,
-   "cocomo": 133
+   "lines": 340,
+   "hours": 23,
+   "cocomo": 118
   },
   {
-   "name": "particular-lenticular",
-   "created": "2026-11-10",
+   "name": "ghost-kitchen-builder",
+   "created": "2026-10-11",
    "pushed": "2026-11-25",
+   "files": 10,
+   "lines": 331,
+   "hours": 22,
+   "cocomo": 114
+  },
+  {
+   "name": "2026-11-17-orange-campusapi",
+   "created": "2026-11-18",
+   "pushed": "2026-11-23",
    "files": 1,
-   "lines": 383,
-   "hours": 26,
-   "cocomo": 133
+   "lines": 327,
+   "hours": 22,
+   "cocomo": 113
   },
   {
    "name": "2026-11-24-green-greenscreen",
    "created": "2026-11-24",
    "pushed": "2026-11-25",
    "files": 3,
-   "lines": 360,
-   "hours": 24,
-   "cocomo": 125
-  },
-  {
-   "name": "androids",
-   "created": "2026-10-09",
-   "pushed": "2026-10-22",
-   "files": 1,
-   "lines": 324,
+   "lines": 327,
    "hours": 22,
-   "cocomo": 112
+   "cocomo": 113
   },
   {
-   "name": "rosetta-pone",
-   "created": "2026-10-18",
+   "name": "graceland-diagram",
+   "created": "2026-05-09",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 323,
-   "hours": 22,
+   "lines": 322,
+   "hours": 21,
    "cocomo": 111
   },
   {
-   "name": "purple-agent",
-   "created": "2026-10-22",
+   "name": "topo-wars-server",
+   "created": "2026-09-30",
    "pushed": "2026-11-25",
-   "files": 2,
-   "lines": 316,
+   "files": 6,
+   "lines": 313,
    "hours": 21,
-   "cocomo": 109
+   "cocomo": 108
+  },
+  {
+   "name": "ether-wand",
+   "created": "2026-10-11",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 309,
+   "hours": 21,
+   "cocomo": 106
+  },
+  {
+   "name": "tinewood-keys",
+   "created": "2026-10-11",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 303,
+   "hours": 20,
+   "cocomo": 104
+  },
+  {
+   "name": "sound-bender",
+   "created": "2026-10-25",
+   "pushed": "2026-11-25",
+   "files": 3,
+   "lines": 299,
+   "hours": 20,
+   "cocomo": 103
   },
   {
    "name": "signal-snapshot-backend",
    "created": "2026-09-28",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 308,
-   "hours": 21,
-   "cocomo": 106
+   "lines": 297,
+   "hours": 20,
+   "cocomo": 102
   },
   {
-   "name": "2026-11-26-orange-casino",
-   "created": "2026-11-27",
-   "pushed": "2026-11-27",
+   "name": "purple-agent",
+   "created": "2026-10-22",
+   "pushed": "2026-11-25",
    "files": 2,
-   "lines": 300,
+   "lines": 297,
    "hours": 20,
-   "cocomo": 103
+   "cocomo": 102
   },
   {
    "name": "topdown-pixeltowns",
@@ -1769,137 +1481,380 @@
    "cocomo": 98
   },
   {
+   "name": "androids",
+   "created": "2026-10-09",
+   "pushed": "2026-10-22",
+   "files": 1,
+   "lines": 286,
+   "hours": 19,
+   "cocomo": 98
+  },
+  {
+   "name": "shared-server",
+   "created": "2026-10-21",
+   "pushed": "2026-11-27",
+   "files": 3,
+   "lines": 286,
+   "hours": 19,
+   "cocomo": 98
+  },
+  {
+   "name": "mission-operator-next",
+   "created": "2026-10-31",
+   "pushed": "2026-11-25",
+   "files": 11,
+   "lines": 285,
+   "hours": 19,
+   "cocomo": 98
+  },
+  {
+   "name": "2026-11-01-orange-decimalday",
+   "created": "2026-11-01",
+   "pushed": "2026-11-27",
+   "files": 1,
+   "lines": 282,
+   "hours": 19,
+   "cocomo": 97
+  },
+  {
+   "name": "dronecamp",
+   "created": "2026-07-03",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 270,
+   "hours": 18,
+   "cocomo": 92
+  },
+  {
    "name": "arcade-backend",
    "created": "2026-09-11",
    "pushed": "2026-10-19",
    "files": 1,
-   "lines": 278,
-   "hours": 19,
-   "cocomo": 95
+   "lines": 270,
+   "hours": 18,
+   "cocomo": 92
   },
   {
-   "name": "spaceout",
-   "created": "2026-05-10",
+   "name": "charley-douglass",
+   "created": "2026-10-26",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 275,
-   "hours": 18,
-   "cocomo": 94
+   "lines": 260,
+   "hours": 17,
+   "cocomo": 89
+  },
+  {
+   "name": "qsr-receipt-sim",
+   "created": "2026-10-09",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 256,
+   "hours": 17,
+   "cocomo": 87
+  },
+  {
+   "name": "engine-companion",
+   "created": "2026-09-17",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 248,
+   "hours": 17,
+   "cocomo": 84
+  },
+  {
+   "name": "2026-11-26-orange-casino",
+   "created": "2026-11-27",
+   "pushed": "2026-11-27",
+   "files": 2,
+   "lines": 248,
+   "hours": 17,
+   "cocomo": 84
+  },
+  {
+   "name": "paycheck-hub",
+   "created": "2026-10-02",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 236,
+   "hours": 16,
+   "cocomo": 80
   },
   {
    "name": "threat-poller",
    "created": "2026-08-01",
    "pushed": "2026-11-07",
    "files": 4,
-   "lines": 249,
-   "hours": 17,
-   "cocomo": 85
+   "lines": 235,
+   "hours": 16,
+   "cocomo": 80
+  },
+  {
+   "name": "spyhunt",
+   "created": "2026-11-10",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 205,
+   "hours": 14,
+   "cocomo": 69
+  },
+  {
+   "name": "fatty-fart-pedal",
+   "created": "2026-10-19",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 203,
+   "hours": 14,
+   "cocomo": 68
   },
   {
    "name": "hackercons-roulette-api",
    "created": "2026-10-05",
    "pushed": "2026-11-19",
    "files": 1,
-   "lines": 227,
-   "hours": 15,
-   "cocomo": 77
+   "lines": 199,
+   "hours": 13,
+   "cocomo": 67
   },
   {
-   "name": "pajamastan",
-   "created": "2026-10-09",
-   "pushed": "2026-11-27",
-   "files": 3,
-   "lines": 222,
-   "hours": 15,
-   "cocomo": 75
-  },
-  {
-   "name": "topdown-pixeltown",
-   "created": "2026-10-05",
+   "name": "torque-converter",
+   "created": "2026-10-12",
    "pushed": "2026-11-25",
    "files": 1,
-   "lines": 211,
-   "hours": 14,
-   "cocomo": 71
+   "lines": 199,
+   "hours": 13,
+   "cocomo": 67
   },
   {
-   "name": "2026-11-24-green-fleetindex",
-   "created": "2026-11-24",
-   "pushed": "2026-11-26",
-   "files": 1,
-   "lines": 196,
+   "name": "pajamastan-warrants",
+   "created": "2026-10-02",
+   "pushed": "2026-11-25",
+   "files": 3,
+   "lines": 193,
    "hours": 13,
-   "cocomo": 66
+   "cocomo": 65
+  },
+  {
+   "name": "signal-snapshot",
+   "created": "2026-09-28",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 183,
+   "hours": 12,
+   "cocomo": 61
+  },
+  {
+   "name": "2026-11-05-drive-thru-dental",
+   "created": "2026-11-05",
+   "pushed": "2026-11-27",
+   "files": 1,
+   "lines": 179,
+   "hours": 12,
+   "cocomo": 60
   },
   {
    "name": "2026-11-25-ten-turn-machine",
    "created": "2026-11-25",
    "pushed": "2026-11-27",
    "files": 4,
-   "lines": 192,
-   "hours": 13,
-   "cocomo": 64
+   "lines": 171,
+   "hours": 11,
+   "cocomo": 57
   },
   {
-   "name": "stinkin-badges",
-   "created": "2026-11-07",
-   "pushed": "2026-11-08",
-   "files": 3,
-   "lines": 184,
-   "hours": 12,
-   "cocomo": 62
+   "name": "delivery-twin",
+   "created": "2026-11-11",
+   "pushed": "2026-11-25",
+   "files": 17,
+   "lines": 170,
+   "hours": 11,
+   "cocomo": 57
+  },
+  {
+   "name": "text-based-game",
+   "created": "2026-10-21",
+   "pushed": "2026-11-25",
+   "files": 2,
+   "lines": 166,
+   "hours": 11,
+   "cocomo": 55
+  },
+  {
+   "name": "pancake-orange",
+   "created": "2026-10-05",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 164,
+   "hours": 11,
+   "cocomo": 55
+  },
+  {
+   "name": "irrigation-demo",
+   "created": "2026-10-12",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 163,
+   "hours": 11,
+   "cocomo": 54
+  },
+  {
+   "name": "blue-agent-sandbox",
+   "created": "2026-10-19",
+   "pushed": "2026-11-25",
+   "files": 16,
+   "lines": 163,
+   "hours": 11,
+   "cocomo": 54
+  },
+  {
+   "name": "2026-11-16-orange-zion",
+   "created": "2026-11-16",
+   "pushed": "2026-11-27",
+   "files": 1,
+   "lines": 162,
+   "hours": 11,
+   "cocomo": 54
+  },
+  {
+   "name": "2026-11-24-green-fleetindex",
+   "created": "2026-11-24",
+   "pushed": "2026-11-26",
+   "files": 1,
+   "lines": 161,
+   "hours": 11,
+   "cocomo": 54
+  },
+  {
+   "name": "bpm-finder",
+   "created": "2026-10-28",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 150,
+   "hours": 10,
+   "cocomo": 50
+  },
+  {
+   "name": "particular-lenticular",
+   "created": "2026-11-10",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 147,
+   "hours": 10,
+   "cocomo": 49
+  },
+  {
+   "name": "mail-ionaire",
+   "created": "2026-11-11",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 131,
+   "hours": 9,
+   "cocomo": 43
   },
   {
    "name": "2026-11-26-orange-bingo",
    "created": "2026-11-26",
    "pushed": "2026-11-27",
    "files": 1,
-   "lines": 156,
-   "hours": 10,
-   "cocomo": 52
+   "lines": 119,
+   "hours": 8,
+   "cocomo": 39
+  },
+  {
+   "name": "rosetta-pone",
+   "created": "2026-10-18",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 104,
+   "hours": 7,
+   "cocomo": 34
+  },
+  {
+   "name": "delivery-twin-violet",
+   "created": "2026-11-13",
+   "pushed": "2026-11-25",
+   "files": 19,
+   "lines": 98,
+   "hours": 7,
+   "cocomo": 32
+  },
+  {
+   "name": "stinkin-badges",
+   "created": "2026-11-07",
+   "pushed": "2026-11-08",
+   "files": 3,
+   "lines": 95,
+   "hours": 6,
+   "cocomo": 31
   },
   {
    "name": "skwiggle-mint-pin",
    "created": "2026-09-01",
    "pushed": "2026-10-18",
    "files": 1,
-   "lines": 111,
-   "hours": 7,
-   "cocomo": 36
-  },
-  {
-   "name": "2026-11-26-orange-bingo-server",
-   "created": "2026-11-26",
-   "pushed": "2026-11-27",
-   "files": 1,
-   "lines": 101,
-   "hours": 7,
-   "cocomo": 33
+   "lines": 94,
+   "hours": 6,
+   "cocomo": 30
   },
   {
    "name": "mohave-browser",
    "created": "2026-09-16",
    "pushed": "2026-10-19",
    "files": 1,
-   "lines": 100,
-   "hours": 7,
-   "cocomo": 33
+   "lines": 93,
+   "hours": 6,
+   "cocomo": 30
+  },
+  {
+   "name": "axiom",
+   "created": "2026-10-11",
+   "pushed": "2026-11-25",
+   "files": 3,
+   "lines": 83,
+   "hours": 6,
+   "cocomo": 27
   },
   {
    "name": "pajamastan-card-orders",
    "created": "2026-11-23",
    "pushed": "2026-11-24",
    "files": 1,
-   "lines": 99,
-   "hours": 7,
-   "cocomo": 32
+   "lines": 81,
+   "hours": 5,
+   "cocomo": 26
+  },
+  {
+   "name": "2026-11-26-orange-bingo-server",
+   "created": "2026-11-26",
+   "pushed": "2026-11-27",
+   "files": 1,
+   "lines": 78,
+   "hours": 5,
+   "cocomo": 25
+  },
+  {
+   "name": "stumbler",
+   "created": "2026-09-02",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 73,
+   "hours": 5,
+   "cocomo": 23
+  },
+  {
+   "name": "spaceout",
+   "created": "2026-05-10",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 63,
+   "hours": 4,
+   "cocomo": 20
   },
   {
    "name": "free-as-in-links",
    "created": "2026-10-11",
    "pushed": "2026-10-31",
    "files": 2,
-   "lines": 64,
+   "lines": 62,
    "hours": 4,
    "cocomo": 20
   },
@@ -1908,18 +1863,45 @@
    "created": "2026-11-10",
    "pushed": "2026-11-11",
    "files": 1,
-   "lines": 44,
-   "hours": 3,
-   "cocomo": 14
+   "lines": 31,
+   "hours": 2,
+   "cocomo": 10
+  },
+  {
+   "name": "pajamastan",
+   "created": "2026-10-09",
+   "pushed": "2026-11-27",
+   "files": 3,
+   "lines": 22,
+   "hours": 1,
+   "cocomo": 7
+  },
+  {
+   "name": "2026-11-05-locker-screen",
+   "created": "2026-11-05",
+   "pushed": "2026-11-27",
+   "files": 3,
+   "lines": 4,
+   "hours": 0,
+   "cocomo": 1
   },
   {
    "name": "skwiggle-backend",
    "created": "2026-08-31",
    "pushed": "2026-10-18",
    "files": 1,
-   "lines": 8,
-   "hours": 1,
-   "cocomo": 2
+   "lines": 3,
+   "hours": 0,
+   "cocomo": 1
+  },
+  {
+   "name": "topdown-pixeltown",
+   "created": "2026-10-05",
+   "pushed": "2026-11-25",
+   "files": 1,
+   "lines": 2,
+   "hours": 0,
+   "cocomo": 1
   }
  ]
 }
