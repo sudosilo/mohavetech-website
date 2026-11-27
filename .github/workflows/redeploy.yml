@@ -1,0 +1,35 @@
+name: redeploy
+# Links Vercel projects to GitHub and deploys them from GitHub, one batch per run, until the list is empty.
+on:
+  push:
+    branches: [master]
+    paths: [mohavetech-redeploy-v1.js, .github/workflows/redeploy.yml]
+  schedule:
+    - cron: "41 15 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  redeploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Link and deploy a batch
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_SLUG: sudosilo2-1771s-projects
+        run: |
+          node -e 'process.exit(require("./mohavetech-redeploy-v1.json").pending.length?0:1)' || { echo "nothing pending"; exit 0; }
+          node mohavetech-redeploy-v1.js
+      - name: Save progress
+        run: |
+          git config user.name "mohave-sync-bot"
+          git config user.email "mohave-sync-bot@users.noreply.github.com"
+          git add mohavetech-redeploy-v1.json
+          git diff --cached --quiet && exit 0
+          git commit -m "redeploy progress"
+          git pull --rebase origin master
+          git push

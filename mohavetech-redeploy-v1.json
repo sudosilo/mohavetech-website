@@ -1,0 +1,601 @@
+{
+ "note": "Apps whose GitHub pushes never reached Vercel. The redeploy job links each to its repo and deploys it, a batch per day.",
+ "pending": [
+  {
+   "project": "2026-10-22-orange-agent",
+   "repo": "sudosilo/2026-10-22-orange-agent",
+   "branch": "main"
+  },
+  {
+   "project": "2026-10-23-orange-smash",
+   "repo": "sudosilo/2026-10-23-orange-smash",
+   "branch": "main"
+  },
+  {
+   "project": "2026-11-01-orange-decimalday",
+   "repo": "sudosilo/2026-11-01-orange-decimalday",
+   "branch": "main"
+  },
+  {
+   "project": "2026-11-04-field-dispatch",
+   "repo": "sudosilo/2026-11-04-field-dispatch",
+   "branch": "main"
+  },
+  {
+   "project": "2026-11-05-drive-thru-dental",
+   "repo": "sudosilo/2026-11-05-drive-thru-dental",
+   "branch": "main"
+  },
+  {
+   "project": "2026-11-09-orange-icefiles",
+   "repo": "sudosilo/2026-11-09-orange-icefiles",
+   "branch": "main"
+  },
+  {
+   "project": "2026-11-11-orange-codelens",
+   "repo": "sudosilo/2026-11-11-orange-codelens",
+   "branch": "main"
+  },
+  {
+   "project": "2026-11-15-orange-keydecode",
+   "repo": "sudosilo/2026-11-15-orange-keydecode",
+   "branch": "main"
+  },
+  {
+   "project": "2026-11-16-pipe-weave",
+   "repo": "sudosilo/2026-11-16-pipe-weave",
+   "branch": "main"
+  },
+  {
+   "project": "2026-11-19-blue-just-five-more",
+   "repo": "sudosilo/2026-11-19-blue-just-five-more",
+   "branch": "main"
+  },
+  {
+   "project": "2026-11-19-orange-drivethru",
+   "repo": "sudosilo/2026-11-19-orange-drivethru",
+   "branch": "main"
+  },
+  {
+   "project": "2026-11-19-orange-packets",
+   "repo": "sudosilo/2026-11-19-orange-packets",
+   "branch": "main"
+  },
+  {
+   "project": "2026-11-23-orange-explode",
+   "repo": "sudosilo/2026-11-23-orange-explode",
+   "branch": "main"
+  },
+  {
+   "project": "2026-11-24-blue-estate-dossier",
+   "repo": "sudosilo/2026-11-24-blue-estate-dossier",
+   "branch": "main"
+  },
+  {
+   "project": "2026-11-26-orange-centipede",
+   "repo": "sudosilo/2026-11-26-orange-centipede",
+   "branch": "main"
+  },
+  {
+   "project": "67-idea-generator",
+   "repo": "sudosilo/67-idea-generator",
+   "branch": "main"
+  },
+  {
+   "project": "67-press-proccessor",
+   "repo": "sudosilo/67-press-proccessor",
+   "branch": "master"
+  },
+  {
+   "project": "a-canticle-for-pajamastan",
+   "repo": "sudosilo/a-canticle-for-pajamastan",
+   "branch": "main"
+  },
+  {
+   "project": "aerophin-twin",
+   "repo": "sudosilo/aerophin-twin",
+   "branch": "master"
+  },
+  {
+   "project": "aliens-win",
+   "repo": "sudosilo/aliens-win",
+   "branch": "main"
+  },
+  {
+   "project": "anthropic-percentage-pop-up-game",
+   "repo": "sudosilo/anthropic-percentage-pop-up-game",
+   "branch": "main"
+  },
+  {
+   "project": "artifactium",
+   "repo": "sudosilo/artifactium",
+   "branch": "main"
+  },
+  {
+   "project": "beesim-green",
+   "repo": "sudosilo/beesim-green",
+   "branch": "master"
+  },
+  {
+   "project": "beewars",
+   "repo": "sudosilo/beewars",
+   "branch": "main"
+  },
+  {
+   "project": "birdix",
+   "repo": "sudosilo/birdix",
+   "branch": "master"
+  },
+  {
+   "project": "bitfield-synth",
+   "repo": "sudosilo/bitfield-synth",
+   "branch": "master"
+  },
+  {
+   "project": "bloxx",
+   "repo": "sudosilo/bloxx",
+   "branch": "main"
+  },
+  {
+   "project": "blue-agent",
+   "repo": "sudosilo/blue-agent",
+   "branch": "main"
+  },
+  {
+   "project": "boba-breakeven-x8k4",
+   "repo": "sudosilo/boba-breakeven-x8k4",
+   "branch": "master"
+  },
+  {
+   "project": "bpm-finder",
+   "repo": "sudosilo/bpm-finder",
+   "branch": "main"
+  },
+  {
+   "project": "carchive",
+   "repo": "sudosilo/carchive",
+   "branch": "master"
+  },
+  {
+   "project": "cipher-wars-v3",
+   "repo": "sudosilo/cipher-wars-v3",
+   "branch": "master"
+  },
+  {
+   "project": "circuit-musicfx",
+   "repo": "sudosilo/circuit-musicfx",
+   "branch": "master"
+  },
+  {
+   "project": "city-seek",
+   "repo": "sudosilo/city-seek",
+   "branch": "main"
+  },
+  {
+   "project": "cockpit-racer",
+   "repo": "sudosilo/cockpit-racer",
+   "branch": "main"
+  },
+  {
+   "project": "coffee-autosim",
+   "repo": "sudosilo/coffee-autosim",
+   "branch": "main"
+  },
+  {
+   "project": "coffeekit1",
+   "repo": "sudosilo/coffeekit1",
+   "branch": "main"
+  },
+  {
+   "project": "conveyor-sim",
+   "repo": "sudosilo/conveyor-sim",
+   "branch": "master"
+  },
+  {
+   "project": "daily-outline",
+   "repo": "sudosilo/daily-outline",
+   "branch": "main"
+  },
+  {
+   "project": "datacenter-osint",
+   "repo": "sudosilo/datacenter-osint",
+   "branch": "main"
+  },
+  {
+   "project": "defcon-trail",
+   "repo": "sudosilo/defcon-trail",
+   "branch": "main"
+  },
+  {
+   "project": "delivery-twin",
+   "repo": "sudosilo/delivery-twin",
+   "branch": "master"
+  },
+  {
+   "project": "delivery-twin-violet",
+   "repo": "sudosilo/delivery-twin-violet",
+   "branch": "main"
+  },
+  {
+   "project": "diamond-driller",
+   "repo": "sudosilo/diamond-driller",
+   "branch": "master"
+  },
+  {
+   "project": "dronecamp",
+   "repo": "sudosilo/dronecamp",
+   "branch": "master"
+  },
+  {
+   "project": "edmia",
+   "repo": "sudosilo/edmia",
+   "branch": "main"
+  },
+  {
+   "project": "engine-companion",
+   "repo": "sudosilo/engine-companion",
+   "branch": "master"
+  },
+  {
+   "project": "ether-wand",
+   "repo": "sudosilo/ether-wand",
+   "branch": "main"
+  },
+  {
+   "project": "fashionocalypse",
+   "repo": "sudosilo/fashionocalypse",
+   "branch": "main"
+  },
+  {
+   "project": "field-study",
+   "repo": "sudosilo/field-study",
+   "branch": "master"
+  },
+  {
+   "project": "flipcount-game",
+   "repo": "sudosilo/flipcount-game",
+   "branch": "main"
+  },
+  {
+   "project": "fogwarren-vx",
+   "repo": "sudosilo/fogwarren-vx",
+   "branch": "main"
+  },
+  {
+   "project": "ghost-kitchen-builder",
+   "repo": "sudosilo/ghost-kitchen-builder",
+   "branch": "master"
+  },
+  {
+   "project": "gladhand-dockyard",
+   "repo": "sudosilo/gladhand-dockyard",
+   "branch": "main"
+  },
+  {
+   "project": "hackercons-roulette",
+   "repo": "sudosilo/hackercons-roulette",
+   "branch": "master"
+  },
+  {
+   "project": "hire-portal",
+   "repo": "sudosilo/hire-portal",
+   "branch": "main"
+  },
+  {
+   "project": "hoofer-sync",
+   "repo": "sudosilo/hoofer-sync",
+   "branch": "main"
+  },
+  {
+   "project": "infinicanvan",
+   "repo": "sudosilo/infinicanvan",
+   "branch": "master"
+  },
+  {
+   "project": "inkrunner",
+   "repo": "sudosilo/inkrunner",
+   "branch": "main"
+  },
+  {
+   "project": "j30p4rdy",
+   "repo": "sudosilo/j30p4rdy",
+   "branch": "main"
+  },
+  {
+   "project": "kat-chat",
+   "repo": "sudosilo/kat-chat",
+   "branch": "master"
+  },
+  {
+   "project": "lartte",
+   "repo": "sudosilo/lartte",
+   "branch": "main"
+  },
+  {
+   "project": "looper",
+   "repo": "sudosilo/looper",
+   "branch": "master"
+  },
+  {
+   "project": "lv-liquor-map",
+   "repo": "sudosilo/lv-liquor-map",
+   "branch": "main"
+  },
+  {
+   "project": "mail-ionaire",
+   "repo": "sudosilo/mail-ionaire",
+   "branch": "master"
+  },
+  {
+   "project": "mill-ionaire",
+   "repo": "sudosilo/mill-ionaire",
+   "branch": "main"
+  },
+  {
+   "project": "mission-operator-next",
+   "repo": "sudosilo/mission-operator-next",
+   "branch": "main"
+  },
+  {
+   "project": "mobbyhill",
+   "repo": "sudosilo/mobbyhill",
+   "branch": "main"
+  },
+  {
+   "project": "mohave-wtf",
+   "repo": "sudosilo/mohave-wtf",
+   "branch": "main"
+  },
+  {
+   "project": "mohavetech-contracts",
+   "repo": "sudosilo/mohavetech-contracts",
+   "branch": "master"
+  },
+  {
+   "project": "nanoverse",
+   "repo": "sudosilo/nanoverse",
+   "branch": "master"
+  },
+  {
+   "project": "note-note-note",
+   "repo": "sudosilo/note-note-note",
+   "branch": "master"
+  },
+  {
+   "project": "ordersim",
+   "repo": "sudosilo/ordersim",
+   "branch": "main"
+  },
+  {
+   "project": "page-wide-pof",
+   "repo": "sudosilo/page-wide-pof",
+   "branch": "main"
+  },
+  {
+   "project": "pajamastan-badge-tool",
+   "repo": "sudosilo/pajamastan-badge-tool",
+   "branch": "main"
+  },
+  {
+   "project": "pajamastan-invoices",
+   "repo": "sudosilo/pajamastan-invoices",
+   "branch": "main"
+  },
+  {
+   "project": "pajamastan-space-administration",
+   "repo": "sudosilo/pajamastan-space-administration",
+   "branch": "main"
+  },
+  {
+   "project": "pajamastan-warrants",
+   "repo": "sudosilo/pajamastan-warrants",
+   "branch": "master"
+  },
+  {
+   "project": "pancake-orange",
+   "repo": "sudosilo/pancake-orange",
+   "branch": "master"
+  },
+  {
+   "project": "parcelsun-kq",
+   "repo": "sudosilo/parcelsun-kq",
+   "branch": "main"
+  },
+  {
+   "project": "parkingten",
+   "repo": "sudosilo/parkingten",
+   "branch": "main"
+  },
+  {
+   "project": "particular-lenticular",
+   "repo": "sudosilo/particular-lenticular",
+   "branch": "main"
+  },
+  {
+   "project": "pdf-yourself",
+   "repo": "sudosilo/pdf-yourself",
+   "branch": "main"
+  },
+  {
+   "project": "pipeline-builder",
+   "repo": "sudosilo/pipeline-builder",
+   "branch": "master"
+  },
+  {
+   "project": "pixelcoop-farm",
+   "repo": "sudosilo/pixelcoop-farm",
+   "branch": "main"
+  },
+  {
+   "project": "pixelmill",
+   "repo": "sudosilo/pixelmill",
+   "branch": "master"
+  },
+  {
+   "project": "qsr-receipt-sim",
+   "repo": "sudosilo/qsr-receipt-sim",
+   "branch": "master"
+  },
+  {
+   "project": "rainbow-run",
+   "repo": "sudosilo/rainbow-run",
+   "branch": "main"
+  },
+  {
+   "project": "raineurysm",
+   "repo": "sudosilo/raineurysm",
+   "branch": "main"
+  },
+  {
+   "project": "repo-cloner",
+   "repo": "sudosilo/repo-cloner",
+   "branch": "main"
+  },
+  {
+   "project": "repofind",
+   "repo": "sudosilo/repofind",
+   "branch": "master"
+  },
+  {
+   "project": "rogue-rail",
+   "repo": "sudosilo/rogue-rail",
+   "branch": "main"
+  },
+  {
+   "project": "rosetta-pone",
+   "repo": "sudosilo/rosetta-pone",
+   "branch": "main"
+  },
+  {
+   "project": "rtss",
+   "repo": "sudosilo/rtss",
+   "branch": "main"
+  },
+  {
+   "project": "scope-listener",
+   "repo": "sudosilo/scope-listener",
+   "branch": "master"
+  },
+  {
+   "project": "scorpion-supper",
+   "repo": "sudosilo/scorpion-supper",
+   "branch": "main"
+  },
+  {
+   "project": "secureops",
+   "repo": "sudosilo/secureops",
+   "branch": "master"
+  },
+  {
+   "project": "skyflow-orange",
+   "repo": "sudosilo/skyflow-orange",
+   "branch": "main"
+  },
+  {
+   "project": "spaceout",
+   "repo": "sudosilo/spaceout",
+   "branch": "master"
+  },
+  {
+   "project": "stackloom-meta",
+   "repo": "sudosilo/stackloom-meta",
+   "branch": "main"
+  },
+  {
+   "project": "starwake-game",
+   "repo": "sudosilo/starwake-game",
+   "branch": "main"
+  },
+  {
+   "project": "stompbox-lab",
+   "repo": "sudosilo/stompbox-lab",
+   "branch": "main"
+  },
+  {
+   "project": "strudel-samples",
+   "repo": "sudosilo/strudel-samples",
+   "branch": "main"
+  },
+  {
+   "project": "stumbler",
+   "repo": "sudosilo/stumbler",
+   "branch": "master"
+  },
+  {
+   "project": "suno-forge",
+   "repo": "sudosilo/suno-forge",
+   "branch": "main"
+  },
+  {
+   "project": "tapperator",
+   "repo": "sudosilo/tapperator",
+   "branch": "main"
+  },
+  {
+   "project": "termbeat",
+   "repo": "sudosilo/termbeat",
+   "branch": "main"
+  },
+  {
+   "project": "text-based-game",
+   "repo": "sudosilo/text-based-game",
+   "branch": "main"
+  },
+  {
+   "project": "thanks-for-watching",
+   "repo": "sudosilo/thanks-for-watching",
+   "branch": "main"
+  },
+  {
+   "project": "threat-atlas-v3",
+   "repo": "sudosilo/threat-atlas-v3",
+   "branch": "master"
+  },
+  {
+   "project": "tile-topia",
+   "repo": "sudosilo/tile-topia",
+   "branch": "main"
+  },
+  {
+   "project": "tinewood-keys",
+   "repo": "sudosilo/tinewood-keys",
+   "branch": "main"
+  },
+  {
+   "project": "tomatomo",
+   "repo": "sudosilo/tomatomo",
+   "branch": "main"
+  },
+  {
+   "project": "topdown-pixeltown",
+   "repo": "sudosilo/topdown-pixeltown",
+   "branch": "master"
+  },
+  {
+   "project": "topo-wars",
+   "repo": "sudosilo/topo-wars",
+   "branch": "master"
+  },
+  {
+   "project": "topo-wars-server",
+   "repo": "sudosilo/topo-wars-server",
+   "branch": "master"
+  },
+  {
+   "project": "torque-converter",
+   "repo": "sudosilo/torque-converter",
+   "branch": "main"
+  },
+  {
+   "project": "tractor-tool",
+   "repo": "sudosilo/tractor-tool",
+   "branch": "main"
+  },
+  {
+   "project": "welcome-to-the-madness",
+   "repo": "sudosilo/welcome-to-the-madness",
+   "branch": "main"
+  }
+ ],
+ "done": []
+}
