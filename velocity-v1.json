@@ -1,18 +1,9 @@
 {
- "generated": "2026-11-27T21:31:59.984Z",
+ "generated": "2026-11-27T21:34:04.436Z",
  "start": "2026-04-05",
  "linesPerHour": 15,
  "hoursPerPersonMonth": 152,
  "repos": [
-  {
-   "name": "rainbow-run",
-   "created": "2026-11-05",
-   "pushed": "2026-11-25",
-   "files": 44,
-   "lines": 12958,
-   "hours": 864,
-   "cocomo": 5373
-  },
   {
    "name": "mohavetech-website",
    "created": "2026-09-05",
@@ -57,6 +48,15 @@
    "lines": 4468,
    "hours": 298,
    "cocomo": 1757
+  },
+  {
+   "name": "rainbow-run",
+   "created": "2026-11-05",
+   "pushed": "2026-11-25",
+   "files": 43,
+   "lines": 4381,
+   "hours": 292,
+   "cocomo": 1721
   },
   {
    "name": "artifactium",
