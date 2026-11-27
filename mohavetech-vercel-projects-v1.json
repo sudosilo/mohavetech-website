@@ -532,7 +532,7 @@
  },
  {
   "name": "control-troll",
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "aliases": [
    "control-troll-sudosilo2-1771s-projects.vercel.app",
    "control-troll-git-main-sudosilo2-1771s-projects.vercel.app"
@@ -809,6 +809,14 @@
   ]
  },
  {
+  "name": "green-ghostwing",
+  "date": "2026-11-26",
+  "aliases": [
+   "green-ghostwing.vercel.app",
+   "green-ghostwing-sudosilo2-1771s-projects.vercel.app"
+  ]
+ },
+ {
   "name": "groundcore",
   "date": "2026-10-30",
   "aliases": [
@@ -837,7 +845,7 @@
  },
  {
   "name": "heckle-troll",
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "aliases": [
    "heckle-troll.vercel.app",
    "heckle-troll-sudosilo2-1771s-projects.vercel.app",
