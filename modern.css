@@ -136,3 +136,13 @@ html.modern .troll-panel { background: transparent !important; box-shadow: none 
 html.modern #category-view p:hover, html.modern #alpha-view p:hover { background: transparent; }
 html.modern #category-view p > a, html.modern #alpha-view p > a, html.modern h2, html.modern h1 { text-shadow: 0 0 6px var(--bg), 0 0 2px var(--bg); }
 html.modern.dark { --hair: rgba(111, 140, 255, .35); }
+
+/* footer: frosted glass over the stars */
+html.modern .mtg-seal { background: color-mix(in srgb, var(--surface) 55%, transparent) !important; -webkit-backdrop-filter: blur(10px) saturate(1.2); backdrop-filter: blur(10px) saturate(1.2); border-top: 1px solid var(--hair) !important; color: var(--ink) !important; font-family: inherit !important; }
+html.modern .mtg-seal-org, html.modern .mtg-seal-export, html.modern .mtg-seal-mission, html.modern .mtg-donate-sub { color: var(--muted) !important; font-family: inherit !important; -webkit-text-fill-color: currentColor; }
+html.modern .mtg-seal-org { color: var(--ink) !important; font-weight: 600; }
+html.modern .mtg-seal-link, html.modern .mtg-seal-ask { color: var(--link) !important; -webkit-text-fill-color: currentColor; }
+html.modern .mtg-seal-links a { background: color-mix(in srgb, var(--surface) 70%, transparent) !important; border-color: var(--hair) !important; color: var(--ink) !important; -webkit-text-fill-color: currentColor; border-radius: 8px; }
+html.modern .mtg-donate { background: color-mix(in srgb, var(--surface) 70%, transparent) !important; border-color: var(--hair) !important; box-shadow: none !important; }
+html.modern .mtg-donate-main { color: var(--ink) !important; font-family: inherit !important; font-weight: 600; -webkit-text-fill-color: currentColor; }
+html.modern .mtg-flag { border-color: var(--hair) !important; }

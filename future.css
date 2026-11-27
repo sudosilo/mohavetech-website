@@ -125,3 +125,11 @@ html.future h2 {
   margin: 22px 0 14px !important; padding: 0 0 4px !important; line-height: 1.2;
 }
 html.future #category-view p > a, html.future #alpha-view p > a, html.future h2, html.future h1 { text-shadow: 0 0 5px #eef1ec, 0 0 2px #eef1ec; }
+
+/* footer: see-through console panel with the stripe on top */
+html.future .mtg-seal { background: rgba(238, 241, 236, .55) !important; -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); border-top: 0 !important; box-shadow: 0 -3px 0 var(--orange), 0 -6px 0 var(--gold), 0 -9px 0 var(--teal); margin-top: 18px; color: var(--ink) !important; font-family: "Trebuchet MS", Verdana, sans-serif !important; }
+html.future .mtg-seal-org { font-family: var(--display) !important; font-size: 12px !important; color: var(--ink) !important; -webkit-text-fill-color: currentColor; }
+html.future .mtg-seal-export, html.future .mtg-seal-mission, html.future .mtg-donate-sub { color: var(--ink) !important; opacity: .75; -webkit-text-fill-color: currentColor; }
+html.future .mtg-seal-link, html.future .mtg-seal-ask { color: var(--teal) !important; -webkit-text-fill-color: currentColor; }
+html.future .mtg-seal-links a, html.future .mtg-donate { background: rgba(255, 255, 255, .6) !important; border: 1.5px solid var(--ink) !important; border-radius: 999px !important; box-shadow: 0 3px 0 var(--ink) !important; color: var(--ink) !important; -webkit-text-fill-color: currentColor; }
+html.future .mtg-donate-main { color: var(--ink) !important; font-family: var(--display) !important; font-size: 11px !important; -webkit-text-fill-color: currentColor; }

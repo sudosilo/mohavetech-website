@@ -129,3 +129,9 @@ html.retro #category-view p > a, html.retro #alpha-view p > a { text-shadow: 0 0
 
 /* menu floats over the page instead of pushing it down */
 html.retro .menu { position: absolute !important; top: 46px; left: 10px; z-index: 50; max-height: calc(100vh - 60px); overflow-y: auto; margin: 0; }
+
+/* footer: a see-through gray status bar */
+html.retro .mtg-seal { background: rgba(192, 192, 192, .6) !important; -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); border-top: 1px solid #000 !important; box-shadow: inset 0 1px 0 #fff; color: #000 !important; font-family: Tahoma, Verdana, sans-serif !important; margin-top: 12px; }
+html.retro .mtg-seal-org, html.retro .mtg-seal-export, html.retro .mtg-seal-mission, html.retro .mtg-donate-sub, html.retro .mtg-donate-main { color: #000 !important; font-family: inherit !important; -webkit-text-fill-color: currentColor; }
+html.retro .mtg-seal-link, html.retro .mtg-seal-ask { color: #0000cc !important; -webkit-text-fill-color: currentColor; }
+html.retro .mtg-seal-links a, html.retro .mtg-donate { background: rgba(192, 192, 192, .85) !important; border: 1px solid #000 !important; border-radius: 0 !important; box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #808080 !important; color: #000 !important; -webkit-text-fill-color: currentColor; }

@@ -438,7 +438,7 @@
 (function () {
   /* DEFAULT is the look every visitor gets: "modern", "future", "retro" or "classic". Change it to put another look back for everyone. */
   var DEFAULT = "modern";
-  var SHEET = { modern: ["modern.css?v=4", "#ffffff"], future: ["future.css?v=3", "#eef1ec"], retro: ["retro.css?v=3", "#000080"] };
+  var SHEET = { modern: ["modern.css?v=4", "#ffffff"], future: ["future.css?v=4", "#eef1ec"], retro: ["retro.css?v=4", "#000080"] };
   var NAME = { modern: "Modern look", future: "Future retro look", retro: "Retro look", classic: "Classic look" };
   var look = DEFAULT;
   try { look = localStorage.getItem("hub-look3") || DEFAULT; } catch (e) {}
@@ -492,4 +492,13 @@
   }
   if (document.readyState === "complete") addSwitch();
   else window.addEventListener("load", function () { setTimeout(addSwitch, 300); });
+})();
+/* footmark: classic look footer, see-through black with green text like the rest of the classic page */
+(function () {
+  var s = document.createElement("style");
+  s.textContent = 'html:not(.modern):not(.future):not(.retro) .mtg-seal{background:rgba(0,0,0,.45)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border-top:1px solid rgba(0,255,0,.35)!important;color:#0f0!important;font-family:monospace!important}'
+    + 'html:not(.modern):not(.future):not(.retro) .mtg-seal-org,html:not(.modern):not(.future):not(.retro) .mtg-seal-export,html:not(.modern):not(.future):not(.retro) .mtg-seal-mission,html:not(.modern):not(.future):not(.retro) .mtg-donate-main,html:not(.modern):not(.future):not(.retro) .mtg-donate-sub{color:#0f0!important;font-family:monospace!important;-webkit-text-fill-color:currentColor}'
+    + 'html:not(.modern):not(.future):not(.retro) .mtg-seal-link,html:not(.modern):not(.future):not(.retro) .mtg-seal-ask{color:#7fff7f!important;-webkit-text-fill-color:currentColor}'
+    + 'html:not(.modern):not(.future):not(.retro) .mtg-seal-links a,html:not(.modern):not(.future):not(.retro) .mtg-donate{background:rgba(0,40,0,.5)!important;border:1px solid rgba(0,255,0,.5)!important;box-shadow:none!important;color:#0f0!important;-webkit-text-fill-color:currentColor}';
+  document.head.appendChild(s);
 })();
