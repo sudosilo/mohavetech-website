@@ -3,7 +3,7 @@ name: redeploy
 on:
   push:
     branches: [master]
-    paths: [mohavetech-redeploy-v1.js, .github/workflows/redeploy.yml]
+    paths: [.github/workflows/redeploy.yml]
   schedule:
     - cron: "41 15 * * *"
   workflow_dispatch:

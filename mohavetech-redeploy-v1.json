@@ -2,6 +2,61 @@
  "note": "Apps whose GitHub pushes never reached Vercel. The redeploy job links each to its repo and deploys it, a batch per day.",
  "pending": [
   {
+   "project": "field-study",
+   "repo": "sudosilo/field-study",
+   "branch": "master"
+  },
+  {
+   "project": "flipcount-game",
+   "repo": "sudosilo/flipcount-game",
+   "branch": "main"
+  },
+  {
+   "project": "fogwarren-vx",
+   "repo": "sudosilo/fogwarren-vx",
+   "branch": "main"
+  },
+  {
+   "project": "ghost-kitchen-builder",
+   "repo": "sudosilo/ghost-kitchen-builder",
+   "branch": "master"
+  },
+  {
+   "project": "gladhand-dockyard",
+   "repo": "sudosilo/gladhand-dockyard",
+   "branch": "main"
+  },
+  {
+   "project": "hackercons-roulette",
+   "repo": "sudosilo/hackercons-roulette",
+   "branch": "master"
+  },
+  {
+   "project": "hire-portal",
+   "repo": "sudosilo/hire-portal",
+   "branch": "main"
+  },
+  {
+   "project": "hoofer-sync",
+   "repo": "sudosilo/hoofer-sync",
+   "branch": "main"
+  },
+  {
+   "project": "infinicanvan",
+   "repo": "sudosilo/infinicanvan",
+   "branch": "master"
+  },
+  {
+   "project": "inkrunner",
+   "repo": "sudosilo/inkrunner",
+   "branch": "main"
+  },
+  {
+   "project": "j30p4rdy",
+   "repo": "sudosilo/j30p4rdy",
+   "branch": "main"
+  },
+  {
    "project": "kat-chat",
    "repo": "sudosilo/kat-chat",
    "branch": "master"
@@ -542,61 +597,6 @@
    "project": "fashionocalypse",
    "link": "already linked to sudosilo/fashionocalypse",
    "deploy": "started fashionocalypse-lc72xfthy-sudosilo2-1771s-projects.vercel.app"
-  },
-  {
-   "project": "field-study",
-   "link": "linked",
-   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
-  },
-  {
-   "project": "flipcount-game",
-   "link": "already linked to sudosilo/flipcount-game",
-   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
-  },
-  {
-   "project": "fogwarren-vx",
-   "link": "already linked to sudosilo/fogwarren-vx",
-   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
-  },
-  {
-   "project": "ghost-kitchen-builder",
-   "link": "already linked to sudosilo/ghost-kitchen-builder",
-   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
-  },
-  {
-   "project": "gladhand-dockyard",
-   "link": "already linked to sudosilo/gladhand-dockyard",
-   "deploy": "deploy failed: Resource is limited - try again in 1 day (more than 100, code: \"api-deployments-free-per-day\")."
-  },
-  {
-   "project": "hackercons-roulette",
-   "link": "already linked to sudosilo/hackercons-roulette",
-   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
-  },
-  {
-   "project": "hire-portal",
-   "link": "already linked to sudosilo/hire-portal",
-   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
-  },
-  {
-   "project": "hoofer-sync",
-   "link": "already linked to sudosilo/hoofer-sync",
-   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
-  },
-  {
-   "project": "infinicanvan",
-   "link": "already linked to sudosilo/infinicanvan",
-   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
-  },
-  {
-   "project": "inkrunner",
-   "link": "already linked to sudosilo/inkrunner",
-   "deploy": "deploy failed: Resource is limited - try again in 1 day (more than 100, code: \"api-deployments-free-per-day\")."
-  },
-  {
-   "project": "j30p4rdy",
-   "link": "linked",
-   "deploy": "deploy failed: Resource is limited - try again in 24 hours (more than 100, code: \"api-deployments-free-per-day\")."
   }
  ]
 }

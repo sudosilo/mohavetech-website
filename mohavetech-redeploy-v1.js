@@ -1,7 +1,7 @@
 /* Links Vercel projects to their GitHub repos and deploys them from GitHub, so pushes to those repos go live.
    Works through mohavetech-redeploy-v1.json in batches to stay under Vercel's daily deploy limit. */
 const fs = require('fs');
-const FILE = 'mohavetech-redeploy-v1.json', BATCH = 60;
+const FILE = 'mohavetech-redeploy-v1.json', BATCH = 80;
 const token = process.env.VERCEL_TOKEN, slug = process.env.VERCEL_SLUG;
 const api = async (method, path, body) => {
   const r = await fetch('https://api.vercel.com' + path + (path.includes('?') ? '&' : '?') + 'slug=' + slug, { method, headers: { Authorization: 'Bearer ' + token, 'Content-Type': 'application/json' }, body: body && JSON.stringify(body) });
