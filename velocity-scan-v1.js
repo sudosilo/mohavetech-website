@@ -53,6 +53,22 @@ function countLines(file, seen) {
   return n;
 }
 
+// Real hours from commit times: commits less than SESSION_GAP minutes apart are one work session.
+// Each session counts from its first commit to its last, plus LEAD minutes of work before the first commit.
+const SESSION_GAP = 45, LEAD = 15;
+const BOTS = /(bot|scribe|troll|github-actions|dependabot)/i;
+function sessions(times) {
+  times = times.slice().sort((a, b) => a - b);
+  let n = 0, mins = 0, s0 = null, last = null;
+  times.forEach(t => {
+    if (last === null || t - last > SESSION_GAP * 60) { if (s0 !== null) mins += (last - s0) / 60 + LEAD; s0 = t; n++; }
+    last = t;
+  });
+  if (s0 !== null) mins += (last - s0) / 60 + LEAD;
+  return { count: n, hours: Math.round(mins / 6) / 10 };
+}
+const allTimes = [];
+
 function cocomoHours(lines) {
   const kloc = lines / 1000;
   if (kloc <= 0) return 0;
@@ -76,13 +92,17 @@ const repos = [];
 repoList.sort((a, b) => String(a.createdAt).localeCompare(String(b.createdAt)));
 repoList.filter(r => !r.isFork).forEach(r => {
   const dir = path.join(tmp, r.name);
-  run(`git clone --depth 1 --quiet https://github.com/${OWNER}/${r.name}.git "${dir}"`);
+  run(`git clone --filter=blob:none --quiet https://github.com/${OWNER}/${r.name}.git "${dir}"`);
+  const times = run(`git -C "${dir}" log --format=%ct%x09%an`).split("\n").filter(Boolean)
+    .filter(l => !BOTS.test(l.split("\t")[1] || "")).map(l => +l.split("\t")[0]).filter(t => t > 0);
   const files = [];
   walk(dir, files);
   let lines = 0;
   files.forEach(f => { lines += countLines(f, seen); });
   fs.rmSync(dir, { recursive: true, force: true });
   if (!lines) return;
+  times.forEach(t => allTimes.push(t));
+  const ses = sessions(times);
   repos.push({
     name: r.name,
     created: (r.createdAt || "").slice(0, 10),
@@ -90,7 +110,10 @@ repoList.filter(r => !r.isFork).forEach(r => {
     files: files.length,
     lines,
     hours: Math.round(lines / LINES_PER_HOUR),
-    cocomo: cocomoHours(lines)
+    cocomo: cocomoHours(lines),
+    commits: times.length,
+    sessions: ses.count,
+    realHours: ses.hours
   });
   console.log(r.name, lines);
 });
@@ -102,6 +125,9 @@ const out = {
   start: START,
   linesPerHour: LINES_PER_HOUR,
   hoursPerPersonMonth: HOURS_PER_PERSON_MONTH,
+  sessionGapMinutes: SESSION_GAP,
+  realHours: sessions(allTimes).hours,
+  sessions: sessions(allTimes).count,
   repos
 };
 fs.writeFileSync(path.join(__dirname, "velocity-v1.json"), JSON.stringify(out, null, 1) + "\n");

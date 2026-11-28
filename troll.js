@@ -503,4 +503,4 @@
   document.head.appendChild(s);
 })();
 /* appstatsmark: per-project statistics dropdown */
-(function () { var s = document.createElement("script"); s.src = "appstats-v1.js?v=2"; document.head.appendChild(s); })();
+(function () { var s = document.createElement("script"); s.src = "appstats-v1.js?v=3"; document.head.appendChild(s); })();

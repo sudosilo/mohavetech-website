@@ -44,6 +44,10 @@
       box.style.cssText = "display:none;width:90%;box-sizing:border-box;background:black;color:" + BLUE + ";border:1px solid " + BLUE + ";font-family:monospace;font-size:12px;padding:6px 8px;margin:4px 0";
       if (r) {
         line(box, fmt(r.lines) + " lines of code in " + r.files + " files");
+        if (r.realHours != null) {
+          line(box, r.realHours + " real hours in " + r.sessions + (r.sessions === 1 ? " session" : " sessions") + ", from " + r.commits + " commits");
+          if (r.realHours > 0) line(box, fmt(r.lines / r.realHours) + " lines per real hour");
+        }
         line(box, fmt(r.hours) + " hours to build the 2016 way, by hand");
         line(box, "About " + money(r.lines * m.perLine) + " of AI subscriptions at " + money(m.perLine).replace(/^\$0/, "$0") + " per line");
         line(box, "Started " + r.created + ", last push " + r.pushed, GRAY);

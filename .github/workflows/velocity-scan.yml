@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: "41 12 * * *"
   workflow_dispatch:
+  push:
+    branches: [master]
+    paths: [velocity-scan-v1.js]
 permissions:
   contents: write
 jobs:

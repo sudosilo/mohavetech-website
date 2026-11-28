@@ -50,6 +50,10 @@
 
     h += '<p>Code written: ' + fmt(lines) + ' lines across ' + repos.length + ' repos</p>';
     h += '<p>Calendar days since starting: ' + fmt(days) + '</p>';
+    if (d.realHours) {
+      h += '<p>Real hours, from commit times: ' + fmt(d.realHours) + ' in ' + fmt(d.sessions) + ' sessions, ' + one(d.realHours / days) + ' per calendar day</p>';
+      h += '<p>Lines per real hour: ' + fmt(lines / d.realHours) + '. Every real hour did ' + one(hours / d.realHours) + ' hours of 2016 work.</p>';
+    }
     h += '<p>2016 solo developer build time: ' + fmt(hours) + ' hours, which is ' + fmt(workdays2016) + ' eight hour workdays or ' + one(years2016) + ' full time work years</p>';
     h += '<p>2016 hours claimed per calendar day: ' + one(perDay) + '</p>';
     h += '<p>Full company estimate (COCOMO, with planning, testing and docs): ' + fmt(cocomo) + ' hours, ' + one(cocomoPerDay) + ' hours per calendar day</p>';
@@ -101,6 +105,7 @@
       h += '<p style="font-size:13px">These are flat monthly plans at today\'s prices, counted from ' + esc(d.start) + '. Every dollar counts against the code, including tokens that went into anything else. Plans that started later than that make the real cost lower.</p>';
     }
     h += '<h2>How This Is Figured</h2>';
+    if (d.realHours) h += '<p style="font-size:13px">Real hours come from commit times. Commits less than ' + (d.sessionGapMinutes || 45) + ' minutes apart count as one work session, timed from the first commit to the last plus 15 minutes of lead in. Bot commits are left out, and sessions on different projects at the same time count once in the total.</p>';
     h += '<p style="font-size:13px">Every sudosilo repo is cloned each morning and its hand written code lines are counted, leaving out blank lines, copied or snapshot apps, any line already counted in an older repo, libraries, minified files, data files, and any line over 400 characters. ';
     h += 'The 2016 build time assumes a solo developer finishing ' + d.linesPerHour + ' working lines per hour, counting design, debugging and testing, without AI help. ';
     h += 'The full company estimate uses the basic COCOMO organic model, 2.4 times thousands of lines to the 1.05 power person months at ' + d.hoursPerPersonMonth + ' hours each, which is how a 2016 software shop would bid the same work. ';
