@@ -1,1 +1,45 @@
-{"generated":"","sites":[]}
+{
+ "generated": "2026-11-28T03:26:43.825Z",
+ "sites": [
+  {
+   "name": "2026-11-26-green-ghostwing",
+   "url": "sudosilo.github.io/2026-11-26-green-ghostwing/",
+   "repo": "sudosilo/2026-11-26-green-ghostwing",
+   "pushed": "2026-11-28",
+   "built": "2026-11-28",
+   "source": "master",
+   "status": "built",
+   "description": "Early Ghost Wing repo whose page is a tile placing map building game."
+  },
+  {
+   "name": "2026-11-27-purple-sodashelf",
+   "url": "sudosilo.github.io/2026-11-27-purple-sodashelf/",
+   "repo": "sudosilo/2026-11-27-purple-sodashelf",
+   "pushed": "2026-11-28",
+   "built": "2026-11-28",
+   "source": "main",
+   "status": "built",
+   "description": "Isometric pixel soda stocking game, first build: one kiosk, one shelf, twenty sodas"
+  },
+  {
+   "name": "bpm-finder",
+   "url": "sudosilo.github.io/bpm-finder/",
+   "repo": "sudosilo/bpm-finder",
+   "pushed": "2026-11-25",
+   "built": "2026-11-25",
+   "source": "main",
+   "status": "built",
+   "description": "Hold a phone near a speaker and read the tempo of the music in beats per minute"
+  },
+  {
+   "name": "sudosilo.github.io",
+   "url": "sudosilo.github.io/",
+   "repo": "sudosilo/sudosilo.github.io",
+   "pushed": "2026-11-28",
+   "built": "2026-11-28",
+   "source": "main",
+   "status": "built",
+   "description": ""
+  }
+ ]
+}
