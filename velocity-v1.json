@@ -1,17 +1,23 @@
 {
- "generated": "2026-11-27T21:34:04.436Z",
+ "generated": "2026-11-28T00:19:44.401Z",
  "start": "2026-04-05",
  "linesPerHour": 15,
  "hoursPerPersonMonth": 152,
+ "sessionGapMinutes": 45,
+ "realHours": 428.5,
+ "sessions": 450,
  "repos": [
   {
    "name": "mohavetech-website",
    "created": "2026-09-05",
-   "pushed": "2026-11-27",
-   "files": 87,
-   "lines": 5156,
-   "hours": 344,
-   "cocomo": 2042
+   "pushed": "2026-11-28",
+   "files": 88,
+   "lines": 5269,
+   "hours": 351,
+   "cocomo": 2089,
+   "commits": 209,
+   "sessions": 68,
+   "realHours": 31.2
   },
   {
    "name": "RTSS",
@@ -20,7 +26,10 @@
    "files": 13,
    "lines": 4864,
    "hours": 324,
-   "cocomo": 1920
+   "cocomo": 1920,
+   "commits": 14,
+   "sessions": 10,
+   "realHours": 3.9
   },
   {
    "name": "mill-ionaire",
@@ -29,7 +38,10 @@
    "files": 3,
    "lines": 4631,
    "hours": 309,
-   "cocomo": 1824
+   "cocomo": 1824,
+   "commits": 42,
+   "sessions": 29,
+   "realHours": 11.9
   },
   {
    "name": "nanoverse",
@@ -38,7 +50,10 @@
    "files": 2,
    "lines": 4489,
    "hours": 299,
-   "cocomo": 1765
+   "cocomo": 1765,
+   "commits": 7,
+   "sessions": 5,
+   "realHours": 2
   },
   {
    "name": "song-offset-listener",
@@ -47,16 +62,22 @@
    "files": 37,
    "lines": 4468,
    "hours": 298,
-   "cocomo": 1757
+   "cocomo": 1757,
+   "commits": 109,
+   "sessions": 45,
+   "realHours": 26.3
   },
   {
    "name": "rainbow-run",
    "created": "2026-11-05",
    "pushed": "2026-11-25",
    "files": 43,
-   "lines": 4381,
+   "lines": 4380,
    "hours": 292,
-   "cocomo": 1721
+   "cocomo": 1720,
+   "commits": 38,
+   "sessions": 9,
+   "realHours": 7.7
   },
   {
    "name": "artifactium",
@@ -65,7 +86,10 @@
    "files": 7,
    "lines": 3696,
    "hours": 246,
-   "cocomo": 1439
+   "cocomo": 1439,
+   "commits": 7,
+   "sessions": 4,
+   "realHours": 1.7
   },
   {
    "name": "2026-11-24-green-filecensus",
@@ -74,7 +98,10 @@
    "files": 11,
    "lines": 3694,
    "hours": 246,
-   "cocomo": 1439
+   "cocomo": 1439,
+   "commits": 9,
+   "sessions": 3,
+   "realHours": 1.9
   },
   {
    "name": "gladhand-dockyard",
@@ -83,7 +110,10 @@
    "files": 1,
    "lines": 3589,
    "hours": 239,
-   "cocomo": 1396
+   "cocomo": 1396,
+   "commits": 32,
+   "sessions": 6,
+   "realHours": 8.9
   },
   {
    "name": "2026-10-23-orange-smash",
@@ -92,7 +122,10 @@
    "files": 18,
    "lines": 3557,
    "hours": 237,
-   "cocomo": 1383
+   "cocomo": 1383,
+   "commits": 93,
+   "sessions": 17,
+   "realHours": 15.7
   },
   {
    "name": "a-canticle-for-pajamastan",
@@ -101,7 +134,10 @@
    "files": 32,
    "lines": 3525,
    "hours": 235,
-   "cocomo": 1370
+   "cocomo": 1370,
+   "commits": 13,
+   "sessions": 6,
+   "realHours": 2.8
   },
   {
    "name": "itchy-troll",
@@ -110,7 +146,10 @@
    "files": 14,
    "lines": 3485,
    "hours": 232,
-   "cocomo": 1353
+   "cocomo": 1353,
+   "commits": 93,
+   "sessions": 27,
+   "realHours": 14.4
   },
   {
    "name": "topo-wars",
@@ -119,7 +158,10 @@
    "files": 2,
    "lines": 3196,
    "hours": 213,
-   "cocomo": 1236
+   "cocomo": 1236,
+   "commits": 24,
+   "sessions": 16,
+   "realHours": 7
   },
   {
    "name": "2026-11-25-blue-cliprig",
@@ -128,7 +170,10 @@
    "files": 18,
    "lines": 2944,
    "hours": 196,
-   "cocomo": 1134
+   "cocomo": 1134,
+   "commits": 7,
+   "sessions": 5,
+   "realHours": 1.9
   },
   {
    "name": "kat-chat",
@@ -137,7 +182,10 @@
    "files": 17,
    "lines": 2943,
    "hours": 196,
-   "cocomo": 1133
+   "cocomo": 1133,
+   "commits": 50,
+   "sessions": 15,
+   "realHours": 10.7
   },
   {
    "name": "ascend",
@@ -146,7 +194,10 @@
    "files": 4,
    "lines": 2924,
    "hours": 195,
-   "cocomo": 1125
+   "cocomo": 1125,
+   "commits": 16,
+   "sessions": 7,
+   "realHours": 3.3
   },
   {
    "name": "repofind",
@@ -155,7 +206,10 @@
    "files": 3,
    "lines": 2886,
    "hours": 192,
-   "cocomo": 1110
+   "cocomo": 1110,
+   "commits": 9,
+   "sessions": 6,
+   "realHours": 1.8
   },
   {
    "name": "skyflow-orange",
@@ -164,7 +218,10 @@
    "files": 11,
    "lines": 2700,
    "hours": 180,
-   "cocomo": 1035
+   "cocomo": 1035,
+   "commits": 4,
+   "sessions": 4,
+   "realHours": 1
   },
   {
    "name": "parcelsun-kq",
@@ -173,7 +230,10 @@
    "files": 4,
    "lines": 2496,
    "hours": 166,
-   "cocomo": 953
+   "cocomo": 953,
+   "commits": 20,
+   "sessions": 9,
+   "realHours": 4.7
   },
   {
    "name": "city-seek",
@@ -182,7 +242,10 @@
    "files": 7,
    "lines": 2489,
    "hours": 166,
-   "cocomo": 950
+   "cocomo": 950,
+   "commits": 21,
+   "sessions": 8,
+   "realHours": 4.8
   },
   {
    "name": "qsr-timeline-Orange",
@@ -191,7 +254,10 @@
    "files": 2,
    "lines": 2408,
    "hours": 161,
-   "cocomo": 918
+   "cocomo": 918,
+   "commits": 6,
+   "sessions": 4,
+   "realHours": 1.2
   },
   {
    "name": "coffee-autosim",
@@ -200,7 +266,10 @@
    "files": 1,
    "lines": 2373,
    "hours": 158,
-   "cocomo": 904
+   "cocomo": 904,
+   "commits": 5,
+   "sessions": 4,
+   "realHours": 1.3
   },
   {
    "name": "tanks-and-zombies",
@@ -209,7 +278,10 @@
    "files": 1,
    "lines": 2213,
    "hours": 148,
-   "cocomo": 840
+   "cocomo": 840,
+   "commits": 3,
+   "sessions": 2,
+   "realHours": 0.6
   },
   {
    "name": "raineurysm",
@@ -218,7 +290,10 @@
    "files": 21,
    "lines": 2209,
    "hours": 147,
-   "cocomo": 838
+   "cocomo": 838,
+   "commits": 19,
+   "sessions": 10,
+   "realHours": 3.7
   },
   {
    "name": "beesim-green",
@@ -227,7 +302,10 @@
    "files": 1,
    "lines": 2154,
    "hours": 144,
-   "cocomo": 817
+   "cocomo": 817,
+   "commits": 7,
+   "sessions": 2,
+   "realHours": 0.9
   },
   {
    "name": "2026-11-24-blue-estate-dossier",
@@ -236,7 +314,10 @@
    "files": 2,
    "lines": 2112,
    "hours": 141,
-   "cocomo": 800
+   "cocomo": 800,
+   "commits": 5,
+   "sessions": 3,
+   "realHours": 1
   },
   {
    "name": "downfree-foundry",
@@ -245,7 +326,10 @@
    "files": 4,
    "lines": 2073,
    "hours": 138,
-   "cocomo": 784
+   "cocomo": 784,
+   "commits": 21,
+   "sessions": 10,
+   "realHours": 5.1
   },
   {
    "name": "tilespinneratlas",
@@ -254,7 +338,10 @@
    "files": 1,
    "lines": 2062,
    "hours": 137,
-   "cocomo": 780
+   "cocomo": 780,
+   "commits": 12,
+   "sessions": 4,
+   "realHours": 2.9
   },
   {
    "name": "pajamastan-badge-tool",
@@ -263,7 +350,10 @@
    "files": 4,
    "lines": 2046,
    "hours": 136,
-   "cocomo": 774
+   "cocomo": 774,
+   "commits": 16,
+   "sessions": 5,
+   "realHours": 2.9
   },
   {
    "name": "2026-10-22-orange-agent",
@@ -272,7 +362,10 @@
    "files": 16,
    "lines": 1961,
    "hours": 131,
-   "cocomo": 740
+   "cocomo": 740,
+   "commits": 6,
+   "sessions": 5,
+   "realHours": 1.5
   },
   {
    "name": "smash-bender",
@@ -281,7 +374,10 @@
    "files": 22,
    "lines": 1959,
    "hours": 131,
-   "cocomo": 739
+   "cocomo": 739,
+   "commits": 48,
+   "sessions": 12,
+   "realHours": 9
   },
   {
    "name": "datacenter-osint",
@@ -290,7 +386,10 @@
    "files": 3,
    "lines": 1898,
    "hours": 127,
-   "cocomo": 715
+   "cocomo": 715,
+   "commits": 5,
+   "sessions": 3,
+   "realHours": 0.9
   },
   {
    "name": "aerophin-twin",
@@ -299,7 +398,10 @@
    "files": 1,
    "lines": 1889,
    "hours": 126,
-   "cocomo": 711
+   "cocomo": 711,
+   "commits": 6,
+   "sessions": 3,
+   "realHours": 1.1
   },
   {
    "name": "hoofer-sync",
@@ -308,7 +410,22 @@
    "files": 2,
    "lines": 1842,
    "hours": 123,
-   "cocomo": 693
+   "cocomo": 693,
+   "commits": 8,
+   "sessions": 5,
+   "realHours": 1.8
+  },
+  {
+   "name": "2026-11-26-orange-rocketbench",
+   "created": "2026-11-27",
+   "pushed": "2026-11-28",
+   "files": 2,
+   "lines": 1840,
+   "hours": 123,
+   "cocomo": 692,
+   "commits": 3,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "infinicanvan",
@@ -317,7 +434,10 @@
    "files": 1,
    "lines": 1835,
    "hours": 122,
-   "cocomo": 690
+   "cocomo": 690,
+   "commits": 5,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "2026-10-18-orange-testbed",
@@ -326,7 +446,10 @@
    "files": 21,
    "lines": 1822,
    "hours": 121,
-   "cocomo": 685
+   "cocomo": 685,
+   "commits": 203,
+   "sessions": 121,
+   "realHours": 44.2
   },
   {
    "name": "field-twin",
@@ -335,7 +458,10 @@
    "files": 21,
    "lines": 1789,
    "hours": 119,
-   "cocomo": 672
+   "cocomo": 672,
+   "commits": 128,
+   "sessions": 58,
+   "realHours": 29.3
   },
   {
    "name": "lartte",
@@ -344,16 +470,22 @@
    "files": 1,
    "lines": 1730,
    "hours": 115,
-   "cocomo": 649
+   "cocomo": 649,
+   "commits": 10,
+   "sessions": 4,
+   "realHours": 3
   },
   {
    "name": "rogue-rail",
    "created": "2026-06-08",
    "pushed": "2026-11-27",
    "files": 1,
-   "lines": 1663,
+   "lines": 1662,
    "hours": 111,
-   "cocomo": 622
+   "cocomo": 622,
+   "commits": 4,
+   "sessions": 3,
+   "realHours": 1.1
   },
   {
    "name": "field-study",
@@ -362,7 +494,10 @@
    "files": 1,
    "lines": 1613,
    "hours": 108,
-   "cocomo": 603
+   "cocomo": 603,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "stompbox-lab",
@@ -371,7 +506,10 @@
    "files": 7,
    "lines": 1568,
    "hours": 105,
-   "cocomo": 585
+   "cocomo": 585,
+   "commits": 25,
+   "sessions": 13,
+   "realHours": 6.2
   },
   {
    "name": "mobbyhill",
@@ -380,7 +518,10 @@
    "files": 1,
    "lines": 1553,
    "hours": 104,
-   "cocomo": 579
+   "cocomo": 579,
+   "commits": 17,
+   "sessions": 10,
+   "realHours": 4.6
   },
   {
    "name": "circuit-musicfx",
@@ -389,7 +530,10 @@
    "files": 1,
    "lines": 1490,
    "hours": 99,
-   "cocomo": 554
+   "cocomo": 554,
+   "commits": 15,
+   "sessions": 7,
+   "realHours": 3.3
   },
   {
    "name": "groundcore",
@@ -398,7 +542,10 @@
    "files": 3,
    "lines": 1483,
    "hours": 99,
-   "cocomo": 552
+   "cocomo": 552,
+   "commits": 1,
+   "sessions": 1,
+   "realHours": 0.3
   },
   {
    "name": "termbeat",
@@ -407,25 +554,22 @@
    "files": 1,
    "lines": 1466,
    "hours": 98,
-   "cocomo": 545
-  },
-  {
-   "name": "2026-11-26-orange-rocketbench",
-   "created": "2026-11-27",
-   "pushed": "2026-11-27",
-   "files": 2,
-   "lines": 1463,
-   "hours": 98,
-   "cocomo": 544
+   "cocomo": 545,
+   "commits": 4,
+   "sessions": 4,
+   "realHours": 1
   },
   {
    "name": "birdix",
    "created": "2026-05-10",
-   "pushed": "2026-11-25",
+   "pushed": "2026-11-27",
    "files": 1,
-   "lines": 1445,
-   "hours": 96,
-   "cocomo": 537
+   "lines": 1449,
+   "hours": 97,
+   "cocomo": 538,
+   "commits": 4,
+   "sessions": 4,
+   "realHours": 1
   },
   {
    "name": "pixelmill",
@@ -434,7 +578,10 @@
    "files": 1,
    "lines": 1404,
    "hours": 94,
-   "cocomo": 521
+   "cocomo": 521,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "ordersim",
@@ -443,7 +590,10 @@
    "files": 2,
    "lines": 1387,
    "hours": 92,
-   "cocomo": 514
+   "cocomo": 514,
+   "commits": 3,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "page-wide-pof",
@@ -452,7 +602,10 @@
    "files": 1,
    "lines": 1357,
    "hours": 90,
-   "cocomo": 503
+   "cocomo": 503,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "2026-11-25-green-starfighter",
@@ -461,7 +614,10 @@
    "files": 2,
    "lines": 1327,
    "hours": 88,
-   "cocomo": 491
+   "cocomo": 491,
+   "commits": 11,
+   "sessions": 5,
+   "realHours": 3.1
   },
   {
    "name": "flipcount-game",
@@ -470,7 +626,10 @@
    "files": 1,
    "lines": 1298,
    "hours": 87,
-   "cocomo": 480
+   "cocomo": 480,
+   "commits": 4,
+   "sessions": 4,
+   "realHours": 1
   },
   {
    "name": "2026-11-25-blue-manualrebuild",
@@ -479,16 +638,22 @@
    "files": 4,
    "lines": 1297,
    "hours": 86,
-   "cocomo": 479
+   "cocomo": 479,
+   "commits": 8,
+   "sessions": 6,
+   "realHours": 1.7
   },
   {
    "name": "blue-agent",
    "created": "2026-10-19",
-   "pushed": "2026-11-27",
+   "pushed": "2026-11-28",
    "files": 20,
    "lines": 1291,
    "hours": 86,
-   "cocomo": 477
+   "cocomo": 477,
+   "commits": 40,
+   "sessions": 17,
+   "realHours": 8.6
   },
   {
    "name": "2026-11-16-pipe-weave",
@@ -497,7 +662,10 @@
    "files": 1,
    "lines": 1277,
    "hours": 85,
-   "cocomo": 472
+   "cocomo": 472,
+   "commits": 23,
+   "sessions": 16,
+   "realHours": 6.3
   },
   {
    "name": "algorithm-albatross",
@@ -506,7 +674,10 @@
    "files": 8,
    "lines": 1258,
    "hours": 84,
-   "cocomo": 464
+   "cocomo": 464,
+   "commits": 4,
+   "sessions": 4,
+   "realHours": 1
   },
   {
    "name": "skwiggle-v105",
@@ -515,7 +686,10 @@
    "files": 1,
    "lines": 1193,
    "hours": 80,
-   "cocomo": 439
+   "cocomo": 439,
+   "commits": 5,
+   "sessions": 3,
+   "realHours": 1.2
   },
   {
    "name": "looper",
@@ -524,7 +698,10 @@
    "files": 3,
    "lines": 1186,
    "hours": 79,
-   "cocomo": 436
+   "cocomo": 436,
+   "commits": 7,
+   "sessions": 4,
+   "realHours": 1.9
   },
   {
    "name": "field-twin-viridian",
@@ -533,7 +710,10 @@
    "files": 1,
    "lines": 1185,
    "hours": 79,
-   "cocomo": 436
+   "cocomo": 436,
+   "commits": 6,
+   "sessions": 3,
+   "realHours": 1.7
   },
   {
    "name": "chassisquiver",
@@ -542,7 +722,10 @@
    "files": 7,
    "lines": 1123,
    "hours": 75,
-   "cocomo": 412
+   "cocomo": 412,
+   "commits": 18,
+   "sessions": 10,
+   "realHours": 4.1
   },
   {
    "name": "bloxx",
@@ -551,7 +734,10 @@
    "files": 1,
    "lines": 1105,
    "hours": 74,
-   "cocomo": 405
+   "cocomo": 405,
+   "commits": 9,
+   "sessions": 4,
+   "realHours": 2.1
   },
   {
    "name": "spectral-engine",
@@ -560,7 +746,10 @@
    "files": 5,
    "lines": 1103,
    "hours": 74,
-   "cocomo": 404
+   "cocomo": 404,
+   "commits": 7,
+   "sessions": 6,
+   "realHours": 2
   },
   {
    "name": "carchive",
@@ -569,7 +758,10 @@
    "files": 1,
    "lines": 1103,
    "hours": 74,
-   "cocomo": 404
+   "cocomo": 404,
+   "commits": 5,
+   "sessions": 2,
+   "realHours": 1.6
   },
   {
    "name": "mohave-wtf",
@@ -578,7 +770,10 @@
    "files": 2,
    "lines": 1100,
    "hours": 73,
-   "cocomo": 403
+   "cocomo": 403,
+   "commits": 7,
+   "sessions": 3,
+   "realHours": 2
   },
   {
    "name": "pajamastan-space-administration",
@@ -587,7 +782,10 @@
    "files": 6,
    "lines": 1078,
    "hours": 72,
-   "cocomo": 395
+   "cocomo": 395,
+   "commits": 5,
+   "sessions": 4,
+   "realHours": 1.3
   },
   {
    "name": "defcon-trail",
@@ -596,7 +794,10 @@
    "files": 1,
    "lines": 1065,
    "hours": 71,
-   "cocomo": 390
+   "cocomo": 390,
+   "commits": 7,
+   "sessions": 2,
+   "realHours": 0.9
   },
   {
    "name": "threat-atlas-v3",
@@ -605,7 +806,10 @@
    "files": 1,
    "lines": 991,
    "hours": 66,
-   "cocomo": 361
+   "cocomo": 361,
+   "commits": 4,
+   "sessions": 4,
+   "realHours": 1
   },
   {
    "name": "mind-globe",
@@ -614,7 +818,10 @@
    "files": 3,
    "lines": 981,
    "hours": 65,
-   "cocomo": 358
+   "cocomo": 358,
+   "commits": 6,
+   "sessions": 5,
+   "realHours": 1.4
   },
   {
    "name": "j30p4rdy",
@@ -623,7 +830,10 @@
    "files": 2,
    "lines": 973,
    "hours": 65,
-   "cocomo": 354
+   "cocomo": 354,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "phasewell-scope",
@@ -632,7 +842,10 @@
    "files": 1,
    "lines": 967,
    "hours": 64,
-   "cocomo": 352
+   "cocomo": 352,
+   "commits": 8,
+   "sessions": 2,
+   "realHours": 2.3
   },
   {
    "name": "thanks-for-watching",
@@ -641,7 +854,10 @@
    "files": 7,
    "lines": 967,
    "hours": 64,
-   "cocomo": 352
+   "cocomo": 352,
+   "commits": 8,
+   "sessions": 3,
+   "realHours": 1.9
   },
   {
    "name": "coffeekit1",
@@ -650,7 +866,10 @@
    "files": 2,
    "lines": 953,
    "hours": 64,
-   "cocomo": 347
+   "cocomo": 347,
+   "commits": 3,
+   "sessions": 2,
+   "realHours": 0.6
   },
   {
    "name": "synth",
@@ -659,7 +878,10 @@
    "files": 1,
    "lines": 933,
    "hours": 62,
-   "cocomo": 339
+   "cocomo": 339,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "pixelcoop-farm",
@@ -668,7 +890,10 @@
    "files": 1,
    "lines": 925,
    "hours": 62,
-   "cocomo": 336
+   "cocomo": 336,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "tomatomo",
@@ -677,7 +902,10 @@
    "files": 1,
    "lines": 916,
    "hours": 61,
-   "cocomo": 333
+   "cocomo": 333,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "topo-war",
@@ -686,7 +914,10 @@
    "files": 1,
    "lines": 903,
    "hours": 60,
-   "cocomo": 328
+   "cocomo": 328,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "edmia",
@@ -695,7 +926,10 @@
    "files": 1,
    "lines": 893,
    "hours": 60,
-   "cocomo": 324
+   "cocomo": 324,
+   "commits": 7,
+   "sessions": 5,
+   "realHours": 1.4
   },
   {
    "name": "tower2",
@@ -704,7 +938,10 @@
    "files": 1,
    "lines": 853,
    "hours": 57,
-   "cocomo": 309
+   "cocomo": 309,
+   "commits": 3,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "checkin-kiosk",
@@ -713,7 +950,22 @@
    "files": 3,
    "lines": 851,
    "hours": 57,
-   "cocomo": 308
+   "cocomo": 308,
+   "commits": 6,
+   "sessions": 2,
+   "realHours": 1.1
+  },
+  {
+   "name": "2026-11-26-green-ghostwing",
+   "created": "2026-11-27",
+   "pushed": "2026-11-27",
+   "files": 1,
+   "lines": 850,
+   "hours": 57,
+   "cocomo": 308,
+   "commits": 3,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "chromahum-zq",
@@ -722,7 +974,10 @@
    "files": 2,
    "lines": 848,
    "hours": 57,
-   "cocomo": 307
+   "cocomo": 307,
+   "commits": 14,
+   "sessions": 4,
+   "realHours": 3.7
   },
   {
    "name": "parkingten",
@@ -731,7 +986,10 @@
    "files": 9,
    "lines": 847,
    "hours": 56,
-   "cocomo": 306
+   "cocomo": 306,
+   "commits": 17,
+   "sessions": 5,
+   "realHours": 2.8
   },
   {
    "name": "cross-venue-equivalence-engine",
@@ -740,7 +998,10 @@
    "files": 5,
    "lines": 844,
    "hours": 56,
-   "cocomo": 305
+   "cocomo": 305,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "2026-11-17-orange-campus",
@@ -749,7 +1010,10 @@
    "files": 1,
    "lines": 817,
    "hours": 54,
-   "cocomo": 295
+   "cocomo": 295,
+   "commits": 7,
+   "sessions": 6,
+   "realHours": 1.7
   },
   {
    "name": "nota-city",
@@ -758,7 +1022,10 @@
    "files": 23,
    "lines": 794,
    "hours": 53,
-   "cocomo": 286
+   "cocomo": 286,
+   "commits": 8,
+   "sessions": 3,
+   "realHours": 2.2
   },
   {
    "name": "2026-11-11-orange-codelens",
@@ -767,7 +1034,10 @@
    "files": 1,
    "lines": 790,
    "hours": 53,
-   "cocomo": 285
+   "cocomo": 285,
+   "commits": 5,
+   "sessions": 3,
+   "realHours": 0.9
   },
   {
    "name": "fogwarren-vx",
@@ -776,7 +1046,10 @@
    "files": 1,
    "lines": 776,
    "hours": 52,
-   "cocomo": 280
+   "cocomo": 280,
+   "commits": 4,
+   "sessions": 3,
+   "realHours": 0.9
   },
   {
    "name": "dronesim",
@@ -785,7 +1058,10 @@
    "files": 7,
    "lines": 768,
    "hours": 51,
-   "cocomo": 276
+   "cocomo": 276,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "cipher-wars-v3",
@@ -794,7 +1070,10 @@
    "files": 1,
    "lines": 752,
    "hours": 50,
-   "cocomo": 270
+   "cocomo": 270,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "tractor-tool",
@@ -803,7 +1082,10 @@
    "files": 1,
    "lines": 749,
    "hours": 50,
-   "cocomo": 269
+   "cocomo": 269,
+   "commits": 4,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "2026-11-04-orange-hush",
@@ -812,7 +1094,10 @@
    "files": 7,
    "lines": 749,
    "hours": 50,
-   "cocomo": 269
+   "cocomo": 269,
+   "commits": 8,
+   "sessions": 6,
+   "realHours": 2.3
   },
   {
    "name": "ebutuoy-frontend",
@@ -821,7 +1106,10 @@
    "files": 1,
    "lines": 740,
    "hours": 49,
-   "cocomo": 266
+   "cocomo": 266,
+   "commits": 4,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "fashionocalypse",
@@ -830,7 +1118,10 @@
    "files": 1,
    "lines": 737,
    "hours": 49,
-   "cocomo": 265
+   "cocomo": 265,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "2026-11-22-orange-hubview",
@@ -839,7 +1130,10 @@
    "files": 22,
    "lines": 729,
    "hours": 49,
-   "cocomo": 262
+   "cocomo": 262,
+   "commits": 233,
+   "sessions": 18,
+   "realHours": 37.1
   },
   {
    "name": "inkrunner",
@@ -848,7 +1142,10 @@
    "files": 1,
    "lines": 720,
    "hours": 48,
-   "cocomo": 258
+   "cocomo": 258,
+   "commits": 7,
+   "sessions": 3,
+   "realHours": 1.7
   },
   {
    "name": "suno-forge",
@@ -857,7 +1154,10 @@
    "files": 25,
    "lines": 716,
    "hours": 48,
-   "cocomo": 257
+   "cocomo": 257,
+   "commits": 3,
+   "sessions": 2,
+   "realHours": 0.9
   },
   {
    "name": "note-note-note",
@@ -866,7 +1166,10 @@
    "files": 1,
    "lines": 705,
    "hours": 47,
-   "cocomo": 253
+   "cocomo": 253,
+   "commits": 8,
+   "sessions": 5,
+   "realHours": 2.1
   },
   {
    "name": "2026-10-20-orange-dialbeat",
@@ -875,7 +1178,10 @@
    "files": 1,
    "lines": 705,
    "hours": 47,
-   "cocomo": 253
+   "cocomo": 253,
+   "commits": 24,
+   "sessions": 8,
+   "realHours": 4.6
   },
   {
    "name": "repo-cloner",
@@ -884,7 +1190,22 @@
    "files": 1,
    "lines": 696,
    "hours": 46,
-   "cocomo": 249
+   "cocomo": 249,
+   "commits": 5,
+   "sessions": 3,
+   "realHours": 1.4
+  },
+  {
+   "name": "2026-11-27-blue-familytree",
+   "created": "2026-11-27",
+   "pushed": "2026-11-27",
+   "files": 3,
+   "lines": 694,
+   "hours": 46,
+   "cocomo": 249,
+   "commits": 3,
+   "sessions": 1,
+   "realHours": 0.5
   },
   {
    "name": "ebutuoy-backend",
@@ -893,7 +1214,10 @@
    "files": 1,
    "lines": 685,
    "hours": 46,
-   "cocomo": 245
+   "cocomo": 245,
+   "commits": 10,
+   "sessions": 7,
+   "realHours": 2.4
   },
   {
    "name": "rat",
@@ -902,7 +1226,10 @@
    "files": 2,
    "lines": 681,
    "hours": 45,
-   "cocomo": 244
+   "cocomo": 244,
+   "commits": 6,
+   "sessions": 5,
+   "realHours": 1.5
   },
   {
    "name": "field-twin-violet-api",
@@ -911,7 +1238,10 @@
    "files": 19,
    "lines": 677,
    "hours": 45,
-   "cocomo": 242
+   "cocomo": 242,
+   "commits": 40,
+   "sessions": 17,
+   "realHours": 9.3
   },
   {
    "name": "2026-10-30-orange-scores",
@@ -920,7 +1250,10 @@
    "files": 21,
    "lines": 672,
    "hours": 45,
-   "cocomo": 240
+   "cocomo": 240,
+   "commits": 30,
+   "sessions": 16,
+   "realHours": 6.9
   },
   {
    "name": "2026-11-27-orange-parallaxwire",
@@ -929,7 +1262,10 @@
    "files": 3,
    "lines": 672,
    "hours": 45,
-   "cocomo": 240
+   "cocomo": 240,
+   "commits": 28,
+   "sessions": 1,
+   "realHours": 3.1
   },
   {
    "name": "2026-11-25-purple-lobhill",
@@ -938,16 +1274,10 @@
    "files": 2,
    "lines": 660,
    "hours": 44,
-   "cocomo": 236
-  },
-  {
-   "name": "2026-11-26-green-ghostwing",
-   "created": "2026-11-27",
-   "pushed": "2026-11-27",
-   "files": 1,
-   "lines": 654,
-   "hours": 44,
-   "cocomo": 234
+   "cocomo": 236,
+   "commits": 3,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "strudel-samples",
@@ -956,7 +1286,10 @@
    "files": 5,
    "lines": 651,
    "hours": 43,
-   "cocomo": 232
+   "cocomo": 232,
+   "commits": 27,
+   "sessions": 6,
+   "realHours": 3
   },
   {
    "name": "secureops",
@@ -965,7 +1298,10 @@
    "files": 9,
    "lines": 650,
    "hours": 43,
-   "cocomo": 232
+   "cocomo": 232,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "conveyor-sim",
@@ -974,7 +1310,10 @@
    "files": 8,
    "lines": 644,
    "hours": 43,
-   "cocomo": 230
+   "cocomo": 230,
+   "commits": 9,
+   "sessions": 9,
+   "realHours": 2.3
   },
   {
    "name": "beewars",
@@ -983,7 +1322,10 @@
    "files": 1,
    "lines": 644,
    "hours": 43,
-   "cocomo": 230
+   "cocomo": 230,
+   "commits": 3,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "mission-operator",
@@ -992,7 +1334,10 @@
    "files": 8,
    "lines": 643,
    "hours": 43,
-   "cocomo": 229
+   "cocomo": 229,
+   "commits": 4,
+   "sessions": 3,
+   "realHours": 1
   },
   {
    "name": "welcome-to-the-madness",
@@ -1001,7 +1346,10 @@
    "files": 1,
    "lines": 617,
    "hours": 41,
-   "cocomo": 220
+   "cocomo": 220,
+   "commits": 6,
+   "sessions": 3,
+   "realHours": 1.1
   },
   {
    "name": "67-idea-generator",
@@ -1010,7 +1358,10 @@
    "files": 5,
    "lines": 617,
    "hours": 41,
-   "cocomo": 220
+   "cocomo": 220,
+   "commits": 7,
+   "sessions": 4,
+   "realHours": 1.6
   },
   {
    "name": "qsr-tracker-backend",
@@ -1019,7 +1370,10 @@
    "files": 13,
    "lines": 614,
    "hours": 41,
-   "cocomo": 219
+   "cocomo": 219,
+   "commits": 18,
+   "sessions": 10,
+   "realHours": 4.7
   },
   {
    "name": "2026-11-04-field-dispatch",
@@ -1028,7 +1382,10 @@
    "files": 10,
    "lines": 612,
    "hours": 41,
-   "cocomo": 218
+   "cocomo": 218,
+   "commits": 14,
+   "sessions": 4,
+   "realHours": 1.8
   },
   {
    "name": "pdf-yourself",
@@ -1037,7 +1394,10 @@
    "files": 1,
    "lines": 611,
    "hours": 41,
-   "cocomo": 217
+   "cocomo": 217,
+   "commits": 7,
+   "sessions": 4,
+   "realHours": 1.8
   },
   {
    "name": "aliens-win",
@@ -1046,7 +1406,10 @@
    "files": 1,
    "lines": 609,
    "hours": 41,
-   "cocomo": 217
+   "cocomo": 217,
+   "commits": 4,
+   "sessions": 3,
+   "realHours": 0.9
   },
   {
    "name": "threat-dash",
@@ -1055,7 +1418,10 @@
    "files": 1,
    "lines": 599,
    "hours": 40,
-   "cocomo": 213
+   "cocomo": 213,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "diamond-driller",
@@ -1064,7 +1430,10 @@
    "files": 1,
    "lines": 587,
    "hours": 39,
-   "cocomo": 209
+   "cocomo": 209,
+   "commits": 5,
+   "sessions": 2,
+   "realHours": 1
   },
   {
    "name": "coffeekit",
@@ -1073,7 +1442,22 @@
    "files": 1,
    "lines": 570,
    "hours": 38,
-   "cocomo": 202
+   "cocomo": 202,
+   "commits": 1,
+   "sessions": 1,
+   "realHours": 0.3
+  },
+  {
+   "name": "2026-11-27-orange-lumbricus",
+   "created": "2026-11-28",
+   "pushed": "2026-11-28",
+   "files": 1,
+   "lines": 567,
+   "hours": 38,
+   "cocomo": 201,
+   "commits": 2,
+   "sessions": 1,
+   "realHours": 0.3
   },
   {
    "name": "lv-liquor-map",
@@ -1082,7 +1466,10 @@
    "files": 3,
    "lines": 562,
    "hours": 37,
-   "cocomo": 199
+   "cocomo": 199,
+   "commits": 4,
+   "sessions": 3,
+   "realHours": 0.9
   },
   {
    "name": "scorpion-supper",
@@ -1091,7 +1478,10 @@
    "files": 1,
    "lines": 559,
    "hours": 37,
-   "cocomo": 198
+   "cocomo": 198,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "kvs-roulette",
@@ -1100,7 +1490,10 @@
    "files": 1,
    "lines": 555,
    "hours": 37,
-   "cocomo": 197
+   "cocomo": 197,
+   "commits": 3,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "pipeline-builder",
@@ -1109,7 +1502,10 @@
    "files": 1,
    "lines": 552,
    "hours": 37,
-   "cocomo": 195
+   "cocomo": 195,
+   "commits": 4,
+   "sessions": 2,
+   "realHours": 0.7
   },
   {
    "name": "2026-11-26-orange-centipede",
@@ -1118,7 +1514,10 @@
    "files": 1,
    "lines": 551,
    "hours": 37,
-   "cocomo": 195
+   "cocomo": 195,
+   "commits": 5,
+   "sessions": 3,
+   "realHours": 1.1
   },
   {
    "name": "hire-portal",
@@ -1127,7 +1526,10 @@
    "files": 1,
    "lines": 549,
    "hours": 37,
-   "cocomo": 194
+   "cocomo": 194,
+   "commits": 8,
+   "sessions": 7,
+   "realHours": 1.8
   },
   {
    "name": "tapperator",
@@ -1136,7 +1538,10 @@
    "files": 1,
    "lines": 547,
    "hours": 36,
-   "cocomo": 194
+   "cocomo": 194,
+   "commits": 5,
+   "sessions": 2,
+   "realHours": 1.3
   },
   {
    "name": "pajamastan-invoices",
@@ -1145,7 +1550,10 @@
    "files": 1,
    "lines": 546,
    "hours": 36,
-   "cocomo": 193
+   "cocomo": 193,
+   "commits": 3,
+   "sessions": 2,
+   "realHours": 0.6
   },
   {
    "name": "forkmill-zx",
@@ -1154,7 +1562,10 @@
    "files": 2,
    "lines": 544,
    "hours": 36,
-   "cocomo": 193
+   "cocomo": 193,
+   "commits": 3,
+   "sessions": 2,
+   "realHours": 0.7
   },
   {
    "name": "starwake-game",
@@ -1163,7 +1574,10 @@
    "files": 1,
    "lines": 528,
    "hours": 35,
-   "cocomo": 187
+   "cocomo": 187,
+   "commits": 6,
+   "sessions": 3,
+   "realHours": 1.7
   },
   {
    "name": "control-troll",
@@ -1172,7 +1586,22 @@
    "files": 6,
    "lines": 499,
    "hours": 33,
-   "cocomo": 176
+   "cocomo": 176,
+   "commits": 35,
+   "sessions": 16,
+   "realHours": 7
+  },
+  {
+   "name": "2026-11-25-green-hopper",
+   "created": "2026-11-26",
+   "pushed": "2026-11-27",
+   "files": 1,
+   "lines": 495,
+   "hours": 33,
+   "cocomo": 174,
+   "commits": 7,
+   "sessions": 6,
+   "realHours": 1.8
   },
   {
    "name": "2026-11-15-orange-keydecode",
@@ -1181,7 +1610,10 @@
    "files": 1,
    "lines": 483,
    "hours": 32,
-   "cocomo": 170
+   "cocomo": 170,
+   "commits": 4,
+   "sessions": 4,
+   "realHours": 1
   },
   {
    "name": "x",
@@ -1190,7 +1622,10 @@
    "files": 1,
    "lines": 481,
    "hours": 32,
-   "cocomo": 169
+   "cocomo": 169,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "tickle-boxie",
@@ -1199,7 +1634,10 @@
    "files": 1,
    "lines": 481,
    "hours": 32,
-   "cocomo": 169
+   "cocomo": 169,
+   "commits": 4,
+   "sessions": 2,
+   "realHours": 0.6
   },
   {
    "name": "bitfield-synth",
@@ -1208,16 +1646,22 @@
    "files": 1,
    "lines": 480,
    "hours": 32,
-   "cocomo": 169
+   "cocomo": 169,
+   "commits": 10,
+   "sessions": 6,
+   "realHours": 2
   },
   {
    "name": "heckle-troll",
    "created": "2026-10-15",
    "pushed": "2026-11-27",
    "files": 3,
-   "lines": 480,
+   "lines": 479,
    "hours": 32,
-   "cocomo": 169
+   "cocomo": 168,
+   "commits": 4,
+   "sessions": 4,
+   "realHours": 1
   },
   {
    "name": "2026-11-25-purple-turret-sight",
@@ -1226,7 +1670,10 @@
    "files": 1,
    "lines": 474,
    "hours": 32,
-   "cocomo": 167
+   "cocomo": 167,
+   "commits": 2,
+   "sessions": 1,
+   "realHours": 0.3
   },
   {
    "name": "cockpit-racer",
@@ -1235,7 +1682,10 @@
    "files": 1,
    "lines": 471,
    "hours": 31,
-   "cocomo": 165
+   "cocomo": 165,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "daily-outline",
@@ -1244,7 +1694,10 @@
    "files": 2,
    "lines": 467,
    "hours": 31,
-   "cocomo": 164
+   "cocomo": 164,
+   "commits": 5,
+   "sessions": 4,
+   "realHours": 1.4
   },
   {
    "name": "mohavetech-contracts-api",
@@ -1253,7 +1706,10 @@
    "files": 6,
    "lines": 437,
    "hours": 29,
-   "cocomo": 153
+   "cocomo": 153,
+   "commits": 8,
+   "sessions": 5,
+   "realHours": 2.4
   },
   {
    "name": "2026-11-19-blue-just-five-more",
@@ -1262,16 +1718,10 @@
    "files": 1,
    "lines": 432,
    "hours": 29,
-   "cocomo": 151
-  },
-  {
-   "name": "2026-11-25-green-hopper",
-   "created": "2026-11-26",
-   "pushed": "2026-11-27",
-   "files": 1,
-   "lines": 429,
-   "hours": 29,
-   "cocomo": 150
+   "cocomo": 151,
+   "commits": 5,
+   "sessions": 4,
+   "realHours": 1
   },
   {
    "name": "2026-11-23-orange-explode",
@@ -1280,7 +1730,10 @@
    "files": 1,
    "lines": 428,
    "hours": 29,
-   "cocomo": 150
+   "cocomo": 150,
+   "commits": 11,
+   "sessions": 5,
+   "realHours": 2.7
   },
   {
    "name": "2026-11-09-orange-icefiles",
@@ -1289,7 +1742,22 @@
    "files": 1,
    "lines": 425,
    "hours": 28,
-   "cocomo": 149
+   "cocomo": 149,
+   "commits": 5,
+   "sessions": 3,
+   "realHours": 0.9
+  },
+  {
+   "name": "anthropic-percentage-pop-up-game",
+   "created": "2026-10-13",
+   "pushed": "2026-11-27",
+   "files": 1,
+   "lines": 424,
+   "hours": 28,
+   "cocomo": 148,
+   "commits": 8,
+   "sessions": 3,
+   "realHours": 1.5
   },
   {
    "name": "67-press-proccessor",
@@ -1298,7 +1766,10 @@
    "files": 1,
    "lines": 405,
    "hours": 27,
-   "cocomo": 141
+   "cocomo": 141,
+   "commits": 3,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "2026-11-19-orange-drivethru",
@@ -1307,7 +1778,10 @@
    "files": 1,
    "lines": 403,
    "hours": 27,
-   "cocomo": 140
+   "cocomo": 140,
+   "commits": 4,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "hackercons-roulette",
@@ -1316,16 +1790,10 @@
    "files": 1,
    "lines": 398,
    "hours": 27,
-   "cocomo": 139
-  },
-  {
-   "name": "anthropic-percentage-pop-up-game",
-   "created": "2026-10-13",
-   "pushed": "2026-11-25",
-   "files": 1,
-   "lines": 397,
-   "hours": 26,
-   "cocomo": 138
+   "cocomo": 139,
+   "commits": 3,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "gridmark",
@@ -1334,7 +1802,10 @@
    "files": 1,
    "lines": 393,
    "hours": 26,
-   "cocomo": 137
+   "cocomo": 137,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "mohavetech-contracts",
@@ -1343,7 +1814,10 @@
    "files": 1,
    "lines": 391,
    "hours": 26,
-   "cocomo": 136
+   "cocomo": 136,
+   "commits": 3,
+   "sessions": 2,
+   "realHours": 0.6
   },
   {
    "name": "scope-listener",
@@ -1352,7 +1826,10 @@
    "files": 1,
    "lines": 381,
    "hours": 25,
-   "cocomo": 132
+   "cocomo": 132,
+   "commits": 6,
+   "sessions": 5,
+   "realHours": 1.4
   },
   {
    "name": "steward-repo",
@@ -1361,7 +1838,10 @@
    "files": 2,
    "lines": 377,
    "hours": 25,
-   "cocomo": 131
+   "cocomo": 131,
+   "commits": 10,
+   "sessions": 6,
+   "realHours": 2.3
   },
   {
    "name": "2026-11-26-orange-casino-server",
@@ -1370,7 +1850,22 @@
    "files": 2,
    "lines": 367,
    "hours": 24,
-   "cocomo": 127
+   "cocomo": 127,
+   "commits": 2,
+   "sessions": 1,
+   "realHours": 0.8
+  },
+  {
+   "name": "2026-11-27-orange-whatareyou",
+   "created": "2026-11-28",
+   "pushed": "2026-11-28",
+   "files": 1,
+   "lines": 358,
+   "hours": 24,
+   "cocomo": 124,
+   "commits": 2,
+   "sessions": 1,
+   "realHours": 0.3
   },
   {
    "name": "boba-breakeven-x8k4",
@@ -1379,7 +1874,10 @@
    "files": 1,
    "lines": 340,
    "hours": 23,
-   "cocomo": 118
+   "cocomo": 118,
+   "commits": 3,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "ghost-kitchen-builder",
@@ -1388,7 +1886,10 @@
    "files": 10,
    "lines": 331,
    "hours": 22,
-   "cocomo": 114
+   "cocomo": 114,
+   "commits": 9,
+   "sessions": 6,
+   "realHours": 2.1
   },
   {
    "name": "2026-11-17-orange-campusapi",
@@ -1397,7 +1898,10 @@
    "files": 1,
    "lines": 327,
    "hours": 22,
-   "cocomo": 113
+   "cocomo": 113,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "2026-11-24-green-greenscreen",
@@ -1406,7 +1910,10 @@
    "files": 3,
    "lines": 327,
    "hours": 22,
-   "cocomo": 113
+   "cocomo": 113,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "graceland-diagram",
@@ -1415,7 +1922,10 @@
    "files": 1,
    "lines": 322,
    "hours": 21,
-   "cocomo": 111
+   "cocomo": 111,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "topo-wars-server",
@@ -1424,7 +1934,10 @@
    "files": 6,
    "lines": 313,
    "hours": 21,
-   "cocomo": 108
+   "cocomo": 108,
+   "commits": 20,
+   "sessions": 15,
+   "realHours": 5.5
   },
   {
    "name": "ether-wand",
@@ -1433,7 +1946,10 @@
    "files": 1,
    "lines": 309,
    "hours": 21,
-   "cocomo": 106
+   "cocomo": 106,
+   "commits": 4,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "tinewood-keys",
@@ -1442,7 +1958,10 @@
    "files": 1,
    "lines": 303,
    "hours": 20,
-   "cocomo": 104
+   "cocomo": 104,
+   "commits": 3,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "sound-bender",
@@ -1451,7 +1970,10 @@
    "files": 3,
    "lines": 299,
    "hours": 20,
-   "cocomo": 103
+   "cocomo": 103,
+   "commits": 3,
+   "sessions": 2,
+   "realHours": 0.9
   },
   {
    "name": "signal-snapshot-backend",
@@ -1460,7 +1982,10 @@
    "files": 1,
    "lines": 297,
    "hours": 20,
-   "cocomo": 102
+   "cocomo": 102,
+   "commits": 3,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "purple-agent",
@@ -1469,7 +1994,10 @@
    "files": 2,
    "lines": 297,
    "hours": 20,
-   "cocomo": 102
+   "cocomo": 102,
+   "commits": 21,
+   "sessions": 6,
+   "realHours": 3.3
   },
   {
    "name": "topdown-pixeltowns",
@@ -1478,7 +2006,10 @@
    "files": 1,
    "lines": 286,
    "hours": 19,
-   "cocomo": 98
+   "cocomo": 98,
+   "commits": 1,
+   "sessions": 1,
+   "realHours": 0.3
   },
   {
    "name": "androids",
@@ -1487,7 +2018,10 @@
    "files": 1,
    "lines": 286,
    "hours": 19,
-   "cocomo": 98
+   "cocomo": 98,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "shared-server",
@@ -1496,7 +2030,10 @@
    "files": 3,
    "lines": 286,
    "hours": 19,
-   "cocomo": 98
+   "cocomo": 98,
+   "commits": 11,
+   "sessions": 7,
+   "realHours": 2.9
   },
   {
    "name": "mission-operator-next",
@@ -1505,7 +2042,10 @@
    "files": 11,
    "lines": 285,
    "hours": 19,
-   "cocomo": 98
+   "cocomo": 98,
+   "commits": 7,
+   "sessions": 4,
+   "realHours": 1.4
   },
   {
    "name": "2026-11-01-orange-decimalday",
@@ -1514,7 +2054,10 @@
    "files": 1,
    "lines": 282,
    "hours": 19,
-   "cocomo": 97
+   "cocomo": 97,
+   "commits": 17,
+   "sessions": 3,
+   "realHours": 1.9
   },
   {
    "name": "dronecamp",
@@ -1523,7 +2066,10 @@
    "files": 1,
    "lines": 270,
    "hours": 18,
-   "cocomo": 92
+   "cocomo": 92,
+   "commits": 4,
+   "sessions": 2,
+   "realHours": 0.9
   },
   {
    "name": "arcade-backend",
@@ -1532,7 +2078,10 @@
    "files": 1,
    "lines": 270,
    "hours": 18,
-   "cocomo": 92
+   "cocomo": 92,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "charley-douglass",
@@ -1541,7 +2090,10 @@
    "files": 1,
    "lines": 260,
    "hours": 17,
-   "cocomo": 89
+   "cocomo": 89,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "qsr-receipt-sim",
@@ -1550,7 +2102,10 @@
    "files": 1,
    "lines": 256,
    "hours": 17,
-   "cocomo": 87
+   "cocomo": 87,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "engine-companion",
@@ -1559,7 +2114,10 @@
    "files": 1,
    "lines": 248,
    "hours": 17,
-   "cocomo": 84
+   "cocomo": 84,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "2026-11-26-orange-casino",
@@ -1568,7 +2126,10 @@
    "files": 2,
    "lines": 248,
    "hours": 17,
-   "cocomo": 84
+   "cocomo": 84,
+   "commits": 2,
+   "sessions": 1,
+   "realHours": 0.3
   },
   {
    "name": "paycheck-hub",
@@ -1577,7 +2138,10 @@
    "files": 1,
    "lines": 236,
    "hours": 16,
-   "cocomo": 80
+   "cocomo": 80,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "threat-poller",
@@ -1586,7 +2150,10 @@
    "files": 4,
    "lines": 235,
    "hours": 16,
-   "cocomo": 80
+   "cocomo": 80,
+   "commits": 4,
+   "sessions": 3,
+   "realHours": 1
   },
   {
    "name": "spyhunt",
@@ -1595,7 +2162,10 @@
    "files": 1,
    "lines": 205,
    "hours": 14,
-   "cocomo": 69
+   "cocomo": 69,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "fatty-fart-pedal",
@@ -1604,7 +2174,10 @@
    "files": 1,
    "lines": 203,
    "hours": 14,
-   "cocomo": 68
+   "cocomo": 68,
+   "commits": 5,
+   "sessions": 2,
+   "realHours": 1.2
   },
   {
    "name": "hackercons-roulette-api",
@@ -1613,7 +2186,10 @@
    "files": 1,
    "lines": 199,
    "hours": 13,
-   "cocomo": 67
+   "cocomo": 67,
+   "commits": 3,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "torque-converter",
@@ -1622,7 +2198,10 @@
    "files": 1,
    "lines": 199,
    "hours": 13,
-   "cocomo": 67
+   "cocomo": 67,
+   "commits": 4,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "pajamastan-warrants",
@@ -1631,7 +2210,10 @@
    "files": 3,
    "lines": 193,
    "hours": 13,
-   "cocomo": 65
+   "cocomo": 65,
+   "commits": 4,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "signal-snapshot",
@@ -1640,7 +2222,10 @@
    "files": 1,
    "lines": 183,
    "hours": 12,
-   "cocomo": 61
+   "cocomo": 61,
+   "commits": 3,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "2026-11-05-drive-thru-dental",
@@ -1649,7 +2234,10 @@
    "files": 1,
    "lines": 179,
    "hours": 12,
-   "cocomo": 60
+   "cocomo": 60,
+   "commits": 3,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "2026-11-25-ten-turn-machine",
@@ -1658,7 +2246,10 @@
    "files": 4,
    "lines": 171,
    "hours": 11,
-   "cocomo": 57
+   "cocomo": 57,
+   "commits": 6,
+   "sessions": 1,
+   "realHours": 0.6
   },
   {
    "name": "delivery-twin",
@@ -1667,7 +2258,10 @@
    "files": 17,
    "lines": 170,
    "hours": 11,
-   "cocomo": 57
+   "cocomo": 57,
+   "commits": 33,
+   "sessions": 14,
+   "realHours": 7.8
   },
   {
    "name": "text-based-game",
@@ -1676,7 +2270,10 @@
    "files": 2,
    "lines": 166,
    "hours": 11,
-   "cocomo": 55
+   "cocomo": 55,
+   "commits": 6,
+   "sessions": 2,
+   "realHours": 1.7
   },
   {
    "name": "pancake-orange",
@@ -1685,7 +2282,10 @@
    "files": 1,
    "lines": 164,
    "hours": 11,
-   "cocomo": 55
+   "cocomo": 55,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "irrigation-demo",
@@ -1694,7 +2294,10 @@
    "files": 1,
    "lines": 163,
    "hours": 11,
-   "cocomo": 54
+   "cocomo": 54,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "blue-agent-sandbox",
@@ -1703,7 +2306,10 @@
    "files": 16,
    "lines": 163,
    "hours": 11,
-   "cocomo": 54
+   "cocomo": 54,
+   "commits": 4,
+   "sessions": 2,
+   "realHours": 0.7
   },
   {
    "name": "2026-11-16-orange-zion",
@@ -1712,7 +2318,10 @@
    "files": 1,
    "lines": 162,
    "hours": 11,
-   "cocomo": 54
+   "cocomo": 54,
+   "commits": 6,
+   "sessions": 4,
+   "realHours": 1.1
   },
   {
    "name": "2026-11-24-green-fleetindex",
@@ -1721,7 +2330,10 @@
    "files": 1,
    "lines": 161,
    "hours": 11,
-   "cocomo": 54
+   "cocomo": 54,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "bpm-finder",
@@ -1730,7 +2342,10 @@
    "files": 1,
    "lines": 150,
    "hours": 10,
-   "cocomo": 50
+   "cocomo": 50,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "particular-lenticular",
@@ -1739,7 +2354,10 @@
    "files": 1,
    "lines": 147,
    "hours": 10,
-   "cocomo": 49
+   "cocomo": 49,
+   "commits": 3,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "mail-ionaire",
@@ -1748,7 +2366,10 @@
    "files": 1,
    "lines": 131,
    "hours": 9,
-   "cocomo": 43
+   "cocomo": 43,
+   "commits": 5,
+   "sessions": 4,
+   "realHours": 1.1
   },
   {
    "name": "2026-11-26-orange-bingo",
@@ -1757,7 +2378,10 @@
    "files": 1,
    "lines": 119,
    "hours": 8,
-   "cocomo": 39
+   "cocomo": 39,
+   "commits": 1,
+   "sessions": 1,
+   "realHours": 0.3
   },
   {
    "name": "rosetta-pone",
@@ -1766,7 +2390,10 @@
    "files": 1,
    "lines": 104,
    "hours": 7,
-   "cocomo": 34
+   "cocomo": 34,
+   "commits": 5,
+   "sessions": 3,
+   "realHours": 0.9
   },
   {
    "name": "delivery-twin-violet",
@@ -1775,7 +2402,10 @@
    "files": 19,
    "lines": 98,
    "hours": 7,
-   "cocomo": 32
+   "cocomo": 32,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "stinkin-badges",
@@ -1784,7 +2414,10 @@
    "files": 3,
    "lines": 95,
    "hours": 6,
-   "cocomo": 31
+   "cocomo": 31,
+   "commits": 3,
+   "sessions": 1,
+   "realHours": 1.3
   },
   {
    "name": "skwiggle-mint-pin",
@@ -1793,7 +2426,10 @@
    "files": 1,
    "lines": 94,
    "hours": 6,
-   "cocomo": 30
+   "cocomo": 30,
+   "commits": 3,
+   "sessions": 2,
+   "realHours": 0.8
   },
   {
    "name": "mohave-browser",
@@ -1802,7 +2438,10 @@
    "files": 1,
    "lines": 93,
    "hours": 6,
-   "cocomo": 30
+   "cocomo": 30,
+   "commits": 3,
+   "sessions": 1,
+   "realHours": 0.4
   },
   {
    "name": "axiom",
@@ -1811,7 +2450,10 @@
    "files": 3,
    "lines": 83,
    "hours": 6,
-   "cocomo": 27
+   "cocomo": 27,
+   "commits": 6,
+   "sessions": 3,
+   "realHours": 1.5
   },
   {
    "name": "pajamastan-card-orders",
@@ -1820,7 +2462,10 @@
    "files": 1,
    "lines": 81,
    "hours": 5,
-   "cocomo": 26
+   "cocomo": 26,
+   "commits": 2,
+   "sessions": 1,
+   "realHours": 0.3
   },
   {
    "name": "2026-11-26-orange-bingo-server",
@@ -1829,7 +2474,10 @@
    "files": 1,
    "lines": 78,
    "hours": 5,
-   "cocomo": 25
+   "cocomo": 25,
+   "commits": 1,
+   "sessions": 1,
+   "realHours": 0.3
   },
   {
    "name": "stumbler",
@@ -1838,7 +2486,10 @@
    "files": 1,
    "lines": 73,
    "hours": 5,
-   "cocomo": 23
+   "cocomo": 23,
+   "commits": 3,
+   "sessions": 3,
+   "realHours": 0.8
   },
   {
    "name": "spaceout",
@@ -1847,7 +2498,10 @@
    "files": 1,
    "lines": 63,
    "hours": 4,
-   "cocomo": 20
+   "cocomo": 20,
+   "commits": 2,
+   "sessions": 2,
+   "realHours": 0.5
   },
   {
    "name": "free-as-in-links",
@@ -1856,7 +2510,10 @@
    "files": 2,
    "lines": 62,
    "hours": 4,
-   "cocomo": 20
+   "cocomo": 20,
+   "commits": 5,
+   "sessions": 3,
+   "realHours": 0.9
   },
   {
    "name": "spyhunt-server",
@@ -1865,7 +2522,10 @@
    "files": 1,
    "lines": 31,
    "hours": 2,
-   "cocomo": 10
+   "cocomo": 10,
+   "commits": 2,
+   "sessions": 1,
+   "realHours": 0.3
   },
   {
    "name": "pajamastan",
@@ -1874,7 +2534,10 @@
    "files": 3,
    "lines": 22,
    "hours": 1,
-   "cocomo": 7
+   "cocomo": 7,
+   "commits": 10,
+   "sessions": 7,
+   "realHours": 2.5
   },
   {
    "name": "2026-11-05-locker-screen",
@@ -1883,7 +2546,10 @@
    "files": 3,
    "lines": 4,
    "hours": 0,
-   "cocomo": 1
+   "cocomo": 1,
+   "commits": 6,
+   "sessions": 3,
+   "realHours": 1.1
   },
   {
    "name": "skwiggle-backend",
@@ -1892,7 +2558,10 @@
    "files": 1,
    "lines": 3,
    "hours": 0,
-   "cocomo": 1
+   "cocomo": 1,
+   "commits": 2,
+   "sessions": 1,
+   "realHours": 0.4
   },
   {
    "name": "topdown-pixeltown",
@@ -1901,7 +2570,10 @@
    "files": 1,
    "lines": 2,
    "hours": 0,
-   "cocomo": 1
+   "cocomo": 1,
+   "commits": 3,
+   "sessions": 2,
+   "realHours": 0.6
   }
  ]
 }
