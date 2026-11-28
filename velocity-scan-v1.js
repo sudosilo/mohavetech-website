@@ -71,6 +71,7 @@ function sessions(times, repo) {
 }
 const allSessions = [];
 const allTimes = [];
+const commitLog = {};
 
 function cocomoHours(lines) {
   const kloc = lines / 1000;
@@ -96,17 +97,15 @@ repoList.sort((a, b) => String(a.createdAt).localeCompare(String(b.createdAt)));
 repoList.filter(r => !r.isFork).forEach(r => {
   const dir = path.join(tmp, r.name);
   run(`git clone --filter=blob:none --quiet https://github.com/${OWNER}/${r.name}.git "${dir}"`);
-  const times = run(`git -C "${dir}" log --format=%ct%x09%an`).split("\n").filter(Boolean)
-    .filter(l => !BOTS.test(l.split("\t")[1] || "")).map(l => +l.split("\t")[0]).filter(t => t > 0);
+  const commits = run(`git -C "${dir}" log --format=%ct%x09%an%x09%s`).split("\n").filter(Boolean)
+    .map(l => l.split("\t")).filter(c => !BOTS.test(c[1] || "") && +c[0] > 0).map(c => ({ t: +c[0], msg: (c[2] || "").trim() }));
   const files = [];
   walk(dir, files);
   let lines = 0;
   files.forEach(f => { lines += countLines(f, seen); });
   fs.rmSync(dir, { recursive: true, force: true });
   if (!lines) return;
-  times.forEach(t => allTimes.push(t));
-  const ses = sessions(times, r.name);
-  ses.list.forEach(x => allSessions.push(x));
+  commitLog[r.name] = commits;
   repos.push({
     name: r.name,
     created: (r.createdAt || "").slice(0, 10),
@@ -115,11 +114,22 @@ repoList.filter(r => !r.isFork).forEach(r => {
     lines,
     hours: Math.round(lines / LINES_PER_HOUR),
     cocomo: cocomoHours(lines),
-    commits: times.length,
-    sessions: ses.count,
-    realHours: ses.hours
   });
   console.log(r.name, lines);
+});
+
+// The same commit message pushed to many repos at once is a scripted bulk change, not hands-on work.
+const msgRepos = {};
+Object.keys(commitLog).forEach(n => new Set(commitLog[n].map(c => c.msg)).forEach(m => { msgRepos[m] = (msgRepos[m] || 0) + 1; }));
+const BULK = 5;
+repos.forEach(r => {
+  const times = (commitLog[r.name] || []).filter(c => !(c.msg && msgRepos[c.msg] >= BULK)).map(c => c.t);
+  times.forEach(t => allTimes.push(t));
+  const ses = sessions(times, r.name);
+  ses.list.forEach(x => allSessions.push(x));
+  r.commits = times.length;
+  r.sessions = ses.count;
+  r.realHours = ses.hours;
 });
 
 repos.sort((a, b) => b.lines - a.lines);
@@ -149,15 +159,20 @@ function fieldTwin() {
   if (!tickets.length) return { tickets: 0 };
   const from = Math.min.apply(null, tickets.map(t => t[0]));
   const overlap = (a, b) => tickets.reduce((m, t) => m + Math.max(0, Math.min(b, t[1]) - Math.max(a, t[0])), 0);
-  let on = 0, off = 0, n = 0;
-  const perRepo = {}, byHour = new Array(24).fill(0);
-  allSessions.filter(x => x.end >= from).forEach(x => {
-    n++;
-    const len = Math.max(0, x.end - x.start), o = Math.min(len, overlap(x.start, x.end));
+  const perRepo = {};
+  allSessions.filter(x => x.end >= from).forEach(x => { perRepo[x.repo] = (perRepo[x.repo] || 0) + Math.min(x.end - x.start, overlap(x.start, x.end)); });
+  // merged timeline: sessions on different repos at the same time count once
+  const merged = [];
+  allSessions.filter(x => x.end >= from).map(x => [x.start, x.end]).sort((a, b) => a[0] - b[0]).forEach(x => {
+    const m = merged[merged.length - 1];
+    if (m && x[0] <= m[1]) m[1] = Math.max(m[1], x[1]); else merged.push(x.slice());
+  });
+  let on = 0, off = 0;
+  const n = merged.length, byHour = new Array(24).fill(0);
+  merged.forEach(x => {
+    const len = x[1] - x[0], o = Math.min(len, overlap(x[0], x[1]));
     on += o; off += len - o;
-    perRepo[x.repo] = (perRepo[x.repo] || 0) + o;
-    const h = new Date((x.start - 7 * 3600) * 1000).getUTCHours();
-    byHour[h] += len / 3600;
+    for (let t = x[0]; t < x[1]; t += 300) byHour[new Date((t - 7 * 3600) * 1000).getUTCHours()] += 300 / 3600;
   });
   return {
     tickets: tickets.length,
