@@ -1,10 +1,10 @@
 {
- "generated": "2026-11-28T00:19:44.401Z",
+ "generated": "2026-11-28T00:45:46.315Z",
  "start": "2026-04-05",
  "linesPerHour": 15,
  "hoursPerPersonMonth": 152,
  "sessionGapMinutes": 45,
- "realHours": 428.5,
+ "realHours": 428.9,
  "sessions": 450,
  "repos": [
   {
@@ -12,12 +12,12 @@
    "created": "2026-09-05",
    "pushed": "2026-11-28",
    "files": 88,
-   "lines": 5269,
-   "hours": 351,
-   "cocomo": 2089,
-   "commits": 209,
+   "lines": 5321,
+   "hours": 355,
+   "cocomo": 2110,
+   "commits": 210,
    "sessions": 68,
-   "realHours": 31.2
+   "realHours": 31.6
   },
   {
    "name": "RTSS",
@@ -504,8 +504,8 @@
    "created": "2026-10-11",
    "pushed": "2026-11-25",
    "files": 7,
-   "lines": 1568,
-   "hours": 105,
+   "lines": 1567,
+   "hours": 104,
    "cocomo": 585,
    "commits": 25,
    "sessions": 13,
@@ -1016,6 +1016,18 @@
    "realHours": 1.7
   },
   {
+   "name": "2026-11-27-orange-lumbricus",
+   "created": "2026-11-28",
+   "pushed": "2026-11-28",
+   "files": 1,
+   "lines": 803,
+   "hours": 54,
+   "cocomo": 290,
+   "commits": 3,
+   "sessions": 1,
+   "realHours": 0.5
+  },
+  {
    "name": "nota-city",
    "created": "2026-04-20",
    "pushed": "2026-10-14",
@@ -1304,6 +1316,18 @@
    "realHours": 0.5
   },
   {
+   "name": "2026-11-27-orange-whatareyou",
+   "created": "2026-11-28",
+   "pushed": "2026-11-28",
+   "files": 1,
+   "lines": 648,
+   "hours": 43,
+   "cocomo": 231,
+   "commits": 3,
+   "sessions": 1,
+   "realHours": 0.4
+  },
+  {
    "name": "conveyor-sim",
    "created": "2026-10-28",
    "pushed": "2026-11-25",
@@ -1444,18 +1468,6 @@
    "hours": 38,
    "cocomo": 202,
    "commits": 1,
-   "sessions": 1,
-   "realHours": 0.3
-  },
-  {
-   "name": "2026-11-27-orange-lumbricus",
-   "created": "2026-11-28",
-   "pushed": "2026-11-28",
-   "files": 1,
-   "lines": 567,
-   "hours": 38,
-   "cocomo": 201,
-   "commits": 2,
    "sessions": 1,
    "realHours": 0.3
   },
@@ -1854,18 +1866,6 @@
    "commits": 2,
    "sessions": 1,
    "realHours": 0.8
-  },
-  {
-   "name": "2026-11-27-orange-whatareyou",
-   "created": "2026-11-28",
-   "pushed": "2026-11-28",
-   "files": 1,
-   "lines": 358,
-   "hours": 24,
-   "cocomo": 124,
-   "commits": 2,
-   "sessions": 1,
-   "realHours": 0.3
   },
   {
    "name": "boba-breakeven-x8k4",
@@ -2575,5 +2575,60 @@
    "sessions": 2,
    "realHours": 0.6
   }
- ]
+ ],
+ "fieldTwin": {
+  "tickets": 3,
+  "from": "2026-11-15",
+  "sessions": 455,
+  "onTicketHours": 21.6,
+  "offTicketHours": 171.1,
+  "byHour": [
+   1.2,
+   5.3,
+   0.3,
+   0,
+   0,
+   0,
+   4,
+   3,
+   6.8,
+   25.2,
+   9,
+   14.7,
+   5.9,
+   18.1,
+   22.2,
+   40.5,
+   7.1,
+   8.7,
+   6.1,
+   4.4,
+   5.9,
+   2.4,
+   1.6,
+   0.3
+  ],
+  "perRepo": {
+   "RTSS": 1.3,
+   "mohavetech-website": 2.9,
+   "field-twin": 1.7,
+   "pajamastan": 0.3,
+   "ghost-kitchen-builder": 0.7,
+   "control-troll": 0.3,
+   "2026-10-18-orange-testbed": 2.7,
+   "itchy-troll": 0.6,
+   "2026-10-30-orange-scores": 1.3,
+   "2026-11-04-orange-hush": 0.3,
+   "hire-portal": 0.3,
+   "city-seek": 0.3,
+   "delivery-twin": 1.5,
+   "raineurysm": 0.3,
+   "mobbyhill": 2.4,
+   "fashionocalypse": 0.3,
+   "lartte": 2.8,
+   "2026-11-15-orange-keydecode": 0.5,
+   "2026-11-16-orange-zion": 0.3,
+   "2026-11-16-pipe-weave": 1.2
+  }
+ }
 }
