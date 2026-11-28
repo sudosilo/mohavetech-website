@@ -247,6 +247,19 @@
   ]
  },
  {
+  "name": "2026-11-27-blue-familytree",
+  "date": "2026-11-27",
+  "aliases": [
+   "2026-11-27-blue-familytree.vercel.app",
+   "2026-11-27-blue-familytree-sudosilo2-1771s-projects.vercel.app"
+  ]
+ },
+ {
+  "name": "2026-11-27-orange-lumbricus",
+  "date": "2026-11-27",
+  "aliases": []
+ },
+ {
   "name": "2026-11-27-orange-parallaxwire",
   "date": "2026-11-27",
   "aliases": [
@@ -254,6 +267,11 @@
    "2026-11-27-orange-parallaxwire-sudosilo2-1771s-projects.vercel.app",
    "2026-11-27-orange-parallaxw-git-d02bbd-sudosilo2-1771s-projects.vercel.app"
   ]
+ },
+ {
+  "name": "2026-11-27-orange-whatareyou",
+  "date": "2026-11-27",
+  "aliases": []
  },
  {
   "name": "67-idea-generator",
@@ -757,7 +775,7 @@
  },
  {
   "name": "field-twin",
-  "date": "2026-11-25",
+  "date": "2026-11-27",
   "aliases": [
    "field-twin-teal.vercel.app",
    "field-twin-sudosilo2-1771s-projects.vercel.app",
@@ -848,7 +866,8 @@
   "date": "2026-11-27",
   "aliases": [
    "green-ghostwing.vercel.app",
-   "green-ghostwing-sudosilo2-1771s-projects.vercel.app"
+   "green-ghostwing-sudosilo2-1771s-projects.vercel.app",
+   "green-ghostwing-git-master-sudosilo2-1771s-projects.vercel.app"
   ]
  },
  {
@@ -1157,7 +1176,7 @@
  },
  {
   "name": "pajamastan-space-administration",
-  "date": "2026-11-09",
+  "date": "2026-11-27",
   "aliases": [
    "pajamastan-space-administration.vercel.app",
    "pajamastan-space-administration-sudosilo2-1771s-projects.vercel.app",
