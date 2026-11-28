@@ -1,0 +1,31 @@
+name: pages-scan
+# Finds every sudosilo repo with a GitHub Pages site and saves pages-v1.json for the hub.
+# Runs every three hours and on demand. The push it makes is deployed by Vercel like any other push.
+on:
+  schedule:
+    - cron: "53 */3 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Find GitHub Pages sites
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node pages-scan-v1.js
+      - name: Save
+        run: |
+          git config user.name "mohave-sync-bot"
+          git config user.email "mohave-sync-bot@users.noreply.github.com"
+          git add pages-v1.json
+          git diff --cached --quiet && exit 0
+          git commit -m "refresh github pages list"
+          git pull --rebase origin master
+          git push
