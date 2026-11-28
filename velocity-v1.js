@@ -90,6 +90,16 @@
       h += '<div style="margin-bottom:4px;font-size:13px"><span style="display:inline-block;min-width:150px;word-break:break-all">' + esc(r.name) + '</span> ' + bar(Math.round(r.hours / maxH * 160), BLUE) + ' ' + fmt(r.hours) + ' h, ' + fmt(r.lines) + ' lines</div>';
     });
 
+    if (window.mohaveCostModel && window.MOHAVE_SPEND) {
+      var m = window.mohaveCostModel(d), sp = window.MOHAVE_SPEND;
+      var usd = function (n) { return n >= 100 ? '$' + fmt(n) : n >= 1 ? '$' + n.toFixed(2) : (n * 100).toFixed(1) + ' cents'; };
+      h += '<h2>Cost Of Code</h2>';
+      h += '<p>Subscriptions: ' + sp.items.map(function (x) { return esc(x[0]) + ' $' + x[1]; }).join(', ') + ', for $' + sp.monthly + ' a month</p>';
+      h += '<p>Spent since ' + esc(d.start) + ': about ' + usd(m.spent) + '</p>';
+      h += '<p>Cost per line of code: ' + usd(m.perLine) + '</p>';
+      h += '<p>Cost per 2016 build hour: ' + usd(m.perHour) + '</p>';
+      h += '<p style="font-size:13px">These are flat monthly plans at today\'s prices, counted from ' + esc(d.start) + '. Every dollar counts against the code, including tokens that went into anything else. Plans that started later than that make the real cost lower.</p>';
+    }
     h += '<h2>How This Is Figured</h2>';
     h += '<p style="font-size:13px">Every sudosilo repo is cloned each morning and its hand written code lines are counted, leaving out blank lines, copied or snapshot apps, any line already counted in an older repo, libraries, minified files, data files, and any line over 400 characters. ';
     h += 'The 2016 build time assumes a solo developer finishing ' + d.linesPerHour + ' working lines per hour, counting design, debugging and testing, without AI help. ';

@@ -502,3 +502,5 @@
     + 'html:not(.modern):not(.future):not(.retro) .mtg-seal-links a,html:not(.modern):not(.future):not(.retro) .mtg-donate{background:rgba(0,40,0,.5)!important;border:1px solid rgba(0,255,0,.5)!important;box-shadow:none!important;color:#0f0!important;-webkit-text-fill-color:currentColor}';
   document.head.appendChild(s);
 })();
+/* appstatsmark: per-project statistics dropdown */
+(function () { var s = document.createElement("script"); s.src = "appstats-v1.js?v=2"; document.head.appendChild(s); })();
