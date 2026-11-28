@@ -58,6 +58,21 @@
     h += '<p>2016 hours claimed per calendar day: ' + one(perDay) + '</p>';
     h += '<p>Full company estimate (COCOMO, with planning, testing and docs): ' + fmt(cocomo) + ' hours, ' + one(cocomoPerDay) + ' hours per calendar day</p>';
 
+    var ft = d.fieldTwin;
+    if (ft && ft.tickets) {
+      var tot = ft.onTicketHours + ft.offTicketHours;
+      h += '<h2>Coding And The Day Job</h2>';
+      h += '<p>Since ' + esc(ft.from) + ', from ' + fmt(ft.tickets) + ' Field Twin work tickets and ' + fmt(ft.sessions) + ' coding sessions:</p>';
+      h += '<p>' + one(ft.onTicketHours) + ' hours coded while a work ticket was open, ' + one(ft.offTicketHours) + ' hours off the clock' + (tot ? ', ' + Math.round(ft.onTicketHours / tot * 100) + ' percent on the clock' : '') + '</p>';
+      var mx = Math.max.apply(null, ft.byHour.concat([0.1]));
+      h += '<p style="font-size:13px">Coding hours by time of day, Arizona time, midnight on the left</p><div style="display:flex;align-items:flex-end;gap:2px;height:60px;margin-bottom:4px">';
+      ft.byHour.forEach(function (v, i) { h += '<span title="' + i + ':00 ' + one(v) + ' h" style="flex:1;background:' + BLUE + ';height:' + Math.max(1, Math.round(v / mx * 60)) + 'px;border-radius:2px 2px 0 0"></span>'; });
+      h += '</div><div style="display:flex;justify-content:space-between;font-size:11px;opacity:.7"><span>12am</span><span>6am</span><span>noon</span><span>6pm</span><span>11pm</span></div>';
+    } else if (ft && ft.error) {
+      h += '<h2>Coding And The Day Job</h2><p style="font-size:13px">Field Twin link: ' + esc(ft.error) + '</p>';
+    } else if (ft) {
+      h += '<h2>Coding And The Day Job</h2><p style="font-size:13px">No work tickets in Field Twin yet. This fills in once tickets are logged.</p>';
+    }
     h += '<h2>One Day, Claimed</h2>';
     h += '<p style="font-size:13px">Each block is one hour. Gray is the clock. Blue is 2016 work claimed in an average day.</p>';
     var blocks = Math.round(perDay);

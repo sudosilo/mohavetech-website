@@ -47,6 +47,8 @@
         if (r.realHours != null) {
           line(box, r.realHours + " real hours in " + r.sessions + (r.sessions === 1 ? " session" : " sessions") + ", from " + r.commits + " commits");
           if (r.realHours > 0) line(box, fmt(r.lines / r.realHours) + " lines per real hour");
+          var ft = d.fieldTwin && d.fieldTwin.perRepo && d.fieldTwin.perRepo[r.name];
+          if (ft) line(box, ft + " of those hours while a work ticket was open");
         }
         line(box, fmt(r.hours) + " hours to build the 2016 way, by hand");
         line(box, "About " + money(r.lines * m.perLine) + " of AI subscriptions at " + money(m.perLine).replace(/^\$0/, "$0") + " per line");

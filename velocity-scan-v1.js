@@ -57,16 +57,19 @@ function countLines(file, seen) {
 // Each session counts from its first commit to its last, plus LEAD minutes of work before the first commit.
 const SESSION_GAP = 45, LEAD = 15;
 const BOTS = /(bot|scribe|troll|github-actions|dependabot)/i;
-function sessions(times) {
+function sessions(times, repo) {
   times = times.slice().sort((a, b) => a - b);
   let n = 0, mins = 0, s0 = null, last = null;
+  const list = [];
+  const close = () => { mins += (last - s0) / 60 + LEAD; list.push({ repo, start: s0 - LEAD * 60, end: last }); };
   times.forEach(t => {
-    if (last === null || t - last > SESSION_GAP * 60) { if (s0 !== null) mins += (last - s0) / 60 + LEAD; s0 = t; n++; }
+    if (last === null || t - last > SESSION_GAP * 60) { if (s0 !== null) close(); s0 = t; n++; }
     last = t;
   });
-  if (s0 !== null) mins += (last - s0) / 60 + LEAD;
-  return { count: n, hours: Math.round(mins / 6) / 10 };
+  if (s0 !== null) close();
+  return { count: n, hours: Math.round(mins / 6) / 10, list };
 }
+const allSessions = [];
 const allTimes = [];
 
 function cocomoHours(lines) {
@@ -102,7 +105,8 @@ repoList.filter(r => !r.isFork).forEach(r => {
   fs.rmSync(dir, { recursive: true, force: true });
   if (!lines) return;
   times.forEach(t => allTimes.push(t));
-  const ses = sessions(times);
+  const ses = sessions(times, r.name);
+  ses.list.forEach(x => allSessions.push(x));
   repos.push({
     name: r.name,
     created: (r.createdAt || "").slice(0, 10),
@@ -130,5 +134,42 @@ const out = {
   sessions: sessions(allTimes).count,
   repos
 };
+// Field Twin correlation: which coding sessions happened while a work ticket was open.
+// Only totals are saved, since this file is public. No places, addresses or ticket details leave the database.
+function fieldTwin() {
+  const token = process.env.SUPABASE_ACCESS_TOKEN;
+  if (!token) return { error: "no Field Twin key" };
+  const q = "select extract(epoch from opened_at)::bigint as o, extract(epoch from coalesce(closed_at, opened_at + interval '4 hours'))::bigint as c from public.field_twin_tickets where opened_at is not null";
+  fs.writeFileSync(path.join(tmp, "q.json"), JSON.stringify({ query: q }));
+  const raw = run(`curl -s -X POST https://api.supabase.com/v1/projects/zasyjjoypkpvyqdueums/database/query -H "Authorization: Bearer ${token}" -H "Content-Type: application/json" --data-binary @${path.join(tmp, "q.json")}`);
+  let rows;
+  try { rows = JSON.parse(raw); } catch (e) { return { error: "Field Twin did not answer" }; }
+  if (!Array.isArray(rows)) return { error: "Field Twin said: " + String(rows.message || raw).slice(0, 120) };
+  const tickets = rows.map(t => [+t.o, +t.c]).filter(t => t[0] && t[1] >= t[0]);
+  if (!tickets.length) return { tickets: 0 };
+  const from = Math.min.apply(null, tickets.map(t => t[0]));
+  const overlap = (a, b) => tickets.reduce((m, t) => m + Math.max(0, Math.min(b, t[1]) - Math.max(a, t[0])), 0);
+  let on = 0, off = 0, n = 0;
+  const perRepo = {}, byHour = new Array(24).fill(0);
+  allSessions.filter(x => x.end >= from).forEach(x => {
+    n++;
+    const len = Math.max(0, x.end - x.start), o = Math.min(len, overlap(x.start, x.end));
+    on += o; off += len - o;
+    perRepo[x.repo] = (perRepo[x.repo] || 0) + o;
+    const h = new Date((x.start - 7 * 3600) * 1000).getUTCHours();
+    byHour[h] += len / 3600;
+  });
+  return {
+    tickets: tickets.length,
+    from: new Date(from * 1000).toISOString().slice(0, 10),
+    sessions: n,
+    onTicketHours: Math.round(on / 360) / 10,
+    offTicketHours: Math.round(off / 360) / 10,
+    byHour: byHour.map(v => Math.round(v * 10) / 10),
+    perRepo: Object.fromEntries(Object.entries(perRepo).filter(e => e[1] > 0).map(e => [e[0], Math.round(e[1] / 360) / 10]))
+  };
+}
+out.fieldTwin = fieldTwin();
+console.log("field twin", JSON.stringify(out.fieldTwin).slice(0, 300));
 fs.writeFileSync(path.join(__dirname, "velocity-v1.json"), JSON.stringify(out, null, 1) + "\n");
 console.log("saved", repos.length, "repos");
