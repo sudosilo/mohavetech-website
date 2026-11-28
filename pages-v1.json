@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-28T03:26:43.825Z",
+ "generated": "2026-11-28T12:28:25.702Z",
  "sites": [
   {
    "name": "2026-11-26-green-ghostwing",
@@ -10,6 +10,16 @@
    "source": "master",
    "status": "built",
    "description": "Early Ghost Wing repo whose page is a tile placing map building game."
+  },
+  {
+   "name": "2026-11-27-blue-familytree",
+   "url": "sudosilo.github.io/2026-11-27-blue-familytree/",
+   "repo": "sudosilo/2026-11-27-blue-familytree",
+   "pushed": "2026-11-27",
+   "built": "2026-11-28",
+   "source": "main",
+   "status": "built",
+   "description": ""
   },
   {
    "name": "2026-11-27-purple-sodashelf",
